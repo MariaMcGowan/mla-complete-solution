@@ -1,0 +1,24 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Order" columnSpan="4">
+    <field fieldName="Destination" readOnly="true" displayName="Destination" padding="1">
+    </field>
+    <field fieldName="LotNbr" multilineEdit="true" displayName="Lot Number" padding="1"/>
+    <field fieldName="DestinationBuildingID" multilineEdit="true" displayName="Destination Building" padding="1">
+      <lookupList>
+        <source sql="execute DestinationBuilding_Lookup"></source>
+      </lookupList>
+    </field>
+    <field fieldName="CustomerReferenceNbr" multilineEdit="true" displayName="PO Number" padding="1"/>
+    <field fieldName="IncubationDayCnt" multilineEdit="true" displayName="Incubation Day Count"/>
+    <field fieldName="DeliveryDate" multilineEdit="true" displayName="Delivery Date" />    
+    <field fieldName="PlannedSetDate" multilineEdit="true" displayName="Planned Set Date" padding="1"/>
+    <field fieldName="OrderQty" multilineEdit="true" displayName="Actual Order Quantity"/>
+    <field fieldName="PlannedQty" multilineEdit="true" displayName="Planned Order Quantity"/>
+    <field fieldName="OrderStatusID" multilineEdit="true" displayName="Order Status" padding="2">
+      <lookupList>
+        <source sql="exec OrderStatus_Lookup" />
+      </lookupList>
+    </field>
+    <field fieldName="DeliverySpecComments" displayName="Comments" columnSpan="4"/>
+  </section>
+</fieldList>

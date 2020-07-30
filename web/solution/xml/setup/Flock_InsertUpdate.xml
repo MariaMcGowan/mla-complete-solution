@@ -1,0 +1,11 @@
+<CargasConnect>
+  <dbo.Flock_InsertUpdate>
+	<FlockID/>
+	<Flock/>
+	<FarmID/>
+	<SortOrder/>
+	<IsActive/>
+	<UserName/>
+    <HatchDate/>
+  </dbo.Flock_InsertUpdate>
+</CargasConnect>

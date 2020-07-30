@@ -1,0 +1,10 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Delivery Flock" mobileLayoutSize="none">
+    <field fieldName="FlockID" multilineEdit="true" displayName="Flock">
+      <lookupList>
+        <source sql="exec Flock_LookupForOrder @OrderID='{0}'" />
+      </lookupList>
+    </field>
+    <field fieldName="DeliveryFlockID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="DeliveryFlock_Delete" visibleFieldName="OrderFlockID.toString()!" visibleFieldValue="0"/>
+  </section>
+</fieldList>

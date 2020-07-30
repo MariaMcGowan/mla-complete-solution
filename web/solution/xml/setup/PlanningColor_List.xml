@@ -1,0 +1,6 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Planning Colors">
+		<field fieldName="BlankField" displayName="Color" readOnly="true" className="{{thisRecord.PlanningColor}}" />
+		<field fieldName="Description" />
+	</section>
+</fieldList>

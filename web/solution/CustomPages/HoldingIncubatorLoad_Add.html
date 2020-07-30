@@ -1,0 +1,9 @@
+﻿<div ng-if="thisRecord.HoldingIncubator>''">{{thisRecord.HoldingIncubator}}</div>
+<div ng-if="thisRecord.HoldingIncubator==''">
+    <a name="DeliveryID" id="DeliveryID" onclick="fireCSBLink(this); return false;"
+       csb-link="showInDialog('Form.html?screenID=DeliveryHoldingIncubatorSelect&amp;p={{thisRecord.DeliveryID}}&amp;p=0','Select Holding Incubator',900,600)"
+       href style="font-size:small;">
+        Select Holding Incubator
+    </a>
+    </div>
+

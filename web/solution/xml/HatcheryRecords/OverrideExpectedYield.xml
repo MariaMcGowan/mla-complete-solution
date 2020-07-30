@@ -1,0 +1,9 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Override Expected Yield" >
+    <field fieldName="SetDate" multilineEdit="true" displayName="Set Date" readOnly="true"/>
+    <field fieldName="DeliveryDate" multilineEdit="true" displayName="Delivery Date" readOnly="true"/>
+    <field fieldName="EstimatedYield" displayName="Yield Expected" updateAllColumnsType="numeric"/>
+    <field fieldName="CalculatedYield" readOnly="true" displayName="Yield Calculated"/>
+    <field fieldName="UniqueRowID" hidden="true"/>
+  </section>
+</fieldList>

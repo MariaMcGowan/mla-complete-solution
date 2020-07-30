@@ -1,0 +1,146 @@
+<!-- In order to use security, a unique alphanumeric menuID is required -->
+<menuList>
+	<!-- Begin Contract Menu -->
+	<menugroup menuID="100" displayName="Contracts" ScreenID="">
+		<menu menuID="100.1" displayName="Contract List" ScreenID="Contract_List"/>
+	</menugroup>
+
+	<!-- Begin Planning Menu -->
+	<menugroup menuID="200" displayName="Planning" ScreenID="">
+    <menu menuID="200.10" displayName="Flock Rotation" ScreenID="FlockRotation_List"/>
+	<menu menuID="200.20" displayName="Flock Schedule" ScreenID="">
+			<submenu menuID="200.20.1" displayName="Chick Ordering" ScreenID="ChickOrdering_List"/>
+				<submenu menuID="200.20.2" displayName="Pullet Schedule" ScreenID="PulletSchedule_List"/>
+				<submenu menuID="200.20.3" displayName="Production Farm Schedule" ScreenID="FarmSchedule_List"/>
+		</menu>
+		<menu menuID="300.10" displayName="Commercial Eggs" ScreenID="">
+			<menu menuID="300.10.1" displayName="Overall Summary" ScreenID="CommercialEggs_Summary_List"/>
+			<menu menuID="300.10.2" displayName="Commitments" ScreenID="CommercialCommitment_List"/>
+			<menu menuID="300.10.3" displayName="Schedule By Flock" ScreenID="CommercialFlockSchedule_List"/>
+      <menu menuID="300.10.4" displayName="Commercial Markets" ScreenID="CommercialMarket_List"/>
+		</menu>
+		<menu menuID="300.20" displayName="Hatchery Records" ScreenID="PredictEggFlows">
+		</menu>
+    <menu menuID="300.30" displayName="Projected Orders" ScreenID="ProjectedOrderList">
+    </menu>
+	</menugroup>
+
+	<!-- Begin Order Menu -->
+  <menugroup menuID="1" displayName="Orders" ScreenID="">
+    <menu menuID="1.1" displayName="Order List" ScreenID="OrderList"/>
+    <menu menuID="1.2" displayName="Order Entry" ScreenID="OrderEntryGrid"/>
+  </menugroup>
+
+	<!-- Begin Operations Menu -->
+	<menugroup menuID="2" displayName="Operations" ScreenID="">
+		<menu menuID="2.1" displayName="Cooler Load" ScreenID="CoolerClutch_List"/>
+		<menu menuID="2.2" displayName="Load Planning" ScreenID="LoadPlanning_List"/>
+		<menu menuID="2.3" displayName="Incubator Load" ScreenID="IncubatorLoadList"/>
+		<menu menuID="2.4" displayName="Candle Out Conversion" ScreenID="Candling_List"/>
+		<menu menuID="2.5" displayName="Holding Incubator Load" ScreenID="HoldingIncubatorLoadList"/>
+	</menugroup>
+	
+	<!-- Begin Egg Changes Menu -->
+	<menugroup menuID="5" displayName="Egg Changes" ScreenID="">
+		<menu menuID="5.0" displayName="Cooler" ScreenID="ClutchTransaction_List"/>
+		<menu menuID="5.1" displayName="Incubator" ScreenID="IncubatorClutch_List"/>
+		<menu menuID="5.2" displayName="Holding Incubator" ScreenID="HoldingIncubatorFlock_List"/>
+	</menugroup>
+
+	<!-- Begin Invoice Menu -->
+	<menugroup menuID="3" displayName="Invoices" ScreenID="">
+		<menu menuID="3.2" displayName="Invoice List" ScreenID="InvoiceList"/>
+	</menugroup>
+
+	<!-- Begin Reports Menu -->
+	<menugroup menuID="4" displayName="Reports" ScreenID="">
+		<menu menuID="4.1" displayName="Embryo Delivered By Flock" ScreenID="rptEmbryoDeliveredByFlock_Params"/>
+		<menu menuID="4.2" displayName="10-Day Pack Proof" ScreenID="rptTenDayPackProof_Params"/>
+		<menu menuID="4.5" displayName="Delivery Slip" ScreenID="rptDeliverySlip_Params"/>
+		<menu menuID="4.3" displayName="Delivery Spec Sheet" ScreenID="rptDeliverySpecSheet_Params"/>
+		<menu menuID="4.4" displayName="Invoice" ScreenID="rptInvoice_Params"/>
+		<menu menuID="4.6" displayName="Flock Statistics" ScreenID="rptFlockStatistics_Params"/>
+		<menu menuID="4.7" displayName="Time In Cooler" ScreenID="rptTimeInCooler_Params"/>
+    <menu menuID="4.8" displayName="Eggs Added To Cooler" ScreenID="EggsAddedToCooler_Params"/>
+  </menugroup>
+
+	<!-- Begin Setup Menu -->
+	<menugroup menuID="990" displayName="Setup" ScreenID="">
+		<menu menuID="990.10" displayName="Contacts" ScreenID="">
+			<submenu menuID="990.10.1" displayName="Contact Types" ScreenID="ContactTypeList"/>
+			<submenu menuID="990.10.2" displayName="Contacts" ScreenID="ContactList"/>
+		</menu>
+		<menu menuID="990.40" displayName="Customers" ScreenID="Customer_List"/>
+		<menu menuID="990.20" displayName="Farms" ScreenID="">
+      <submenu menuID="990.20.1.0" displayName="Farm List" ScreenID="FarmList"/>
+      <submenu menuID="990.20.1.1" displayName="Facility Survey" ScreenID="FacilitySurvey_Params"/>
+      <submenu menuID="990.20.1.2" displayName="Shavings Template" ScreenID="ShavingTemplate_Params"/>
+    </menu>
+    <menu menuID="990.20.2" displayName="Flocks" ScreenID="">
+      <submenu menuID="990.20.2.0" displayName="Flock List" ScreenID="FlockListAll"/>
+      <submenu menuID="990.20.2.8" displayName="Pullet Facilities" ScreenID="PulletFacility_List"/>
+      <submenu menuID="990.20.2.4" displayName="---------------------------" ScreenID=""/>
+      <submenu menuID="990.20.2.9" displayName="PADLS Sampling Report" ScreenID="PADLSReportScreen"/>
+      <submenu menuID="990.20.2.1" displayName="PADLS Sampling Schedule" ScreenID="PADLSSamplingSchedule_List"/>
+      <submenu menuID="990.20.2.2" displayName="Quarterly Performance Audit" ScreenID="QuarterlyPeformanceAudit_List"/>
+      <submenu menuID="990.20.2.3" displayName="Vaccination and Service" ScreenID="VaccinationService_List"/>
+      <submenu menuID="990.20.2.4" displayName="---------------------------" ScreenID=""/>
+      <submenu menuID="990.20.2.5" displayName="PADLS Sampling Schedule Template" ScreenID="PADLSTemplate_List"/>
+      <submenu menuID="990.20.2.6" displayName="Quarterly Performance Audit Template" ScreenID="QtrlyPerformAuditTemplate_List"/>
+      <submenu menuID="990.20.3.7" displayName="Vaccination and Service Template" ScreenID="VaccinationServiceTemplate_List"/>
+    </menu>      
+		<menu menuID="990.30" displayName="Cooler and Incubator Setup" ScreenID="">
+			<submenu menuID="990.30.1" displayName="Coolers" ScreenID="CoolerList"/>
+			<submenu menuID="990.30.2" displayName="Incubators" ScreenID="IncubatorList"/>
+			<submenu menuID="990.30.3" displayName="Holding Incubators" ScreenID="HoldingIncubatorList"/>
+		</menu>
+		<menu menuID="990.50" displayName="Destination Buildings" ScreenID="DestinationMaster">
+		</menu>
+		<menu menuID="990.60" displayName="Quantity Change Reasons" ScreenID="QuantityChangeReason"/>
+		<menu menuID="990.70" displayName="Trucks" ScreenID="Truck"/>
+		<menu menuID="990.95" displayName="Planning" ScreenID="">			
+			<menu menuID="990.95.50" displayName="Egg Classifications" ScreenID="EggClassification_List"/>
+			<menu menuID="990.95.30" displayName="Embryo Standards" ScreenID="FarmEmbryoStandardYield_List"/>
+			<menu menuID="990.95.10" displayName="Farm Planning Constraints" ScreenID="FarmPlanning_List"/>
+      <menu menuID="990.95.70" displayName="Planning Colors" ScreenID="PlanningColor_List"/>
+			<menu menuID="990.95.40" displayName="System Constants" ScreenID="SystemConstant_List"/>
+			
+		</menu>
+		<menu menuID="990.90" displayName="User Setup" ScreenID="">
+			<submenu menuID="990.90.1" displayName="Users" ScreenID="UserTable_List" />
+			<submenu menuID="990.90.2" displayName="User Groups" ScreenID="UserGroup_List" />
+		</menu>
+	</menugroup>
+    <menugroup menuID="1000" displayName="Portal Security" ScreenID="">
+	  <menu menuID="990.90.9" displayName="Portal Security" ScreenID="SecurityHome"  />
+      <menu menuID="1000.20" displayName="Security By User Group" ScreenID="SecurityScreensForUserGroup"/>
+    </menugroup>	
+
+  <!-- Begin Support Menu -->
+  <menugroup menuID="999" displayName="Support" ScreenID="ActivityLog_List">
+    <menu menuID="999.1" displayName="Documentation" ScreenID="Job_List">
+      <submenu menuID="999.1.1" displayName="Overview" ScreenID="Overview_Form" />
+      <submenu menuID="999.1.2" displayName="Team" ScreenID="TeamMember_List" />
+      <submenu menuID="999.1.3" displayName="Servers" ScreenID="ServerDetails_Form" />
+      <submenu menuID="999.1.4" displayName="Database objects" ScreenID="SolutionObject_List" />
+      <submenu menuID="999.1.5" displayName="Jobs" ScreenID="Job_List" />
+    </menu>
+    <menu menuID="999.2" displayName="Activity" ScreenID="ActivityLog_List">
+      <submenu menuID="999.2.1" displayName="Summary by page" ScreenID="ActivityLog_ListSummaryByPage" />
+      <submenu menuID="999.2.2" displayName="Summary by user" ScreenID="ActivityLog_ListSummaryByUser" />
+      <submenu menuID="999.2.3" displayName="Summary by IP address" ScreenID="ActivityLog_ListSummaryByIpAddress" />
+      <submenu menuID="999.2.4" displayName="Summary by time" ScreenID="ActivityLog_ListSummaryBySupportSubInterval" />
+      <submenu menuID="999.2.5" displayName="Details" ScreenID="ActivityLog_List" />
+    </menu>
+    <menu menuID="999.3" displayName="Performance" ScreenID="PerformanceLog_List">
+      <submenu menuID="999.2.1" displayName="Summary by source" ScreenID="PerformanceLog_ListSummaryBySource" />
+      <submenu menuID="999.2.2" displayName="Summary by time" ScreenID="PerformanceLog_ListSummaryBySupportSubInterval" />
+      <submenu menuID="999.2.3" displayName="Details" ScreenID="PerformanceLog_List" />
+    </menu>
+    <menu menuID="999.4" displayName="Warnings" ScreenID="WarningLog_List" />
+    <menu menuID="999.5" displayName="Exceptions" ScreenID="ExceptionLog_List" />
+  </menugroup>
+  <!-- End Support Menu -->
+
+</menuList>
+

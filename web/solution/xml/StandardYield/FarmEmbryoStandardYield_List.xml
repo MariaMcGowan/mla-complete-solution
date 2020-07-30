@@ -1,0 +1,12 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Farm Embryo Standard Yield" displayStyle="paging:100">
+		<field fieldName="WeekNumber" displayName="Week Number" readOnly="true"/>
+		<field fieldName="CumulativeMortalityPercent" displayName="Cumulative Mortality Percent"/>
+		<field fieldName="CumulativeLivabilityPercent" displayName="Cumulative Livability Percent"/>
+		<field fieldName="LayPercent" displayName="Lay Percent"/>
+		<field fieldName="SettableEggsPercentForWeek" displayName="Settable Eggs Percent For Week"/>
+		<field fieldName="FloorEggPercent" displayName="Floor Egg Percent"/>
+		<field fieldName="CaseWeight" displayName="Case Weight"/>
+		<field fieldName="CandleoutPercent" displayName="Candleout Percent"/>
+	</section>
+</fieldList>

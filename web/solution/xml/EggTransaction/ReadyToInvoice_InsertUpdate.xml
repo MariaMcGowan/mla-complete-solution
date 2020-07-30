@@ -1,0 +1,13 @@
+<CargasConnect>
+	<ReadyToInvoice_InsertUpdate>
+    <OrderID />
+    <Selected />
+    <LotNbr />
+    <DeliveredQty />
+    <InvoiceQty />
+    <UnitPrice />
+    <DeliveryCharge />
+    <DeliveryDate />
+    <Terms />
+	</ReadyToInvoice_InsertUpdate>
+</CargasConnect>

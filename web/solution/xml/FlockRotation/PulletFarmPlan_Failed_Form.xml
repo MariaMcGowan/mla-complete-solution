@@ -1,0 +1,9 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Failed Flock Plan" >
+		<field fieldName="FarmNumber"  readOnly="true" displayName="Farm"/>
+		<field fieldName="PulletQtyAt16Weeks" displayName="Pullet Quantity at 16 Weeks"/>
+		<field fieldName="TwentyFourWeekDate" displayName="Planned 24 Week Date"/>
+		<field fieldName="EndDate" displayName="Planned End Date"/>
+		<field fieldName="Planned65WeekDate" displayName="Planned 65 Week Date"/>
+	</section>
+</fieldList>

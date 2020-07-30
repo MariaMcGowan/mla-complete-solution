@@ -1,0 +1,171 @@
+﻿<table fixed-header="1" offset-from-element=".contextBar md-toolbar" style="font-size:8px">
+	<thead style="background-color:white;">
+		<tr class="green-header">
+			<th sticky-header>Day of Week</th>
+			<th sticky-header>Set Date</th>
+			<th sticky-header>Delivery Date</th>
+			<th sticky-header>Lot Numbers</th>
+			<th sticky-header>Order Qty</th>
+			<th sticky-header>Target Qty</th>
+			<th sticky-header>Yield Expected</th>
+			<th sticky-header>Yield Calculated</th>
+			<th sticky-header>Cases Set</th>
+			<th sticky-header>+ Cases</th>
+			<th sticky-header>Cases In Cooler at the End of Day</th>
+			<th sticky-header>Egg Loss</th>
+			<th sticky-header>Gains / Losses</th>
+			<th sticky-header>Oldest Egg Age</th>
+			<th sticky-header>Cases of Oldest Egg Age Prior to Set</th>
+
+			<th ng-if="data.records[0].ShowFarms=='0'" sticky-header ><div>Total Settable Eggs</div></th>
+
+			<th ng-if="data.records[0].FarmColumn01_Visible=='1'" sticky-header ><div title={{::data.records[0].FarmColumn01_FarmName}}>{{::data.records[0].FarmColumn01_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn02_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn02_FarmName}}>{{::data.records[0].FarmColumn02_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn03_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn03_FarmName}}>{{::data.records[0].FarmColumn03_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn04_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn04_FarmName}}>{{::data.records[0].FarmColumn04_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn05_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn05_FarmName}}>{{::data.records[0].FarmColumn05_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn06_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn06_FarmName}}>{{::data.records[0].FarmColumn06_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn07_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn07_FarmName}}>{{::data.records[0].FarmColumn07_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn08_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn08_FarmName}}>{{::data.records[0].FarmColumn08_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn09_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn09_FarmName}}>{{::data.records[0].FarmColumn09_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn10_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn10_FarmName}}>{{::data.records[0].FarmColumn10_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn11_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn11_FarmName}}>{{::data.records[0].FarmColumn11_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn12_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn12_FarmName}}>{{::data.records[0].FarmColumn12_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn13_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn13_FarmName}}>{{::data.records[0].FarmColumn13_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn14_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn14_FarmName}}>{{::data.records[0].FarmColumn14_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn15_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn15_FarmName}}>{{::data.records[0].FarmColumn15_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn16_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn16_FarmName}}>{{::data.records[0].FarmColumn16_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn17_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn17_FarmName}}>{{::data.records[0].FarmColumn17_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn18_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn18_FarmName}}>{{::data.records[0].FarmColumn18_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn19_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn19_FarmName}}>{{::data.records[0].FarmColumn19_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn20_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn20_FarmName}}>{{::data.records[0].FarmColumn20_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn21_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn21_FarmName}}>{{::data.records[0].FarmColumn21_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn22_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn22_FarmName}}>{{::data.records[0].FarmColumn22_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn23_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn23_FarmName}}>{{::data.records[0].FarmColumn23_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn24_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn24_FarmName}}>{{::data.records[0].FarmColumn24_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn25_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn25_FarmName}}>{{::data.records[0].FarmColumn25_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn26_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn26_FarmName}}>{{::data.records[0].FarmColumn26_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn27_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn27_FarmName}}>{{::data.records[0].FarmColumn27_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn28_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn28_FarmName}}>{{::data.records[0].FarmColumn28_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn29_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn29_FarmName}}>{{::data.records[0].FarmColumn29_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn30_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn30_FarmName}}>{{::data.records[0].FarmColumn30_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn31_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn31_FarmName}}>{{::data.records[0].FarmColumn31_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn32_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn32_FarmName}}>{{::data.records[0].FarmColumn32_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn33_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn33_FarmName}}>{{::data.records[0].FarmColumn33_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn34_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn34_FarmName}}>{{::data.records[0].FarmColumn34_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn35_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn35_FarmName}}>{{::data.records[0].FarmColumn35_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn36_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn36_FarmName}}>{{::data.records[0].FarmColumn36_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn37_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn37_FarmName}}>{{::data.records[0].FarmColumn37_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn38_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn38_FarmName}}>{{::data.records[0].FarmColumn38_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn39_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn39_FarmName}}>{{::data.records[0].FarmColumn39_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn40_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn40_FarmName}}>{{::data.records[0].FarmColumn40_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn41_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn41_FarmName}}>{{::data.records[0].FarmColumn41_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn42_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn42_FarmName}}>{{::data.records[0].FarmColumn42_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn43_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn43_FarmName}}>{{::data.records[0].FarmColumn43_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn44_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn44_FarmName}}>{{::data.records[0].FarmColumn44_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn45_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn45_FarmName}}>{{::data.records[0].FarmColumn45_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn46_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn46_FarmName}}>{{::data.records[0].FarmColumn46_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn47_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn47_FarmName}}>{{::data.records[0].FarmColumn47_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn48_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn48_FarmName}}>{{::data.records[0].FarmColumn48_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn49_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn49_FarmName}}>{{::data.records[0].FarmColumn49_FarmNumber}}</div></th>
+			<th ng-if="data.records[0].FarmColumn50_Visible=='1'" sticky-header><div title={{::data.records[0].FarmColumn50_FarmName}}>{{::data.records[0].FarmColumn50_FarmNumber}}</div></th>
+
+
+			<th sticky-header ng-if="data.records[0].ContractTypeID==columnRecord.DefaultContractTypeID" ng-repeat="columnRecord in data.detailRecords[0].HatcheryRecords_BuildingList | filter:{DestinationBuildingColumn:$index}" class="hiderotateText table-header-row-1">
+				<div>
+					{{::columnRecord.DestinationBuilding}}
+				</div>
+			</th>
+
+
+			<!--<th style="display: none;" ng-init="data.setAdvancedSearchFields([{'field':'WeekEndingDate', 'label':'Week Ending Date', 'type':'date'},{'field':'FarmColumn01_CalcPulletQty', 'label':'Quantity', 'type':''}])"></th>-->
+		</tr>
+
+	</thead>
+
+	<tr table-content-main-row="table-content-main-row" dir-paginate="thisRecord in data.records | itemsPerPage: 2000 " current-page="data.currentPage">
+		<td class="flockScheduleCell">{{::thisRecord.SetDate_Day}}</td>		
+		<td class="flockScheduleCell">{{::thisRecord.SetDate}}</td>
+		<td class="flockScheduleCell">{{::thisRecord.DeliveryDate}}</td>
+		<td class="flockScheduleCell">{{::thisRecord.LotNumbers}}</td>
+		<td class="flockScheduleCell"><md-input-container class="csb-numeric-type "><div name="OrderedEggs" id="OrderedEggs">{{::thisRecord.OrderedEggs|csbCustomFormat:'numeric':0}}</div></md-input-container></td>
+		<td class="flockScheduleCell"><md-input-container class="csb-numeric-type "><div name="TargetedEggs" id="TargetedEggs">{{::thisRecord.TargetedEggs|csbCustomFormat:'numeric':0}}</div></md-input-container></td>
+
+		<td class="flockScheduleCell"><md-input-container class="csb-numeric-type "><div name="EstimatedYield" id="EstimatedYield">{{::thisRecord.EstimatedYield|csbCustomFormat:'numeric':2}}</div></md-input-container></td>
+		<td class="flockScheduleCell"><md-input-container class="csb-numeric-type "><div name="CalculatedYield" id="CalculatedYield">{{::thisRecord.CalculatedYield|csbCustomFormat:'numeric':2}}</div></md-input-container></td>
+		<td class="flockScheduleCell"><md-input-container class="csb-numeric-type "><div name="CasesSet" id="CasesSet">{{::thisRecord.CasesSet|csbCustomFormat:'numeric':1}}</div></md-input-container></td>
+
+		<td class="flockScheduleCell"><md-input-container class="csb-numeric-type "><div name="FarmPickupQty" id="FarmPickupQty">{{::thisRecord.FarmPickupQty|csbCustomFormat:'numeric':1}}</div></md-input-container></td>
+		<!--<td class="flockScheduleCell"><md-input-container class="csb-numeric-type "><div name="CasesInCooler" id="CasesInCooler">{{::thisRecord.CasesInCooler|csbCustomFormat:'numeric':1}}</div></md-input-container></td>-->
+		<td class="flockScheduleCell"><md-input-container class="csb-numeric-type"><div name="CasesInCooler" id="CasesInCooler" onclick="fireCSBLink(this); return false;" csb-link="showInDialog('form.html?screenID=ZeroOutCooler_Form&amp;p={{::thisRecord.SetDate}}&amp;p={{::thisRecord.CasesInCooler}}&amp;p={{::thisRecord.ContractTypeID}}', 'Zero Out Cooler', 430,480)">{{::thisRecord.CasesInCooler|csbCustomFormat:'numeric':1}}</div></md-input-container></td>
+		<td class="flockScheduleCell"><md-input-container class="csb-numeric-type "><div name="EggLoss" id="EggLoss">{{::thisRecord.EggLoss|csbCustomFormat:'numeric':1}}</div></md-input-container></td>
+		<td class="flockScheduleCell"><md-input-container class="csb-numeric-type "><div name="GainsLosses" id="GainsLosses">{{::thisRecord.GainsLosses|csbCustomFormat:'numeric':1}}</div></md-input-container></td>
+		<td class="flockScheduleCell"><md-input-container class="csb-numeric-type "><div name="OldestEggAge" id="OldestEggAge">{{::thisRecord.OldestEggAge|csbCustomFormat:'numeric':1}}</div></md-input-container></td>
+		<td class="flockScheduleCell"><md-input-container class="csb-numeric-type "><div name="CasesOfOldestEggAge" id="CasesOfOldestEggAge">{{::thisRecord.CasesOfOldestEggAge|csbCustomFormat:'numeric':1}}</div></md-input-container></td>
+
+		<td class="flockScheduleCell" style="text-align:right;" ng-if="data.records[0].ShowFarms=='0'"><div name="CalcSettableEggs" id="CalcSettableEggs">{{::thisRecord.CalcSettableEggs|csbCustomFormat:'numeric':0}}</div></td>
+
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn01_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn01_Visible=='1'"><div name="FarmColumn01_Qty" id="FarmColumn01_Qty" title={{::thisRecord.FarmColumn01_WeekNumber}}>{{::thisRecord.FarmColumn01_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn02_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn02_Visible=='1'"><div name="FarmColumn02_Qty" id="FarmColumn02_Qty" title={{::thisRecord.FarmColumn02_WeekNumber}}>{{::thisRecord.FarmColumn02_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn03_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn03_Visible=='1'"><div name="FarmColumn03_Qty" id="FarmColumn03_Qty" title={{::thisRecord.FarmColumn03_WeekNumber}}>{{::thisRecord.FarmColumn03_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn04_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn04_Visible=='1'"><div name="FarmColumn04_Qty" id="FarmColumn04_Qty" title={{::thisRecord.FarmColumn04_WeekNumber}}>{{::thisRecord.FarmColumn04_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn05_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn05_Visible=='1'"><div name="FarmColumn05_Qty" id="FarmColumn05_Qty" title={{::thisRecord.FarmColumn05_WeekNumber}}>{{::thisRecord.FarmColumn05_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn06_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn06_Visible=='1'"><div name="FarmColumn06_Qty" id="FarmColumn06_Qty" title={{::thisRecord.FarmColumn06_WeekNumber}}>{{::thisRecord.FarmColumn06_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn07_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn07_Visible=='1'"><div name="FarmColumn07_Qty" id="FarmColumn07_Qty" title={{::thisRecord.FarmColumn07_WeekNumber}}>{{::thisRecord.FarmColumn07_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn08_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn08_Visible=='1'"><div name="FarmColumn08_Qty" id="FarmColumn08_Qty" title={{::thisRecord.FarmColumn08_WeekNumber}}>{{::thisRecord.FarmColumn08_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn09_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn09_Visible=='1'"><div name="FarmColumn09_Qty" id="FarmColumn09_Qty" title={{::thisRecord.FarmColumn09_WeekNumber}}>{{::thisRecord.FarmColumn09_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn10_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn10_Visible=='1'"><div name="FarmColumn10_Qty" id="FarmColumn10_Qty" title={{::thisRecord.FarmColumn10_WeekNumber}}>{{::thisRecord.FarmColumn10_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn11_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn11_Visible=='1'"><div name="FarmColumn11_Qty" id="FarmColumn11_Qty" title={{::thisRecord.FarmColumn11_WeekNumber}}>{{::thisRecord.FarmColumn11_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn12_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn12_Visible=='1'"><div name="FarmColumn12_Qty" id="FarmColumn12_Qty" title={{::thisRecord.FarmColumn12_WeekNumber}}>{{::thisRecord.FarmColumn12_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn13_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn13_Visible=='1'"><div name="FarmColumn13_Qty" id="FarmColumn13_Qty" title={{::thisRecord.FarmColumn13_WeekNumber}}>{{::thisRecord.FarmColumn13_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn14_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn14_Visible=='1'"><div name="FarmColumn14_Qty" id="FarmColumn14_Qty" title={{::thisRecord.FarmColumn14_WeekNumber}}>{{::thisRecord.FarmColumn14_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn15_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn15_Visible=='1'"><div name="FarmColumn15_Qty" id="FarmColumn15_Qty" title={{::thisRecord.FarmColumn15_WeekNumber}}>{{::thisRecord.FarmColumn15_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn16_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn16_Visible=='1'"><div name="FarmColumn16_Qty" id="FarmColumn16_Qty" title={{::thisRecord.FarmColumn16_WeekNumber}}>{{::thisRecord.FarmColumn16_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn17_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn17_Visible=='1'"><div name="FarmColumn17_Qty" id="FarmColumn17_Qty" title={{::thisRecord.FarmColumn17_WeekNumber}}>{{::thisRecord.FarmColumn17_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn18_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn18_Visible=='1'"><div name="FarmColumn18_Qty" id="FarmColumn18_Qty" title={{::thisRecord.FarmColumn18_WeekNumber}}>{{::thisRecord.FarmColumn18_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn19_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn19_Visible=='1'"><div name="FarmColumn19_Qty" id="FarmColumn19_Qty" title={{::thisRecord.FarmColumn19_WeekNumber}}>{{::thisRecord.FarmColumn19_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn20_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn20_Visible=='1'"><div name="FarmColumn20_Qty" id="FarmColumn20_Qty" title={{::thisRecord.FarmColumn20_WeekNumber}}>{{::thisRecord.FarmColumn20_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn21_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn21_Visible=='1'"><div name="FarmColumn21_Qty" id="FarmColumn21_Qty" title={{::thisRecord.FarmColumn21_WeekNumber}}>{{::thisRecord.FarmColumn21_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn22_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn22_Visible=='1'"><div name="FarmColumn22_Qty" id="FarmColumn22_Qty" title={{::thisRecord.FarmColumn22_WeekNumber}}>{{::thisRecord.FarmColumn22_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn23_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn23_Visible=='1'"><div name="FarmColumn23_Qty" id="FarmColumn23_Qty" title={{::thisRecord.FarmColumn23_WeekNumber}}>{{::thisRecord.FarmColumn23_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn24_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn24_Visible=='1'"><div name="FarmColumn24_Qty" id="FarmColumn24_Qty" title={{::thisRecord.FarmColumn24_WeekNumber}}>{{::thisRecord.FarmColumn24_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn25_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn25_Visible=='1'"><div name="FarmColumn25_Qty" id="FarmColumn25_Qty" title={{::thisRecord.FarmColumn25_WeekNumber}}>{{::thisRecord.FarmColumn25_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn26_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn26_Visible=='1'"><div name="FarmColumn26_Qty" id="FarmColumn26_Qty" title={{::thisRecord.FarmColumn26_WeekNumber}}>{{::thisRecord.FarmColumn26_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn27_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn27_Visible=='1'"><div name="FarmColumn27_Qty" id="FarmColumn27_Qty" title={{::thisRecord.FarmColumn27_WeekNumber}}>{{::thisRecord.FarmColumn27_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn28_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn28_Visible=='1'"><div name="FarmColumn28_Qty" id="FarmColumn28_Qty" title={{::thisRecord.FarmColumn28_WeekNumber}}>{{::thisRecord.FarmColumn28_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn29_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn29_Visible=='1'"><div name="FarmColumn29_Qty" id="FarmColumn29_Qty" title={{::thisRecord.FarmColumn29_WeekNumber}}>{{::thisRecord.FarmColumn29_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn30_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn30_Visible=='1'"><div name="FarmColumn30_Qty" id="FarmColumn30_Qty" title={{::thisRecord.FarmColumn30_WeekNumber}}>{{::thisRecord.FarmColumn30_Qty|csbCustomFormat:'numeric':0}}</div></td>
+
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn31_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn31_Visible=='1'"><div name="FarmColumn31_Qty" id="FarmColumn31_Qty" title={{::thisRecord.FarmColumn31_WeekNumber}}>{{::thisRecord.FarmColumn31_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn32_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn32_Visible=='1'"><div name="FarmColumn32_Qty" id="FarmColumn32_Qty" title={{::thisRecord.FarmColumn32_WeekNumber}}>{{::thisRecord.FarmColumn32_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn33_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn33_Visible=='1'"><div name="FarmColumn33_Qty" id="FarmColumn33_Qty" title={{::thisRecord.FarmColumn33_WeekNumber}}>{{::thisRecord.FarmColumn33_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn34_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn34_Visible=='1'"><div name="FarmColumn34_Qty" id="FarmColumn34_Qty" title={{::thisRecord.FarmColumn34_WeekNumber}}>{{::thisRecord.FarmColumn34_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn35_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn35_Visible=='1'"><div name="FarmColumn35_Qty" id="FarmColumn35_Qty" title={{::thisRecord.FarmColumn35_WeekNumber}}>{{::thisRecord.FarmColumn35_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn36_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn36_Visible=='1'"><div name="FarmColumn36_Qty" id="FarmColumn36_Qty" title={{::thisRecord.FarmColumn36_WeekNumber}}>{{::thisRecord.FarmColumn36_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn37_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn37_Visible=='1'"><div name="FarmColumn37_Qty" id="FarmColumn37_Qty" title={{::thisRecord.FarmColumn37_WeekNumber}}>{{::thisRecord.FarmColumn37_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn38_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn38_Visible=='1'"><div name="FarmColumn38_Qty" id="FarmColumn38_Qty" title={{::thisRecord.FarmColumn38_WeekNumber}}>{{::thisRecord.FarmColumn38_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn39_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn39_Visible=='1'"><div name="FarmColumn39_Qty" id="FarmColumn39_Qty" title={{::thisRecord.FarmColumn39_WeekNumber}}>{{::thisRecord.FarmColumn39_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn40_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn40_Visible=='1'"><div name="FarmColumn40_Qty" id="FarmColumn40_Qty" title={{::thisRecord.FarmColumn40_WeekNumber}}>{{::thisRecord.FarmColumn40_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn41_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn41_Visible=='1'"><div name="FarmColumn41_Qty" id="FarmColumn41_Qty" title={{::thisRecord.FarmColumn41_WeekNumber}}>{{::thisRecord.FarmColumn41_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn42_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn42_Visible=='1'"><div name="FarmColumn42_Qty" id="FarmColumn42_Qty" title={{::thisRecord.FarmColumn42_WeekNumber}}>{{::thisRecord.FarmColumn42_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn43_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn43_Visible=='1'"><div name="FarmColumn43_Qty" id="FarmColumn43_Qty" title={{::thisRecord.FarmColumn43_WeekNumber}}>{{::thisRecord.FarmColumn43_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn44_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn44_Visible=='1'"><div name="FarmColumn44_Qty" id="FarmColumn44_Qty" title={{::thisRecord.FarmColumn44_WeekNumber}}>{{::thisRecord.FarmColumn44_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn45_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn45_Visible=='1'"><div name="FarmColumn45_Qty" id="FarmColumn45_Qty" title={{::thisRecord.FarmColumn45_WeekNumber}}>{{::thisRecord.FarmColumn45_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn46_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn46_Visible=='1'"><div name="FarmColumn46_Qty" id="FarmColumn46_Qty" title={{::thisRecord.FarmColumn46_WeekNumber}}>{{::thisRecord.FarmColumn46_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn47_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn47_Visible=='1'"><div name="FarmColumn47_Qty" id="FarmColumn47_Qty" title={{::thisRecord.FarmColumn47_WeekNumber}}>{{::thisRecord.FarmColumn47_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn48_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn48_Visible=='1'"><div name="FarmColumn48_Qty" id="FarmColumn48_Qty" title={{::thisRecord.FarmColumn48_WeekNumber}}>{{::thisRecord.FarmColumn48_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn49_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn49_Visible=='1'"><div name="FarmColumn49_Qty" id="FarmColumn49_Qty" title={{::thisRecord.FarmColumn49_WeekNumber}}>{{::thisRecord.FarmColumn49_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" style="background-color:{{::thisRecord.FarmColumn50_Color}}; text-align:right;" ng-if="thisRecord.FarmColumn50_Visible=='1'"><div name="FarmColumn50_Qty" id="FarmColumn50_Qty" title={{::thisRecord.FarmColumn50_WeekNumber}}>{{::thisRecord.FarmColumn50_Qty|csbCustomFormat:'numeric':0}}</div></td>
+
+
+		<td class="flockScheduleCell" text-align:right;" ng-if="thisRecord.BuildingColumn01_Visible=='1'"><div name="BuildingColumn01_Qty" id="BuildingColumn01_Qty">{{::thisRecord.BuildingColumn01_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" text-align:right;" ng-if="thisRecord.BuildingColumn02_Visible=='1'"><div name="BuildingColumn02_Qty" id="BuildingColumn02_Qty">{{::thisRecord.BuildingColumn02_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" text-align:right;" ng-if="thisRecord.BuildingColumn03_Visible=='1'"><div name="BuildingColumn03_Qty" id="BuildingColumn03_Qty">{{::thisRecord.BuildingColumn03_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" text-align:right;" ng-if="thisRecord.BuildingColumn04_Visible=='1'"><div name="BuildingColumn04_Qty" id="BuildingColumn04_Qty">{{::thisRecord.BuildingColumn04_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" text-align:right;" ng-if="thisRecord.BuildingColumn05_Visible=='1'"><div name="BuildingColumn05_Qty" id="BuildingColumn05_Qty">{{::thisRecord.BuildingColumn05_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" text-align:right;" ng-if="thisRecord.BuildingColumn06_Visible=='1'"><div name="BuildingColumn06_Qty" id="BuildingColumn06_Qty">{{::thisRecord.BuildingColumn06_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" text-align:right;" ng-if="thisRecord.BuildingColumn07_Visible=='1'"><div name="BuildingColumn07_Qty" id="BuildingColumn07_Qty">{{::thisRecord.BuildingColumn07_Qty|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell" text-align:right;" ng-if="thisRecord.BuildingColumn08_Visible=='1'"><div name="BuildingColumn08_Qty" id="BuildingColumn08_Qty">{{::thisRecord.BuildingColumn08_Qty|csbCustomFormat:'numeric':0}}</div></td>
+
+	</tr>
+</table>

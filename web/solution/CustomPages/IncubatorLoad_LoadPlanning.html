@@ -1,0 +1,62 @@
+<div>
+    <a href="" ng-click="thisRecord.ShowLoadPlanning= thisRecord.ShowLoadPlanning == '0' ? '1' : '0';">
+        <span ng-if="thisRecord.ShowLoadPlanning=='0'">Show Load Planning</span>
+        <span ng-if="thisRecord.ShowLoadPlanning=='1'">Hide Load Planning</span>
+    </a>
+</div>
+
+<div style="text-align:center;" ng-show="thisRecord.ShowLoadPlanning=='1'">
+<div>
+    <span style="font-size:smaller;">Cart = 4608 | Column = 2304 | Shelf = 144</span>
+</div>
+<table style="width:100%;" flex="100" border="1">
+    <tr class="background700">
+        <th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Flock</th>
+        <th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Qty Planned</th>
+        <td style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Lay Date</td>
+        <td style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Qty in Coolers (for entire delivery)</td>
+        <th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Qty in Incubators (for entire delivery)</th>
+    </tr>
+    <tr ng-repeat="detailRecord in data.detailRecords[0].IncubatorLoad_LoadPlanning" ng-class-even="'background100'" class="{{detailRecord.FontColor}}">
+        <td>
+           {{detailRecord.Flock}}
+        </td>
+        <td>
+            {{detailRecord.LoadPlanQty}}
+            <span style="font-size:smaller">({{detailRecord.LoadPlanQtyRacks}} Racks</span>
+            <span style="font-size:smaller" ng-if="detailRecord.LoadPlanQtyColumns!=0">, {{detailRecord.LoadPlanQtyColumns}} Columns</span>
+            <span style="font-size:smaller" ng-if="detailRecord.LoadPlanQtyShelves!=0">, {{detailRecord.LoadPlanQtyShelves}} Shelves</span>
+            <span style="font-size:smaller" ng-if="detailRecord.LoadPlanQtyEggs!=0">, {{detailRecord.LoadPlanQtyEggs}} Eggs</span>
+            <span style="font-size:smaller">)</span>
+        </td>
+        <td>
+            <div ng-class-even="'background50'" ng-repeat="clutchRecord in data.detailRecords[0].IncubatorLoad_CoolerClutch | filter:{FlockID:detailRecord.FlockID}:true">
+                {{clutchRecord.LayDate}}<br/>
+            </div>
+        </td>
+        <td>
+            <div ng-class-even="'background50'" ng-repeat="clutchRecord in data.detailRecords[0].IncubatorLoad_CoolerClutch | filter:{FlockID:detailRecord.FlockID}:true">
+                {{clutchRecord.CoolerQty}}
+                <span style="font-size:smaller" ng-if="clutchRecord.CoolerQtyRacks!=0">({{clutchRecord.CoolerQtyRacks}} Racks</span>
+                <span style="font-size:smaller" ng-if="clutchRecord.CoolerQtyColumns!=0">, {{clutchRecord.CoolerQtyColumns}} Columns</span>
+                <span style="font-size:smaller" ng-if="clutchRecord.CoolerQtyShelves!=0">, {{clutchRecord.CoolerQtyShelves}} Shelves</span>
+                <span style="font-size:smaller" ng-if="clutchRecord.CoolerQtyEggs!=0">, {{clutchRecord.CoolerQtyEggs}} Eggs</span>
+                <span style="font-size:smaller" ng-if="clutchRecord.CoolerQtyRacks!=0">)</span>
+                <br />
+            </div>
+        </td>
+        <td>
+            <div ng-class-even="'background50'" ng-repeat="clutchRecord in data.detailRecords[0].IncubatorLoad_CoolerClutch | filter:{FlockID:detailRecord.FlockID}:true">
+                {{clutchRecord.IncubatorQty}}
+                <span style="font-size:smaller" ng-if="clutchRecord.IncubatorQtyRacks!=0">({{clutchRecord.IncubatorQtyRacks}} Racks</span>
+                <span style="font-size:smaller" ng-if="clutchRecord.IncubatorQtyColumns!=0">, {{clutchRecord.IncubatorQtyColumns}} Columns</span>
+                <span style="font-size:smaller" ng-if="clutchRecord.IncubatorQtyShelves!=0">, {{clutchRecord.IncubatorQtyShelves}} Shelves</span>
+                <span style="font-size:smaller" ng-if="clutchRecord.IncubatorQtyEggs!=0">, {{clutchRecord.IncubatorQtyEggs}} Eggs</span>
+                <span style="font-size:smaller" ng-if="clutchRecord.IncubatorQtyRacks!=0">)</span>
+                <br />
+            </div>
+        </td>
+    </tr>
+</table>
+</div> 
+

@@ -1,0 +1,13 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Setup - Lay Date(s)" columnSpan="3">
+		<field fieldName="LayDate" multilineEdit="true" displayName="Lay Date"/>
+		<field fieldName="Clutch" multilineEdit="true" displayName="Description"/>
+		<field fieldName="IsActive" multilineEdit="true" displayName="Is Active"/>
+		<field fieldName="PlannedQty" multilineEdit="true" displayName="Planned Qty"/>
+		<field fieldName="ActualQty" multilineEdit="true" displayName="Actual Qty" padding="1"/>
+		<field fieldName="RackCnt" multilineEdit="true" displayName="Rack Count"/>
+		<field fieldName="CaseCnt" multilineEdit="true" displayName="Case Count"/>
+		<field fieldName="WgtPerDozen" multilineEdit="true" displayName="Wgt / Dozen"/>
+		<field fieldName="ReasoningForPlannedQty" multilineEdit="true" displayName="Notes" columnSpan="3"/>
+	</section>
+</fieldList>

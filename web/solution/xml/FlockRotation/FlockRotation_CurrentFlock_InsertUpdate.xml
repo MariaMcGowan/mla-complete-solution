@@ -1,0 +1,16 @@
+﻿<CargasConnect>
+  <FlockRotation_CurrentFlock_InsertUpdate>
+    <PulletFarmPlanID/>
+    <ConservativeFactor/>
+    <PulletQtyAt16Weeks/>
+    <OverrideModifiedAfterOrderConfirm/>
+    <PulletFacility_RemoveDate/>
+    <PulletFacility_WashDownDate/>
+    <PulletFacility_LitterDate/>
+    <PulletFacility_FumigationDate/>
+    <ProductionFarm_RemoveDate/>
+    <ProductionFarm_WashDownDate/>
+    <ProductionFarm_LitterDate/>
+    <ProductionFarm_FumigationDate/>
+  </FlockRotation_CurrentFlock_InsertUpdate>
+</CargasConnect>

@@ -1,0 +1,18 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Destination Buildings" columnSpan="4">
+		<field fieldName="DestinationBuilding" multilineEdit="true" displayName="Destination Building"/>
+		<field fieldName="InvoiceContactInfo" displayName="Contact Name to Print on Invoice"/>
+		<field fieldName="DefaultContractTypeID" multilineEdit="true" displayName="Default Order Type">
+			<lookupList>
+				<source sql="exec ContractType_Lookup @IncludeCommercial = 0"/>
+			</lookupList>
+		</field>
+		<field fieldName="IsActive" multilineEdit="true" displayName="Is Active"/>
+		<field fieldName="Address1" multilineEdit="true" displayName="Primary Address" columnSpan="4" />
+		<field fieldName="Address2" multilineEdit="true" displayName="Secondary Address" columnSpan="4" />
+		<field fieldName="City" multilineEdit="true" displayName="City" columnSpan="2"/>
+		<field fieldName="State" multilineEdit="true" displayName="State" />
+		<field fieldName="Zip" multilineEdit="true" displayName="Zip"/>
+		<field fieldName="Notes" multilineEdit="true" displayName="Notes" columnSpan="4"/>
+	</section>
+</fieldList>

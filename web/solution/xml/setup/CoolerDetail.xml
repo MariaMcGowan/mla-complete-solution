@@ -1,0 +1,8 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Setup - Cooler" columnSpan="3">
+		<field fieldName="Cooler" multilineEdit="true" displayName="Cooler" padding="1"/>
+		<field fieldName="IsActive" multilineEdit="true" displayName="Is Active"/>
+		<field fieldName="CartCapacity" multilineEdit="true" displayName="Cart Capacity" padding="2"/>
+		<field fieldName="Notes" multilineEdit="true" displayName="Notes" columnSpan="3"/>		
+	</section>
+</fieldList>

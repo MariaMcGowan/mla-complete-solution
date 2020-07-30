@@ -1,0 +1,29 @@
+﻿<CargasConnect>
+  <PulletFarmPlan_InsertUpdate_NoValidationRequired>
+    <PulletFarmPlanID/>
+    <ConservativeFactor/>
+    <PulletQtyAt16Weeks/>
+    <PulletFacility_RemoveDate/>
+	<PulletFacility_RemovalDateConfirmed/>
+    <PulletFacility_FumigationDate/>
+	<PulletFacility_FumigationDateConfirmed/>
+    <PulletFacility_LitterDate/>
+	<PulletFacility_LitterDateConfirmed/>
+    <PulletFacility_WashDownDate/>
+	<PulletFacility_WashDownDateConfirmed/>
+	<ProductionFarm_PlannedRemoveDate/>
+    <ProductionFarm_RemoveDate/>
+	<ProductionFarm_RemovalDateConfirmed/>
+    <ProductionFarm_FumigationDate/>
+	<ProductionFarm_FumigationDateConfirmed/>
+    <ProductionFarm_LitterDate/>
+	<ProductionFarm_LitterDateConfirmed/>
+    <ProductionFarm_WashDownDate/>
+	<ProductionFarm_WashDownDateConfirmed/>
+    <OverrideModifiedAfterOrderConfirm/>
+  </PulletFarmPlan_InsertUpdate_NoValidationRequired>
+</CargasConnect>
+
+
+
+    

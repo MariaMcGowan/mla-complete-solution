@@ -1,0 +1,6 @@
+<fieldList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://csb2018.cargascloud.com/xmlschemas/csbFormatXML.xsd">
+  <section displayName="Support - Documentation - Overview">
+    <field fieldName="GoLiveDate" displayName="Go live"/>
+    <field fieldName="Overview"/>
+  </section>
+</fieldList>

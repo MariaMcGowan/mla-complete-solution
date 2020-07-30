@@ -1,0 +1,6 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Vaccination and Service" columnSpan ="4">
+    <field fieldName="Flock" displayName="Flock" readOnly="true"/>
+    <field fieldName="HatchDate" displayName="Hatch Date" readOnly="true"/>
+	</section>
+</fieldList>

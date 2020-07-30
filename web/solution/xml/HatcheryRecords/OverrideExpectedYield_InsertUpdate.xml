@@ -1,0 +1,8 @@
+﻿<CargasConnect>
+  <OverrideExpectedYield_InsertUpdate>
+    <SetDate/>
+    <ContractTypeID/>
+    <EstimatedYield/>
+  </OverrideExpectedYield_InsertUpdate>
+
+</CargasConnect>

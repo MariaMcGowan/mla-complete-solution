@@ -1,0 +1,10 @@
+﻿<CargasConnect>
+  <PulletFarmPlan_Form_UpdateActuals_InsertUpdate>
+    <PulletFarmPlanID/>
+    <ConservativeFactor/>
+    <PulletQtyAt16Weeks/>
+    <Actual24WeekDate/>
+    <ActualStartDate/>
+    <ActualEndDate/>
+  </PulletFarmPlan_Form_UpdateActuals_InsertUpdate>
+</CargasConnect>

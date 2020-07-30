@@ -1,0 +1,17 @@
+﻿<CargasConnect>
+	<FlockPlanDates_InsertUpdate>
+		<PulletFarmPlanID/>
+		<PulletFacilityID/>
+		<ActualHatchDate/>
+		<PlannedHatchDate/>
+		<PulletFacility_RemoveDate/>
+		<PulletFacility_WashDownDate/>
+		<PulletFacility_LitterDate/>
+		<PulletFacility_FumigationDate/>
+		<ProductionFarm_RemoveDate/>
+		<ProductionFarm_WashDownDate/>
+		<ProductionFarm_LitterDate/>
+		<ProductionFarm_FumigationDate/>
+	</FlockPlanDates_InsertUpdate>
+</CargasConnect>
+

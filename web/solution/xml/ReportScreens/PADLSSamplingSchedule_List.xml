@@ -1,0 +1,8 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="PADLS Sampling Schedule" columnSpan ="4">
+    <field fieldName="PADLSSamplingScheduleID" displayName="Add/Edit" type="htmlfile ~\solution\CustomPages\PADLSSamplingScheduleAddEdit.html"/>
+    <field fieldName="Flock" displayName="Flock" />
+    <field fieldName="PADLSSamplingSchedule" displayName="PADLS Sampling Schedule"/>
+    <field fieldName="PADLSSamplingScheduleID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="PADLSSamplingSchedule_Delete" visibleFieldName="PADLSSamplingScheduleID.toString()!" visibleFieldValue="0"/>
+	</section>
+</fieldList>

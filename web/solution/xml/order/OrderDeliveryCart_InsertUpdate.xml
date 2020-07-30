@@ -1,0 +1,9 @@
+<CargasConnect>
+  <OrderDeliveryCart_InsertUpdate>
+    <OrderDeliveryCartID/>
+    <DeliveryCartID/>
+    <PlannedQty/>
+    <ActualQty/>
+    <FlockID/>
+  </OrderDeliveryCart_InsertUpdate>
+</CargasConnect>

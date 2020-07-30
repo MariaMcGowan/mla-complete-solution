@@ -1,0 +1,12 @@
+<CargasConnect>
+  <OrderIncubatorLoad_InsertUpdate>
+    <OrderID/>
+    <IncubatorID/>
+    <LoadNumber/>
+    <StartDate/>
+    <StartTime/>
+    <ProgramBy/>
+    <CheckedByPrimary/>
+    <CheckedBySecondary/>
+  </OrderIncubatorLoad_InsertUpdate>
+</CargasConnect>

@@ -1,0 +1,13 @@
+<CargasConnect>
+  <dbo.IncubatorCart_InsertUpdate>
+	<IncubatorCartID/>
+	<IncubatorCart/>
+	<ShelfCnt/>
+	<EggCapacityPerShelf/>
+	<EggCapacity/>
+	<Notes/>
+	<SortOrder/>
+	<IsActive/>
+	<UserName/>
+  </dbo.IncubatorCart_InsertUpdate>
+</CargasConnect>

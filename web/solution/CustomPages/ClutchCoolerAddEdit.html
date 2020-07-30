@@ -1,0 +1,19 @@
+<div text-align:center;">
+    <div ng-if="thisRecord.OrderClutchCoolerID!='0'">
+        <a name="OrderClutchCoolerID" id="OrderClutchCoolerID" onclick="fireCSBLink(this); return false;"
+           csb-link="showInDialog('Form.html?screenID=OrderClutchCooler&amp;p={{thisRecord.OrderFlockClutchID}}&amp;p={{thisRecord.OrderClutchCoolerID}}','Edit Cooler',900,600)"
+           href>
+            <i id="OrderClutchCoolerID" class="center material-icons ng-binging ng-scope">mode_edit</i>
+        </a>
+        <md-tooltip md-direction="bottom">Edit</md-tooltip>
+    </div>
+    <div ng-if="thisRecord.OrderClutchCoolerID=='0'">
+        <a name="OrderClutchCoolerID" id="OrderClutchCoolerID" onclick="fireCSBLink(this); return false;"
+           csb-link="showInDialog('Form.html?screenID=OrderClutchCooler&amp;p={{thisRecord.OrderFlockClutchID}}&amp;p=0','Add Cooler',900,600)"
+           href>
+            <i id="OrderClutchCoolerID" class="center material-icons ng-binging ng-scope">add</i>
+        </a>
+        <md-tooltip md-direction="bottom">Create New</md-tooltip>
+    </div>
+</div> 
+

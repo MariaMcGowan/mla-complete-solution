@@ -1,0 +1,14 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Load Planning" readOnlyOneWayBinding="false">
+    <field fieldName="IsOverflow" multilineEdit="true" displayName="Overflow Flock" type="singleSelect" hideWhenNull="true" customValidateFunction="LoadPlanningQty({thisRecord},{detailRecords},{record})"/>
+    <field fieldName="FarmNumber" readOnly="true" displayName="Flock"/>
+    <field fieldName="FlockIncubatorCartQty" multilineEdit="true" displayName="Incubator Cart Qty" customValidateFunction="LoadPlanningQty({thisRecord},{detailRecords},{record});" className="width50 rightAlign" />
+    <field fieldName="FlockQty" readOnly="true" displayName="Egg Quantity" className="rightAlign"/>
+    <field fieldName="LayDateQuantity" readOnly="true" displayName="Qty in Cooler (by Lay Date)" type="html" className="width250 centerAlign"/>
+    <field fieldName="LastCandleoutPercent" multilineEdit="true" displayName="Last Candleout Percent" customValidateFunction="LoadPlanningQty({thisRecord},{detailRecords},{record})"/>
+    <field fieldName="Delivery1" type="htmlfile ~\solution\CustomPages\LoadPlanning\PreviousCandleout.html" displayName="Previous Candleout (calculated)" className="width250 centerAlign"/>
+    <field fieldName="ProjectedOutcome" readOnly="true" displayName="Projected Outcome (Eggs)" className="rightAlign width100"/>
+    <field fieldName="ProjectedOutcomeDeliveryCarts" readOnly="true" displayName="Projected Outcome (Delivery Carts)" className="width75 rightAlign"/>
+    
+  </section>
+</fieldList>

@@ -1,0 +1,25 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section columnSpan="10">
+    <field fieldName="FarmID" displayName="Farm">
+      <lookupList>
+        <source sql="exec Farm_Lookup @IncludeAll=1"/>
+      </lookupList>
+    </field>
+    <field fieldName="IsActive"  displayName="Is Active">
+      <lookupList>
+        <source sql="exec IsActive_Lookup @IncludeAll=1"/>
+      </lookupList>
+    </field>
+    <field fieldName="ContractTypeID" displayName="Contract Type" padding="7">
+      <lookupList>
+        <source sql="exec ContractType_Lookup @IncludeAll=1"/>
+      </lookupList>
+    </field>
+    <field fieldName="HatchDateStart" displayName="Hatch Date From" />
+    <field fieldName="HatchDateEnd" displayName="Hatch Date End" />
+    <field fieldName="HousingDateStart" displayName="Housing Date From" />
+    <field fieldName="HousingDateEnd" displayName="Housing Date End" />
+    <field fieldName="RemovalDateStart" displayName="Removal Date From" />
+    <field fieldName="RemovalDateEnd" displayName="Removal Date End" />
+	</section>
+</fieldList>

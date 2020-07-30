@@ -1,0 +1,21 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Commercial Commitments">
+		<field fieldName="CommercialCommitmentID" displayName="Edit" type="link icon edit" ScreenID="CommercialCommitmentMaster" hideWhenNull="true" readOnly ="true"/>
+		<field fieldName="CommercialMarketID" multilineEdit="true" displayName="Commercial Market" className="{{thisRecord.DynamicFormatting}}" readOnly ="true">
+			<lookupList>
+				<source sql="exec CommercialMarket_Lookup"/>
+			</lookupList>
+		</field>
+		<field fieldName="CommitmentStatusID" multilineEdit="true" displayName="Commitment Status" className="{{thisRecord.DynamicFormatting}}" readOnly ="true">
+			<lookupList>
+				<source sql="exec CommitmentStatus_Lookup"/>
+			</lookupList>
+		</field>
+		<field fieldName="CommitmentDateStart" displayName="Commitment Start Date" className="{{thisRecord.DynamicFormatting}}" readOnly ="true" />
+		<field fieldName="CommitmentDateEnd" displayName="Commitment End Date" className="{{thisRecord.DynamicFormatting}}" readOnly ="true" />
+		<field fieldName="CommitmentQty_InCases" displayName="Total Commitment Qty (cases)" className="{{thisRecord.DynamicFormatting}}" readOnly ="true" />
+		<field fieldName="Notes" displayName="Notes" className="{{thisRecord.DynamicFormatting}}" readOnly ="true" />
+    <field fieldName="CommercialCommitmentID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="CommercialCommitment_Delete" visibleFieldName="CommercialCommitmentID.toString()!" visibleFieldValue="0"/>
+
+	</section>
+</fieldList>

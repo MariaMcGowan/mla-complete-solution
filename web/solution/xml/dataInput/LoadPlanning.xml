@@ -1,0 +1,11 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Load Planning" columnSpan="3">
+    <field fieldName="LotNumbers" readOnly="true" displayName="Lot Numbers" padding="2"/>
+	<field fieldName="SetDate" readOnly="true" displayName="Set Date"/>	  
+    <field fieldName="DeliveryDate" readOnly="true" displayName="Delivery Date" padding="1"/>
+    <field fieldName="TotalOrderPlannedQty" readOnly="true" displayName="Total Order Planned Quantity" padding="2"/>
+
+    <field fieldName="TargetQty" multilineEdit="true" displayName="Target Quantity" customValidateFunction="LoadPlanningRecalc({detailRecords},{record})"/>
+    <field fieldName="PercentCushion" multilineEdit="true" displayName="Percent Cushion" customValidateFunction="LoadPlanningRecalc({detailRecords},{record})"/>
+  </section>
+</fieldList>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="11730" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="GroupHeader" Name="OrderGroup" Height="3359" DataField="LoadPlanningID" GroupKeepTogether="2" BackColor="16777215" NewPage="1" CanShrink="0">
+      <Control Type="AR.Field" Name="txtSetBy" DataField="SetBy" MOD="4" Left="2430" Top="2160" Width="6930" Height="468" Text="SetBy" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label" MOD="4" Left="180" Top="90" Width="9360" Height="450" Caption="Maple Lawn Associates 10-Day Pack Proof" Style="text-align: center; font-weight: normal; font-size: 18pt; " />
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="450" Top="810" Width="1890" Height="450" Caption="Set Date" Style="text-align: center; background-color: Gainsboro; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="450" Top="1260" Width="1890" Height="450" Caption="Del Date" Style="text-align: center; background-color: Gainsboro; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="450" Top="1710" Width="1890" Height="450" Caption="Inc #" Style="text-align: center; background-color: Gainsboro; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="450" Top="2160" Width="1890" Height="450" Caption="Eggs Set By" Style="text-align: center; background-color: Gainsboro; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="5400" Top="810" Width="1890.72" Height="450.72" Caption="Lot #" Style="text-align: center; background-color: Gainsboro; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtSetDate" DataField="SetDate" MOD="4" Left="2430" Top="810" Width="1980" Height="468" Text="SetDate" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtDeliveryDate" DataField="DeliveryDate" MOD="4" Left="2430" Top="1260" Width="1980" Height="468" Text="DeliveryDate" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtIncubators" DataField="Incubators" MOD="4" Left="2430" Top="1710" Width="1980" Height="468" Text="Incubators" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtLotNbr" DataField="LotNbr" MOD="4" Left="7380" Top="810" Width="1980" Height="468" Text="LotNbr" Style="vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label6" MOD="4" Left="180" Top="3060" Width="2340" Height="270" Caption="Inc# - Rack#" Style="text-align: center; background-color: Gainsboro; " />
+      <Control Type="AR.Label" Name="Label7" MOD="4" Left="2520" Top="3060" Width="2340" Height="270" Caption="Flock#" Style="text-align: center; background-color: Gainsboro; " />
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="4860" Top="3060" Width="2340" Height="270" Caption="Lay Date" Style="text-align: center; background-color: Gainsboro; " />
+      <Control Type="AR.Label" Name="Label9" MOD="4" Left="7200" Top="3060" Width="2340" Height="270" Caption="Days" Style="text-align: center; background-color: Gainsboro; " />
+      <Control Type="AR.Line" Name="Line" MOD="4" X1="180" Y1="3330" X2="9540" Y2="3330" />
+      <Control Type="AR.Line" Name="Line2" MOD="4" X1="180" Y1="3060" X2="180" Y2="3330" />
+      <Control Type="AR.Line" Name="Line3" MOD="4" X1="2520" Y1="3060" X2="2520" Y2="3330" />
+      <Control Type="AR.Line" Name="Line4" MOD="4" X1="4860" Y1="3060" X2="4860" Y2="3330" />
+      <Control Type="AR.Line" Name="Line5" MOD="4" X1="7200" Y1="3060" X2="7200" Y2="3330" />
+      <Control Type="AR.Line" Name="Line6" MOD="4" X1="9540" Y1="3060" X2="9540" Y2="3330" />
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="2430" Y1="1260" X2="4410" Y2="1260" />
+      <Control Type="AR.Line" Name="Line7" MOD="4" X1="2430" Y1="1710" X2="4410" Y2="1710" />
+      <Control Type="AR.Line" Name="Line8" MOD="4" X1="2430" Y1="2160" X2="4410" Y2="2160" />
+      <Control Type="AR.Line" Name="Line9" MOD="4" X1="2430" Y1="2610" X2="9360" Y2="2610" />
+      <Control Type="AR.Line" Name="Line10" MOD="4" X1="7380" Y1="1260" X2="9360" Y2="1260" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="270" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtRackNbr" DataField="RackNbr" MOD="4" Left="270" Top="0" Width="2250" Height="288" Text="RackNbr" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtFlock" DataField="Flock" MOD="4" Left="2520" Top="0" Width="2340" Height="288" Text="Flock" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtLayDate" DataField="LayDate" MOD="4" Left="4860" Top="0" Width="2340" Height="288" Text="LayDate" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtDayCnt" DataField="DayCnt" MOD="4" Left="7200" Top="0" Width="2340" Height="288" Text="DayCnt" Style="text-align: center; " />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="PageFooter" Name="PageFooter" Height="0" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <OleDbDataSource ConnectE="fnDeMoPQcekew7TB2OSGi0EJ1BusaId7FRAmOQ8dILU2SELX9kAi+EJuj0vuY6UIoTS3P/1QeUKceexE/UbYzvurE2kb/BqSY7SOsf2cPPyx0kHqXkmKWD/7PeRtRLke/kAb/tZljmv1jSFN5Y0c4esKIIBzm896qADlI4E5ctc=" SQL="execute rpt10DayPackProof" />
+  </DataSources>
+  <PageSettings LeftMargin="1152" />
+</ActiveReportsLayout>

@@ -1,0 +1,8 @@
+<fieldList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://csb2018.cargascloud.com/xmlschemas/csbFormatXML.xsd">
+  <section displayStyle="paging=500">
+    <field fieldName="Organization"/>
+    <field fieldName="Name"/>
+    <field fieldName="FirstInvolvementDate" format="yyyy-MM-dd HH:mm:ss"/>
+    <field fieldName="Role"/>
+  </section>
+</fieldList>

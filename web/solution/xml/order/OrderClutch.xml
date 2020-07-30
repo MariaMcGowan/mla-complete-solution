@@ -1,0 +1,13 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Order Lay Date Information" columnSpan="3">
+		<field fieldName="OrderNbr" readOnly="true" displayName="Order Number">
+		</field>
+		<field fieldName="OrderDate" readOnly="true" displayName="Order Date"/>
+		<field fieldName="PlannedSetDate" readOnly="true" displayName="Planned Set Date"/>
+		<field fieldName="Farm" readOnly="true" displayName="Farm"/>
+		<field fieldName="FarmNumber" readOnly="true" displayName="Farm Number"/>
+		<field fieldName="Flock" readOnly="true" displayName="Flock"/>
+    <field fieldName="PlannedQty" readOnly="true" displayName="Planned Quantity"/>
+    <field fieldName="ActualQty" readOnly="true" displayName="Actual Quantity"/>
+	</section>
+</fieldList>

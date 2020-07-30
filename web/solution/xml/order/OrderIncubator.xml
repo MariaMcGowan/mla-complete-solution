@@ -1,0 +1,30 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Order Lay Date Incubator">
+    <field fieldName="IncubatorID" multilineEdit="true" displayName="Incubator">
+      <lookupList>
+        <source sql="exec Incubator_Lookup"/>
+      </lookupList>
+    </field>
+    <field fieldName="PlannedQty" multilineEdit="true" displayName="Planned Qty"/>
+    <field fieldName="ActualQty" multilineEdit="true" displayName="Actual Qty"/>
+    <field fieldName="ProfileNumber" multilineEdit="true" displayName="Profile Number"/>
+    <field fieldName="StartDate" multilineEdit="true" displayName="Start Date"/>
+    <field fieldName="StartTime" multilineEdit="true" displayName="Start Time"/>
+    <field fieldName="ProgramBy" multilineEdit="true" displayName="Program By">
+      <lookupList>
+        <source sql="Contact_Lookup @ContactTypeID=4"/>
+      </lookupList>
+    </field>
+    <field fieldName="CheckedByPrimary" multilineEdit="true" displayName="Checked By Primary">
+      <lookupList>
+        <source sql="Contact_Lookup @ContactTypeID=4"/>
+      </lookupList>
+    </field>
+    <field fieldName="CheckedBySecondary" multilineEdit="true" displayName="Checked By Secondary">
+      <lookupList>
+        <source sql="Contact_Lookup @ContactTypeID=4"/>
+      </lookupList>
+    </field>
+    
+  </section>
+</fieldList>

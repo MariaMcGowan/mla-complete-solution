@@ -1,0 +1,8 @@
+<CargasConnect>
+  <dbo.CoolerList_InsertUpdate>
+	<CoolerID/>
+	<SortOrder/>
+	<IsActive/>
+	<UserName/>
+  </dbo.CoolerList_InsertUpdate>
+</CargasConnect>

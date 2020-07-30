@@ -1,0 +1,29 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="InvoiceEdit" columnSpan="5">
+    <field fieldName="InvoiceNbr" multilineEdit="true" readOnly="true"/>
+    <field fieldName="Printed" multilineEdit="true" />
+    <field fieldName="Uploaded" multilineEdit="true" />
+    <field fieldName="Paid" multilineEdit="true" />
+    <field fieldName="Cancelled" multilineEdit="true" />
+  </section>
+  <section displayName="&lt;p/&gt;">
+  </section>
+  <section displayName="" columnSpan="5">
+    <field fieldName="InvoiceDate" multilineEdit="true" padding="1"/>
+    <field fieldName="DueDate" multilineEdit="true" padding="1" />
+    <field fieldName="CreatedDate" multilineEdit="true" padding="0" />
+  </section>
+  <section displayName="&lt;p/&gt;">
+  </section>
+  <section displayName="" columnSpan="5">
+    <field fieldName="EggsInvoiced" multilineEdit="true" padding="1"/>
+    <field fieldName="CummulativeQty" multilineEdit="true" displayName ="Cummulative Eggs Invoiced" padding="2"/>
+    <field fieldName="UnitPrice" multilineEdit="true" padding="4"/>
+    <field fieldName="ChargeForEggsInvoiced" multilineEdit="true" displayName="Calculated Egg Cost" readOnly="true" padding="4"/>
+    <field fieldName="DeliveryCharge" multilineEdit="true" padding="5"/>
+    <field fieldName="InvoiceAmount" multilineEdit="true" />
+  </section>
+  <section displayName="" columnSpan="1">
+    <field fieldName="Notes" multilineEdit="true"/>
+  </section>
+</fieldList>

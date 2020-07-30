@@ -1,0 +1,11 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Setup - Destination">
+		<field fieldName="Destination" multilineEdit="true" displayName="Destination"/>
+		<field fieldName="PrimaryContactID" multilineEdit="true" displayName="Primary Contact"/>
+		<field fieldName="SecondaryContactID" multilineEdit="true" displayName="Secondary Contact"/>
+		<field fieldName="Notes" multilineEdit="true" displayName="Notes"/>
+		<field fieldName="SortOrder" multilineEdit="true" displayName="Sort Order"/>
+		<field fieldName="IsActive" multilineEdit="true" displayName="Is Active"/>
+		<field fieldName="DestinationID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="Destination_Delete" visibleFieldName="DestinationID.toString()!" visibleFieldValue="0"/>
+	</section>
+</fieldList>

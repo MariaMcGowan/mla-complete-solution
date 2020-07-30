@@ -1,0 +1,7 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Zero Out Cooler" mobileLayoutSize="none">
+    <field fieldName="Date" multilineEdit="true" readOnly="true"/>
+    <field fieldName="CoolerQuantity" displayName="Calculated Cooler Quantity"/>
+    <field fieldName="ZeroOut" displayName="Zero Out?"/>
+  </section>
+</fieldList>

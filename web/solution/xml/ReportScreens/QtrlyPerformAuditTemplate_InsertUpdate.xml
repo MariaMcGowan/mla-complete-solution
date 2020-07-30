@@ -1,0 +1,7 @@
+﻿<CargasConnect>
+  <QtrlyPerformAuditTemplate_InsertUpdate>
+    <QtrlyPerformAuditTemplateID/>
+    <QtrlyPerformAuditTemplateDescr/>
+    <IsActive/>
+  </QtrlyPerformAuditTemplate_InsertUpdate>
+</CargasConnect>

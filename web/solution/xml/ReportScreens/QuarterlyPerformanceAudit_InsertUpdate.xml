@@ -1,0 +1,10 @@
+﻿<CargasConnect>
+  <QuarterlyPerformanceAudit_InsertUpdate>
+    <QuarterlyPerformanceAuditID/>
+	<QuarterlyPerformanceAudit/>
+    <DateCreated/>
+    <InspectedBy/>
+    <AuditStatusID/>
+    <Comments/>
+  </QuarterlyPerformanceAudit_InsertUpdate>
+</CargasConnect>

@@ -1,0 +1,10 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Try this">
+    <field fieldName="FlockNumber" displayName="Flock" readOnly="true"/>
+    <field fieldName="UpdatedDateTime" displayName="Date" readOnly="true"/>
+    <field fieldName="UserID" displayName="User" readOnly="true"/>
+    <field fieldName="Comment" displayName="Comment"/>
+    <field fieldName="PulletFarmPlanCommentID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="FlockComment_Delete" visibleFieldName="PulletFarmPlanCommentID.toString()!" visibleFieldValue="0"/>
+    
+  </section>
+</fieldList>

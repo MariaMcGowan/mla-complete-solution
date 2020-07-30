@@ -1,0 +1,14 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="New Flock Plan" >
+		<field fieldName="UserMessage"  readOnly="true" displayName="" type="html" className="UserMessage"/>
+		<field fieldName="FarmNumber"  readOnly="true" displayName="Farm" className="LeftAlign"/>
+		<field fieldName="PulletQtyAt16Weeks" displayName="Pullet Quantity at 16 Weeks" format="numeric 0"/>
+		<field fieldName="Planned24WeekDate" displayName="Planned 24 Week Date"/>
+		<field fieldName="PlannedStartDate" displayName="Planned Start Date"/>
+		<field fieldName="PlannedEndDate" displayName="Planned End Date"/>
+		<field fieldName="Planned65WeekDate" displayName="Planned 65 Week Date"/>
+		<field fieldName="BlankField" required="true" displayName="" className="hide"  />
+	</section>
+</fieldList>
+
+

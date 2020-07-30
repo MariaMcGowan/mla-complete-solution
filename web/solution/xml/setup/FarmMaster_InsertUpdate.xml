@@ -1,0 +1,6 @@
+<CargasConnect>
+  <dbo.FarmMaster_InsertUpdate>
+	<FarmID/>
+	<Farm/>
+  </dbo.FarmMaster_InsertUpdate>
+</CargasConnect>

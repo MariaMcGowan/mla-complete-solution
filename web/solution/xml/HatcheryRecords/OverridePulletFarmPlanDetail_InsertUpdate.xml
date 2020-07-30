@@ -1,0 +1,8 @@
+﻿<CargasConnect>
+  <OverridePulletFarmPlanDetail_InsertUpdate>
+		<PulletFarmPlanDetailID/>
+    <ReserveReleaseID/>
+    <SettableEggs_Cases/>
+	</OverridePulletFarmPlanDetail_InsertUpdate>
+
+</CargasConnect>

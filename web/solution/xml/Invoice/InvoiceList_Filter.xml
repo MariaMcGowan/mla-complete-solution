@@ -1,0 +1,12 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="" columnSpan="2">
+    <field fieldName="LotNbr" multilineEdit="true" displayName="Lot Number"/>
+    <field fieldName="DestinationBuildingID" multilineEdit="true" displayName="Destination Building">
+      <lookupList>
+        <source sql="exec DestinationBuilding_Lookup @includeBlank=1, @includeAll=0"/>
+      </lookupList>
+    </field>
+    <field fieldName="DeliveryDate_Start" multilineEdit="true" displayName="Delivery From"/>
+    <field fieldName="DeliveryDate_End" multilineEdit="true" displayName="Delivery To"/>
+  </section>
+</fieldList>

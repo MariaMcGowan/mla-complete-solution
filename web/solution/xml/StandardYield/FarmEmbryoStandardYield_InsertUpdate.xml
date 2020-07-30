@@ -1,0 +1,13 @@
+﻿<CargasConnect>
+	<FarmEmbryoStandardYield_InsertUpdate>
+		<FarmEmbryoStandardYieldID/>
+		<FarmID/>
+		<WeekNumber/>
+		<CumulativeMortalityPercent/>
+		<LayPercent/>
+		<CaseWeight/>
+		<SettableEggsPercentForWeek/>
+		<FloorEggPercent/>
+		<CandleoutPercent/>
+	</FarmEmbryoStandardYield_InsertUpdate>
+</CargasConnect>

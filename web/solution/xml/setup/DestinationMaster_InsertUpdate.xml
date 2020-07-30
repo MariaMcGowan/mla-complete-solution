@@ -1,0 +1,6 @@
+<CargasConnect>
+  <dbo.DestinationMaster_InsertUpdate>
+	<DestinationID/>
+	<Destination/>
+  </dbo.DestinationMaster_InsertUpdate>
+</CargasConnect>

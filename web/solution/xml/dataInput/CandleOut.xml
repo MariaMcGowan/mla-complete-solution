@@ -1,0 +1,22 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Candling" mobileLayoutSize="none" displayStyle="paging:50">
+    <field fieldName="SortOrder" multilineEdit="true" displayName="Sort Order" className="{{thisRecord.rowClass}} width50" visibleFieldName="ShowWgt" visibleFieldValue="1"/>
+    <field fieldName="Flock" readOnly="true" displayName="Flock#" className="{{thisRecord.rowClass}} width75" />
+    <field fieldName="PlatRacksStarted" readOnly="true" displayName="#Plat Racks Started" className="{{thisRecord.rowClass}} rightAlign"/>
+    <field fieldName="EggsStarted" readOnly="true" displayName="#Eggs Started" className="{{thisRecord.rowClass}} rightAlign"/>
+    <field fieldName="CartsAtEnd" readOnly="true" displayName="Carts At End" className="{{thisRecord.rowClass}} rightAlign"/>
+    <field fieldName="ShelvesAtEnd" readOnly="true" displayName="Shelves At End" className="{{thisRecord.rowClass}} rightAlign"/>
+    <field fieldName="TraysAtEnd" readOnly="true" displayName="Trays At End" className="{{thisRecord.rowClass}} rightAlign"/>
+    <field fieldName="EggsAtEnd" readOnly="true" displayName="Eggs At End" className="{{thisRecord.rowClass}} rightAlign"/>
+    <field fieldName="TotalEggs" readOnly="true" displayName="Total Eggs" className="{{thisRecord.rowClass}} rightAlign"/>
+    <field fieldName="TotalCandleOut" readOnly="true" displayName="Total Candleout" className="{{thisRecord.rowClass}} {{thisRecord.candleoutClass}} rightAlign"/>
+    <field fieldName="PreviousCandleOut" readOnly="true" displayName="Previous Candleout" className="{{thisRecord.rowClass}} {{thisRecord.candleoutClass}} rightAlign"/>
+    <field fieldName="WgtPreCon" customValidateFunction="weightConversion({thisRecord})" multilineEdit="true" visibleFieldName="ShowWgt" visibleFieldValue="1" displayName="Weight (Pre-Conversion)" className="{{thisRecord.rowClass}} rightAlign"/>
+    <field fieldName="Wgt_PostCon" readOnly="true" displayName="Weight (Post-Conversion)" className="{{thisRecord.rowClass}} {{thisRecord.candleoutWeightClass}} rightAlign"/>
+    <field fieldName="HoldingIncubators" readOnly="true" displayName="Holding Inc" className="{{thisRecord.rowClass}}"/>
+    <field fieldName="DeliveryNbrs" readOnly="true" displayName="Truck Load #" className="{{thisRecord.rowClass}}"/>
+    <field fieldName="CasesStarted" readOnly="true" displayName="Cases Started" className="{{thisRecord.rowClass}} rightAlign"/>
+    <field fieldName="EggsDelivered" readOnly="true" displayName="Eggs Delivered" className="{{thisRecord.rowClass}} rightAlign"/>
+    <field fieldName="PickOut" readOnly="true" displayName="Pickout %" className="{{thisRecord.rowClass}} rightAlign"/>
+  </section>
+</fieldList>

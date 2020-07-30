@@ -1,0 +1,13 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Commercial Commitment - Choose Flocks">
+		<field fieldName="Selected" multilineEdit="true" displayName="Select" updateAllColumnsType="bit" format="bit" update-reserve-quant-if-true="" />
+		<field fieldName="WeekEndingDate" displayName="Week Ending Date" readOnly="true"  className="{{thisRecord.DynamicFormatting}}" />
+		<field fieldName="Flock" displayName="Flock" readOnly="true"  className="{{thisRecord.DynamicFormatting}}" />
+		<field fieldName="CommercialQty_InCases" displayName="Total Quantity (cases)" readOnly="true"  className="{{thisRecord.DynamicFormatting}}" />
+		<field fieldName="CommittedQty_InCases" displayName="Quantity Committed Elsewhere (cases)" readOnly="true"  className="{{thisRecord.DynamicFormatting}}" />
+		<field fieldName="AvailableQty_InCases" displayName="Quantity Available (cases)" readOnly="true"  className="{{thisRecord.DynamicFormatting}}" />
+		<field fieldName="ReservedQty_InCases" displayName="Reserve Quantity (cases)"  className="{{thisRecord.DynamicFormatting}}"  customValidateFunction="CommercialDetail_Select({thisRecord})"/>
+    <field fieldName="CommercialQty_AveragePerDay_InCases" displayName="Average Cases Per Day" className="{{thisRecord.DynamicFormatting}}" readOnly="true"  />
+		<field fieldName="UniqueRowID" hidden="true"/>
+	</section>
+</fieldList>

@@ -1,0 +1,20 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Commercial Commitment" columnSpan ="4">
+		<field fieldName="CommercialMarketID" multilineEdit="true" displayName="Commercial Market">
+			<lookupList>
+				<source sql="exec CommercialMarket_Lookup"/>
+			</lookupList>
+		</field>
+		<field fieldName="CommitmentStatusID" multilineEdit="true" displayName="Commitment Status">
+			<lookupList>
+				<source sql="exec CommitmentStatus_Lookup"/>
+			</lookupList>
+		</field>
+		<field fieldName="TurnOffWarning" displayName="Turn Off Warnings" padding="1"/>
+		<field fieldName="CommitmentDateStart" displayName="Commitment Start Date" />
+		<field fieldName="CommitmentDateEnd" displayName="Commitment end Date" />
+		<field fieldName="CommitmentQty_InCases" displayName="Total Commitment Qty (cases)" />
+		<field fieldName="ReservedQty_InCases" displayName="Total Reserved Qty (cases)" readOnly="true" />
+		<field fieldName="Notes" displayName="Notes" columnSpan="4"/>
+	</section>
+</fieldList>

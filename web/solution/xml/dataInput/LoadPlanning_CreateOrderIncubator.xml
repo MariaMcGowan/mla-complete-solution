@@ -1,0 +1,14 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Load Planning" columnSpan="3">
+    <field fieldName="OrderID" multilineEdit="true" displayName="Intended Order">
+      <lookupList>
+        <source sql="exec Order_LookupForLoadPlanning @LoadPlanningID='{0}'"/>
+      </lookupList>
+    </field>
+    <field fieldName="IncubatorID" multilineEdit="true" displayName="Incubator" >
+      <lookupList>
+        <source sql="exec Incubator_LookupForLoadPlanning @LoadPlanningID='{0}'"/>
+      </lookupList>
+    </field>
+  </section>
+</fieldList>

@@ -1,0 +1,9 @@
+﻿<CargasConnect>
+	<UserPlanningFarmList_InsertUpdate>
+		<UserID/>
+		<ContractTypeID/>
+		<FarmID/>
+		<DefaultPulletQty/>
+		<IncludeFarmInPlan/>
+	</UserPlanningFarmList_InsertUpdate>
+</CargasConnect>

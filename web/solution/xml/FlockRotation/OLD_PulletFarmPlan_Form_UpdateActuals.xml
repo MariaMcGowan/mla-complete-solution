@@ -1,0 +1,16 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Update Flock Plan" columnSpan="2" mobileLayoutSize="none" >
+    <field fieldName="FarmNumber"  readOnly="true" displayName="Farm" className="LeftAlign"/>
+    <field fieldName="ConservativeFactor"  displayName="Conservative Factor" />
+    <field fieldName="PulletQtyAt16Weeks" displayName="Pullet Quantity at 16 Weeks" format="numeric 0" padding="1"/>
+    <field fieldName="Planned24WeekDate" displayName="Planned 24 Week Date" readOnly="true"/>
+    <field fieldName="Actual24WeekDate" displayName="Actual 24 Week Date" readOnly="true"/>
+    <field fieldName="PlannedStartDate" displayName="Planned Start Date" readOnly="true"/>
+    <field fieldName="ActualStartDate" displayName="Actual Start Date"/>
+    <field fieldName="PlannedEndDate" displayName="Planned End Date" readOnly="true"/>
+    <field fieldName="ActualEndDate" displayName="Actual End Date" />
+    <field fieldName="Planned65WeekDate" displayName="Planned 65 Week Date" readOnly="true"/>
+    <field fieldName="Actual65WeekDate" displayName="Actual 65 Week Date" readOnly="true" />
+    <field fieldName="PulletFarmPlanID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="PulletFarmPlan_Delete" visibleFieldName="PulletFarmPlanID.toString()!" visibleFieldValue="0"/>
+  </section>
+</fieldList>

@@ -1,0 +1,12 @@
+﻿<CargasConnect>
+	<CommercialCommitment_InsertUpdate>
+		<CommercialCommitmentID/>
+		<CommercialMarketID/>
+		<TurnOffWarning/>
+		<CommitmentDateStart/>
+		<CommitmentDateEnd/>
+		<CommitmentQty_InCases/>
+		<Notes/>
+		<CommitmentStatusID/>
+	</CommercialCommitment_InsertUpdate>
+</CargasConnect>

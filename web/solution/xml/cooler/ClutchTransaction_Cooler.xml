@@ -1,0 +1,16 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Cooler Inventory">
+    <field fieldName="FlockID" multilineEdit="true" displayName="Flock">
+      <lookupList>
+        <source sql="exec Flock_Lookup @includeBlank=0, @includeAll=0"/>
+      </lookupList>
+    </field>
+    <field fieldName="LayDate" multilineEdit="true" displayName="Lay Date"/>
+    <!--<field fieldName="PlannedQtyCarts" multilineEdit="true" displayName="Planned Qty (Carts)" customValidateFunction="convertEggQty({thisRecord}, \'PlannedQtyCarts\', \'PlannedQty\', \'incubatorCart\', \'egg\')" />-->
+    <!--<field fieldName="PlannedQty" multilineEdit="true" displayName="Planned Qty (Eggs)" customValidateFunction="convertEggQty({thisRecord}, \'PlannedQty\', \'PlannedQtyCarts\', \'egg\', \'incubatorCart\')"/>-->
+    <field fieldName="ActualQtyCarts" multilineEdit="true" displayName="Actual Qty (Carts)" customValidateFunction="convertEggQty({thisRecord}, \'ActualQtyCarts\', \'ActualQty\', \'incubatorCart\', \'egg\')"/>
+    <field fieldName="ActualQty" multilineEdit="true" displayName="Actual Qty (Eggs)" customValidateFunction="convertEggQty({thisRecord}, \'ActualQty\', \'ActualQtyCarts\', \'egg\', \'incubatorCart\')"/>
+    <field fieldName="HistoricalLayDate" multilineEdit="true" displayName="Historical" />
+    <!--<field fieldName="CoolerClutchID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="CoolerClutch_Delete" visibleFieldName="CoolerClutchID.toString()!" visibleFieldValue="0"/>-->
+  </section>
+</fieldList>

@@ -1,0 +1,14 @@
+﻿<CargasConnect>
+	<CommercialCommitment_SelectDetail_InsertUpdate>
+		<CommercialCommitmentID/>
+		<Selected/>
+		<WeekEndingDate/>
+		<CommercialQty/>
+		<CommittedQty/>
+		<ReservedQty_InCases/>
+		<PulletFarmPlanID/>
+		<EggWeightClassificationID/>
+		<CommitmentStatusID/>
+    <CommercialCommitmentDetailID/>
+	</CommercialCommitment_SelectDetail_InsertUpdate>
+</CargasConnect>

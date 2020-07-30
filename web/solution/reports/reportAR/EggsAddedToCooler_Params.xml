@@ -1,0 +1,12 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Eggs Added To Cooler Report" colunSpan="4">
+		<field fieldName="StartDate" displayName="Start Date"/>
+		<field fieldName="EndDate" displayName="End Date"/>
+    <field fieldName="FarmID" multilineEdit="true" displayName="Farm">
+      <lookupList>
+        <source sql="exec Farm_Lookup"/>
+      </lookupList>
+    </field>
+    
+	</section>
+</fieldList>

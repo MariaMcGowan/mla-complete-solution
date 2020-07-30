@@ -1,0 +1,13 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Incubator Load List">
+    <field fieldName="LotNumbers" readOnly="true" displayName="Lot Numbers" padding="2"/>
+    <field fieldName="DeliveryDate" displayName="Delivery Date" readOnly="true"/>
+    <field fieldName="SetDate" displayName="Set Date" readOnly="true"/>
+    <field fieldName="OrderIncubatorID1" type="htmlfile ~\solution\CustomPages\LoadPlanning\OrderIncubator1.html" displayName="First Incubator"/>
+    <field fieldName="OrderIncubatorID2" type="htmlfile ~\solution\CustomPages\LoadPlanning\OrderIncubator2.html" displayName="Second Incubator"/>
+    <field fieldName="OrderIncubatorID3" type="htmlfile ~\solution\CustomPages\LoadPlanning\OrderIncubator3.html" displayName="Third Incubator"/>
+    <field fieldName="OrderIncubatorID4" type="htmlfile ~\solution\CustomPages\LoadPlanning\OrderIncubator4.html" displayName="Fourth Incubator"/>
+    <field fieldName="OrderIncubatorID5" type="htmlfile ~\solution\CustomPages\LoadPlanning\OrderIncubator5.html" displayName="Fifth Incubator"/>
+    <field fieldName="OrderIncubatorID6" type="htmlfile ~\solution\CustomPages\LoadPlanning\OrderIncubator6.html" displayName="Sixth Incubator"/>
+	</section>
+</fieldList>

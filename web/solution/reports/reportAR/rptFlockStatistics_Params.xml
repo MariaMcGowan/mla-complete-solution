@@ -1,0 +1,9 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Flock Statistics Report">
+		<field fieldName="FlockID" displayName="Flock">
+		      <lookupList>
+        <source sql="exec Flock_Lookup @IncludeInactive=1"/>
+      </lookupList>
+	  </field>
+	</section>
+</fieldList>

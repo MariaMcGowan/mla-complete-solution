@@ -1,0 +1,14 @@
+<div text-align:center;">
+    <div ng-if="thisRecord.InvoiceID!='0'">
+        <a name="InvoiceID" id="InvoiceID" href="Form.html?screenID=InvoiceEdit&amp;p={{thisRecord.InvoiceID}}">
+            <i id="Invoice" class="center material-icons ng-binging ng-scope">mode_edit</i>
+        </a>
+        <md-tooltip md-direction="bottom">Edit</md-tooltip>
+    </div>
+    <div ng-if="thisRecord.InvoiceID=='0'">
+        <a name="InvoiceID" id="A1" href="runProcess.aspx?screenID=NewInvoice&amp;p={{thisRecord.OrderID}}&amp;p={{thisRecord.LotNbr}}&amp;p={{thisRecord.NoFormat_EggsDelivered}}&amp;p={{thisRecord.NoFormat_EggsInvoiced}}&amp;p={{thisRecord.UnitPrice == '' ? 'null' : thisRecord.UnitPrice}}&amp;p={{thisRecord.NoFormat_DeliveryCharge == '' ? 'null' : thisRecord.NoFormat_DeliveryCharge}}&amp;p={{thisRecord.DeliveryDate}}">
+            <i id="I1" class="center material-icons ng-binging ng-scope">add</i>
+        </a>
+        <md-tooltip md-direction="bottom">Create New</md-tooltip>
+    </div>
+</div> 

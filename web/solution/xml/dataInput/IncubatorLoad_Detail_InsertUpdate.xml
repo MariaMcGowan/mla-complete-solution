@@ -1,0 +1,14 @@
+<CargasConnect>
+  <IncubatorLoad_Detail_InsertUpdate>
+    <LocationNumber />
+    <ActualQty />
+    <IncubatorID />
+    <OrderID />
+    <IncubatorCartID />
+    <OrderIncubatorID />
+    <OrderIncubatorCartID />
+    <IncubatorLocationNumber />
+    <FlockID />
+    <LayDate/>
+  </IncubatorLoad_Detail_InsertUpdate>
+</CargasConnect>

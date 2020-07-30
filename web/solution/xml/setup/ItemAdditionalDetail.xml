@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<fieldList>
+	<section>
+	<field fieldName="ITEMNMBR" diplayName="Item Number" readOnly="true" doNotAutoLink="true" padding="2"/>
+    <field fieldName="VendorRebateCustClassPattern_ID" displayName="CUST CLASS&lt;br/&gt;like (*)" multilineEdit="true">
+		<lookupList>
+			<source sql="exec csiCustClassPattern_Lookup"/>
+		</lookupList>
+	</field>
+	<field fieldName="CustomerNbr" displayName="Customer" required="true"  multilineEdit="true" >
+		  <lookupList>
+			  <source sql="exec csiCustomerNbr_Lookup"/>
+		  </lookupList>
+	</field>
+	<field fieldName="DSCT" displayName="Rebate Type" multilineEdit="true" padding="2" customValidateFunction="calculateCostFields_New" >
+		<lookupList>
+			<source sql="exec csiRebateCalcType_Lookup"/>
+		</lookupList>
+	</field>
+	<field fieldName="Discount_Percent" displayName="Percent"  multilineEdit="true" textColumns="5" customValidateFunction="calculateCostFields_New"/>
+	<field fieldName="Discount_Amount" displayName="Amount"  multilineEdit="true" textColumns="5" customValidateFunction="calculateCostFields_New"/>
+	<field fieldName="AdjCost" displayName="Adjusted Cost"  readOnly="true" multilineEdit="true" textColumns="7"/>
+	<field fieldName="EffectiveDate" displayName="Effective Date"  multilineEdit="true" textColumns="7" />
+	<field fieldName="RebateEnabled" displayName="Enabled"  multilineEdit="true" />
+	<field fieldName="DeleteThis" displayName="Delete"  multilineEdit="true" />
+</section>
+</fieldList>

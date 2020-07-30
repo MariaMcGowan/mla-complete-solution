@@ -1,0 +1,15 @@
+<fieldList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://csb2018.cargascloud.com/xmlschemas/csbFormatXML.xsd">
+  <section displayStyle="fcSingleValue" columnSpan="10">
+    <field fieldName="SolutionObjectTypeCode" displayName="Object Type" columnSpan="2">
+      <lookupList>
+        <source sql="exec csb.SolutionObjectType_GetList @IncludeAll=1"/>
+      </lookupList>
+    </field>
+    <field fieldName="SchemaName" displayName="Schema Name" columnSpan="2">
+      <lookupList>
+        <source sql="exec csb.SolutionSchema_GetList @IncludeAll=1"/>
+      </lookupList>
+    </field>
+    <field fieldName="ObjectNameFilter" displayName="Object Name" columnSpan="2"/>
+  </section>
+</fieldList>

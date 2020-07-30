@@ -1,0 +1,9 @@
+<CargasConnect>
+  <Candling_InsertUpdate>
+    <FlockID />
+    <LoadPlanning_DetailID />
+    <LoadPlanningID />
+    <WgtPreCon />
+    <SortOrder />
+  </Candling_InsertUpdate>
+</CargasConnect>

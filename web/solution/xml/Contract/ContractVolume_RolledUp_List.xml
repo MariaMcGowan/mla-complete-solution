@@ -1,0 +1,7 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Contract Volume">
+		<field fieldName="StartDate" displayName="Start Date (Sunday)"/>
+		<field fieldName="EndDate" displayName="End Date (Saturday)"/>
+		<field fieldName="Volume" displayName="Volume" format="numeric 0" />
+	</section>
+</fieldList>

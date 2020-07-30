@@ -1,0 +1,15 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Commercial Commitment Details">
+		<field fieldName="NewRecord" type="link icon add" ScreenID="" displayName="Add" hideWhenNull="true"/>
+		<field fieldName="WeekEndingDate" displayName="Week Ending Date" readOnly="true"/>
+		<field fieldName="FlockNumber" displayName="Flock" />
+		<field fieldName="EggClassification" multilineEdit="true" displayName="Egg Classification"/>
+		<field fieldName="EggWeightClassification" displayName="Egg Weight" readOnly="true"/>
+		<field fieldName="Qty_InCases" displayName="Quantity (cases)" readOnly="true" />
+		<field fieldName="CommitmentStatusID" multilineEdit="true" displayName="Commitment Status" readOnly="true">
+			<lookupList>
+				<source sql="exec CommitmentStatus_Lookup"/>
+			</lookupList>
+		</field>
+	</section>
+</fieldList>

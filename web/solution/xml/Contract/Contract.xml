@@ -1,0 +1,19 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Contract">
+		<field fieldName="ContractID" displayName="Contract">
+			<lookupList>
+				<source sql="exec Contract_Lookup @includeBlank=1, @includeAll=0"/>
+			</lookupList>
+		</field>
+		<field fieldName="ContractTypeID" displayName="Contract Type">
+			<lookupList>
+				<source sql="exec ContractType_Lookup @includeBlank=1, @includeAll=0"/>
+			</lookupList>
+		</field>
+		<field fieldName="CustomerID" displayName="Customer">
+			<lookupList>
+				<source sql="exec Customer_Lookup @includeBlank=1, @includeAll=0"/>
+			</lookupList>
+		</field>
+	</section>	
+</fieldList>

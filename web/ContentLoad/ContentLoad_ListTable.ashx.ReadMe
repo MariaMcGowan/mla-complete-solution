@@ -1,0 +1,22 @@
+ContentLoad_ListTable.ashx
+
+Look for:
+	headerContent.Append("<th sticky-header sticky-anchor-selector="".mainContentContainer""")
+	
+	
+It should be between these two things:
+
+                headerContent.Append("<th ")
+				
+				headerContent.Append("<th sticky-header sticky-anchor-selector="".mainContentContainer""")
+
+                If thisFP.hidden Then
+                    headerContent.Append(" ng-show=""false"" ")
+                ElseIf thisFP.HideWhenNull Then
+                    headerContent.Append(" ng-show=""" & _fieldDataHeaderPrefix & ".hasOwnProperty('" & thisFP.FieldName & "')"" ")
+                ElseIf thisFP.ColumnNgShow > "" Then
+                    headerContent.Append(" ng-show=""" & thisFP.ColumnNgShow & """ ")
+                End If
+                If thisFP.ColumnNgIf > "" Then
+                    headerContent.Append(" ng-if=""" & thisFP.ColumnNgIf & """ ")
+                End If	

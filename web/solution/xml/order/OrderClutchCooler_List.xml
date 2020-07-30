@@ -1,0 +1,11 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Order Lay Date Cooler">
+    <field fieldName="OrderClutchCoolerID" displayName="Add/Edit" type="htmlfile ~\solution\CustomPages\ClutchCoolerAddEdit.html"/>
+		<field fieldName="Cooler" multilineEdit="true" displayName="Cooler">
+		</field>
+		<field fieldName="PlannedQty" multilineEdit="true" displayName="Planned Qty"/>
+		<field fieldName="ActualQty" multilineEdit="true" displayName="Actual Qty"/>
+
+		<!--<field fieldName="OrderClutchCoolerID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="OrderClutchCooler_Delete" visibleFieldName="OrderClutchCoolerID.toString()!" visibleFieldValue="0"/>-->
+	</section>
+</fieldList>

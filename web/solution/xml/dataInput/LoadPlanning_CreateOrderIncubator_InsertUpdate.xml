@@ -1,0 +1,8 @@
+<CargasConnect>
+  <LoadPlanning_CreateOrderIncubator_InsertUpdate>
+    <OrderID/>
+    <IncubatorID/>
+    <IncubatorNumber/>
+    <LoadPlanningID/>
+  </LoadPlanning_CreateOrderIncubator_InsertUpdate>
+</CargasConnect>

@@ -1,0 +1,7 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="System Constants">
+		<field fieldName="ConstantName" multilineEdit="true" displayName="Constant"/>
+		<field fieldName="ConstantValue" multilineEdit="true" displayName="Value"/>
+		<field fieldName="SystemConstantID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="SystemConstant_Delete" visibleFieldName="SystemConstantID.toString()!" visibleFieldValue="0"/>
+	</section>
+</fieldList>

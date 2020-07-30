@@ -1,0 +1,15 @@
+﻿<?xml
+<div text-align:center="";">
+  <div ng-if="thisRecord.PADLSTemplateID!='0'">
+    <a name="PADLSTemplateID" id="PADLSTemplateID" href="Form.html?screenID=PADLSTemplate_Form&amp;p={{thisRecord.PADLSTemplateID}}">
+      <i id="PADLSTemplate" class="center material-icons ng-binging ng-scope">mode_edit</i>
+    </a>
+    <md-tooltip md-direction="bottom">Edit</md-tooltip>
+  </div>
+  <div ng-if="thisRecord.PADLSTemplateID=='0'">
+    <a name="PADLSTemplateID" id="PADLSTemplateID" href="runProcess.aspx?screenID=NewPADLSTemplate&amp;p={{thisRecord.PADLSTemplateID}}">
+      <i id="PADLSTemplate" class="center material-icons ng-binging ng-scope">add</i>
+    </a>
+    <md-tooltip md-direction="bottom">Create New</md-tooltip>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Deliveries" columnSpan="2">
+		<field fieldName="DeliveryDate" multilineEdit="true" displayName="Delivery Date"/>
+		<field fieldName="DeliveryQuantity_InCases" multilineEdit="true" displayName="Delivery Qty (cases)"/>
+		<field fieldName="DriverID" multilineEdit="true" displayName="Driver">
+			<lookupList>
+				<source sql="exec Contact_Lookup @ContactTypeID=5"/>
+			</lookupList>
+		</field>
+		<field fieldName="TruckID" multilineEdit="true" displayName="Truck">
+			<lookupList>
+				<source sql="exec Truck_Lookup"/>
+			</lookupList>
+		</field>
+		<field fieldName="DeliveryNotes" multilineEdit="true" displayName="Deliver Notes"  columnSpan="2"/>
+	</section>
+</fieldList>

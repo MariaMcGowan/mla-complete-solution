@@ -1,0 +1,25 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Delivery">
+    <field fieldName="DeliveryDescription" multilineEdit="true" displayName="Delivery Description"/>
+    <field fieldName="TimeOfDelivery" multilineEdit="true" displayName="Time of Delivery"/>
+    <field fieldName="ActualQty" multilineEdit="true" displayName="Actual Qty"/>
+    <field fieldName="HoldingIncubatorID" multilineEdit="true" displayName="Holding Incubator">
+      <lookupList>
+        <source sql="exec HoldingIncubator_Lookup"/>
+      </lookupList>
+    </field>
+    <field fieldName="DeliveryID_forLink" displayName="Load Holding Incubator" type="link icon edit" ScreenID="HoldingIncubator_Load" hideWhenNull="true"/>
+    <field fieldName="TruckID" multilineEdit="true" displayName="Truck">
+      <lookupList>
+        <source sql="exec Truck_Lookup"/>
+      </lookupList>
+    </field>
+    <field fieldName="DriverID" multilineEdit="true" displayName="Driver">
+      <lookupList>
+        <source sql="exec Contact_Lookup @ContactTypeID=5"/>
+      </lookupList>
+    </field>
+    <field fieldName="DeliverySlip" multilineEdit="true" displayName="Deliver Slip" />
+    <field fieldName="DeliveryID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="Delivery_Delete" visibleFieldName="DeliveryID.toString()!" visibleFieldValue="0"/>
+  </section>
+</fieldList>

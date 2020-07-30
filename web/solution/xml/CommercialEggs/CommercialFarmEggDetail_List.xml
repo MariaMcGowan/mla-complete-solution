@@ -1,0 +1,6 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="" displayStyle="paging:100" mobileLayoutSize="none">
+		<field fieldName="EggClassification" displayName="Classification"></field>
+		<field fieldName="Count" displayName="Count"></field>
+	</section>
+</fieldList>

@@ -1,0 +1,11 @@
+﻿<CargasConnect>
+	<CommercialCommitmentDelivery_InsertUpdate>
+		<CommercialCommitmentDeliveryID/>
+		<CommercialCommitmentID/>
+		<DeliveryDate/>
+		<DeliveryQuantity_InCases/>
+		<DeliveryNotes/>
+		<DriverID/>
+		<TruckID/>
+	</CommercialCommitmentDelivery_InsertUpdate>
+</CargasConnect>

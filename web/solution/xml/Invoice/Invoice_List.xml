@@ -1,0 +1,19 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="">
+    <field fieldName="InvoiceID" displayName="Add/Edit" type="htmlfile ~\solution\CustomPages\InvoiceAddEdit.html"/>
+    <field fieldName="InvoiceNbr" multilineEdit="true" readOnly="true" displayName="Invoice Number"/>
+    <field fieldName="InvoiceDate" multilineEdit="true" displayName="Invoice Date"/>
+    <field fieldName="DueDate" multilineEdit="true" displayName="Due Date"/>
+	<field fieldName="DeliveryDate" multilineEdit="true" displayName="Delivery Date"/>
+    <field fieldName="DeliveryCount" multilineEdit="true" displayName="Delivery Count" className="rightAlign"/>
+    <field fieldName="EggsDelivered" multilineEdit="true" displayName="Eggs Delivered" className="rightAlign"/>
+    <field fieldName="EggsInvoiced" multilineEdit="true" displayName="Eggs Invoiced" className="rightAlign"/>
+    <field fieldName="CummulativeQty" multilineEdit="true" displayName="Cummulative Eggs Invoiced" className="rightAlign"/>
+    <field fieldName="ChargeForEggsInvoiced" multilineEdit="true" readOnly="true" displayName="Charge for Eggs" className="rightAlign"/>
+    <field fieldName="DeliveryCharge" multilineEdit="true" displayName="Delivery Charge" className="rightAlign"/>
+    <field fieldName="InvoiceAmount" multilineEdit="true" readOnly="true" displayName="Invoice Amount" className="rightAlign"/>
+    <field fieldName="Printed" multilineEdit="true" />
+    <field fieldName="Uploaded" multilineEdit="true" />
+    <field fieldName="Paid" multilineEdit="true" />
+   </section>
+</fieldList> 

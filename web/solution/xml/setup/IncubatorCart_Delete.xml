@@ -1,0 +1,5 @@
+<CargasConnect>
+  <dbo.IncubatorCart_Delete>
+	<IncubatorCartID/>
+  </dbo.IncubatorCart_Delete>
+</CargasConnect>

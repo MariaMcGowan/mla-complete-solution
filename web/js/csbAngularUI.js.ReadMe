@@ -1,0 +1,95 @@
+csbAngularUI.js (if it doesn't include the functions below, add them before 'tableContentRow' function)
+
+
+    app.directive('stickyHeader', function () {
+      var offsetMap = {};
+
+      function offsetParentIsMdContent(element) {
+        return (element.offsetParent.tagName == 'MD-CONTENT');
+      }
+
+      function setStickyTopAtAnchor(element, attrs) {
+        element.style.position = "sticky";
+        var anchorSelector = attrs.stickyAnchorSelector || ".mainContentContainer";
+
+        var y = 0;
+        if (!offsetParentIsMdContent(element)) {
+          offsetMap[anchorSelector] = offsetMap[anchorSelector] || $(anchorSelector)[0].getBoundingClientRect().y;
+          y = offsetMap[anchorSelector];
+        }
+
+        var additionalOffsetElements = [];
+        if (attrs.additionalOffsetSelectors) {
+          additionalOffsetElements= attrs.additionalOffsetSelectors.split(';');
+        }
+
+        additionalOffsetElements.forEach((elementSelector)=>{
+          var e = $(elementSelector)[0];
+          y += e.getBoundingClientRect().height;
+        }); 
+
+        element.style.top = y + "px"; 
+      }
+
+      return {
+        link: function (scope, element, attrs) {
+          setStickyTopAtAnchor(element[0], attrs);
+        }
+      }
+    });
+
+    app.directive('dynamicWidth', function () {
+      var dynamicWidthCols = [];
+      var staticWidthCols = []; 
+      var staticTotalWidth = 0;
+      var completed = false;
+
+      function addCol(element) {
+        if (!element.attributes['dynamic-width']) return;
+        var width = element.attributes['dynamic-width'].value;
+
+        if (width) {
+          element.style.width = width;
+          staticTotalWidth += Number(width.replace('%',''))
+          staticWidthCols.push(element);
+        } else {
+          dynamicWidthCols.push(element);
+        }
+      }
+
+      function setDynamicWidths () {
+        if (dynamicWidthCols.length < 1) return;
+
+        var evenDynamicWidth = (100.0 - staticTotalWidth) / dynamicWidthCols.length;
+
+        dynamicWidthCols.forEach((col) => {
+          col.style.width = evenDynamicWidth + "%";
+        }); 
+      }
+
+      return {
+        link : function (scope, element, attrs) {
+          addCol(element[0]); 
+
+          if (scope.$last) {
+            setDynamicWidths();
+            dynamicWidthCols = [];
+          }
+        } 
+      }
+    });
+
+
+
+    app.directive('updateReserveQuantIfTrue', function () {
+      return {
+        link : function (scope, element, attrs) {
+          scope.$watchCollection('thisRecord', function (newValue, oldValue) {
+            if (newValue == undefined) return;
+
+            if (newValue.Selected == '1') newValue.ReservedQty_InCases = newValue.AvailableQty_InCases;
+            else if (newValue.Selected == '0') newValue.ReservedQty_InCases = 0;
+          });
+        }
+      }
+    });

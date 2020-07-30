@@ -1,0 +1,10 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Load Planning">
+		<field fieldName="SetDate" multilineEdit="true" displayName="Set Date"/>
+		<field fieldName="DeliveryDate" displayName="Delivery Date" >
+			<lookupList lookupListFilterField="SetDate == listItem.SetDate || '' " lookupListFilterValue="fieldName:SetDate">
+				<source sql="exec DeliveryDate_Lookup @IncludeBlank=0"/>
+			</lookupList>
+		</field>
+	</section>
+</fieldList>

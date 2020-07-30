@@ -1,0 +1,26 @@
+<table style="width:100%;" flex="100" border="1">
+    <tr class="background700">
+        <th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Building</th>
+        <th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Total</th>
+        <td style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Target</td>
+        <td style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">2% Over</td>
+        <th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Overage/Shortage</th>
+    </tr>
+    <tr ng-repeat="detailRecord in data.detailRecords[0].HoldingIncubatorLoad_GetBuildingSummary" ng-class-even="'background100'">
+        <td>
+            {{detailRecord.DestinationBuilding}}
+        </td>
+        <td align="right" style="padding-right:2px;">
+            {{detailRecord.ActualQty}}
+        </td>
+        <td align="right" style="padding-right:2px;">
+            {{detailRecord.PlannedQty}}
+        </td>
+        <td align="right" style="padding-right:2px;">
+            {{detailRecord.PlannedOver}}
+        </td>
+        <td align="right" style="padding-right:2px;">
+            {{detailRecord.ExcessEggs}}
+        </td>
+    </tr>
+</table>

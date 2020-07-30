@@ -1,0 +1,10 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Quarterly Permformance Update">
+		<field fieldName="ItemText" displayName="" readOnly="true"/>
+		<field fieldName="ItemStatusID" displayName="" >
+      <lookupList>
+        <source sql="execute ItemStatus_Lookup @IncludeBlank=1, @IncludeAll=0"></source>
+      </lookupList>
+    </field>
+	</section>
+</fieldList>

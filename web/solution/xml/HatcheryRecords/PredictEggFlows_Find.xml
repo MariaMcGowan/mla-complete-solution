@@ -1,0 +1,19 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="" displayStyle="paging:none" columnSpan="10">
+		<field fieldName="StartDate" multilineEdit="true" displayName="Start Date"/>
+		<field fieldName="EndDate" multilineEdit="true" displayName="End Date"/>
+		<field fieldName="ContractTypeID" multilineEdit="true" displayName="Type">
+			<lookupList>
+				<source sql="exec ContractType_Lookup @IncludeCommercial = 0"/>
+			</lookupList>
+		</field>
+		<field fieldName="ShowFarms" multilineEdit="true" displayName="Show Flocks?" padding="3">
+			<lookupList>
+				<element text="Yes" value="1"/>
+				<element text="No" value="0"/>
+			</lookupList>
+		</field>
+    <field fieldName="CoolerInventory" readOnly="true" displayName="Cooler Inventory (Eggs)"/>
+    <field fieldName="CoolerInventory_Cases" readOnly="true" displayName="Cooler Inventory (Cases)"/>
+	</section>
+</fieldList>

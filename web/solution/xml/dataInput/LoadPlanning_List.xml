@@ -1,0 +1,10 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Load Planning">
+    <field fieldName="LoadPlanningID" type="link icon edit" ScreenID="LoadPlanning" displayName="Edit"/>
+    <field fieldName="SetDate" readOnly="true" displayName="Set Date"/>
+	<field fieldName="DeliveryDate" readOnly="true" displayName="Delivery Date"/>
+    <field fieldName="LotNumbers" readOnly="true" displayName="Lot Numbers"/>
+    <field fieldName="TotalOrderPlannedQty" readOnly="true" displayName="Total Planned Quantity"/>
+    <field fieldName="LoadPlanningID" readOnly="true" displayName="Edit Lot Numbers in Load Plan" type="link icon queue" ScreenID="LoadPlanning_AssignOrders" hideWhenNull="true"/>
+  </section>
+</fieldList>

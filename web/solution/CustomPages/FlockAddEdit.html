@@ -1,0 +1,15 @@
+<div text-align:center;">
+    <div ng-if="thisRecord.FlockID!='0'">
+        <a name="FlockID" id="FlockID" href="Form.html?screenID=FlockDetail&amp;p={{thisRecord.FlockID}}">
+            <i id="Flock" class="center material-icons ng-binging ng-scope">mode_edit</i>
+        </a>
+        <md-tooltip md-direction="bottom">Edit</md-tooltip>
+    </div>
+    <div ng-if="thisRecord.FlockID=='0'">
+        <a name="FlockID" id="FlockID" href="runProcess.aspx?screenID=NewFlock&amp;p={{thisRecord.FarmID}}">
+            <i id="Flock" class="center material-icons ng-binging ng-scope">add</i>
+        </a>
+        <md-tooltip md-direction="bottom">Create New</md-tooltip>
+    </div>
+</div> 
+

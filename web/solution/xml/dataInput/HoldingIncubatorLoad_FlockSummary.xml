@@ -1,0 +1,9 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Holding Incubator Flock Summary" displayStyle="paging:100">
+    <field fieldName="HoldingIncubator" displayName="Holding Incubator" readOnly="true"/>
+    <field fieldName="Flock" displayName="Flock" readOnly="true"/>
+    <field fieldName="FullCarts" displayName="Full Carts" readOnly="true" className="rightAlign"/>
+    <field fieldName="TotalCarts" displayName="Total Carts" readOnly="true" className="rightAlign"/>
+    <field fieldName="TotalEggs" displayName="Total Eggs" readOnly="true" className="rightAlign"/>
+	</section>
+</fieldList>

@@ -1,0 +1,10 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="New Vaccination Service" columnSpan ="2">
+		<field fieldName="Flock" displayName="Flock" readOnly="true"/>
+		<field fieldName="VaccinationServiceTemplateID" multilineEdit="true" required="true" displayName="Choose Template">
+		  <lookupList>
+			<source sql="exec VaccinationServiceTemplate_Lookup @IncludeBlank = '1'"/>
+		  </lookupList>
+		</field>
+	</section>
+</fieldList>

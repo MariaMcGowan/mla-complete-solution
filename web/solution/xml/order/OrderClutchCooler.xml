@@ -1,0 +1,16 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Order Lay Date Cooler">
+		<field fieldName="CoolerID" multilineEdit="true" displayName="Cooler">
+			<lookupList>
+				<source sql="exec Cooler_Lookup"/>
+			</lookupList>
+		</field>
+		<field fieldName="PlannedQty" multilineEdit="true" displayName="Planned Qty"/>
+		<field fieldName="ActualQty" multilineEdit="true" displayName="Actual Qty"/>
+		<field fieldName="DateDelivered" multilineEdit="true" displayName="Date Delivered"/>
+		<field fieldName="TimeDelivered" multilineEdit="true" displayName="Time Delivered"/>
+		<field fieldName="DateMovedToIncubator" multilineEdit="true" displayName="Date Moved To Incubator"/>
+		<field fieldName="TimeMovedToIncubator" multilineEdit="true" displayName="Time Moved To Incubator"/>
+		<!--<field fieldName="OrderClutchCoolerID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="OrderClutchCooler_Delete" visibleFieldName="OrderClutchCoolerID.toString()!" visibleFieldValue="0"/>-->
+	</section>
+</fieldList>

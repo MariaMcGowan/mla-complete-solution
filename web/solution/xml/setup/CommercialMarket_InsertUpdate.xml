@@ -1,0 +1,8 @@
+﻿<CargasConnect>
+	<CommercialMarket_InsertUpdate>
+		<CommercialMarketID/>
+		<CommercialMarket/>
+		<PrimaryContactID/>
+		<SecondaryContactID/>
+	</CommercialMarket_InsertUpdate>
+</CargasConnect>

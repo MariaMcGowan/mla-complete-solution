@@ -1,0 +1,9 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Shaving Template" colunSpan="4">
+    <field fieldName="PulletFacilityID" multilineEdit="true" displayName="Pullet Facility">
+      <lookupList>
+        <source sql="exec PulletFacility_Lookup @IncludeAll=1"/>
+      </lookupList>
+    </field>    
+	</section>
+</fieldList>

@@ -1,0 +1,10 @@
+﻿<CargasConnect>
+  <OrderFlock_InsertUpdate>
+    <OrderFlockID/>
+    <OrderID/>
+    <FlockID/>
+    <PlannedQty/>
+    <ActualQty/>
+    <UserName/>
+  </OrderFlock_InsertUpdate>
+</CargasConnect>

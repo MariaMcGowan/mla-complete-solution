@@ -1,0 +1,6 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="">
+		<field fieldName="Farm" multilineEdit="true" displayName="Farm" readOnly="true"/>
+		<field fieldName="FarmNumber" multilineEdit="true" displayName="Farm Number" readOnly="true"/>
+	</section>
+</fieldList> 

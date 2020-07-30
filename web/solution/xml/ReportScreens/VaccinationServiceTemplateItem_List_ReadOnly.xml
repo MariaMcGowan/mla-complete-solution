@@ -1,0 +1,19 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Vaccination Service Template Item" columnSpan ="4">
+    <field fieldName="ServiceOrDisease" displayName="Service Or Disease" readOnly="true">
+      <lookupList>
+        <element text="Disease" value="D"/>
+        <element text="Service" value="S"/>
+      </lookupList>
+    </field>
+    <field fieldName="AgeInDays" displayName="Age In Days" readOnly="true"/>    
+    <field fieldName="Service" displayName="Service" readOnly="true"/>
+    <field fieldName="Disease" displayName="Disease" readOnly="true"/>
+    <field fieldName="VaccineDeliveryMethod" displayName="Vaccine Delivery Method" readOnly="true"/>
+    <field fieldName="Supplier" displayName="Supplier" readOnly="true"/>
+    <field fieldName="ProductName" displayName="Product Name" readOnly="true"/>
+    <field fieldName="ProductSerialNumber" displayName="Product Serial Number" readOnly="true"/>
+    <field fieldName="Administrator" displayName="Administrator" readOnly="true"/>
+    <field fieldName="SortOrder" displayName="Sort Order" readOnly="true"/>
+  </section>
+</fieldList>

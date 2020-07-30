@@ -1,0 +1,57 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Incubator Load" columnSpan="4">
+    <!--<field fieldName="OrderID" displayName="Order" readOnly="true" >
+      <lookupList>
+        <source sql="Order_Lookup"/>
+      </lookupList>
+    </field>-->
+
+    <field fieldName="LotNumber" dislayName="Lot #" readOnly="true" columnSpan="2"/>
+    <field fieldName="SetDate" dislayName="Set Date" multilineEdit="true" />
+    <field fieldName="DeliveryDate" dislayName="Delivery Date" readOnly="true" />
+
+    <field fieldName="IncubatorID" displayName="Incubator" readOnly="true" columnSpan="2">
+      <lookupList>
+        <source sql="Incubator_Lookup"/>
+      </lookupList>
+    </field>
+    <field fieldName="ProfileNumber" dislayName="Profile #" multilineEdit="true" columnSpan="2"/>
+
+    <field fieldName="DestinationBuilding" dislayName="Destination Building" readOnly="true" columnSpan="2"/>
+    <field fieldName="StartDate" dislayName="Incubator Start Date" multilineEdit="true"/>
+    <field fieldName="StartTime" dislayName="Incubator Start Time" multilineEdit="true" />
+  </section>
+  <section displayName="Load Details" columnSpan="2">
+
+    <field fieldName="CandleDate" multilineEdit="true" displayName="Candle Date"/>
+    <field fieldName="ProgramBy" multilineEdit="true" displayName="Program By" >
+      <lookupList>
+        <source sql="Contact_Lookup @ContactTypeID=4"/>
+      </lookupList>
+    </field>
+    
+    <field fieldName="CheckedByPrimary" multilineEdit="true" displayName="Checked By Primary">
+      <lookupList>
+        <source sql="Contact_Lookup @ContactTypeID=4"/>
+      </lookupList>
+    </field>
+    <field fieldName="CheckedBySecondary" multilineEdit="true" displayName="Checked By Secondary">
+      <lookupList>
+        <source sql="Contact_Lookup @ContactTypeID=4"/>
+      </lookupList>
+    </field>
+    <!--<field fieldName="blankField" displayName="" readOnly="true"/>-->
+    <field fieldName="OrderIncubatorID" type="htmlfile ~\solution\CustomPages\IncubatorLoad_LoadPlanning.html" columnSpan="2"/>
+    <field fieldName="OrderID" type="htmlfile ~\solution\CustomPages\IncubatorMap.html" columnSpan="2"/>
+    <field fieldName="FlockID" hidden="true">
+      <lookupList>
+        <source sql="exec Flock_LookupForIncubatorLoad @OrderIncubatorID='{0}'"/>
+      </lookupList>
+    </field>
+    <field fieldName="ClutchID" hidden="true">
+      <lookupList>
+        <source sql="exec Clutch_LookupForOrder @OrderID='{0}'"/>
+      </lookupList>
+    </field>
+	</section>
+</fieldList>

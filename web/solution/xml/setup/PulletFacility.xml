@@ -1,0 +1,43 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Pullet Facility" columnSpan ="5">
+		<field fieldName="PulletFacility" displayName="Pullet Facility" className="width250" />
+    <field fieldName="FacilityOwner" displayName="Facility Owner" className="width250" />
+		<field fieldName="ContractedBy" displayName="Contracted With"/>
+		<field fieldName="StateID" displayName="State ID"/>
+		<field fieldName="FederalID" displayName="Federal ID"/>
+	</section>
+	<section displayName="Contact Information" columnSpan ="5" collapsed="true" >
+		<field fieldName="PrimaryContactID" multilineEdit="true" displayName="Primary Contact">
+			<lookupList>
+				<source sql="exec Contact_Lookup @ContactTypeID=1008"/>
+			</lookupList>
+		</field>
+		<field fieldName="SecondaryContactID" multilineEdit="true" displayName="Secondary Contact" padding="3">
+			<lookupList>
+				<source sql="exec Contact_Lookup @ContactTypeID=6"/>
+			</lookupList>
+		</field>
+	</section>
+	<section displayName="Physical Address" columnSpan ="5" collapsed="true" >		
+		<field fieldName="Address1" displayName="Address1" />
+		<field fieldName="Address2" displayName="Address2" />
+		<field fieldName="City" displayName="City"/>
+		<field fieldName="State" displayName="State"/>
+		<field fieldName="Zip" displayName="Zip" />
+		<field fieldName="GPSCoordinates" displayName="GPS Coordinates" />
+		
+	</section>
+	<section displayName="Mailing Address" columnSpan ="5" collapsed="true" >
+		<field fieldName="MailingAddress1" displayName="Address1" />
+		<field fieldName="MailingAddress2" displayName="Address2" />
+		<field fieldName="MailingCity" displayName="City"/>
+		<field fieldName="MailingState" displayName="State"/>
+		<field fieldName="MailingZip" displayName="Zip" />
+	</section>
+  <section displayName="Shaving Template" columnSpan ="5" collapsed="true" >
+    <field fieldName="ShavingAmounts" displayName="Shaving Amount" />
+    <field fieldName="ShavingCompany" displayName="Company" />
+    <field fieldName="ShavingComments" displayName="Comments" columnSpan="3"/>
+  </section>
+	
+</fieldList>

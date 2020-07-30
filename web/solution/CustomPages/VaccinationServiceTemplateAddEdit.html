@@ -1,0 +1,15 @@
+﻿<?xml
+<div text-align:center="";">
+  <div ng-if="thisRecord.VaccinationServiceTemplateID!='0'">
+    <a name="VaccinationServiceTemplateID" id="VaccinationServiceTemplateID" href="Form.html?screenID=VaccinationServiceTemplate_ActiveForm&amp;p={{thisRecord.VaccinationServiceTemplateID}}">
+      <i id="VaccinationServiceTemplate" class="center material-icons ng-binging ng-scope">mode_edit</i>
+    </a>
+    <md-tooltip md-direction="bottom">Edit</md-tooltip>
+  </div>
+  <div ng-if="thisRecord.VaccinationServiceTemplateID=='0'">
+    <a name="VaccinationServiceTemplateID" id="VaccinationServiceTemplateID" href="runProcess.aspx?screenID=NewVaccinationServiceTemplate&amp;p={{thisRecord.VaccinationServiceTemplateID}}">
+      <i id="VaccinationServiceTemplate" class="center material-icons ng-binging ng-scope">add</i>
+    </a>
+    <md-tooltip md-direction="bottom">Create New</md-tooltip>
+  </div>
+</div>

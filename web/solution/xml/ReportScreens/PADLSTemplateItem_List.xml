@@ -1,0 +1,9 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="PADLS Sampling Schedule" columnSpan ="4">
+    <field fieldName="ItemText" displayName="Item Text"/>
+    <field fieldName="AgeInDays" displayName="Age (in Days)"/>
+    <field fieldName="OmitDateTargetedFromReport" displayName="Omit Targeted Date From Report"/>
+    <field fieldName="SortOrder" displayName="Sort Order"/>
+    <field fieldName="DeleteItem" displayName="Delete" format="bit"/>
+  </section>
+</fieldList>

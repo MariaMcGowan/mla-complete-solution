@@ -1,0 +1,7 @@
+<CargasConnect>
+  <OrderDelivery_Create>
+    <OrderID/>
+    
+    <DeliveryDescription />
+  </OrderDelivery_Create>
+</CargasConnect>

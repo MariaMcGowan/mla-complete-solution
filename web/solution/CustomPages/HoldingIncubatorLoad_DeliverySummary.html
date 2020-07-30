@@ -1,0 +1,38 @@
+<table style="width:100%;" flex="100" border="1">
+    <tr class="background700">
+        <th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Building</th>
+        <th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Delivery Description</th>
+        <td style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Holding Incubator</td>
+        <td style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Full Carts</td>
+        <th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Shelves</th>
+        <th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Trays</th>
+        <th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Egs</th>
+        <th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">TOTAL</th>
+    </tr>
+    <tr ng-repeat="detailRecord in data.detailRecords[0].HoldingIncubatorLoad_GetDeliverySummary" ng-class-even="'background100'">
+        <td>
+            {{detailRecord.DestinationBuilding}}
+        </td>
+        <td>
+            {{detailRecord.DeliveryDescription}}
+        </td>
+        <td>
+            {{detailRecord.HoldingIncubator}}
+        </td>
+        <td>
+            {{detailRecord.FullCarts}}
+        </td>
+        <td>
+            {{detailRecord.DeliveryShelves}}
+        </td>
+        <td>
+            {{detailRecord.Trays}}
+        </td>
+        <td>
+            {{detailRecord.Eggs}}
+        </td>
+        <td>
+            {{detailRecord.ActualQty}}
+        </td>
+    </tr>
+</table>

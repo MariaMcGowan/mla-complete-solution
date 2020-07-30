@@ -1,0 +1,8 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Flock">
+		<field fieldName="FarmID" multilineEdit="true" displayName="Farm"/>
+			<lookupList>
+				<source sql="exec Farm_Lookup" />
+			</lookupList>
+	</section>
+</fieldList>

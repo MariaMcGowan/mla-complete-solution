@@ -1,0 +1,7 @@
+﻿<CargasConnect>
+  <VaccinationService_InsertUpdate>
+    <VaccinationServiceID/>
+    <FlockID/>
+	<VaccinationServiceTemplateID/>
+  </VaccinationService_InsertUpdate>
+</CargasConnect>

@@ -1,0 +1,15 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Pullet - Move,Wash,Litter,Fog" columnSpan="4" mobileLayoutSize="none">
+		<field fieldName="FlockNumber" displayName="Flock Code" readOnly="true"/>
+		<field fieldName="PulletFacility" displayName="Pullet Facility" readOnly="true" padding="2"/>
+		<field fieldName="PlannedHatchDate" displayName="Planned Hatch Date" className="{{thisRecord.DynamicFormatting}}"/>
+		<field fieldName="Current_ActualHatchDate" displayName="Actual Hatch Date" className="{{thisRecord.DynamicFormatting}}" padding="2"/>
+		<field fieldName="PulletFacility_RemoveDate" displayName="Move From Pullet Facility To Production" className="{{thisRecord.DynamicFormatting}}" />
+		<field fieldName="PulletFacility_MoveDayCount" displayName="1 or 2 Move" className="{{thisRecord.DynamicFormatting}}" />
+		<field fieldName="PulletMover" displayName="Pulle Mover" className="{{thisRecord.DynamicFormatting}}" padding="1"/>
+		<field fieldName="PulletFacility_WashDownDate" displayName="Washdown Date" className="{{thisRecord.DynamicFormatting}}" />
+		<field fieldName="PulletFacility_LitterDate" displayName="Litter Date" className="{{thisRecord.DynamicFormatting}}" />
+		<field fieldName="PulletFacility_FumigationDate" displayName="Fumigation Date" className="{{thisRecord.DynamicFormatting}}" />
+		<field fieldName="PulletFacility_WashDownContractor" displayName="Washdown Contractor" className="{{thisRecord.DynamicFormatting}}" />
+	</section>
+</fieldList>

@@ -1,0 +1,46 @@
+<?xml version="1.0" standalone="yes"?>
+<fieldList>
+	<section displayName="Premier Dental - Vendor Item Rebate Information" >
+	</section>
+	<section displayName="&lt;hr/&gt;" columnSpan="12">
+		<field fieldName="ITEMNMBR" diplayName="Item Number" readOnly="true" doNotAutoLink="true" padding="2" />
+		<field fieldName="StockTypeID" displayName="Stock" >
+			<lookupList>
+				<element value="1" text="Stock" />
+				<element value="2" text="Non-Stock" />
+			</lookupList>
+		</field>
+	</section>
+	<section columnSpan="12">
+		<field fieldName="Descr" diplayName="Description" readOnly="true" doNotAutoLink="true" padding="2"/>
+		<field fieldName="AltDescr" diplayName="Alternate Description" doNotAutoLink="true" padding="2" textColumns="50"/>
+	</section>
+	<section displayName="&lt;hr/&gt;" columnSpan="12">
+		<field fieldName="VendorID" displayName="Vendor ID" ScreenID="VendorSelectList" type="popup" padding="2"/>
+		<field fieldName="VendorName" displayName="Vendor Name" readOnly="true" padding="2"/>
+	</section>
+	<section columnSpan="12">
+		<field fieldName="VENDCOST" displayName="Vendor Price List" multilineEdit="true"/>
+		<field fieldName="LandedCost" displayName="Landed Cost" multilineEdit="true"/>
+	</section>
+	<section columnSpan="12">
+		<field fieldName="PackagingCost" displayName="Packaging Cost" multilineEdit="true"/>
+		<field fieldName="RetailPrice" displayName="Retail Price" padding="2" multilineEdit="true"/>
+	</section>
+	<section columnSpan="16">
+		<field fieldName="RoyaltyAmt" displayName="Royalty Amount" padding="2" multilineEdit="true"/>
+		<field fieldName="IntlSellingPrice" displayName="International List" readOnly="true" format="currency" />
+	</section>
+	<section columnSpan="12">
+		<field fieldName="DomesticCost" displayName="Domestic Cost" readOnly="true" format="currency" />
+		<field fieldName="DomesticList" displayName="Domestic List" readOnly="true" format="currency" />
+	</section>
+	<!--
+	<section displayName="&lt;hr/&gt;" columnSpan="1">
+		<field fieldName="VendorRebateDetail" displayName="See Rebate Detail for:" ScreenID="VendorItemRebateDetail" type="link" doNotAutoLink="true" readOnly="false"/>
+	</section>
+	-->
+</fieldList>
+
+
+

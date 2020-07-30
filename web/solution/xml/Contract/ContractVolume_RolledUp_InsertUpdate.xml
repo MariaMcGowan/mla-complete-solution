@@ -1,0 +1,11 @@
+﻿<CargasConnect>
+	<ContractVolume_RolledUp_InsertUpdate>
+		<ContractID/>
+		<StartDate/>
+		<EndDate/>
+		<Volume/>
+		<Original_StartDate/>
+		<Original_EndDate/>
+		<Original_Volume/>
+	</ContractVolume_RolledUp_InsertUpdate>
+</CargasConnect>

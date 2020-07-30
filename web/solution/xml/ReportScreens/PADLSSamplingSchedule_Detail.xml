@@ -1,0 +1,8 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="PADLS Sampling Schedule">
+		<field fieldName="ItemText" displayName="" readOnly="true"/>
+    <field fieldName="DateTargeted" displayName="Date Targeted" />
+		<field fieldName="DateCompleted" displayName="Date Completed" />
+    <field fieldName="CompletedBy" displayName="Completed By" />
+	</section>
+</fieldList>

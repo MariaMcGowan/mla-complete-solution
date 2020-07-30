@@ -1,0 +1,9 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Order Flock" mobileLayoutSize="none">
+    <field fieldName="FlockID" multilineEdit="true" displayName="Flock">
+      <lookupList>
+        <source sql="exec Flock_Lookup" />
+      </lookupList>
+    </field>
+  </section>
+</fieldList>

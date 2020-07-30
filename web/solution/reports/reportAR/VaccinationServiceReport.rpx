@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="16830" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="2700" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Shape" Name="Shape1" MOD="4" Left="0" Top="2070" Width="16290" Height="630" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label" MOD="4" Left="5130" Top="90" Width="5040" Height="360" Caption="Maple Lawn Associates, Inc." Style="ddo-char-set: 0; text-align: center; font-weight: bold; font-size: 12pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="5130" Top="450" Width="5040" Height="288" Caption="Vaccination and Service Schedule" Style="ddo-char-set: 0; text-align: center; font-weight: bold; font-size: 11.25pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="90" Top="1080" Width="1620" Height="288" Caption="Flock:" Style="ddo-char-set: 0; text-align: right; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="90" Top="1350" Width="1620" Height="288" Caption="Hatch Date:" Style="ddo-char-set: 0; text-align: right; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlock" DataField="Flock" MOD="4" Left="1710" Top="1089" Width="1350" Height="270" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtHatchDate" DataField="HatchDate" MOD="4" Left="1710" Top="1359" Width="1350" Height="270" Text="" OutputFormat="MM/dd/yyyy" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="4680" Top="1080" Width="1620" Height="288" Caption="Hatchery:" Style="ddo-char-set: 0; text-align: right; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="4680" Top="1350" Width="1620" Height="288" Caption="Pullet Facility:" Style="ddo-char-set: 0; text-align: right; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtHatchery" MOD="4" Left="6300" Top="1089" Width="1350" Height="270" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtPulletFacility" MOD="4" Left="6300" Top="1359" Width="1350" Height="270" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label6" MOD="4" Left="8550" Top="1080" Width="1620" Height="288" Caption="Layer House:" Style="ddo-char-set: 0; text-align: right; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label7" MOD="4" Left="8550" Top="1350" Width="1620" Height="288" Caption="Strain:" Style="ddo-char-set: 0; text-align: right; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtLayerHouse" MOD="4" Left="10170" Top="1089" Width="1350" Height="270" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtStrain" MOD="4" Left="10170" Top="1359" Width="1350" Height="270" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="12060" Top="1098" Width="1620" Height="288" Caption="Hens:" Style="ddo-char-set: 0; text-align: right; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label9" MOD="4" Left="12060" Top="1368" Width="1620" Height="288" Caption="Roosters:" Style="ddo-char-set: 0; text-align: right; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtHenCount" MOD="4" Left="13680" Top="1107" Width="1350" Height="270" Text="" OutputFormat="#,##0" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtRoosterCount" MOD="4" Left="13680" Top="1377" Width="1350" Height="270" Text="" OutputFormat="#,##0" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Line" Name="Line" MOD="4" X1="3060" Y1="1350" X2="1710" Y2="1350" />
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="3060" Y1="1620" X2="1710" Y2="1620" />
+      <Control Type="AR.Line" Name="Line2" MOD="4" X1="7650" Y1="1620" X2="6300" Y2="1620" />
+      <Control Type="AR.Line" Name="Line3" MOD="4" X1="7650" Y1="1350" X2="6300" Y2="1350" />
+      <Control Type="AR.Line" Name="Line4" MOD="4" X1="11520" Y1="1620" X2="10170" Y2="1620" />
+      <Control Type="AR.Line" Name="Line5" MOD="4" X1="11520" Y1="1350" X2="10170" Y2="1350" />
+      <Control Type="AR.Line" Name="Line6" MOD="4" X1="15030" Y1="1620" X2="13680" Y2="1620" />
+      <Control Type="AR.Line" Name="Line7" MOD="4" X1="15030" Y1="1350" X2="13680" Y2="1350" />
+      <Control Type="AR.Label" Name="Label10" MOD="4" Left="90" Top="2160" Width="1350.72" Height="468" Caption="Scheduled Date" Style="ddo-char-set: 0; text-align: center; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label11" MOD="4" Left="1440" Top="2160" Width="540" Height="468" Caption="Age (day)" Style="ddo-char-set: 0; text-align: center; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label12" MOD="4" Left="1980" Top="2160" Width="2430.72" Height="468" Caption="Service" Style="ddo-char-set: 0; text-align: center; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label13" MOD="4" Left="4410" Top="2160" Width="1620" Height="468" Caption="Disease" Style="ddo-char-set: 0; text-align: center; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label14" MOD="4" Left="10350" Top="2160" Width="1620" Height="468" Caption="Product Serial #" Style="ddo-char-set: 0; text-align: center; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label15" MOD="4" Left="8640" Top="2160" Width="1710" Height="468" Caption="Product Name" Style="ddo-char-set: 0; text-align: center; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label16" MOD="4" Left="7020" Top="2160" Width="1620" Height="468" Caption="Supplier" Style="ddo-char-set: 0; text-align: center; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label17" MOD="4" Left="6030" Top="2160" Width="990" Height="468" Caption="Method" Style="ddo-char-set: 0; text-align: center; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label18" MOD="4" Left="14760" Top="2160" Width="1440" Height="468" Caption="Sign Off" Style="ddo-char-set: 0; text-align: center; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label19" MOD="4" Left="13320" Top="2160" Width="1440" Height="468" Caption="Date Completed" Style="ddo-char-set: 0; text-align: center; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label20" MOD="4" Left="11970" Top="2160" Width="1350" Height="468" Caption="Administrator" Style="ddo-char-set: 0; text-align: center; font-weight: bold; font-size: 9.75pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Line" Name="Line8" MOD="4" X1="1440" Y1="2070" X2="1440" Y2="2700" />
+      <Control Type="AR.Line" Name="Line9" MOD="4" X1="1980" Y1="2070" X2="1980" Y2="2700" />
+      <Control Type="AR.Line" Name="Line10" MOD="4" X1="4410" Y1="2070" X2="4410" Y2="2700" />
+      <Control Type="AR.Line" Name="Line11" MOD="4" X1="6030" Y1="2070" X2="6030" Y2="2700" />
+      <Control Type="AR.Line" Name="Line12" MOD="4" X1="7020" Y1="2070" X2="7020" Y2="2700" />
+      <Control Type="AR.Line" Name="Line13" MOD="4" X1="8640" Y1="2070" X2="8640" Y2="2700" />
+      <Control Type="AR.Line" Name="Line14" MOD="4" X1="10350" Y1="2070" X2="10350" Y2="2700" />
+      <Control Type="AR.Line" Name="Line15" MOD="4" X1="11970" Y1="2070" X2="11970" Y2="2700" />
+      <Control Type="AR.Line" Name="Line16" MOD="4" X1="13320" Y1="2070" X2="13320" Y2="2700" />
+      <Control Type="AR.Line" Name="Line17" MOD="4" X1="14760" Y1="2070" X2="14760" Y2="2700" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="599" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtAgeInDays" DataField="AgeInDays" MOD="4" Left="1440" Top="0" Width="720" Height="648" Style="ddo-char-set: 0; text-align: center; font-weight: normal; font-size: 9pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Shape" Name="Shape" MOD="4" Left="0" Top="0" Width="16290" Height="630" BackColor="16777215" />
+      <Control Type="AR.Field" Name="txtService" DataField="Service" MOD="4" Left="1890" Top="0" Width="2610" Height="648" Style="ddo-char-set: 0; text-align: center; font-weight: normal; font-size: 9pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtScheduleDate" DataField="ScheduleDate" MOD="4" Left="90" Top="0" Width="1350" Height="648" OutputFormat="MM/dd/yyyy" Style="ddo-char-set: 0; text-align: center; font-weight: normal; font-size: 9pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtProductSerialNumber" DataField="ProductSerialNumber" MOD="4" Left="10350" Top="0" Width="1620" Height="648" Style="ddo-char-set: 0; text-align: center; font-weight: normal; font-size: 9pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtProductName" DataField="ProductName" MOD="4" Left="8640" Top="0" Width="1710" Height="648" Style="ddo-char-set: 0; text-align: center; font-weight: normal; font-size: 9pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtSupplier" DataField="Supplier" MOD="4" Left="7020" Top="0" Width="1620" Height="648" Style="ddo-char-set: 0; text-align: center; font-weight: normal; font-size: 9pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtVaccineDeliveryMethod" DataField="VaccineDeliveryMethod" MOD="4" Left="6030" Top="0" Width="990" Height="648" Style="ddo-char-set: 0; text-align: center; font-weight: normal; font-size: 9pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtSignedOffBy" DataField="SignedOffBy" MOD="4" Left="14760" Top="0" Width="1440" Height="648" Style="ddo-char-set: 0; text-align: center; font-weight: normal; font-size: 9pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtDateCompleted" DataField="DateCompleted" MOD="4" Left="13320" Top="0" Width="1440" Height="648" OutputFormat="MM/dd/yyyy" Style="ddo-char-set: 0; text-align: center; font-weight: normal; font-size: 9pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtAdministrator" DataField="Administrator" MOD="4" Left="11970" Top="0" Width="1350" Height="648" Style="ddo-char-set: 0; text-align: center; font-weight: normal; font-size: 9pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Line" Name="Line18" MOD="4" X1="1440" Y1="0" X2="1440" Y2="652.5" />
+      <Control Type="AR.Line" Name="Line19" MOD="4" X1="1980" Y1="0" X2="1980" Y2="652.5" />
+      <Control Type="AR.Line" Name="Line20" MOD="4" X1="4410" Y1="0" X2="4410" Y2="652.5" />
+      <Control Type="AR.Line" Name="Line21" MOD="4" X1="6030" Y1="0" X2="6030" Y2="652.5" />
+      <Control Type="AR.Line" Name="Line22" MOD="4" X1="7020" Y1="0" X2="7020" Y2="652.5" />
+      <Control Type="AR.Line" Name="Line23" MOD="4" X1="8640" Y1="0" X2="8640" Y2="630" />
+      <Control Type="AR.Line" Name="Line24" MOD="4" X1="10350" Y1="0" X2="10350" Y2="630" />
+      <Control Type="AR.Line" Name="Line25" MOD="4" X1="11970" Y1="0" X2="11970" Y2="630" />
+      <Control Type="AR.Line" Name="Line26" MOD="4" X1="13320" Y1="0" X2="13320" Y2="630" />
+      <Control Type="AR.Line" Name="Line27" MOD="4" X1="14760" Y1="0" X2="14760" Y2="630" />
+      <Control Type="AR.Field" Name="txtDisease" DataField="Disease" MOD="4" Left="4410" Top="0" Width="1620" Height="648" Style="ddo-char-set: 0; text-align: center; font-weight: normal; font-size: 9pt; font-family: Calibri; vertical-align: middle; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="0" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <PageSettings LeftMargin="360" RightMargin="360" TopMargin="360" BottomMargin="360" Orientation="2" />
+</ActiveReportsLayout>

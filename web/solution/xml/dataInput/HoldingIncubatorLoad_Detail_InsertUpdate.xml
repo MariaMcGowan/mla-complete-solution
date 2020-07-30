@@ -1,0 +1,29 @@
+<CargasConnect>
+  <HoldingIncubatorLoad_Detail_InsertUpdate>
+    <DeliveryID/>
+    
+    <LocationNumber />
+    <IncubatorLocationNumber />
+    <DeliveryCartID />
+    <OrderID />
+    <LoadDate />
+    <LoadTime />
+    
+    <DeliveryCartFlockID1 />
+    <FlockID1 />
+    <ActualQty1 />
+    <Carts1/>
+    <Shelves1/>
+    <Trays1/>
+    <Eggs1/>
+    
+    <DeliveryCartFlockID2 />
+    <FlockID2 />
+    <ActualQty2 />
+    <Carts2/>
+    <Shelves2/>
+    <Trays2/>
+    <Eggs2/>
+    
+  </HoldingIncubatorLoad_Detail_InsertUpdate>
+</CargasConnect>

@@ -1,0 +1,5 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="" >
+		<field fieldName="UserMessage"  readOnly="true" displayName="" type="html" className="UserMessage"/>
+	</section>
+</fieldList>

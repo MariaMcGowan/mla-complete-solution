@@ -1,0 +1,20 @@
+﻿<CargasConnect>
+	<PulletSchedule_InsertUpdate>
+		<PulletFarmPlanID/>
+		<PulletFacility_RemoveDate/>
+		<PulletFacility_RemovalDateConfirmed/>
+		<PulletFacility_MoveDayCount/>
+		<PulletMover/>
+		<PulletFacility_WashDownDate/>
+		<PulletFacility_WashDownDateConfirmed/>
+		<PulletFacility_LitterDate/>
+		<PulletFacility_LitterDateConfirmed/>
+		<PulletFacility_FumigationDate/>
+		<PulletFacility_FumigationDateConfirmed/>
+		<PulletFacility_WashDownContractor/>
+		<PlannedMaleQtyAt16Weeks/>
+		<PlannedMaleQtyToRemove/>
+		
+	</PulletSchedule_InsertUpdate>
+</CargasConnect>
+

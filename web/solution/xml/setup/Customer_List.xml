@@ -1,0 +1,9 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Customer">
+		<field fieldName="CustomerID" displayName="Edit" type="link icon edit" ScreenID="Customer_Form" hideWhenNull="true"/>
+		<field fieldName="CustomerName" displayName="Customer Name" readOnly="true"/>
+		<field fieldName="CustomerType" displayName="Customer Type" readOnly="true"/>
+		<field fieldName="SortOrder" displayName="Sort Order" />
+		<field fieldName="CustomerID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="Customer_Delete" visibleFieldName="CustomerID.toString()!" visibleFieldValue="0"/>
+	</section>
+</fieldList>

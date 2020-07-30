@@ -1,0 +1,12 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Pullet Facility">
+		<field fieldName="PulletFacilityID" displayName="Edit" type="link icon edit" ScreenID="PulletFacility_Form" hideWhenNull="true"/>
+		<field fieldName="PulletFacility" displayName="Pullet Facility" className="width250" readOnly ="true"/>
+		<field fieldName="PrimaryContact" multilineEdit="true" displayName="Primary Contact" readOnly ="true"/>
+		<field fieldName="City" displayName="City" readOnly ="true"/>
+		<field fieldName="State" displayName="State" readOnly ="true"/>
+		<field fieldName="ContractedBy" displayName="Contracted With" readOnly ="true"/>
+		<field fieldName="SortOrder" displayName="Sort Order"/>
+		<field fieldName="PulletFacilityID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="PulletFacility_Delete" visibleFieldName="PulletFacilityID.toString()!" visibleFieldValue="0"/>
+	</section>
+</fieldList>

@@ -1,0 +1,13 @@
+﻿<fieldList>
+  <section>
+    <field fieldName="Name" ScreenID="SecurityScreensForUserGroup" type="link icon Edit" ng-if="thisRecord.Type=='group'" />
+    <field fieldName="Name" displayName="Name" readOnly="true"/>
+    <field fieldName="Type" displayName="Type" readOnly="true"/>
+    <field fieldName="EffectivePermission" displayName="Effective Permission" readOnly="true"/>
+    <field fieldName="ExplicitPermission" displayName="Explicit Permission" >
+      <lookupList>
+        <source sql="EXEC csb.GroupUserSecurityExplicitPermissions" />
+      </lookupList>
+    </field>
+  </section>
+</fieldList>

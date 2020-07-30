@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="11295" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader" Height="3390" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtQuarterlyPerformanceAudit" DataField="QuarterlyPerformanceAudit" MOD="4" Left="7740" Top="1260" Width="3330" Height="990.72" Text="" Style="text-align: center; font-family: Calibri; vertical-align: bottom; " />
+      <Control Type="AR.Field" Name="txtInspectedBy" DataField="InspectedBy" MOD="4" Left="7740" Top="2340.72" Width="2520" Height="360.72" Text="" OutputFormat="" Style="text-align: center; font-family: Calibri; vertical-align: bottom; " />
+      <Control Type="AR.Field" Name="txtDateCreated" DataField="DateCreated" MOD="4" Left="2430" Top="2340" Width="2250" Height="360.72" Text="" OutputFormat="MM/dd/yyyy" Style="text-align: center; font-family: Calibri; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label" MOD="4" Left="0" Top="0" Width="11250" Height="540" Caption="Maple Lawn Associates, Inc." Style="text-align: center; font-weight: bold; font-size: 18pt; font-family: Calibri; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="0" Top="630" Width="11250" Height="540" Caption="Quarterly Performance Audit" Style="text-align: center; font-weight: bold; font-size: 18pt; font-family: Calibri; " />
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="450" Top="1890" Width="1800" Height="360" Caption="Farm:" Style="text-align: right; font-weight: bold; font-size: 14pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="450" Top="2430" Width="1800" Height="360" Caption="Date:" Style="text-align: right; font-weight: bold; font-size: 14pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="5760" Top="1890" Width="1800" Height="360" Caption="I.D.#:" Style="text-align: right; font-weight: bold; font-size: 14pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="5760" Top="2430" Width="1800" Height="360" Caption="Insp. By:" Style="text-align: right; font-weight: bold; font-size: 14pt; font-family: Calibri; vertical-align: middle; " />
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="2340" Y1="2700" X2="4770" Y2="2700" />
+      <Control Type="AR.Line" Name="Line2" MOD="4" X1="7650" Y1="2250" X2="11070" Y2="2250" />
+      <Control Type="AR.Line" Name="Line3" MOD="4" X1="7650" Y1="2700" X2="11070" Y2="2700" />
+      <Control Type="AR.Field" Name="txtFarmNumber" DataField="FarmNumber" MOD="4" Left="2430" Top="1890" Width="2250" Height="360.72" Text="" Style="text-align: center; font-family: Calibri; vertical-align: bottom; " />
+      <Control Type="AR.Line" Name="Line" MOD="4" X1="2340" Y1="2250" X2="4770" Y2="2250" />
+    </Section>
+    <Section Type="PageHeader" Name="PageHeader" Height="30" BackColor="16777215" CanShrink="0" />
+    <Section Type="GroupHeader" Name="SectionGroup" Height="900" DataField="SectionNumber" GroupKeepTogether="2" BackColor="16777215" KeepTogether="1" CanShrink="0">
+      <Control Type="AR.Label" Name="lblAcceptable" MOD="4" Left="6660" Top="540" Width="2160" Height="360" Caption="Acceptable" Style="text-align: center; font-weight: bold; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="lblUnacceptable" MOD="4" Left="9000" Top="540" Width="2160" Height="360" Caption="Unacceptable" Style="text-align: center; font-weight: bold; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtSectionText" DataField="SectionText" MOD="4" Left="180" Top="540" Width="5760" Height="360.72" Text="" Style="text-decoration: underline; font-weight: bold; font-size: 14pt; font-family: Calibri; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="435" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Shape" Name="Shape" MOD="4" Left="6660" Top="0" Width="4500" Height="450" BackColor="16777215" />
+      <Control Type="AR.Field" Name="txtItemText" DataField="ItemText" MOD="4" Left="180" Top="90" Width="5670" Height="270.72" Text="" Style="font-family: Calibri; " />
+      <Control Type="AR.Field" Name="txtAcceptable" DataField="Acceptable" MOD="4" Left="6750" Top="90" Width="2070" Height="270.72" Text="" Style="text-align: center; font-family: Calibri; " />
+      <Control Type="AR.Field" Name="txtUnacceptable" DataField="Unacceptable" MOD="4" Left="9000" Top="90" Width="2070" Height="270.72" Text="" Style="text-align: center; font-family: Calibri; " />
+      <Control Type="AR.Line" Name="Line5" MOD="4" X1="8910" Y1="0" X2="8910" Y2="450" />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="PageFooter" Name="PageFooter" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="ReportFooter" Name="ReportFooter" Height="2475" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Shape" Name="Shape1" MOD="4" Left="3960" Top="270" Width="3150" Height="720" BackColor="16777215" LineWeight="5" />
+      <Control Type="AR.Field" Name="txtAuditStatus" DataField="AuditStatus" MOD="4" Left="4050" Top="360" Width="2970" Height="540.72" Text="" Style="text-align: center; font-weight: normal; font-size: 24pt; font-family: Calibri; " />
+      <Control Type="AR.Field" Name="txtComments" DataField="Comments" MOD="4" Left="1440" Top="1170" Width="9720" Height="1260.72" Text="" Style="font-family: Calibri; " />
+      <Control Type="AR.Label" Name="Label6" MOD="4" Left="180" Top="1080" Width="1170" Height="360" Caption="Comments:" Style="text-align: left; font-weight: bold; vertical-align: bottom; " />
+    </Section>
+  </Sections>
+  <PageSettings />
+</ActiveReportsLayout>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="33870" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="Detail" Name="Detail" Height="825" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtCompletedDate_01" DataField="DateCompleted_01" MOD="4" Left="2880" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtTargetedDate_01" DataField="DateTargeted_01" MOD="4" Left="1530" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlockCode" DataField="FlockCode" MOD="4" Left="180" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtCompletedBy_01" DataField="CompletedBy_01" MOD="4" Left="4230" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtDateTargeted_02" DataField="DateTargeted_02" MOD="4" Left="5580" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtCompletedDate_02" DataField="DateCompleted_02" MOD="4" Left="6930" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtCompletedBy_02" DataField="CompletedBy_02" MOD="4" Left="8280" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtDateTargeted_03" DataField="DateTargeted_03" MOD="4" Left="9630" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtDateCompleted_03" DataField="DateCompleted_03" MOD="4" Left="10980" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtCompletedBy_03" DataField="CompletedBy_03" MOD="4" Left="12330" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtDateTargeted_04" DataField="DateTargeted_04" MOD="4" Left="13680" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtDateCompleted_04" DataField="DateCompleted_04" MOD="4" Left="15030" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtCompletedBy_04" DataField="CompletedBy_04" MOD="4" Left="16380" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtDateTargeted_05" DataField="DateTargeted_05" MOD="4" Left="17730" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtDateCompleted_05" DataField="DateCompleted_05" MOD="4" Left="19080" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtCompletedBy_05" DataField="CompletedBy_05" MOD="4" Left="20430" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtDateTargeted_06" DataField="DateTargeted_06" MOD="4" Left="21780" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtDateCompleted_06" DataField="DateCompleted_06" MOD="4" Left="23130" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtCompletedBy_06" DataField="CompletedBy_06" MOD="4" Left="24480" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtDateTargeted_07" DataField="DateTargeted_07" MOD="4" Left="25830" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtDateCompleted_07" DataField="DateCompleted_07" MOD="4" Left="27180" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtCompletedBy_07" DataField="CompletedBy_07" MOD="4" Left="28530" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtDateTargeted_08" DataField="DateTargeted_08" MOD="4" Left="29880" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtDateCompleted_08" DataField="DateCompleted_08" MOD="4" Left="31230" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtCompletedBy_08" DataField="CompletedBy_08" MOD="4" Left="32580" Top="90" Width="1170" Height="630" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Shape" Name="Shape" MOD="4" Left="90" Top="0" Width="33750" Height="810" BackColor="16777215" />
+      <Control Type="AR.Line" Name="Line" MOD="4" X1="1440" Y1="0" X2="1440" Y2="810" />
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="4140" Y1="0" X2="4140" Y2="810" />
+      <Control Type="AR.Line" Name="Line2" MOD="4" X1="2790" Y1="0" X2="2790" Y2="810" />
+      <Control Type="AR.Line" Name="Line3" MOD="4" X1="5490" Y1="0" X2="5490" Y2="810" />
+      <Control Type="AR.Line" Name="Line4" MOD="4" X1="10890" Y1="0" X2="10890" Y2="810" />
+      <Control Type="AR.Line" Name="Line5" MOD="4" X1="9540" Y1="0" X2="9540" Y2="810" />
+      <Control Type="AR.Line" Name="Line6" MOD="4" X1="8190" Y1="0" X2="8190" Y2="810" />
+      <Control Type="AR.Line" Name="Line7" MOD="4" X1="6840" Y1="0" X2="6840" Y2="810" />
+      <Control Type="AR.Line" Name="Line8" MOD="4" X1="16290" Y1="0" X2="16290" Y2="810" />
+      <Control Type="AR.Line" Name="Line9" MOD="4" X1="14940" Y1="0" X2="14940" Y2="810" />
+      <Control Type="AR.Line" Name="Line10" MOD="4" X1="13590" Y1="0" X2="13590" Y2="810" />
+      <Control Type="AR.Line" Name="Line11" MOD="4" X1="12240" Y1="0" X2="12240" Y2="810" />
+      <Control Type="AR.Line" Name="Line12" MOD="4" X1="21690" Y1="0" X2="21690" Y2="810" />
+      <Control Type="AR.Line" Name="Line13" MOD="4" X1="20340" Y1="0" X2="20340" Y2="810" />
+      <Control Type="AR.Line" Name="Line14" MOD="4" X1="18990" Y1="0" X2="18990" Y2="810" />
+      <Control Type="AR.Line" Name="Line15" MOD="4" X1="17640" Y1="0" X2="17640" Y2="810" />
+      <Control Type="AR.Line" Name="Line16" MOD="4" X1="27090" Y1="0" X2="27090" Y2="810" />
+      <Control Type="AR.Line" Name="Line17" MOD="4" X1="25740" Y1="0" X2="25740" Y2="810" />
+      <Control Type="AR.Line" Name="Line18" MOD="4" X1="24390" Y1="0" X2="24390" Y2="810" />
+      <Control Type="AR.Line" Name="Line19" MOD="4" X1="23040" Y1="0" X2="23040" Y2="810" />
+      <Control Type="AR.Line" Name="Line20" MOD="4" X1="32490" Y1="0" X2="32490" Y2="810" />
+      <Control Type="AR.Line" Name="Line21" MOD="4" X1="31140" Y1="0" X2="31140" Y2="810" />
+      <Control Type="AR.Line" Name="Line22" MOD="4" X1="29790" Y1="0" X2="29790" Y2="810" />
+      <Control Type="AR.Line" Name="Line23" MOD="4" X1="28440" Y1="0" X2="28440" Y2="810" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="0" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <PageSettings />
+</ActiveReportsLayout>

@@ -1,0 +1,12 @@
+﻿<CargasConnect>
+	<ChickOrdering_InsertUpdate>
+		<PulletFarmPlanID/>
+		<PulletFacilityID/>
+		<ActualHatchDate/>
+		<FemaleBreed/>
+		<MaleBreed/>
+		<ActualFemaleOrderQty/>
+		<ActualMaleOrderQty/>
+    <Vaccine/>
+	</ChickOrdering_InsertUpdate>
+</CargasConnect>

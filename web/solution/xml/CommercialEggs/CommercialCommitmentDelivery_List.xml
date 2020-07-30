@@ -1,0 +1,10 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Deliveries">
+		<field fieldName="DeliveryDate" multilineEdit="true" displayName="Delivery Date"/>
+		<field fieldName="DeliveryQuantity_InCases" multilineEdit="true" displayName="Delivery Qty (cases)"/>
+		<field fieldName="DeliveryNotes" multilineEdit="true" displayName="Deliver Notes"/>		
+		<field fieldName="Driver" multilineEdit="true" displayName="Driver"/>
+		<field fieldName="Truck" multilineEdit="true" displayName="Truck"/>
+		<field fieldName="CommercialCommitmentDeliveryID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="CommercialCommitmentDelivery_Delete" visibleFieldName="CommercialCommitmentDeliveryID.toString()!" visibleFieldValue="0"/>
+	</section>
+</fieldList>

@@ -1,0 +1,10 @@
+<CargasConnect>
+  <dbo.QuantityChangeReason_InsertUpdate>
+	<QuantityChangeReasonID/>
+	<QuantityChangeReason/>
+	<Notes/>
+	<SortOrder/>
+	<IsActive/>
+	<UserName/>
+  </dbo.QuantityChangeReason_InsertUpdate>
+</CargasConnect>

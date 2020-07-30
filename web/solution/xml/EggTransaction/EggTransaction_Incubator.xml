@@ -1,0 +1,20 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Override Egg Quantities" columnSpan="3">
+    <field fieldName="IncubatorLocationNumber" multilineEdit="true" displayName="Location Number" readOnly="true"/>
+    <field fieldName="FlockID" multilineEdit="true" displayName="Flock" readOnly="true">
+      <lookupList>
+        <source sql="exec Flock_Lookup @includeBlank=0, @includeAll=0"/>
+      </lookupList>
+    </field>
+    <field fieldName="LayDate" multilineEdit="true" displayName="Lay Date" readOnly="true"/>
+    <field fieldName="QtyChangeIncubatorCart" multilineEdit="true" displayName="Quantity Change (Incubator Cart)" customValidateFunction="convertEggQtyTwoFields({thisRecord}, \'QtyChangeIncubatorCart\', \'QtyChangeCase\', \'QtyChange\', \'incubatorCart\', \'case\', \'egg\')"/>
+    <field fieldName="QtyChangeCase" multilineEdit="true" displayName="Quantity Change (Case)" customValidateFunction="convertEggQtyTwoFields({thisRecord}, \'QtyChangeCase\', \'QtyChangeIncubatorCart\', \'QtyChange\', \'case\', \'incubatorCart\', \'egg\')"/>
+    <field fieldName="QtyChange" multilineEdit="true" displayName="Quantity Change (Egg)" customValidateFunction="convertEggQtyTwoFields({thisRecord}, \'QtyChange\', \'QtyChangeIncubatorCart\', \'QtyChangeCase\', \'egg\', \'incubatorCart\', \'case\')"/>
+    <field fieldName="QtyChangeReasonID" multilineEdit="true" displayName="Change Reason">
+      <lookupList>
+        <source sql="exec QuantityChangeReason_UserChoice_Lookup"/>
+      </lookupList>
+    </field>
+    <field fieldName="QtyChangeActualDate" multilineEdit="true" displayName="Change Date"/>
+  </section>
+</fieldList>

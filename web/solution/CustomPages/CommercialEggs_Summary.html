@@ -1,0 +1,68 @@
+﻿<table fixed-header="1" offset-from-element=".contextBar md-toolbar" style="font-size:8px">
+	<thead style="background-color:white;">
+
+		<tr style="background-color:rgb(255,255,255);" id="commercial-egg-summary-table-row-1">
+
+			<th sticky-header style="border:none; background-color:white;">&nbsp;</th>
+			<th sticky-header style="border:none; background-color:white;">&nbsp;</th>
+			<th sticky-header style="border:none; background-color:white; color:black; font-weight:600; text-align:right; font-size:large;">Commercial</th>
+			<th sticky-header style="border:none; background-color:white; color:black; font-weight:600; text-align:left; font-size:large;">Eggs</th>
+			<th sticky-header style="border:none; background-color:white;">&nbsp;</th>
+			<th sticky-header style="border:none; background-color:white; color:black; "></th>
+
+			<th sticky-header style="border-bottom:none; border-top:none; border-right:none; border-right-color:black; background-color:white;">&nbsp;</th>
+			<th sticky-header style="border:none; background-color:white; color:black; font-weight:600; text-align:right; font-size:large;">Committed</th>
+			<th sticky-header style="border:none; background-color:white; color:black; font-weight:600; text-align:left; font-size:large;">Eggs</th>
+			<th sticky-header style="border:none; background-color:white;">&nbsp;</th>
+			<th sticky-header style="border:none; background-color:white;">&nbsp;</th>
+
+			<th sticky-header style="border-bottom:none; border-top:none; border-right:none; border-right-color:black; border-right-width:thick; background-color:white;">&nbsp;</th>
+			<th sticky-header style="border:none; background-color:white; color:black; font-weight:600; text-align:right; font-size:large;">Remaining</th>
+			<th sticky-header style="border:none; background-color:white; color:black; font-weight:600; text-align:left; font-size:large;">Eggs</th>
+			<th sticky-header style="border:none; background-color:white;">&nbsp;</th>
+			<th sticky-header style="border:none; background-color:white;">&nbsp;</th>
+		</tr>
+
+		<tr class="green-header">
+			<th sticky-header additional-offset-selectors="#commercial-egg-summary-table-row-1" >Week Ending</th>
+			<th sticky-header additional-offset-selectors="#commercial-egg-summary-table-row-1" > Case Wt. Less Than 36 lbs</th>
+			<th sticky-header additional-offset-selectors="#commercial-egg-summary-table-row-1" >Case Wt. 36 - 43 lbs</th>
+			<th sticky-header additional-offset-selectors="#commercial-egg-summary-table-row-1" >Case Wt. 43 - 48 lbs</th>
+			<th sticky-header additional-offset-selectors="#commercial-egg-summary-table-row-1" >Case Wt. Greater than 48 lbs</th>
+			<th sticky-header additional-offset-selectors="#commercial-egg-summary-table-row-1" >Total</th>
+			<th sticky-header additional-offset-selectors="#commercial-egg-summary-table-row-1" >Case Wt. Less Than 36 lbs</th>
+			<th sticky-header additional-offset-selectors="#commercial-egg-summary-table-row-1" >Case Wt. 36 - 43 lbs</th>
+			<th sticky-header additional-offset-selectors="#commercial-egg-summary-table-row-1" >Case Wt. 43 - 48 lbs</th>
+			<th sticky-header additional-offset-selectors="#commercial-egg-summary-table-row-1" >Case Wt. Greater than 48 lbs</th>
+			<th sticky-header additional-offset-selectors="#commercial-egg-summary-table-row-1" >Total</th>
+			<th sticky-header additional-offset-selectors="#commercial-egg-summary-table-row-1" >Case Wt. Less Than 36 lbs</th>
+			<th sticky-header additional-offset-selectors="#commercial-egg-summary-table-row-1" >Case Wt. 36 - 43 lbs</th>
+			<th sticky-header additional-offset-selectors="#commercial-egg-summary-table-row-1" >Case Wt. 43 - 48 lbs</th>
+			<th sticky-header additional-offset-selectors="#commercial-egg-summary-table-row-1" >Case Wt. Greater than 48 lbs</th>
+			<th sticky-header additional-offset-selectors="#commercial-egg-summary-table-row-1" >Total</th>
+		</tr>
+
+	</thead>
+
+	<tr table-content-main-row="table-content-main-row" dir-paginate="thisRecord in data.records | itemsPerPage: 2000 " current-page="data.currentPage">
+		<td class="flockScheduleCell;" style="text-align:right;"><div name="WeekEndingDate" id="WeekEndingDate">      {{::thisRecord.WeekEndingDate}}</div></td>
+
+		<td class="flockScheduleCell;" style="text-align:right; border-left:medium; border-left-color:black;"><div name="CommercialEggs_01" id="CommercialEggs_01">   {{::thisRecord.CommercialEggs_01|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell;" style="text-align:right"><div name="CommercialEggs_02" id="CommercialEggs_02">   {{::thisRecord.CommercialEggs_02|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell;" style="text-align:right"><div name="CommercialEggs_03" id="CommercialEggs_03">   {{::thisRecord.CommercialEggs_03|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell;" style="text-align:right"><div name="CommercialEggs_04" id="CommercialEggs_04">   {{::thisRecord.CommercialEggs_04|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell;" style="text-align:right"><div name="TotalCommercialEggs" id="TotalCommercialEggs"> {{::thisRecord.TotalCommercialEggs|csbCustomFormat:'numeric':0}}</div></td>
+
+		<td class="flockScheduleCell;" style="text-align:right"><div name="OrderEggs_01" id="OrderEggs_01">        {{::thisRecord.OrderEggs_01|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell;" style="text-align:right"><div name="OrderEggs_02" id="OrderEggs_02">        {{::thisRecord.OrderEggs_02|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell;" style="text-align:right"><div name="OrderEggs_03" id="OrderEggs_03">        {{::thisRecord.OrderEggs_03|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell;" style="text-align:right"><div name="OrderEggs_04" id="OrderEggs_04">        {{::thisRecord.OrderEggs_04|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell;" style="text-align:right"><div name="TotalOrderEggs" id="TotalOrderEggs">      {{::thisRecord.TotalOrderEggs|csbCustomFormat:'numeric':0}}</div></td>
+
+		<td class="flockScheduleCell;" style="text-align:right; color:{{::thisRecord.RemainingEggs_01_Format}}"><div name="RemainingEggs_01" id="RemainingEggs_01">    {{::thisRecord.RemainingEggs_01|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell;" style="text-align:right; color:{{::thisRecord.RemainingEggs_02_Format}}"><div name="RemainingEggs_02" id="RemainingEggs_02">    {{::thisRecord.RemainingEggs_02|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell;" style="text-align:right; color:{{::thisRecord.RemainingEggs_03_Format}}"><div name="RemainingEggs_03" id="RemainingEggs_03">    {{::thisRecord.RemainingEggs_03|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell;" style="text-align:right; color:{{::thisRecord.RemainingEggs_04_Format}}"><div name="RemainingEggs_04" id="RemainingEggs_04">    {{::thisRecord.RemainingEggs_04|csbCustomFormat:'numeric':0}}</div></td>
+		<td class="flockScheduleCell;" style="text-align:right; color:{{::thisRecord.TotalRemainingEggs_Format}}"><div name="TotalRemainingEggs" id="TotalRemainingEggs">  {{::thisRecord.TotalRemainingEggs|csbCustomFormat:'numeric':0}}</div></td>
+	</tr>
+</table>

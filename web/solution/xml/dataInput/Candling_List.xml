@@ -1,0 +1,8 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Candling" mobileLayoutSize="none" displayStyle="paging:50">
+    <field fieldName="LoadPlanningID" readOnly="true" displayName="Run Report" type="link icon description" ScreenID="Candling_Header"/>
+    <field fieldName="DeliveryDate" readOnly="true" displayName="Delivery Date"/>
+    <field fieldName="SetDate" readOnly="true" displayName="Set Date"/>
+    <field fieldName="LotNumbers" readOnly="true" displayName="Lot Numbers"/>
+  </section>
+</fieldList>

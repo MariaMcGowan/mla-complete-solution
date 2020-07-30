@@ -1,0 +1,7 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Vaccination Service" columnSpan ="4">
+    <field fieldName="Params" displayName="Add/Edit" type="htmlfile ~\solution\CustomPages\VaccinationServiceAddEdit.html"/>
+    <field fieldName="Flock" displayName="Flock" readOnly="true"/>
+	<field fieldName="VaccinationServiceID" displayName="Delete" ScreenID="VaccinationService_Delete" type="command icon Delete" toolTip="Delete" />
+	</section>
+</fieldList>

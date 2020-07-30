@@ -1,0 +1,13 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Order Delivery Cart" mobileLayoutSize="none">
+
+    <field fieldName="PlannedQty" multilineEdit="true" displayName="Planned Qty"/>
+    <field fieldName="ActualQty" multilineEdit="true" displayName="Actual Qty"/>
+    <field fieldName="FlockID" multilineEdit="true" displayName="Flock">
+      <lookupList>
+        <source sql="Flock_Lookup @includeAll = 0, @includeBlank = 0"/>
+      </lookupList>
+    </field>
+    <field fieldName="OrderDeliveryCartID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="OrderDeliveryCart_Delete" visibleFieldName="OrderDeliveryCartID.toString()!" visibleFieldValue="0"/>
+  </section>
+</fieldList>

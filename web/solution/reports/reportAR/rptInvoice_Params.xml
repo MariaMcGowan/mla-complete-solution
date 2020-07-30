@@ -1,0 +1,6 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Invoice">
+		<field fieldName="DeliveryDate" displayName="Delivery Date"/>
+    <field fieldName="LotNbr" displayName="Lot Number"/>
+	</section>
+</fieldList>

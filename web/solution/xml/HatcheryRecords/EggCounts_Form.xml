@@ -1,0 +1,12 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="" displayStyle="paging:100" columnSpan="2" mobileLayoutSize="none">
+		<field fieldName="Date" displayName="Date" readOnly="true"></field>
+		<field fieldName="FarmNumber" displayName="Farm Number" readOnly="true"></field>
+		<field fieldName="ActualPulletQty" displayName="Pullet Count" padding="1"></field>
+		<field fieldName="ActualTotalEggs" displayName="Total Egg Count"></field>
+		<field fieldName="ActualFloorEggs" displayName="Floor Eggs"></field>
+		<field fieldName="ActualCommercialEggs" displayName="Commercial Eggs" readOnly="true"></field>
+		<field fieldName="ActualSettableEggs" displayName="Settable Eggs"></field>
+		<field fieldName="ActualSellableEggs" displayName="Sellable Eggs"></field>
+	</section>
+</fieldList>

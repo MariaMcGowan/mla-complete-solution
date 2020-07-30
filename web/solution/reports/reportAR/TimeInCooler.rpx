@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="9720" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="GroupHeader" Name="DeliveryDateGroup" Height="2799" DataField="DeliveryDate" GroupKeepTogether="2" BackColor="16777215" NewPage="1" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox4" DataField="LotNbr03" MOD="4" Left="8280" Top="810" Width="1170" Height="378" Text="" OutputFormat="" Style="ddo-char-set: 0; text-decoration: underline; text-align: center; font-size: 9.75pt; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox3" DataField="LotNbr02" MOD="4" Left="8280" Top="450" Width="1170" Height="378" Text="" OutputFormat="" Style="ddo-char-set: 0; text-decoration: underline; text-align: center; font-size: 9.75pt; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox2" DataField="LotNbr01" MOD="4" Left="8280" Top="90" Width="1170" Height="378" Text="" OutputFormat="" Style="ddo-char-set: 0; text-decoration: underline; text-align: center; font-size: 9.75pt; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label6" MOD="4" Left="180" Top="1980" Width="810.72" Height="630" Caption="Rack" Style="text-decoration: none; text-align: center; font-weight: bold; font-size: 11pt; font-family: Arial; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label7" MOD="4" Left="1170" Top="1980" Width="1080.72" Height="630" Caption="Flock#" Style="text-decoration: none; text-align: center; font-weight: bold; font-size: 11pt; font-family: Arial; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="2430" Top="1980" Width="990.72" Height="630" Caption="Lay Date" Style="text-decoration: none; text-align: center; font-weight: bold; font-size: 11pt; font-family: Arial; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="5130" Top="1980" Width="900.72" Height="630.72" Caption="Flock#" Style="text-decoration: none; text-align: center; font-weight: bold; font-size: 11pt; font-family: Arial; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="6210" Top="1980" Width="990" Height="630" Caption="# of Racks" Style="text-decoration: none; text-align: center; font-weight: bold; font-size: 11pt; font-family: Arial; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="7380" Top="1980" Width="810" Height="630" Caption="Avg Days" Style="text-decoration: none; text-align: center; font-weight: bold; font-size: 11pt; font-family: Arial; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="8370" Top="1980" Width="990" Height="630" Caption="Avg Hours" Style="text-decoration: none; text-align: center; font-weight: bold; font-size: 11pt; font-family: Arial; vertical-align: bottom; " />
+      <Control Type="AR.Line" Name="Line" MOD="4" X1="90" Y1="2700" X2="9450" Y2="2700" />
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="1080" Y1="1890" X2="1080" Y2="2790" />
+      <Control Type="AR.Line" Name="Line2" MOD="4" X1="2340" Y1="1890" X2="2340" Y2="2790" />
+      <Control Type="AR.Line" Name="Line3" MOD="4" X1="3510" Y1="1890" X2="3510" Y2="2790" />
+      <Control Type="AR.Line" Name="Line4" MOD="4" X1="6120" Y1="1890" X2="6120" Y2="2790" />
+      <Control Type="AR.Line" Name="Line5" MOD="4" X1="7290" Y1="1890" X2="7290" Y2="2790" />
+      <Control Type="AR.Line" Name="Line6" MOD="4" X1="8280" Y1="1890" X2="8280" Y2="2790" />
+      <Control Type="AR.Line" Name="Line8" MOD="4" X1="9450" Y1="1890" X2="9450" Y2="2790" />
+      <Control Type="AR.Line" Name="Line9" MOD="4" X1="90" Y1="1890" X2="90" Y2="2790" />
+      <Control Type="AR.Line" Name="Line21" MOD="4" X1="5040" Y1="1890" X2="5040" Y2="2790" />
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="3600" Top="1980" Width="1350.72" Height="630" Caption="Days" Style="text-decoration: none; text-align: center; font-weight: bold; font-size: 11pt; font-family: Arial; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label10" MOD="4" Left="180" Top="90" Width="4770.72" Height="720" Caption="Time In Cooler" Style="text-align: center; font-weight: normal; font-size: 18pt; font-family: Arial Black; vertical-align: middle; " />
+      <Control Type="AR.Line" Name="Line19" MOD="4" X1="90" Y1="1890" X2="9450" Y2="1890" />
+      <Control Type="AR.Label" Name="Label" MOD="4" Left="5130" Top="90" Width="900.72" Height="360.72" Caption="Set Date" Style="text-decoration: none; text-align: center; font-weight: normal; background-color: Gainsboro; font-size: 10pt; font-family: Arial; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label9" MOD="4" Left="7380" Top="90" Width="810.72" Height="360.72" Caption="Lot #" Style="text-decoration: none; text-align: center; font-weight: normal; background-color: Gainsboro; font-size: 10pt; font-family: Arial; vertical-align: bottom; " />
+      <Control Type="AR.Field" Name="TextBox1" DataField="SetDate" MOD="4" Left="6120" Top="90" Width="1170" Height="378" Text="" OutputFormat="MM/dd/yyyy" Style="ddo-char-set: 0; text-decoration: underline; text-align: center; font-size: 9.75pt; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox5" DataField="LotNbr04" MOD="4" Left="8280" Top="1170" Width="1170" Height="378" Text="" OutputFormat="" Style="text-decoration: underline; ddo-char-set: 0; text-align: center; font-size: 9.75pt; vertical-align: middle; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="419" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtRack" DataField="Rack" MOD="4" Left="180" Top="0" Width="810" Height="378" Text="" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtDetailFlock" DataField="DetailData_Flock" MOD="4" Left="1170" Top="0" Width="1080" Height="378" Text="" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtLayDate" DataField="LayDate" MOD="4" Left="2430" Top="0" Width="990" Height="378" Text="" OutputFormat="M/d" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtSummaryDataFlock" DataField="SummaryData_Flock" MOD="4" Left="5130" Top="0" Width="900.72" Height="378.72" Text="" OutputFormat="" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtRackCnt" DataField="RackCnt" MOD="4" Left="6210" Top="0" Width="990" Height="378.72" Text="" OutputFormat="" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtAvgDays" DataField="AvgDays" MOD="4" Left="7380" Top="0" Width="810" Height="378.72" Text="" OutputFormat="0.00" Style="text-align: center; " />
+      <Control Type="AR.Line" Name="Line10" MOD="4" X1="1080" Y1="0" X2="1080" Y2="450" />
+      <Control Type="AR.Line" Name="Line11" MOD="4" X1="2340" Y1="0" X2="2340" Y2="450" />
+      <Control Type="AR.Line" Name="Line12" MOD="4" X1="3510" Y1="0" X2="3510" Y2="450" />
+      <Control Type="AR.Line" Name="Line13" MOD="4" X1="6120" Y1="0" X2="6120" Y2="450" />
+      <Control Type="AR.Line" Name="Line14" MOD="4" X1="7290" Y1="0" X2="7290" Y2="450" />
+      <Control Type="AR.Line" Name="Line15" MOD="4" X1="8280" Y1="0" X2="8280" Y2="450" />
+      <Control Type="AR.Line" Name="Line17" MOD="4" X1="9450" Y1="0" X2="9450" Y2="450" />
+      <Control Type="AR.Line" Name="Line18" MOD="4" X1="90" Y1="0" X2="90" Y2="450" />
+      <Control Type="AR.Field" Name="TextBox" DataField="Days" MOD="4" Left="3600" Top="0" Width="1350" Height="378" Text="" Style="text-align: center; " />
+      <Control Type="AR.Line" Name="Line22" MOD="4" X1="5040" Y1="0" X2="5040" Y2="450" />
+      <Control Type="AR.Field" Name="txtAvgHrs" DataField="AvgHours" MOD="4" Left="8370" Top="0" Width="990.72" Height="378.72" Text="" OutputFormat="0.00" Style="text-align: center; " />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="PageFooter" Name="PageFooter" Height="0" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <OleDbDataSource ConnectE="VGDvWfkCexLBkCU3jmz1dHLQ92qCNr4SQZNDGmocUm16Sj9+5QjlZxjchJj3Z9uumR03bkVdpK0Uu1UbMIlScDhNXyFsCWk3Li+WnIdIWldW42mwqv64GdGJUK5By7KOTsZhZZ4ihRfJ0moWhnrlTZQm0yWqq+r5BxryF58AZgPh/cAp4ECL5AtG5SffaUx7A0CoQFxyVwKAAtf7+UApv5dvc8pQQ1cX/OUMhXtvecU=" SQL="execute rptTimeInCooler" />
+  </DataSources>
+  <PageSettings LeftMargin="1152" />
+</ActiveReportsLayout>

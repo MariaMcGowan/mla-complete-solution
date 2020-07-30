@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="9360" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="1140" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label" MOD="4" Left="180" Top="180" Width="8910" Height="720" Caption="Eggs Added To Cooler Report" Style="text-align: center; font-weight: bold; font-size: 24pt; " />
+    </Section>
+    <Section Type="GroupHeader" Name="grpDate" Height="720" DataField="ChangeDate" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtDate" DataField="ChangeDate" MOD="4" Left="180" Top="180" Width="2430" Height="270" Text="" OutputFormat="MM/dd/yyyy" Style="font-weight: bold; font-size: 14pt; " />
+      <Control Type="AR.Line" Name="Line2" MOD="4" X1="0" Y1="0" X2="9180" Y2="0" LineWeight="3" />
+      <Control Type="AR.Line" Name="Line3" MOD="4" X1="0" Y1="630" X2="9180" Y2="630" LineWeight="3" />
+    </Section>
+    <Section Type="GroupHeader" Name="grpChangeReason" Height="599" DataField="QuantityChangeReasonID" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtChangeReason" DataField="QuantityChangeReason" MOD="4" Left="450" Top="180" Width="6840" Height="270" Text="" Style="text-align: left; font-weight: bold; font-size: 12pt; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="330" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtFlock" DataField="Flock" MOD="4" Left="1260" Top="0" Width="1620" Height="270" Text="" />
+      <Control Type="AR.Field" Name="txtQtyChange" DataField="QtyChange" MOD="4" Left="6390" Top="0" Width="1620" Height="270" Text="" OutputFormat="#,##0.00;(#,##0.00)" Style="text-align: right; " />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter2" Height="1035" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="TextBox" DataField="QtyChange" MOD="4" Left="6390" Top="180" Width="1620" Height="270" Text="TextBox" OutputFormat="#,##0.00;(#,##0.00)" Style="text-align: right; font-weight: bold; font-size: 12pt; " SummaryType="3" SummaryRunning="1" SummaryGroup="grpChangeReason" />
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="360" Y1="0" X2="9180" Y2="0" />
+      <Control Type="AR.Field" Name="TextBox1" DataField="SubTotalLabel" MOD="4" Left="450" Top="180" Width="5490" Height="270" Text="TextBox1" Style="text-align: left; font-weight: bold; font-size: 12pt; " />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="675" BackColor="16777215" CanShrink="0" />
+    <Section Type="PageFooter" Name="PageFooter" Height="1080" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="9JR1+TFiLGsEhrXkg3pBL7X+Naif97i7X4/e8SZuwpWSje2YKudDxBKWYprbPdha9D23mKTFP9UGz3fee/D0uFjIu8y7CaR6Yjr3kBkQuI6U3mWmKXhYCMqjlOYZLRFt" SQL=" execute rptEggsAddedToCooler" />
+  </DataSources>
+  <PageSettings />
+</ActiveReportsLayout>

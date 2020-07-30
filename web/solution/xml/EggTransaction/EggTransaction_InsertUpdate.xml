@@ -1,0 +1,11 @@
+<CargasConnect>
+  <EggTransaction_InsertUpdate>
+    <FlockID />
+    <LayDate />
+    <CoolerClutchID />
+    <QtyChange />
+    <QtyChangeReasonID />
+    <QtyChangeActualDate />
+    <UserName />
+  </EggTransaction_InsertUpdate>
+</CargasConnect>

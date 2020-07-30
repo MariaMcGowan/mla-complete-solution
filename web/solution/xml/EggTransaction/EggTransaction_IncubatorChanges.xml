@@ -1,0 +1,10 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Lay Date Quantity Changes" columnSpan="3">
+    <field fieldName="Flock" multilineEdit="true" readOnly="true"/>
+    <field fieldName="LayDate" multilineEdit="true" displayName="Lay Date" readOnly="true" padding="1"/>
+    <field fieldName="QtyChangeActualDate" multilineEdit="true" displayName="Change Date" readOnly="true" padding="1"/>
+    <field fieldName="QtyChange" multilineEdit="true" displayName="Quantity Change"/>
+    <field fieldName="QuantityChangeReason" multilineEdit="true" displayName="Change Reason"/>
+    <field fieldName="EggTransactionID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="EggTransaction_Incubator_Delete" visibleFieldName="EggTransactionID.toString()!" visibleFieldValue="0" hideWhenNull="true"/>
+  </section>
+</fieldList>

@@ -1,0 +1,14 @@
+﻿<div text-align:center;">
+	<div ng-if="thisRecord.CommercialCommitmentDeliveryID!='0'">
+		<a name="CommercialCommitmentDeliveryID" id="CommercialCommitmentDeliveryID" href="Form.html?screenID=CommercialCommitmentDelivery_Form&amp;p={{thisRecord.CommercialCommitmentDeliveryID}}">
+			<i id="CommercialCommitmentDelivery" class="center material-icons ng-binging ng-scope">mode_edit</i>
+		</a>
+		<md-tooltip md-direction="bottom">Edit</md-tooltip>
+	</div>
+	<div ng-if="thisRecord.CommercialCommitmentDeliveryID=='0'">
+		<a name="CommercialCommitmentDeliveryID" id="CommercialCommitmentDeliveryID" href="runProcess.aspx?screenID=NewCommercialCommitmentDelivery&amp;p={{thisRecord.CommercialCommitmentID}}">
+			<i id="CommercialCommitmentDelivery" class="center material-icons ng-binging ng-scope">add</i>
+		</a>
+		<md-tooltip md-direction="bottom">Create New</md-tooltip>
+	</div>
+</div>

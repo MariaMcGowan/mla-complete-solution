@@ -1,0 +1,18 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Flock Rotation" displayStyle="paging:100">
+		<field fieldName="WeekEndingDate" />
+		<field fieldName="ContractEmbryoQty" />
+		<field fieldName="EmbryoQtyGoal" />
+		<field fieldName="FarmColumn01_CalcEmbryoQty" format="numeric 0" />
+		<field fieldName="FarmColumn02_CalcEmbryoQty" format="numeric 0" readOnly="true" />
+		<field fieldName="FarmColumn03_CalcEmbryoQty" />
+		<field fieldName="FarmColumn04_CalcEmbryoQty" />
+		<field fieldName="FarmColumn05_CalcEmbryoQty" />
+		<field fieldName="FarmColumn06_CalcEmbryoQty" />
+		<field fieldName="FarmColumn07_CalcEmbryoQty" />
+		<field fieldName="FarmColumn08_CalcEmbryoQty" />
+		<field fieldName="FarmColumn09_CalcEmbryoQty" />
+		<field fieldName="FarmColumn10_CalcEmbryoQty" />
+
+		</section>
+</fieldList>

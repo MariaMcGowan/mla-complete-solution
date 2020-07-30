@@ -1,0 +1,14 @@
+<div text-align:center;">
+    <div ng-if="thisRecord.QuarterlyAuditCount!='0'">
+        <a name="FlockID" id="FlockID" href="Form.html?screenID=FlockQuarterlyPerformanceAudit&amp;p={{thisRecord.FlockID}}">
+            <i id="FlockID" class="center material-icons ng-binging ng-scope">short_text</i>
+        </a>
+        <md-tooltip md-direction="bottom">View Comments</md-tooltip>
+    </div>
+    <div ng-if="thisRecord.QuarterlyAuditCount=='0'">
+		<a name="FlockID" id="FlockID" href="Form.html?screenID=FlockQuarterlyPerformanceAudit&amp;p={{thisRecord.FlockID}}">
+            <i id="FlockID" class="center material-icons ng-binging ng-scope">add</i>
+        </a>
+        <md-tooltip md-direction="bottom">Add Quarterly Audit Report</md-tooltip>
+    </div>
+</div> 

@@ -1,0 +1,6 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Quarterly Permformance Update" columnSpan ="4">
+		<field fieldName="Flock" displayName="Flock" />
+		<field fieldName="FlockID" displayName="Quarterly Audit Reports" type="htmlfile ~\solution\CustomPages\FlockQuarterlyAuditList.html"/>		
+	</section>
+</fieldList>

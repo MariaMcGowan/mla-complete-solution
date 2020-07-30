@@ -1,0 +1,28 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Flock Plan Dates" columnSpan="1" mobileLayoutSize="none">
+		<field fieldName="UserMessage"  readOnly="true" displayName="" type="html" className="UserMessage"/>
+	</section>
+	<section displayName="Pullet Facility Dates" columnSpan="4" mobileLayoutSize="none">
+		<field fieldName="PulletFacilityID" displayName="Pullet Facility" columnSpan="2" padding="2">
+			<lookupList>
+				<source sql="exec PulletFacility_Lookup"/>
+			</lookupList>
+		</field>
+		<field fieldName="PlannedHatchDate" displayName="Planned Hatch Date" className="{{thisRecord.PlannedHatchDateFormat}}"/>
+		<field fieldName="ActualHatchDate" displayName="Actual Hatch Date" className="{{thisRecord.PlannedHatchDateFormat}}" padding="1"/>
+
+    <field fieldName="OverrideModifiedAfterOrderConfirm" displayName="Turn Off Warnings (Red Highlighting)" />
+    <field fieldName="PulletFacility_RemoveDate" displayName="Removal Date" className="{{thisRecord.PulletFacility_RemoveDateFormat}}" />
+		<field fieldName="PulletFacility_WashDownDate" displayName="Washdown Date" className="{{thisRecord.PulletFacility_WashDownDateFormat}}" />
+		<field fieldName="PulletFacility_LitterDate" displayName="Litter Date" className="{{thisRecord.PulletFacility_LitterDateFormat}}" />
+		<field fieldName="PulletFacility_FumigationDate" displayName="Fumigation Date" className="{{thisRecord.PulletFacility_FumigationDateFormat}}" />
+	</section>
+	<section displayName="Production Farm Dates" columnSpan="4" mobileLayoutSize="none">
+    <field fieldName="FlockNumber" displayName="Flock" readOnly="true" padding="3"/>
+		<field fieldName="ProductionFarm_RemoveDate" displayName="Removal Date" className="{{thisRecord.ProductionFarm_RemoveDateFormat}}" />
+		<field fieldName="ProductionFarm_WashDownDate" displayName="Washdown Date" className="{{thisRecord.ProductionFarm_WashDownDateFormat}}" />
+		<field fieldName="ProductionFarm_LitterDate" displayName="Litter Date" className="{{thisRecord.ProductionFarm_LitterDateFormat}}" />
+		<field fieldName="ProductionFarm_FumigationDate" displayName="Fumigation Date" className="{{thisRecord.ProductionFarm_FumigationDateFormat}}" />
+		<field fieldName="BlankField" required="true" displayName="" className="hide"  />
+	</section>
+</fieldList>

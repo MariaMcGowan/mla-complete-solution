@@ -1,0 +1,12 @@
+<CargasConnect>
+  <CoolerClutch_InsertUpdate>
+    <CoolerClutchID/>
+    <CoolerID/>
+    <FlockID/>
+    <LayDate/>
+    <ReceivedDate/>
+    <PlannedQty/>
+    <ActualQty/>
+    <UserName/>
+  </CoolerClutch_InsertUpdate>
+</CargasConnect>

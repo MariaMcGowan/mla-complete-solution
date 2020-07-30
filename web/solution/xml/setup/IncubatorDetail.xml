@@ -1,0 +1,9 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Setup - Incubator" columnSpan="2">
+		<field fieldName="Incubator" multilineEdit="true" displayName="Incubator" />
+		<field fieldName="IsActive" multilineEdit="true" displayName="Is Active"/>		
+		<field fieldName="Row_Count" multilineEdit="true" displayName="Row Count" />
+		<field fieldName="Column_Count" multilineEdit="true" displayName="Column Count" />
+		<field fieldName="Notes" multilineEdit="true" displayName="Notes" columnSpan="2"/>
+	</section>
+</fieldList>

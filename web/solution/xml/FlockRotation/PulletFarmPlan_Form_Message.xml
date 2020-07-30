@@ -1,0 +1,5 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Update Flock Plan" >
+		<field fieldName="UserMessage"  readOnly="true" displayName="UserMessage"/>
+	</section>
+</fieldList>

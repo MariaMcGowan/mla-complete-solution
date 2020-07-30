@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="9405" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="GroupHeader" Name="InvoiceHeader" Height="9225" DataField="InvoiceID" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Shape" Name="Shape6" MOD="4" Left="630" Top="7290" Width="8100" Height="1080" BackColor="16777215" />
+      <Control Type="AR.Shape" Name="Shape" MOD="4" Left="5310" Top="3330" Width="3420" Height="450" BackColor="16777215" />
+      <Control Type="AR.Shape" Name="Shape1" MOD="4" Left="5310" Top="4050" Width="3420" Height="450" BackColor="16777215" />
+      <Control Type="AR.Shape" Name="Shape4" MOD="4" Left="630" Top="5040" Width="1530" Height="450" BackColor="16777215" />
+      <Control Type="AR.Shape" Name="Shape3" MOD="4" Left="4680" Top="5490" Width="4050" Height="1350" BackColor="16777215" />
+      <Control Type="AR.Shape" Name="Shape2" MOD="4" Left="630" Top="5490" Width="4050" Height="1350" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label" MOD="4" Left="0" Top="0" Width="9270" Height="1170" Caption="Maple Lawn Associates, Inc." Style="text-align: center; font-size: 48pt; font-family: Gloucester MT Extra Condensed; " />
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="0" Top="1260" Width="9270" Height="270" Caption="Remit to:" Style="text-align: center; font-size: 10pt; font-family: Britannic Bold; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="0" Top="1530" Width="9270" Height="270" Caption="2394 Black Dog Road" Style="text-align: center; font-size: 10pt; font-family: Britannic Bold; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="0" Top="1800" Width="9270" Height="270" Caption="MCALISTERVILLE, PA  17049" Style="text-align: center; font-size: 10pt; font-family: Britannic Bold; " />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="0" Top="2070" Width="9270" Height="270" Caption="Phone:  717-463-2342" Style="text-align: center; font-size: 10pt; font-family: Britannic Bold; " />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="0" Top="2340" Width="9270" Height="270" Caption="Fax:  717-463-9292" Style="text-align: center; font-size: 10pt; font-family: Britannic Bold; " />
+      <Control Type="AR.Label" Name="Label6" MOD="4" Left="0" Top="2610" Width="9270" Height="270" Caption="Email:  lori@maplelawnassociates.com" Style="text-align: center; font-size: 10pt; font-family: Britannic Bold; " />
+      <Control Type="AR.Field" Name="InvoiceNumber" DataField="InvoiceNbr" MOD="4" Left="7200" Top="3420" Width="1440" Height="270" Text="" Style="text-align: center; " />
+      <Control Type="AR.Label" Name="Label7" MOD="4" Left="5490" Top="3420" Width="1530" Height="270" Caption="Invoice Number" />
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="5490" Top="4140" Width="1530" Height="270" Caption="Invoice Date" />
+      <Control Type="AR.Field" Name="InvoiceDate" DataField="InvoiceDate" MOD="4" Left="7200" Top="4140" Width="1440" Height="270" Text="" Style="text-align: center; " />
+      <Control Type="AR.Line" Name="Line" MOD="4" X1="7110" Y1="3780" X2="7110" Y2="3330" />
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="7110" Y1="4500" X2="7110" Y2="4050" />
+      <Control Type="AR.Label" Name="Label9" MOD="4" Left="810" Top="5130" Width="1170" Height="270" Caption="Bill To:" Style="font-weight: bold; " />
+      <Control Type="AR.Label" Name="Label10" MOD="4" Left="810" Top="5670" Width="3330" Height="270" Caption="Sanofi Pasteur Inc." />
+      <Control Type="AR.Label" Name="Label11" MOD="4" Left="810" Top="5940" Width="3330" Height="270" Caption="Attn: Accounts Payable" />
+      <Control Type="AR.Label" Name="Label12" MOD="4" Left="810" Top="6210" Width="3330" Height="270" Caption="PO Box 30149" />
+      <Control Type="AR.Label" Name="Label13" MOD="4" Left="810" Top="6480" Width="3330" Height="270" Caption="College Station TX 77842" />
+      <Control Type="AR.Shape" Name="Shape5" MOD="4" Left="4680" Top="5040" Width="1530" Height="450" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label14" MOD="4" Left="4860" Top="5130" Width="1170" Height="270" Caption="Ship To:" Style="font-weight: bold; " />
+      <Control Type="AR.Label" Name="Label18" MOD="4" Left="720" Top="7380" Width="1980" Height="270" Caption="P.O. #" Style="text-align: center; font-weight: bold; " />
+      <Control Type="AR.Label" Name="Label19" MOD="4" Left="3060" Top="7380" Width="1350" Height="270" Caption="Via" Style="text-align: center; font-weight: bold; " />
+      <Control Type="AR.Label" Name="Label20" MOD="4" Left="4860" Top="7380" Width="3690" Height="270" Caption="Sanofi Pasteur Contact:" Style="text-align: center; font-weight: bold; " />
+      <Control Type="AR.Field" Name="PO" DataField="CustomerReferenceNbr" MOD="4" Left="720" Top="7740" Width="1980" Height="540" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label21" MOD="4" Left="3060" Top="7740" Width="1350" Height="540" Caption="Our Truck" Style="text-align: center; font-weight: normal; vertical-align: middle; " />
+      <Control Type="AR.Line" Name="Line2" MOD="4" X1="2790" Y1="7290" X2="2790" Y2="8370" />
+      <Control Type="AR.Line" Name="Line3" MOD="4" X1="4680" Y1="7290" X2="4680" Y2="8370" />
+      <Control Type="AR.Line" Name="Line4" MOD="4" X1="630" Y1="7650" X2="8730" Y2="7650" />
+      <Control Type="AR.Label" Name="Label23" MOD="4" Left="630" Top="8640" Width="1170" Height="540" Caption="Quantity" Style="text-align: center; font-weight: bold; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label24" MOD="4" Left="1800" Top="8640" Width="2160" Height="540" Caption="Description" Style="text-align: center; font-weight: bold; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label25" MOD="4" Left="3960" Top="8640" Width="900" Height="540" Caption="Delivery Slip #" Style="text-align: center; font-weight: bold; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label26" MOD="4" Left="4860" Top="8640" Width="1170" Height="540" Caption="Delivery Date" Style="text-align: center; font-weight: bold; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label27" MOD="4" Left="6030" Top="8640" Width="1170" Height="540" Caption="Unit Price" Style="text-align: center; font-weight: bold; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label28" MOD="4" Left="7200" Top="8640" Width="1530" Height="540" Caption="Amount" Style="text-align: center; font-weight: bold; vertical-align: bottom; " />
+      <Control Type="AR.Field" Name="TextBox3" DataField="InvoiceContactInfo" MOD="4" Left="4860" Top="7740" Width="3690" Height="540" Text="" Style="text-align: center; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox5" DataField="InvoiceAddr1" MOD="4" Left="4951.152" Top="5670.72" Width="3150.72" Height="270.72" Text="" />
+      <Control Type="AR.Field" Name="TextBox6" DataField="InvoiceAddr2" MOD="4" Left="4951.152" Top="5941.44" Width="3150.72" Height="270.72" Text="" />
+      <Control Type="AR.Field" Name="TextBox7" DataField="InvoiceAddr3" MOD="4" Left="4951.152" Top="6212.16" Width="3150.72" Height="270.72" Text="" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="1994" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Shape" Name="Shape7" MOD="4" Left="630" Top="0" Width="8100" Height="1980" BackColor="16777215" />
+      <Control Type="AR.Field" Name="DeliveryDate" DataField="DeliveryDate" MOD="4" Left="5040" Top="270" Width="1170" Height="270" Text="" Style="text-align: center; font-size: 9.5pt; " />
+      <Control Type="AR.Line" Name="Line5" MOD="4" X1="1800" Y1="0" X2="1800" Y2="1980" />
+      <Control Type="AR.Line" Name="Line6" MOD="4" X1="3600" Y1="0" X2="3600" Y2="1980" />
+      <Control Type="AR.Line" Name="Line7" MOD="4" X1="5040" Y1="0" X2="5040" Y2="1980" />
+      <Control Type="AR.Line" Name="Line8" MOD="4" X1="6210" Y1="0" X2="6210" Y2="1980" />
+      <Control Type="AR.Line" Name="Line9" MOD="4" X1="7380" Y1="0" X2="7380" Y2="1980" />
+      <Control Type="AR.Field" Name="Quantity" DataField="EggQuantity" MOD="4" Left="720" Top="270" Width="990" Height="270" Text="" OutputFormat="#,##0" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="DeliverySlip01" DataField="DeliverySlips" MOD="4" Left="3690" Top="270" Width="1260" Height="720" Text="" Style="text-align: center; " />
+      <Control Type="AR.Label" Name="Label29" MOD="4" Left="1890" Top="270" Width="1620" Height="450" Caption="11-Day Embryo Eggs" Style="font-size: 9pt; " />
+      <Control Type="AR.Field" Name="UnitPrice" DataField="UnitPrice" MOD="4" Left="6300" Top="270" Width="990" Height="270" Text="" OutputFormat="$#,##0.00" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="Amount" DataField="AmountDue" MOD="4" Left="7470" Top="270" Width="1170" Height="270" Text="" OutputFormat="$#,##0.00" Style="text-align: right; " />
+      <Control Type="AR.Label" Name="lblDeliveryCharge" MOD="4" Left="1890" Top="1620" Width="1620" Height="270" Caption="Delivery Charge" />
+      <Control Type="AR.Field" Name="DeliveryCharge" DataField="DeliveryCharge" MOD="4" Left="7470" Top="1620" Width="1170" Height="270" Text="" OutputFormat="$#,##0.00" Style="text-align: right; " />
+      <Control Type="AR.Field" Name="TextBox2" DataField="Notes" MOD="4" Left="1890" Top="810" Width="1620" Height="720" Text="" />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="1395" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Shape" Name="Shape8" MOD="4" Left="630" Top="0" Width="8100" Height="450" BackColor="16777215" />
+      <Control Type="AR.Field" Name="QuantityTotal" DataField="EggQuantity" MOD="4" Left="720" Top="90" Width="990" Height="270" Text="" OutputFormat="#,##0" Style="text-align: center; " />
+      <Control Type="AR.Label" Name="Label33" MOD="4" Left="1890" Top="90" Width="1530" Height="270" Caption="Total" Style="font-weight: bold; " />
+      <Control Type="AR.Label" Name="Label34" MOD="4" Left="5130" Top="90" Width="900" Height="270" Caption="@" Style="text-align: center; font-weight: normal; " />
+      <Control Type="AR.Field" Name="TextBox" DataField="UnitPrice" MOD="4" Left="6300" Top="90" Width="990" Height="270.72" Text="" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="TextBox1" DataField="TotalAmount" MOD="4" Left="7470" Top="90" Width="1170" Height="270" Text="" OutputFormat="$#,##0.00" Style="text-align: right; " />
+      <Control Type="AR.Line" Name="Line10" MOD="4" X1="1800" Y1="0" X2="1800" Y2="450" />
+      <Control Type="AR.Line" Name="Line11" MOD="4" X1="3600" Y1="0" X2="3600" Y2="450" />
+      <Control Type="AR.Line" Name="Line12" MOD="4" X1="5040" Y1="0" X2="5040" Y2="450" />
+      <Control Type="AR.Line" Name="Line13" MOD="4" X1="6210" Y1="0" X2="6210" Y2="450" />
+      <Control Type="AR.Line" Name="Line14" MOD="4" X1="7380" Y1="0" X2="7380" Y2="450" />
+      <Control Type="AR.Shape" Name="Shape9" MOD="4" Left="630" Top="990" Width="8100" Height="450" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label31" MOD="4" Left="720" Top="1080" Width="1980" Height="270" Caption="Terms: NET 15 Days" Style="font-weight: bold; " />
+      <Control Type="AR.Field" Name="TextBox4" DataField="TotalAmount" MOD="4" Left="7290" Top="1080" Width="1350" Height="270" Text="" OutputFormat="$#,##0.00" Style="text-align: center; " />
+      <Control Type="AR.Line" Name="Line19" MOD="4" X1="7200" Y1="990" X2="7200" Y2="1440" />
+      <Control Type="AR.Label" Name="Label32" MOD="4" Left="6120" Top="1080" Width="990" Height="270" Caption="Total Due" Style="text-align: right; font-weight: bold; " />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="0" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <OleDbDataSource ConnectE="fnDeMoPQcekew7TB2OSGi0EJ1BusaId7FRAmOQ8dILU2SELX9kAi+EJuj0vuY6UIoTS3P/1QeUKceexE/UbYzvurE2kb/BqSY7SOsf2cPPyx0kHqXkmKWD/7PeRtRLke/kAb/tZljmv1jSFN5Y0c4esKIIBzm896qADlI4E5ctc=" SQL="execute rptInvoice '01/12/2017', '1757014'" />
+  </DataSources>
+  <Script><![CDATA[public void Detail_Format()
+{
+
+	if(this.DeliveryCharge.Text=="" || this.DeliveryCharge.Text.Substring(0,1) =="0" || this.DeliveryCharge.Text.Substring(0,2) =="$0")
+	{
+		this.lblDeliveryCharge.Visible = false;
+		this.DeliveryCharge.Visible = false;
+	}
+
+}
+]]></Script>
+  <PageSettings />
+</ActiveReportsLayout>

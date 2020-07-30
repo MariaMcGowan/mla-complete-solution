@@ -1,0 +1,18 @@
+﻿<CargasConnect>
+  <VaccinationService_Detail_InsertUpdate>
+    <VaccinationServiceDetailID/>
+    <AgeInDays/>
+    <Service/>
+    <Disease/>
+    <VaccineDeliveryMethod/>
+    <Supplier/>
+    <ProductName/>
+    <ProductSerialNumber/>
+    <Administrator/>
+    <IsActive/>
+    <SortOrder/>
+    <DateCompleted/>
+    <SignedOffBy/>
+  </VaccinationService_Detail_InsertUpdate>
+</CargasConnect>
+

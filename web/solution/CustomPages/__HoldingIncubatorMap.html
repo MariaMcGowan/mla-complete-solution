@@ -1,0 +1,45 @@
+
+<!--data.detailRecords[0].HoldingIncubatorLoad_Details[0].Flock-->
+<div text-align:center;">
+<table style="width:100%;" flex="100" border="1">
+    <tr ng-repeat="detailRow in data.detailRecords[0].HoldingIncubatorLoad_Rows">
+		<td ng-class="detailColumn.className" style="vertical-align:top;" ng-repeat="detailColumn in data.detailRecords[0].HoldingIncubatorLoad_Locations | filter:{RowNumber:detailRow.RowNumber}">
+			<div ng-if="detailColumn.LocationNumber>0" style="font-weight:bolder;font-size:large;text-decoration:underline;">
+				{{detailColumn.LocationNumber}}
+			</div>
+			<div ng-if="detailColumn.LocationNumber==-1" style="text-align:center;">
+				<img src="solution\images\FAN.png" style="width:100px;" />
+			</div>
+			<div ng-if="detailColumn.LocationNumber==-2" style="text-align:center;">
+				<img src="solution\images\Door_Word.png" style="height:100%;" />
+			</div>
+			<div ng-class="detailRecord.className" ng-repeat="detailRecord in data.detailRecords[0].HoldingIncubatorLoad_Details | filter:{LocationNumber:detailColumn.LocationNumber}:true">
+				<!--cell content-->
+				<div layout="row" layout-sm="column" layout-md="column" layout-wrap="">
+					<md-input-container flex="40" flex-sm="100" flex-md="100" class=""><div><label for="LoadDate" class="form-label">Load Date</label><div layout="rows"><input style="color:black;" ng-change="data.changeFunction('holdingIncubatorLoadFieldChange({detailRecords},{thisRecord},\'LoadDate\')', 'LoadDate', true, detailRecord, 'LoadDate');" ng-model="detailRecord.LoadDate" name="LoadDate" id="LoadDate{{$parent.$parent.$index + '_' + $parent.$index + '_' + $index}}" jq-date="" size="8" class="md-input" type="text"></div></div></md-input-container>
+					<md-input-container flex="20" style="z-index:0"> <div style="min-width:16px; z-index:0;"></div></md-input-container>
+					<md-input-container flex="40" flex-sm="100" flex-md="100" class=""><label for="LoadTime" class="form-label">Load Time</label><input ng-change="data.changeFunction('holdingIncubatorLoadFieldChange({detailRecords},{thisRecord},\'LoadTime\')', 'LoadTime', true, detailRecord, 'LoadTime');" ng-model="detailRecord.LoadTime" name="LoadTime" id="LoadTime{{$parent.$parent.$index + '_' + $parent.$index + '_' + $index}}" style="color:black;" class="md-input" type="text"><div class="csb-error-message" ng-messages="csbForm.LoadTime.$error"></div></md-input-container>
+
+					<md-input-container flex="75" class=""><label for="FlockID1" class="md-no-float csb-md-simulate-has-value">Flock 1</label><md-select ng-change="data.changeFunction('defaultHoldingIncubatorCartQuantity({thisRecord},\'FlockID1\')', 'FlockID1', true, detailRecord, 'FlockID1');" ng-model="detailRecord.FlockID1" name="FlockID1" id="FlockID1{{$parent.$parent.$index + '_' + $parent.$index + '_' + $index}}" class="md-input" style="font-weight:bolder;color:blue;"><md-option ng-value="listItem.value" ng-repeat="listItem in dropdownJSON.FlockID1">{{listItem.display}}</md-option></md-select></md-input-container>
+					<div flex="25" style="padding-top:30px">Qty: {{detailRecord.ActualQty1}}</div>
+					<div flex="20" />
+					<md-input-container flex="20" flex-sm="25" flex-md="25" class=""><label for="Carts1" class="form-label ">Carts</label><input ng-model="detailRecord.Carts1" name="Carts1" id="Carts1{{$parent.$parent.$index + '_' + $parent.$index + '_' + $index}}" style="color:black;" ng-change="data.changeFunction('holdingIncubatorLoadFieldChange({detailRecords},{thisRecord},\'Carts1\')', 'Carts1', true, detailRecord, 'Carts1');" class="md-input" type="text"><div class="csb-error-message" ng-messages="csbForm.Carts1.$error"></div></md-input-container>
+					<md-input-container flex="20" flex-sm="25" flex-md="25" class=""><label for="Shelves1" class="form-label ">Shelves</label><input ng-model="detailRecord.Shelves1" name="Shelves1" id="Shelves1{{$parent.$parent.$index + '_' + $parent.$index + '_' + $index}}" style="color:black;" ng-change="data.changeFunction('holdingIncubatorLoadFieldChange({detailRecords},{thisRecord},\'Shelves1\')', 'Shelves1', true, detailRecord, 'Shelves1');" class="md-input" type="text"><div class="csb-error-message" ng-messages="csbForm.Shelves1.$error"></div></md-input-container>
+					<md-input-container flex="20" flex-sm="25" flex-md="25" class=""><label for="Trays1" class="form-label ">Trays</label><input ng-model="detailRecord.Trays1" name="Trays1" id="Trays1{{$parent.$parent.$index + '_' + $parent.$index + '_' + $index}}" style="color:black;" ng-change="data.changeFunction('holdingIncubatorLoadFieldChange({detailRecords},{thisRecord},\'Trays1\')', 'Trays1', true, detailRecord, 'Trays1');" class="md-input" type="text"><div class="csb-error-message" ng-messages="csbForm.Trays1.$error"></div></md-input-container>
+					<md-input-container flex="20" flex-sm="25" flex-md="25" class=""><label for="Eggs1" class="form-label ">Eggs</label><input ng-model="detailRecord.Eggs1" name="Eggs1" id="Eggs1{{$parent.$parent.$index + '_' + $parent.$index + '_' + $index}}" style="color:black;" ng-change="data.changeFunction('holdingIncubatorLoadFieldChange({detailRecords},{thisRecord},\'Eggs1\')', 'Eggs1', true, detailRecord, 'Eggs1');" class="md-input" type="text"><div class="csb-error-message" ng-messages="csbForm.Eggs1.$error"></div></md-input-container>
+
+					<md-input-container ng-show="detailRecord.ActualQty1!=''&&detailRecord.ActualQty1!='0'&&detailRecord.ActualQty1<4320" flex="75" class=""><label for="FlockID2" class="md-no-float csb-md-simulate-has-value">Flock 2</label><md-select ng-change="data.changeFunction('defaultHoldingIncubatorCartQuantity({thisRecord},\'FlockID2\')', 'FlockID2', true, detailRecord, 'FlockID2');" ng-model="detailRecord.FlockID2" name="FlockID2" id="FlockID2{{$parent.$parent.$index + '_' + $parent.$index + '_' + $index}}" class="md-input"><md-option ng-value="listItem.value" ng-repeat="listItem in dropdownJSON.FlockID2">{{listItem.display}}</md-option></md-select></md-input-container>
+					<div ng-show="detailRecord.ActualQty1!=''&&detailRecord.ActualQty1!='0'&&detailRecord.ActualQty1<4320" flex="25" style="padding-top:30px">Qty: {{detailRecord.ActualQty2}}</div>
+					<div ng-show="detailRecord.ActualQty1!=''&&detailRecord.ActualQty1!='0'&&detailRecord.ActualQty1<4320" flex="20" />
+					<md-input-container flex="20" flex-sm="25" flex-md="25" class="" ng-show="detailRecord.ActualQty1!=''&&detailRecord.ActualQty1!='0'&&detailRecord.ActualQty1<4320"><label for="Carts2" class="form-label ">Carts</label><input ng-model="detailRecord.Carts2" name="Carts2" id="Carts2{{$parent.$parent.$index + '_' + $parent.$index + '_' + $index}}" style="color:black;" ng-change="data.changeFunction('holdingIncubatorLoadFieldChange({thisRecord},\'Carts2\')', 'Carts2', true, detailRecord, 'Carts2');" class="md-input" type="text"><div class="csb-error-message" ng-messages="csbForm.Carts2.$error"></div></md-input-container>
+					<md-input-container flex="20" flex-sm="25" flex-md="25" class="" ng-show="detailRecord.ActualQty1!=''&&detailRecord.ActualQty1!='0'&&detailRecord.ActualQty1<4320"><label for="Shelves2" class="form-label ">Shelves</label><input ng-model="detailRecord.Shelves2" name="Shelves2" id="Shelves2{{$parent.$parent.$index + '_' + $parent.$index + '_' + $index}}" style="color:black;" ng-change="data.changeFunction('holdingIncubatorLoadFieldChange({thisRecord},\'Shelves2\')', 'Shelves2', true, detailRecord, 'Shelves2');" class="md-input" type="text"><div class="csb-error-message" ng-messages="csbForm.Shelves2.$error"></div></md-input-container>
+					<md-input-container flex="20" flex-sm="25" flex-md="25" class="" ng-show="detailRecord.ActualQty1!=''&&detailRecord.ActualQty1!='0'&&detailRecord.ActualQty1<4320"><label for="Trays2" class="form-label ">Trays</label><input ng-model="detailRecord.Trays2" name="Trays2" id="Trays2{{$parent.$parent.$index + '_' + $parent.$index + '_' + $index}}" style="color:black;" ng-change="data.changeFunction('holdingIncubatorLoadFieldChange({thisRecord},\'Trays2\')', 'Trays2', true, detailRecord, 'Trays2');" class="md-input" type="text"><div class="csb-error-message" ng-messages="csbForm.Trays2.$error"></div></md-input-container>
+					<md-input-container flex="20" flex-sm="25" flex-md="25" class="" ng-show="detailRecord.ActualQty1!=''&&detailRecord.ActualQty1!='0'&&detailRecord.ActualQty1<4320"><label for="Eggs2" class="form-label ">Eggs</label><input ng-model="detailRecord.Eggs2" name="Eggs2" id="Eggs2{{$parent.$parent.$index + '_' + $parent.$index + '_' + $index}}" style="color:black;" ng-change="data.changeFunction('holdingIncubatorLoadFieldChange({thisRecord},\'Eggs2\')', 'Eggs2', true, detailRecord, 'Eggs2');" class="md-input" type="text"><div class="csb-error-message" ng-messages="csbForm.Eggs2.$error"></div></md-input-container>
+				</div>
+			</div>
+		</td>
+    </tr>
+   
+</table>
+</div> 
+

@@ -1,0 +1,10 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Customer" columnSpan ="1">
+		<field fieldName="CustomerName" displayName="Customer Name" />
+		<field fieldName="CustomerTypeID" multilineEdit="true" displayName="Customer Type">
+			<lookupList>
+				<source sql="exec CustomerType_Lookup"/>
+			</lookupList>
+		</field>
+	</section>
+</fieldList>

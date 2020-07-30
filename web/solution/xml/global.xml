@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+<fieldList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://csb2018.cargascloud.com/xmlschemas/csbFormatXML.xsd">
+  <section>
+    <field fieldName="SourceDatabase" displayName="System" readOnly="true"/>
+    <field fieldName="OrderType" displayName="Order Type">
+      <lookupList>
+        <!--<element text="All" value="0"/>
+        <element text="Egg" value="1"/>
+        <element text="Dairy (No Ice Cream)" value="2"/>
+        <element text="Dairy/Ice Cream" value="3"/>
+        <element text="Ice Cream" value="4"/>-->
+        <source sql="exec OrderType_Lookup"/>
+      </lookupList>
+    </field>
+  </section>
+</fieldList>

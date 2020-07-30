@@ -1,0 +1,13 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Quarterly Permformance Update" columnSpan ="4">
+    <field fieldName="Params" displayName="Add/Edit" type="htmlfile ~\solution\CustomPages\QuarterlyPerformanceAuditAddEdit.html"/>
+    <field fieldName="Flock" displayName="Flock" />
+	<field fieldName="QuarterlyPerformanceAudit" displayName="Description" />
+    <field fieldName="DateCreated" displayName="Date Created" />    
+		<field fieldName="AuditStatusID" displayName="Overall Audit Status" padding="1" >
+      <lookupList>
+        <source sql="execute AuditStatus_Lookup @IncludeBlank=1, @IncludeAll=0"></source>
+      </lookupList>
+    </field>
+	</section>
+</fieldList>

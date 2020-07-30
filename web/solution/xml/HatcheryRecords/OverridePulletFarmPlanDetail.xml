@@ -1,0 +1,19 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Reserve / Release Eggs" >
+    <field fieldName="Date" multilineEdit="true" displayName="Date" readOnly="true"/>
+    <field fieldName="SettableEggs" readOnly="true" displayName="Estimated Settable Eggs"/>
+    <field fieldName="SettableEggs_Cases" displayName="Estimated Settable Eggs (In Cases)" updateAllColumnsType="numeric"/>
+    
+    
+    <field fieldName="CurrentStatus" readOnly="true" displayName="Current Status"/>
+    <field fieldName="ReserveReleaseID" multilineEdit="true" displayName="Reserve / Release" updateAllColumnsType="int"  >
+      <lookupList>
+        <source sql="exec ReserveRelease_Lookup @IncludeBlank=1"/>
+      </lookupList>
+    </field>
+    <field fieldName="UniqueRowID" hidden="true"/>
+	</section>
+</fieldList>
+
+
+

@@ -1,0 +1,7 @@
+<CargasConnect>
+  <dbo.FlockMaster_InsertUpdate>
+	<FlockID/>
+	<HatchDate/>
+	<UserName/>
+  </dbo.FlockMaster_InsertUpdate>
+</CargasConnect>

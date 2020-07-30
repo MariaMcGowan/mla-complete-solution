@@ -1,0 +1,8 @@
+<CargasConnect>
+  <dbo.ContactType_InsertUpdate>
+	<ContactTypeID/>
+	<SortOrder/>
+	<IsActive/>
+	<UserName/>
+  </dbo.ContactType_InsertUpdate>
+</CargasConnect>

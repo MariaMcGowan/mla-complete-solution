@@ -1,0 +1,8 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Setup - Quantity Change Reason">
+		<field fieldName="QuantityChangeReason" multilineEdit="true" displayName="Quantity Change Reason"/>
+		<field fieldName="SortOrder" multilineEdit="true" displayName="Sort Order"/>
+		<field fieldName="IsActive" multilineEdit="true" displayName="Is Active"/>
+		<field fieldName="QuantityChangeReasonID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="QuantityChangeReason_Delete" visibleFieldName="QuantityChangeReasonID.toString()!" visibleFieldValue="0"/>
+	</section>
+</fieldList>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="13380" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="GroupHeader" Name="FlockGroup" Height="2079" DataField="Flock" GroupKeepTogether="2" BackColor="16777215" NewPage="1" CanShrink="0">
+      <Control Type="AR.Label" Name="Label6" MOD="4" Left="180" Top="1260" Width="1440.72" Height="630" Caption="Flock #" Style="text-decoration: none; text-align: center; font-weight: bold; font-size: 11pt; font-family: Arial; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label7" MOD="4" Left="1800" Top="1260" Width="1620.72" Height="630" Caption="Set Date" Style="text-decoration: none; text-align: center; font-weight: bold; font-size: 11pt; font-family: Arial; vertical-align: bottom; " />
+      <Control Type="AR.Field" Name="Flock" DataField="Flock" MOD="4" Left="90" Top="90" Width="3510.72" Height="360" Text="" Style="text-decoration: none; text-align: left; font-weight: normal; font-size: 12pt; font-family: Arial Black; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label" MOD="4" Left="90" Top="450" Width="3510.72" Height="360" Caption="Results" Style="font-weight: normal; font-size: 12pt; font-family: Arial Black; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="3600" Top="1260" Width="810.72" Height="630" Caption="Lot #" Style="text-decoration: none; text-align: center; font-weight: bold; font-size: 11pt; font-family: Arial; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="5670" Top="1260" Width="990.72" Height="630" Caption="# Cases" Style="text-decoration: none; text-align: center; font-weight: bold; font-size: 11pt; font-family: Arial; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="6840" Top="1260" Width="990" Height="630" Caption="Actual Yield" Style="text-decoration: none; text-align: center; font-weight: bold; font-size: 11pt; font-family: Arial; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="8010" Top="1260" Width="990" Height="630" Caption="Weight / Dozen" Style="text-decoration: none; text-align: center; font-weight: bold; font-size: 11pt; font-family: Arial; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="9180" Top="1260" Width="990" Height="630" Caption="Approx Embryos" Style="text-decoration: none; text-align: center; font-weight: bold; font-size: 11pt; font-family: Arial; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label9" MOD="4" Left="10350" Top="1260" Width="990" Height="630" Caption="Cumm Embryos" Style="text-decoration: none; text-align: center; font-weight: bold; font-size: 11pt; font-family: Arial; vertical-align: bottom; " />
+      <Control Type="AR.Line" Name="Line" MOD="4" X1="90" Y1="1980" X2="11430" Y2="1980" />
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="1710" Y1="1170" X2="1710" Y2="2070" />
+      <Control Type="AR.Line" Name="Line2" MOD="4" X1="3510" Y1="1170" X2="3510" Y2="2070" />
+      <Control Type="AR.Line" Name="Line3" MOD="4" X1="4500" Y1="1170" X2="4500" Y2="2070" />
+      <Control Type="AR.Line" Name="Line4" MOD="4" X1="6750" Y1="1170" X2="6750" Y2="2070" />
+      <Control Type="AR.Line" Name="Line5" MOD="4" X1="7920" Y1="1170" X2="7920" Y2="2070" />
+      <Control Type="AR.Line" Name="Line6" MOD="4" X1="9090" Y1="1170" X2="9090" Y2="2070" />
+      <Control Type="AR.Line" Name="Line7" MOD="4" X1="10260" Y1="1170" X2="10260" Y2="2070" />
+      <Control Type="AR.Line" Name="Line8" MOD="4" X1="11430" Y1="1170" X2="11430" Y2="2070" />
+      <Control Type="AR.Line" Name="Line9" MOD="4" X1="90" Y1="1170" X2="90" Y2="2070" />
+      <Control Type="AR.Line" Name="Line19" MOD="4" X1="90" Y1="1170" X2="11430" Y2="1170" />
+      <Control Type="AR.Line" Name="Line21" MOD="4" X1="5580" Y1="1170" X2="5580" Y2="2070" />
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="4590" Top="1260" Width="900.72" Height="630" Caption="Rack Count" Style="text-decoration: none; text-align: center; font-weight: bold; font-size: 11pt; font-family: Arial; vertical-align: bottom; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="460" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtFlock" DataField="Flock" MOD="4" Left="90" Top="0" Width="1620" Height="378" Text="Flock" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtSetDate" DataField="SetDate" MOD="4" Left="1710" Top="0" Width="1800" Height="378" Text="SetDate" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtLotNbr" DataField="LotNbr" MOD="4" Left="3510" Top="0" Width="990" Height="378" Text="LotNbr" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtCases" DataField="Cases" MOD="4" Left="5580" Top="0" Width="1170" Height="378" Text="Cases" OutputFormat="0.0" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtActualYield" DataField="ActualYield" MOD="4" Left="6750" Top="0" Width="1170" Height="378" Text="ActualYield" OutputFormat="0.0000" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtWgtDz" DataField="WgtDz" MOD="4" Left="7920" Top="0" Width="1170" Height="378" Text="WgtDz" OutputFormat="0.0" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtEggsDelivered" DataField="EggsDelivered" MOD="4" Left="9090" Top="0" Width="1170" Height="378" Text="EggsDelivered" OutputFormat="#,##0" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtCummEggsDelivered" DataField="CummEggsDelivered" MOD="4" Left="10260" Top="0" Width="1170" Height="378" Text="CummEggsDelivered" OutputFormat="#,##0" Style="text-align: center; " />
+      <Control Type="AR.Line" Name="Line10" MOD="4" X1="1710" Y1="0" X2="1710" Y2="450" />
+      <Control Type="AR.Line" Name="Line11" MOD="4" X1="3510" Y1="0" X2="3510" Y2="450" />
+      <Control Type="AR.Line" Name="Line12" MOD="4" X1="4500" Y1="0" X2="4500" Y2="450" />
+      <Control Type="AR.Line" Name="Line13" MOD="4" X1="6750" Y1="0" X2="6750" Y2="450" />
+      <Control Type="AR.Line" Name="Line14" MOD="4" X1="7920" Y1="0" X2="7920" Y2="450" />
+      <Control Type="AR.Line" Name="Line15" MOD="4" X1="9090" Y1="0" X2="9090" Y2="450" />
+      <Control Type="AR.Line" Name="Line16" MOD="4" X1="10260" Y1="0" X2="10260" Y2="450" />
+      <Control Type="AR.Line" Name="Line17" MOD="4" X1="11430" Y1="0" X2="11430" Y2="450" />
+      <Control Type="AR.Line" Name="Line18" MOD="4" X1="90" Y1="0" X2="90" Y2="450" />
+      <Control Type="AR.Field" Name="TextBox" DataField="RackCnt" MOD="4" Left="4590" Top="0" Width="900" Height="378" Text="RackCnt" Style="text-align: center; " />
+      <Control Type="AR.Line" Name="Line22" MOD="4" X1="5580" Y1="0" X2="5580" Y2="450" />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="0" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Line" Name="Line20" MOD="4" X1="90" Y1="0" X2="11430" Y2="0" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="749" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <OleDbDataSource ConnectE="VGDvWfkCexLBkCU3jmz1dHLQ92qCNr4SQZNDGmocUm16Sj9+5QjlZxjchJj3Z9uumR03bkVdpK0Uu1UbMIlScDhNXyFsCWk3Li+WnIdIWldW42mwqv64GdGJUK5By7KOTsZhZZ4ihRfJ0moWhnrlTZQm0yWqq+r5BxryF58AZgPh/cAp4ECL5AtG5SffaUx7A0CoQFxyVwKAAtf7+UApv5dvc8pQQ1cX/OUMhXtvecU=" SQL="execute rptFlockStatistics" />
+  </DataSources>
+  <PageSettings LeftMargin="1152" />
+</ActiveReportsLayout>

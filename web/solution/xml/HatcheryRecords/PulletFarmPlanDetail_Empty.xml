@@ -1,0 +1,8 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Nothing to Reserve \ Release" >
+		<field fieldName="UserMessage"  readOnly="true" displayName="" type="html" className="UserMessage"/>
+		<field fieldName="BlankFieldForSpace" displayName="" />
+	</section>
+</fieldList>
+
+

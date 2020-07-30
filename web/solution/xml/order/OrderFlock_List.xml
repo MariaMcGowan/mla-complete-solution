@@ -1,0 +1,13 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Order Flock" mobileLayoutSize="none">
+    <field fieldName="FlockID" multilineEdit="true" displayName="Flock">
+      <lookupList>
+        <source sql="exec Flock_Lookup" />
+      </lookupList>
+    </field>
+    <field fieldName="PlannedQty" multilineEdit="true" displayName="Planned Quantity"/>
+    <field fieldName="ClutchPlannedQty" readOnly="true" displayName="Planned Lay Date Quantity"/>
+    <field fieldName="OrderFlockID" readOnly="true" displayName="Lay Dates" type="link icon queue" ScreenID="OrderFlockClutch" hideWhenNull="true"/>
+    <field fieldName="OrderFlockID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="OrderFlock_Delete" visibleFieldName="OrderFlockID.toString()!" visibleFieldValue="0"/>
+  </section>
+</fieldList>

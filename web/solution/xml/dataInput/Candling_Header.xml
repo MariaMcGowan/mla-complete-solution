@@ -1,0 +1,9 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Candle Out Conversion" mobileLayoutSize="none" columnSpan="6">
+    <field fieldName="DeliveryDate" displayName="Delivery Date" readOnly="true" columnSpan="2"/>
+    <field fieldName="LotNumbers" displayName="Lot Numbers" readOnly="true" columnSpan="2"/>
+    <field fieldName="SetDate" displayName="Set Date" readOnly="true" columnSpan="2"/>
+    <field fieldName="LoadPlanningID" type="htmlfile ~\solution\CustomPages\CandlingHeader_DeliverySummary.html" columnSpan="3" />
+    <field fieldName="LoadPlanningID" type="htmlfile ~\solution\CustomPages\CandlingHeader_BuildingSummary.html" columnSpan="3" />
+  </section>
+</fieldList>

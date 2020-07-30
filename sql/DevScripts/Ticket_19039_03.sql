@@ -1,0 +1,4 @@
+EXEC sp_fkeys 'orig_flock'
+
+alter table LoadPlanning drop constraint FK__LoadPlann__Overf__4D1564AE
+alter table LoadPLanning_Detail drop constraint FK__LoadPLann__Flock__50E5F592

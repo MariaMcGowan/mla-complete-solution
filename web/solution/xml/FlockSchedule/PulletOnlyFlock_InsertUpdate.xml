@@ -1,0 +1,16 @@
+﻿<CargasConnect>
+	<PulletOnlyFlock_InsertUpdate>
+    <PulletFarmPlanID/>
+    <PulletQtyAt16Weeks/>
+    <PlannedHatchDate/>
+    <ActualHatchDate/>
+    <FemaleBreed/>
+    <MaleBreed/>
+    <PlannedMaleOrderQty/>
+    <PulletFacilityID/>
+    <Destination/>
+	</PulletOnlyFlock_InsertUpdate>
+</CargasConnect>
+
+
+

@@ -1,0 +1,18 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="" displayStyle="paging:none" columnSpan="4">
+    <field fieldName="FlockID" multilineEdit="true" displayName="Flock">
+      <lookupList>
+        <source sql="exec Flock_Lookup" />
+      </lookupList>
+    </field>
+    <field fieldName="QuanitytChangeReasonID" multilineEdit="true" displayName="Reason" padding="2">
+      <lookupList>
+        <source sql="exec QuantityChangeReason_Lookup" />
+      </lookupList>
+    </field>
+    <field fieldName="LayDate_Start" displayName="Lay Date Start"/>
+    <field fieldName="LayDate_End" displayName="Lay Date End"/>
+    <field fieldName="ChangeDate_Start" displayName="Change Date Start"/>
+    <field fieldName="ChangeDate_End" displayName="Change Date End"/>
+  </section>
+</fieldList>

@@ -1,0 +1,17 @@
+﻿<fieldList>
+  <section>
+    <field fieldName="linkValue" displayName="Edit" type="link icon edit" ScreenID="ScreenSecurity"/>
+    <field fieldName="MenuType" displayName="Type" readOnly="true"/>
+    <field fieldName="DisplayName" displayName="Name" readOnly="true" type="html"/>
+    <!--<field fieldName="ScreenID" displayName="Screen ID" readOnly="true"/>
+    <field fieldName="MenuID" displayName="Menu ID" readOnly="true"/>
+    <field fieldName="orderby" readOnly="true"/>
+    <field fieldName="level" readOnly="true"/>-->
+    <field fieldName="EffectivePermission" displayName="Effective Permission" readOnly="true"/>
+    <field fieldName="ExplicitPermission" displayName="Explicit Permission">
+      <lookupList>
+        <source sql="EXEC csb.GroupUserSecurityExplicitPermissions" />
+      </lookupList>
+    </field>
+  </section>
+</fieldList>

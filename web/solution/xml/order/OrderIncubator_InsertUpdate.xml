@@ -1,0 +1,16 @@
+<CargasConnect>
+  <OrderIncubator_InsertUpdate>
+    <OrderIncubatorID/>
+    <OrderID/>
+    <IncubatorID/>
+    <PlannedQty/>
+    <ActualQty/>
+    <ProfileNumber/>
+    <StartDate/>
+    <StartTime/>
+    <CandleDate/>
+    <ProgramBy/>
+    <CheckedByPrimary/>
+    <CheckedBySecondary/>
+  </OrderIncubator_InsertUpdate>
+</CargasConnect>

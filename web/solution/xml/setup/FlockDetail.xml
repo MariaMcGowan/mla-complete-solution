@@ -1,0 +1,13 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Setup - Flock" columnSpan="3">
+    <field fieldName="FarmID" multilineEdit="true" displayName="Farm" readOnly="true" padding="2">
+      <lookupList>
+        <source sql="execute Farm_Lookup"></source>
+      </lookupList>
+    </field>
+		<field fieldName="Flock" multilineEdit="true" displayName="Flock"/>
+		<field fieldName="HatchDate" multilineEdit="true" displayName="Hatch Date"/>
+		<field fieldName="IsActive" multilineEdit="true" displayName="Is Active"/>
+		<field fieldName="SortOrder" multilineEdit="true" displayName="Sort Order"/>
+	</section>
+</fieldList>

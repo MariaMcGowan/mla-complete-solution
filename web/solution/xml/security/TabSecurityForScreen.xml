@@ -1,0 +1,13 @@
+<fieldList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://csb2018.cargascloud.com/xmlschemas/csbFormatXML.xsd">
+  <section>
+    <field fieldName="link" ScreenID="ScreenSecurity" type="link icon Edit" hideWhenNull="1" />
+    <field fieldName="displayName" readOnly="true"/>
+    <field fieldName="ResourceName" displayName="Screen ID" readOnly="true"/>
+    <field fieldName="EffectivePermission" displayName="Effective Permission" readOnly="true"/>
+    <field fieldName="ExplicitPermission" displayName="Explicit Permission" multilineEdit="1" readOnly="true">
+      <lookupList>
+        <source sql="select '', '' union select 'No Access', 'No Access' union select 'Read Only', 'Read Only' union select 'Read/Write', 'Read/Write'"/>
+      </lookupList>
+    </field>
+  </section>
+</fieldList>

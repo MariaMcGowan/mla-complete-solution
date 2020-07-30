@@ -1,0 +1,9 @@
+﻿<CargasConnect>
+	<PulletFarmPlan_InsertUpdate>
+		<FarmID/>
+		<Planned24WeekDate/>
+		<PlannedRemovalDate/>
+		<PulletFarmPlanID/>
+		<PulletQtyAt16Weeks/>
+	</PulletFarmPlan_InsertUpdate>
+</CargasConnect>

@@ -1,0 +1,579 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+csi.Framework
+</name>
+</assembly>
+<members>
+<member name="T:csi.Framework.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:csi.Framework.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:csi.Framework.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:csi.Framework.ScreenData.FormToXML.MapToXML(System.Collections.Hashtable)">
+ <summary>
+ Calls the <see cref="M:csi.Framework.ScreenData.FormToXML.MapCollectionToXML(System.Collections.Hashtable)">MapCollectionToXML</see> method.
+ </summary>
+ <param name="_localHash">The hashtable that is passed to the <see cref="M:csi.Framework.ScreenData.FormToXML.MapCollectionToXML(System.Collections.Hashtable)">MapCollectionToXML</see> method.</param>
+ <returns>The XML template with the field values.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.ScreenItem.DisplayName">
+ <summary>
+ Gets or Sets the display name that is used by the screen.  It's usage varies
+ based on the template that is used for the screen.  Examples of its usage:
+    1.	Header Above Fields
+    2.	Screen Header Label
+         -- Applies To: Attach.aspx / listTemplate.aspx
+    3.	Save Button Text | Cancel Button Text
+         -- Applies To: formTemplate.aspx / formListTemplate.aspx / MasterDetail.aspx
+    4.	Image | Save Button Image URL | Cancel Button Image URL
+         -- Applies To: MasterDetail.aspx
+ </summary>
+ <value></value>
+ <returns>The display name that is used by the screen.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.ScreenItem.PageName">
+ <summary>
+ Gets or Sets the resource that is used for the screen.  This is normally a template,
+ but can a stylesheet, javascript file or another resource. Go to the Implementation.docx
+ in the Documentation folder for all examples of resources.
+ </summary>
+ <value></value>
+ <returns>The resource that is used for the screen.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.ScreenData.ScreenReader.Item(System.String,System.String,System.String)">
+ <summary>
+ Gets a screen item based on the screen attribute passed to the method.
+ </summary>
+ <param name="sAttributeValue">The value of the attribute for the screen.</param>
+ <param name="sAttributeName">The name of the attribute for the screen.</param>
+ <param name="UserName">The userName of the current user in the system.</param>
+ <returns>A screen item based on the attribute name and value passed to the method.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.ScreenData.ScreenReader.References(System.String,System.String)">
+ <summary>
+ Calls the <see cref="M:csi.Framework.ScreenData.ScreenReader.GetReferences(System.String,System.String,System.String)">GetReferences</see> method which loads
+ a collection of references.
+ </summary>
+ <param name="screenID">The ID of the screen where the references will be retrieved.</param>
+ <param name="userName">The userName of the current user in the system.</param>
+ <returns>A collection of screen references.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.ScreenData.ScreenReader.References(System.String,System.String,System.String)">
+ <summary>
+ Calls the <see cref="M:csi.Framework.ScreenData.ScreenReader.GetReferences(System.String,System.String,System.String)">GetReferences</see> method which loads
+ a collection of references based on the Screen ID and Type of reference.
+ </summary>
+ <param name="screenID">The ID of the screen where the references will be retrieved.</param>
+ <param name="type">The type of screen reference used as a filter for the collection.</param>
+ <param name="userName">The userName of the current user in the system.</param>
+ <returns>A collection of screen references.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.ScreenData.ScreenReader.RenderHREF(System.String,System.Boolean,System.String,System.String)">
+ <summary>
+ Generates an anchor tags which builds the href attribute based on the screen ID and parameters.
+ </summary>
+ <param name="sScreenID">The ID of the screen used for the link.</param>
+ <param name="bUseLinkByPost">Determines whether the link calls the linkByPost javascript method.</param>
+ <param name="sParams">The parameters in the querystring.</param>
+ <param name="UserName">The userName of the current user in the system.</param>
+ <returns>An anchor tag which either calls the linkByPost method or contains a href of the path for the application.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.ScreenData.ScreenReader.RenderLink(System.String,System.String,System.Boolean,System.Boolean,System.String,System.String)">
+ <summary>
+ Calls the RenderLink method with the specified parameters.
+ </summary>
+ <param name="sScreenID">The ID of the screen used for the link.</param>
+ <param name="sDisplayName">The name that renders between the anchor tags.</param>
+ <param name="bIncludeMouseMenuEvent">Determines whether onmouseover and onmouseout should be added to the link.</param>
+ <param name="bUseLinkByPost">Determines whether the javascript method linkByPost should be used on the link.</param>
+ <param name="sParams">The parameters passed in the querystring of the link.</param>
+ <param name="UserName">The userName of the current user in the system.</param>
+ <returns>The anchor tag with the appropriate HREF attribute.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.ScreenData.ScreenReader.RenderLink(System.String,System.String,System.Boolean,System.Boolean,System.String,System.String,System.String,System.String)">
+ <summary>
+ Renders the anchor tag using the specified parameters.
+ </summary>
+ <param name="sScreenID">The ID of the screen used for the link.</param>
+ <param name="sDisplayName">The name that renders between the anchor tags.</param>
+ <param name="bIncludeMouseMenuEvent">Determines whether onmouseover and onmouseout should be added to the link.</param>
+ <param name="bUseLinkByPost">Determines whether the javascript method linkByPost should be used on the link.</param>
+ <param name="sParams">The parameters passed in the querystring of the link.</param>
+ <param name="sTarget">The target attribute of the anchor (_blank, _self, _parent, _top)</param>
+ <param name="UserName">The userName of the current user in the system.</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.AutoPostBack">
+ <summary>
+ Gets or Sets whether a control should automatically postback.
+ </summary>
+ <value></value>
+ <returns>True or False based on whether a control should automatically postback.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.ClassName">
+ <summary>
+ Gets or Sets the CSS class for the field.
+ </summary>
+ <value></value>
+ <returns>The CSS class for the field.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.ColumnSpan">
+ <summary>
+ Gets or Sets the number of columns the current field spans.
+ </summary>
+ <value></value>
+ <returns>The number of columns the current field spans.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.CustomErrorMessage">
+ <summary>
+ Gets or Sets the error message that appears upon validation for the field.
+ </summary>
+ <value></value>
+ <returns>The error message that appears upon field validation.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.CustomValidateFunction">
+ <summary>
+ Gets or Sets the javascript method that should be used for validation of the control.
+ </summary>
+ <value></value>
+ <returns>The javascript method that is used for validation of the control.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.DisplayName">
+ <summary>
+ Gets or Sets the text of the label or grid column for the field.
+ </summary>
+ <value></value>
+ <returns>The text of the label or grid column for the field.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.DisplayStyle">
+ <summary>
+ Gets or Sets the display style of a control.
+ </summary>
+ <value></value>
+ <returns>The display style of a control.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.DoNotAutoLink">
+ <summary>
+ Gets or Sets whether the field should render a link if the screen is mapped
+ to a field in global.
+ </summary>
+ <value></value>
+ <returns>True or False based on whether the field should render as a link.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.FieldID">
+ <summary>
+ Gets or Sets the globally unique identifier (GUID) that creates
+ and identity for each field.
+ </summary>
+ <value></value>
+ <returns>The GUID for the field.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.FieldName">
+ <summary>
+ Gets or Sets the field name from the data set which will be used to
+ populate and save the information to and from the field.
+ </summary>
+ <value></value>
+ <returns>The field name from the data set.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.Height">
+ <summary>
+ Gets or Sets the height of the control in pixels.
+ </summary>
+ <value></value>
+ <returns>The height of the control in pixels.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.SetInitialFocus">
+ <summary>
+ Gets or Sets whether the control has focus on load.
+ </summary>
+ <value></value>
+ <returns>True or False based on whether the control has focus on load.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.TabIndex">
+ <summary>
+ Gets or Sets the order in which the field should be reached 
+ when the tab key is pressed.
+ </summary>
+ <value></value>
+ <returns>The order in which the field should be reached when the tab key is pressed.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.Target">
+ <summary>
+ Gets or Sets the name of the window where the linked screen should open.  Providing
+ a value causes the link to open in a new window.
+ </summary>
+ <value></value>
+ <returns>The name of the window where the linked screen should open.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.TextColumns">
+ <summary>
+ Gets or Sets the width of an editable alpha-numeric field.
+ </summary>
+ <value></value>
+ <returns>The width of an editable alpha-numeric field.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.TextRows">
+ <summary>
+ Gets or Sets the height of an editable alpha-numeric field.
+ </summary>
+ <value></value>
+ <returns>The height of an editable alpha-numeric field.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.ToolTip">
+ <summary>
+ Gets or Sets the text to be displayed when the cursor is hovered over
+ the field.  Use fieldname [FieldName] to have a data driven tooltip
+ from a data set.
+ </summary>
+ <value></value>
+ <returns>The text of the tooltip that is displayed when the cursor is hovered over a field.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:csi.Framework.ScreenData.UIFieldProperty.Width">
+ <summary>
+ Gets or Sets the width of a control in pixels.
+ </summary>
+ <value></value>
+ <returns>The width of a control in pixels.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.ScreenData.UIFieldProperty.#ctor(System.Collections.Generic.IList{System.Xml.XmlNode})">
+ <summary>
+ Initializes a new instance of the <see cref="T:csi.Framework.ScreenData.UIFieldProperty" /> class.
+ Calls the <see cref="M:csi.Framework.ScreenData.UIFieldProperty.getValues(System.Collections.Generic.IList{System.Xml.XmlNode})">GetValues</see> method.
+ </summary>
+ <param name="fieldNodes">The collection of nodes to be processed.</param>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.ScreenData.UIFieldProperty.getValues(System.Collections.Generic.IList{System.Xml.XmlNode})">
+ <summary>
+ Sets all of the properties based on the XML attributes from the node collection.
+ </summary>
+ <param name="alNodes">The collection of nodes to be processed.</param>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.AddUpdateUserAndAssignToGroup(System.String,System.String,System.String,System.String)">
+ <summary>
+ Adds or updates a user and assigns the user to a group.
+ </summary>
+ <param name="name">The name of the user.</param>
+ <param name="groupName">The name of the group that the user should be assigned.</param>
+ <param name="previousName">The previous name of the user if the name is being updated.</param>
+ <param name="UseServerDomain">Whether the server domain should be in front of the user.</param>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.DeleteGroupUser(System.String)">
+ <summary>
+ Deletes a GroupUser based on the ID.
+ </summary>
+ <param name="ID">The ID of the GroupUser.</param>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.DeleteGroupUserMember(System.String,System.String)">
+ <summary>
+ Deletes a member of a GroupUser based on the ID and ParentID.
+ </summary>
+ <param name="ID">The ID of the member in a GroupUser.</param>
+ <param name="ParentID">The ID of the GroupUser from which the member is being removed.</param>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetEffectivePermissionForSQL(System.String,System.String)">
+ <summary>
+ Gets the effective permission from the SQL passed to the method.
+ </summary>
+ <param name="SQL">The SQL where the resource information lives.</param>
+ <param name="UserName">The username of the current user in the system.</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetFieldsForScreenGroupUser(System.String,System.String)">
+ <summary>
+ Gets all of the fields based on the Screen and GroupUser.
+ </summary>
+ <param name="ScreenID">The ID of the screen where the fields exist.</param>
+ <param name="GroupUserID">The ID of the GroupUser.</param>
+ <returns>A data set of fields based on the screen and group user.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetGroupIDByName(System.String)">
+ <summary>
+ Gets the ID of a UserGroup based on the name.
+ </summary>
+ <param name="name">The name of the UserGroup.</param>
+ <returns>A data set of UserGroup information.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetGroupUser(System.String)">
+ <summary>
+ Get an instance of a GroupUser based on the ID.
+ </summary>
+ <param name="ID">The ID of the GroupUser.</param>
+ <returns>A data set of GroupUser information.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetMemberOfList(System.String,System.String)">
+ <summary>
+ Gets a member based on the ID of the GroupUser.
+ </summary>
+ <param name="ID">The ID of the GroupUser.</param>
+ <param name="IncludeNew">Adds a blank record to the data set if this field is True.</param>
+ <returns>A data set of Member information.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetMembersList(System.String,System.String)">
+ <summary>
+ Gets a list of members based on the ID of the GroupUser.
+ </summary>
+ <param name="ID">The ID of the GroupUser.</param>
+ <param name="IncludeNew">Adds a blank record to the data set if this field is True.</param>
+ <returns>A data set of members based on the GroupUser.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetOtherSecurablesForScreenGroupUser(System.String,System.String)">
+ <summary>
+ Gets other security information for a screen based on the GroupUser.
+ </summary>
+ <param name="ScreenID">The ID of the screen.</param>
+ <param name="GroupUserID">The ID of the GroupUser.</param>
+ <returns>A data set of security information for a screen.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetPermissionsListForResource(System.String,System.String)">
+ <summary>
+ Gets a list of permissions for the a resource.
+ </summary>
+ <param name="ResourceName">The name of the resource.</param>
+ <param name="ResourceType">The type of the resource.</param>
+ <returns>A data set of permissions for the resource.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetPermissionsForResourceGroupUser(System.String,System.String,System.String)">
+ <summary>
+ Get the permissions for a resource based on the GroupUser.
+ </summary>
+ <param name="ResourceName">The name of the resource.</param>
+ <param name="ResourceType">The type of the resource.</param>
+ <param name="GroupUserID">The ID of the GroupUser.</param>
+ <returns>A data set of the permissions for a resource.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetPermissionsListForMenuAndScreen(System.String,System.String)">
+ <summary>
+ Gets the list of permissions for a Menu and Screen.
+ </summary>
+ <param name="MenuID">The ID of the Menu.</param>
+ <param name="ScreenID">The ID of the Screen.</param>
+ <returns>A data set of the permissions for a menu and screen.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetPermittedRowsForSQL(System.String,System.String)">
+ <summary>
+ Get the allowed rows for the SQL.
+ </summary>
+ <param name="SQL">The SQL which is being validated.</param>
+ <param name="UserName">The username of the current user in the system.</param>
+ <returns>A data set of permitted rows.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetSecurityResource(System.String,System.String)">
+ <summary>
+ Gets the security for the resource specified.
+ </summary>
+ <param name="ResourceName">The name of the resource.</param>
+ <param name="ResourceType">The type of the resource.</param>
+ <returns>A data set of security for the resource.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetSecurityResourceForMenuAndScreen(System.String,System.String)">
+ <summary>
+ Gets the security resource for the menu and screen.
+ </summary>
+ <param name="MenuID">The ID of the Menu.</param>
+ <param name="ScreenID">The ID of the Screen.</param>
+ <returns>A data set of security for a resource.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetSecurityTreeView">
+ <summary>
+ Gets security for a treeview.
+ </summary>
+ <returns>A data set of the security for treeview.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetSecurityTreeViewNoUsersNoQuery">
+ <summary>
+ Gets security for a treeview.
+ </summary>
+ <returns>A data set of the security for treeview.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetSQLResultWithUserGUID(System.String,System.String)">
+ <summary>
+ Gets the SQL result with the user GUID.
+ </summary>
+ <param name="SQL">The SQL that is being executed.</param>
+ <param name="ReturnUserGroup">The return UserGroup.</param>
+ <returns>The data set of items based on the SQL to be executed.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetTabsForScreenGroupUser(System.String,System.String)">
+ <summary>
+ Gets the tabs from the detail references based on the Screen and GroupUser.
+ </summary>
+ <param name="ScreenID">The ID of the screen.</param>
+ <param name="GroupUserID">The ID of the GroupUser.</param>
+ <returns>A data set of the tabs based on the Screen and GroupUser.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetTabsForScreen(System.String)">
+ <summary>
+ Gets the tabs from the detail references based on the Screen .
+ </summary>
+ <param name="ScreenID">The ID of the screen.</param>
+ <returns>A data set of the tabs based on the Screen.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetUserAndGroupList(System.String)">
+ <summary>
+ Gets a collection of GroupUsers.
+ </summary>
+ <param name="IncludeNew">Adds a blank record to the data set.</param>
+ <returns>A data set of the GroupUsers.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetUserAndGroupLookupList(System.String,System.String)">
+ <summary>
+ Gets a collection of users or groups based on the type.
+ </summary>
+ <param name="type">The user or group or everything.</param>
+ <param name="IncludeBlank">Adds a blank record to the data set.</param>
+ <returns>A collection of users or groups.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.GetUserAndGroupLookupListCustom(System.String,System.String)">
+ <summary>
+ Does the same as GetUserAndGroupLookupList but is only used for TekTrak application.
+ </summary>
+ <param name="type">The user or group or everything.</param>
+ <param name="IncludeBlank">Adds a blank record to the data set.</param>
+ <returns>A collection of users or groups.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.UpdateFieldAndSetPermission(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ Updates the field and sets permissions.
+ </summary>
+ <param name="ResourceName">The name of the resource.</param>
+ <param name="ResourceType">The type of the resource.</param>
+ <param name="ResourceID">The ID of the resource.</param>
+ <param name="GroupUserID">The ID of the GroupUser.</param>
+ <param name="ExplicitPermission">The explicit permission.</param>
+ <param name="DefaultPermission">The default permission.</param>
+ <param name="fieldGroup">The field group being used.</param>
+ <param name="formatXML">The Format XML.</param>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.UpdateGroupUser(System.String,System.String,System.String)">
+ <summary>
+ Updates an instance of the GroupUser.
+ </summary>
+ <param name="Name">The name of the GroupUser.</param>
+ <param name="Type">The type of the GroupUser.</param>
+ <param name="ID">The ID of the GroupUser.</param>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.UpdateGroupUserMember(System.String,System.String)">
+ <summary>
+ Updates an instance of the member of a GroupUser.
+ </summary>
+ <param name="ID">The ID of the member.</param>
+ <param name="ParentID">The ID of the GroupUser.</param>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.UpdateResource(System.String,System.String,System.String,System.String)">
+ <summary>
+ Updates an instance of the resource.
+ </summary>
+ <param name="ResourceName">The name of the resource.</param>
+ <param name="ResourceType">The type of the resource.</param>
+ <param name="ResourceID">The ID of the resource.</param>
+ <param name="DefaultPermission">The default permission for the resource.</param>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.UpdateResourceAndSetPermission(System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ Updates an instance of the resource and sets the permission.
+ </summary>
+ <param name="ResourceName">The name of the resource.</param>
+ <param name="ResourceType">The type of the resource.</param>
+ <param name="ResourceID">The ID of the resource.</param>
+ <param name="GroupUserID">The ID of the GroupUser.</param>
+ <param name="ExplicitPermission">The explicit permission for the resource.</param>
+ <param name="DefaultPermission">The default permission for the resource.</param>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.UpdateScreenAndMenuResources(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ Updates the screen and menu resources.
+ </summary>
+ <param name="ScreenID">The ID of the Screen.</param>
+ <param name="MenuID">The ID of the Menu.</param>
+ <param name="ScreenResourceID">The ID of the ScreenResource.</param>
+ <param name="MenuResourceID">The ID of the MenuResource.</param>
+ <param name="DefaultPermission">The default permissions for the screen and menu resource.</param>
+ <remarks></remarks>
+</member>
+<member name="M:csi.Framework.Security.SecurityDataProvider.UpdateScreenAndMenuResourcesAndSetPermission(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ Updates the screen/menu resources and sets permissions.
+ </summary>
+ <param name="ScreenID">The ID of the Screen.</param>
+ <param name="MenuID">The ID of the Menu.</param>
+ <param name="ScreenResourceID">The ID of the ScreenResource.</param>
+ <param name="MenuResourceID">The ID of the MenuResource.</param>
+ <param name="GroupUserID">The ID of the GroupUser.</param>
+ <param name="ExplicitPermission">The explicit permission for the resource.</param>
+ <param name="DefaultPermission">The default permission for the resource.</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

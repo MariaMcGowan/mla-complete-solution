@@ -1,0 +1,31 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Pullet - Move,Wash,Litter,Fog" displayStyle="paging:100">
+		<field fieldName="FlockNumber" displayName="Flock Code" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width85" readOnly="true"/>
+		<field fieldName="PulletFacility" displayName="Pullet Facility" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width150"  readOnly="true"/>
+		<field fieldName="FemaleBreed" displayName="Female&lt;br/&gt;Breed" className="{{thisRecord.FarmColor}}  shrinkFontSize_95 min_width50"  readOnly="true"/>
+		<field fieldName="MaleBreed" displayName="Male&lt;br/&gt;Breed" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width50"  readOnly="true"/>
+		<field fieldName="Current_PlannedHatchDate" displayName="Planned&lt;br/&gt;Hatch Date" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width75"  readOnly="true"/>
+		<field fieldName="Current_ActualHatchDate" displayName="Actual&lt;br/&gt;Hatch Date" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width75"  readOnly="true"/>
+		<field fieldName="PlannedFemalesAt16Weeks" format="numeric 0" displayName="Planned&lt;br/&gt;Female Count&lt;br/&gt;at 16 Weeks" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width75"  readOnly="true"/>
+		<field fieldName="PlannedMaleQtyAt16Weeks" format="numeric 0" displayName="Planned&lt;br/&gt;Male Count&lt;br/&gt;at 16 Weeks" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width75" />
+		
+		
+		<field fieldName="Actual16WeekDate" displayName="Actual 16&lt;br/&gt;Week Date" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width100"  readOnly="true"/>
+		
+		<field fieldName="PulletFacility_RemoveDate" displayName="Move From&lt;br/&gt;Pullet Facility&lt;br/&gt;To Production" className="{{thisRecord.InputColor}} {{thisRecord.DynamicFormattingForRemovalDate}}  shrinkFontSize_95 min_width75" />
+		<field fieldName="PulletFacility_RemovalDateConfirmed" displayName="" format="bit" className="smallCheckbox"/>
+		<field fieldName="PulletFacility_MoveDayCount" displayName="1 or 2&lt;br/&gt;Day&lt;br/&gt;Move" className="{{thisRecord.InputColor}} shrinkFontSize_95 min_width35" />
+		<field fieldName="PulletMover" displayName="Pullet&lt;br/&gt;Mover" className="{{thisRecord.InputColor}}  shrinkFontSize_95 min_width50" />
+		<field fieldName="PulletFacility_WashDownDate" displayName="Washdown&lt;br/&gt;Date" className="{{thisRecord.InputColor}} shrinkFontSize_95 min_width100" />
+		<field fieldName="PulletFacility_WashDownDateConfirmed" displayName="" format="bit" className="smallCheckbox"/>
+		<field fieldName="PulletFacility_LitterDate" displayName="Litter&lt;br/&gt;Date" className="{{thisRecord.InputColor}} shrinkFontSize_95 min_width75" />
+		<field fieldName="PulletFacility_LitterDateConfirmed" displayName="" format="bit" className="smallCheckbox"/>
+		<field fieldName="PulletFacility_FumigationDate" displayName="Fumigation&lt;br/&gt;Date" className="{{thisRecord.InputColor}} shrinkFontSize_95 min_width75" />
+		<field fieldName="PulletFacility_FumigationDateConfirmed" displayName="" format="bit" className="smallCheckbox"/>
+		<field fieldName="PulletFacility_WashDownContractor" displayName="Washdown&lt;br/&gt;Contractor" className="{{thisRecord.InputColor}} shrinkFontSize_95 min_width50" />
+		<field fieldName="Next_ActualHatchDate" displayName="Actual&lt;br/&gt;Hatch Date&lt;br/&gt;For Next Flock" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width75"  readOnly="true"/>
+		<field fieldName="DaysBetweenFlocks" format="numeric 0" displayName="Days Empty&lt;br/&gt;Between Flocks" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width50"  readOnly="true" />
+		<field fieldName="FarmNumber"  className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width50"  readOnly="true" displayName="Farm"/>
+		<field fieldName="PulletFarmPlanID" displayName="Comments" type="htmlfile ~\solution\CustomPages\FlockComments_PulletSchedule.html"/>		
+	</section>
+</fieldList>

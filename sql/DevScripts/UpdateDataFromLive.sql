@@ -1,0 +1,296 @@
+------ Farm
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Farm ON 
+--INSERT into MLA_Phase2Dev.dbo.Farm (FarmID, Farm, PrimaryContactID, SecondaryContactID, Address1, Address2, City, State, Zip, SortOrder, IsActive, FarmNumber, MapleLawnFarm, MLA_MainProperty, MLA_ContractFarm, BirdsOwnedBy)
+--select FarmID, Farm, PrimaryContactID, SecondaryContactID, Address1, Address2, City, State, Zip, SortOrder, IsActive, FarmNumber, MapleLawnFarm, MLA_MainProperty, MLA_ContractFarm, BirdsOwnedBy
+--from MLA.dbo.Farm a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.Farm where FarmID = a.FarmID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Farm OFF
+------
+
+---- Flock
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Flock ON 
+--INSERT into MLA_Phase2Dev.dbo.Flock (FlockID, Flock, FarmID, HatchDate, AvgWeeklyEggOutput, AvgWeeklyEggReject, Notes, SortOrder, IsActive, Date_Activate, Date_Deactivate)
+--select FlockID, Flock, FarmID, HatchDate, AvgWeeklyEggOutput, AvgWeeklyEggReject, Notes, SortOrder, IsActive, Date_Activate, Date_Deactivate
+--from MLA.dbo.Flock a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.Flock where FlockID = a.FlockID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Flock OFF
+----
+---- Clutch
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Clutch ON 
+--INSERT into MLA_Phase2Dev.dbo.Clutch (ClutchID, Clutch, FlockID, LayDate, RackCnt, CaseCnt, PlannedQty, ActualQty, CalculatedQty, WgtPerDozen, ReasoningForPlannedQty, SortOrder, IsActive)
+--select ClutchID, Clutch, FlockID, LayDate, RackCnt, CaseCnt, PlannedQty, ActualQty, CalculatedQty, WgtPerDozen, ReasoningForPlannedQty, SortOrder, IsActive
+--from MLA.dbo.Clutch a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.Clutch where ClutchID = a.ClutchID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Clutch OFF
+----
+------ OrderStatus
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderStatus ON 
+--INSERT into MLA_Phase2Dev.dbo.OrderStatus (OrderStatusID, OrderStatus, SortOrder, IsActive)
+--select OrderStatusID, OrderStatus, SortOrder, IsActive
+--from MLA.dbo.OrderStatus a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.OrderStatus where OrderStatusID = a.OrderStatusID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderStatus OFF
+------
+------ QuantityChangeReason
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.QuantityChangeReason ON 
+--INSERT into MLA_Phase2Dev.dbo.QuantityChangeReason (QuantityChangeReasonID, QuantityChangeReason, Notes, SortOrder, IsActive, UserChoice)
+--select QuantityChangeReasonID, QuantityChangeReason, Notes, SortOrder, IsActive, UserChoice
+--from MLA.dbo.QuantityChangeReason a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.QuantityChangeReason where QuantityChangeReasonID = a.QuantityChangeReasonID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.QuantityChangeReason OFF
+------
+------ TransactionType
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.TransactionType ON 
+--INSERT into MLA_Phase2Dev.dbo.TransactionType (TransactionTypeID, TransactionType, TransactionTableName, Notes, SortOrder, IsActive)
+--select TransactionTypeID, TransactionType, TransactionTableName, Notes, SortOrder, IsActive
+--from MLA.dbo.TransactionType a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.TransactionType where TransactionTypeID = a.TransactionTypeID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.TransactionType OFF
+------
+------ TransactionTypeQuantityChangeReason
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.TransactionTypeQuantityChangeReason ON 
+--INSERT into MLA_Phase2Dev.dbo.TransactionTypeQuantityChangeReason (TransactionTypeQuantityChangeReasonID, TransactionTypeID, QuantityChangeReasonID, Notes, SortOrder, IsActive)
+--select TransactionTypeQuantityChangeReasonID, TransactionTypeID, QuantityChangeReasonID, Notes, SortOrder, IsActive
+--from MLA.dbo.TransactionTypeQuantityChangeReason a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.TransactionTypeQuantityChangeReason where TransactionTypeQuantityChangeReasonID = a.TransactionTypeQuantityChangeReasonID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.TransactionTypeQuantityChangeReason OFF
+------
+------ Truck
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Truck ON 
+--INSERT into MLA_Phase2Dev.dbo.Truck (TruckID, Truck, SortOrder, IsActive)
+--select TruckID, Truck, SortOrder, IsActive
+--from MLA.dbo.Truck a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.Truck where TruckID = a.TruckID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Truck OFF
+------
+------ ContactType
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.ContactType ON 
+--INSERT into MLA_Phase2Dev.dbo.ContactType (ContactTypeID, ContactType, SortOrder, IsActive, IsRequired)
+--select ContactTypeID, ContactType, SortOrder, IsActive, IsRequired
+--from MLA.dbo.ContactType a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.ContactType where ContactTypeID = a.ContactTypeID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.ContactType OFF
+------
+------ Contact
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Contact ON 
+--INSERT into MLA_Phase2Dev.dbo.Contact (ContactID, Contact, FirstName, LastName, Email, OfficePhone, MobilePhone, FaxNumber, PrimaryMethodOfContact, Notes, SortOrder, IsActive, ContactTypeID, HomePhone)
+--select ContactID, Contact, FirstName, LastName, Email, OfficePhone, MobilePhone, FaxNumber, PrimaryMethodOfContact, Notes, SortOrder, IsActive, ContactTypeID, HomePhone
+--from MLA.dbo.Contact a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.Contact where ContactID = a.ContactID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Contact OFF
+------
+------ Cooler
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Cooler ON 
+--INSERT into MLA_Phase2Dev.dbo.Cooler (CoolerID, Cooler, CartCapacity, Notes, SortOrder, IsActive)
+--select CoolerID, Cooler, CartCapacity, Notes, SortOrder, IsActive
+--from MLA.dbo.Cooler a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.Cooler where CoolerID = a.CoolerID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Cooler OFF
+------
+------ CoolerClutch
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.CoolerClutch ON 
+--INSERT into MLA_Phase2Dev.dbo.CoolerClutch (CoolerClutchID, CoolerID, ClutchID, PlannedQty, ActualQty, InitialQty)
+--select CoolerClutchID, CoolerID, ClutchID, PlannedQty, ActualQty, InitialQty
+--from MLA.dbo.CoolerClutch a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.CoolerClutch where CoolerClutchID = a.CoolerClutchID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.CoolerClutch OFF
+----
+------ Destination
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Destination ON 
+--INSERT into MLA_Phase2Dev.dbo.Destination (DestinationID, Destination, PrimaryContactID, SecondaryContactID, Notes, SortOrder, IsActive)
+--select DestinationID, Destination, PrimaryContactID, SecondaryContactID, Notes, SortOrder, IsActive
+--from MLA.dbo.Destination a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.Destination where DestinationID = a.DestinationID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Destination OFF
+------
+---- DestinationBuilding
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.DestinationBuilding ON 
+--INSERT into MLA_Phase2Dev.dbo.DestinationBuilding (DestinationBuildingID, DestinationBuilding, DestinationID, Notes, SortOrder, IsActive, Address1, Address2, City, State, Zip, InvoiceContactInfo, DefaultContractTypeID)
+--select DestinationBuildingID, DestinationBuilding, DestinationID, Notes, SortOrder, IsActive, Address1, Address2, City, State, Zip, InvoiceContactInfo, 1
+--from MLA.dbo.DestinationBuilding a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.DestinationBuilding where DestinationBuildingID = a.DestinationBuildingID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.DestinationBuilding OFF
+------
+------ Invoice
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Invoice ON 
+--INSERT into MLA_Phase2Dev.dbo.Invoice (InvoiceID, InvoiceNbr, InvoiceDate, CreatedDate, DueDate, EggsDelivered, UnitPrice, InvoiceAmount, DeliveryCharge, Printed, Uploaded, Cancelled, Paid, IsActive, EggsInvoiced, ChargeForEggsInvoiced, Notes, AccumulatedEggCount)
+--select InvoiceID, InvoiceNbr, InvoiceDate, CreatedDate, DueDate, EggsDelivered, UnitPrice, InvoiceAmount, DeliveryCharge, Printed, Uploaded, Cancelled, Paid, IsActive, EggsInvoiced, ChargeForEggsInvoiced, Notes, AccumulatedEggCount
+--from MLA.dbo.Invoice a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.Invoice where InvoiceID = a.InvoiceID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Invoice OFF
+------
+
+---- LoadPlanning
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.LoadPlanning ON 
+--INSERT into MLA_Phase2Dev.dbo.LoadPlanning (LoadPlanningID, DeliveryDate, OverflowFlockID, PercentCushion, TargetQty, OrderIncubatorID1, OrderIncubatorID2, OrderIncubatorID3, OrderIncubatorID4, OrderIncubatorID5, OrderIncubatorID6, OrderIncubatorID7, OrderIncubatorID8, SetDate)
+--select LoadPlanningID, DeliveryDate, OverflowFlockID, PercentCushion, TargetQty, OrderIncubatorID1, OrderIncubatorID2, OrderIncubatorID3, OrderIncubatorID4, OrderIncubatorID5, OrderIncubatorID6, OrderIncubatorID7, OrderIncubatorID8, dateadd(day,-12, DeliveryDate)
+--from MLA.dbo.LoadPlanning a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.LoadPlanning where LoadPlanningID = a.LoadPlanningID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.LoadPlanning OFF
+----
+---- LoadPlanning_Detail
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.LoadPlanning_Detail ON 
+--INSERT into MLA_Phase2Dev.dbo.LoadPlanning_Detail (LoadPlanning_DetailID, LoadPlanningID, FlockID, FlockQty, LastCandleoutPercent, weightPreConversion, candlingSortOrder)
+--select LoadPlanning_DetailID, LoadPlanningID, FlockID, FlockQty, LastCandleoutPercent, weightPreConversion, candlingSortOrder
+--from MLA.dbo.LoadPlanning_Detail a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.LoadPlanning_Detail where LoadPlanning_DetailID = a.LoadPlanning_DetailID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.LoadPlanning_Detail OFF
+----
+------ Order
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.[Order] ON 
+--INSERT into MLA_Phase2Dev.dbo.[Order] (OrderID, OrderNbr, CustomerReferenceNbr, CreationDate, DeliveryDate, DestinationID, OrderStatusID, PlannedSetDate, DestinationBuildingID, PlannedQty, OrderQty, LotNbr, LoadPlanningID, CustomIncubation, ContractTypeID, DeliverySpecComments)
+--select OrderID, OrderNbr, CustomerReferenceNbr, CreationDate, a.DeliveryDate, DestinationID, OrderStatusID, PlannedSetDate, DestinationBuildingID, PlannedQty, OrderQty, LotNbr, LoadPlanningID, 
+--CustomIncubation = 
+--case
+--	when datediff(day, PlannedSetDate, a.DeliveryDate) <> 12 then 1
+--	else 0
+--end, 1, null
+--from MLA.dbo.[Order] a  
+--left outer join MLA.dbo.LoadPlanning lp on a.DeliveryDate = lp.DeliveryDate 
+--where not exists (select 1 from MLA_Phase2Dev.dbo.[Order] where OrderID = a.OrderID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.[Order] OFF
+------
+
+---- OrderFlock
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderFlock ON 
+--INSERT into MLA_Phase2Dev.dbo.OrderFlock (OrderFlockID, OrderID, FlockID, PlannedQty, ActualQty, WgtPreConversion)
+--select OrderFlockID, OrderID, FlockID, PlannedQty, ActualQty, WgtPreConversion
+--from MLA.dbo.OrderFlock a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.OrderFlock where OrderFlockID = a.OrderFlockID) 
+--and a.OrderID > 0
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderFlock OFF
+----
+
+
+------ OrderFlockClutch
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderFlockClutch ON 
+--INSERT into MLA_Phase2Dev.dbo.OrderFlockClutch (OrderFlockClutchID, OrderFlockID, ClutchID, PlannedQty, ActualQty)
+--select OrderFlockClutchID, OrderFlockID, ClutchID, PlannedQty, ActualQty
+--from MLA.dbo.OrderFlockClutch a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.OrderFlockClutch where OrderFlockClutchID = a.OrderFlockClutchID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderFlockClutch OFF
+------
+------ OrderClutchCooler
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderClutchCooler ON 
+--INSERT into MLA_Phase2Dev.dbo.OrderClutchCooler (OrderClutchCoolerID, OrderFlockClutchID, CoolerID, PlannedQty, ActualQty, DateTimeDelivered, DateTimeMovedToIncubator)
+--select OrderClutchCoolerID, OrderFlockClutchID, CoolerID, PlannedQty, ActualQty, DateTimeDelivered, DateTimeMovedToIncubator
+--from MLA.dbo.OrderClutchCooler a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.OrderClutchCooler where OrderClutchCoolerID = a.OrderClutchCoolerID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderClutchCooler OFF
+------
+------ Incubator
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Incubator ON 
+--INSERT into MLA_Phase2Dev.dbo.Incubator (IncubatorID, Incubator, CartCapacity, Notes, SortOrder, IsActive, TopLeftLocationNbr, Row_Count, Column_Count)
+--select IncubatorID, Incubator, CartCapacity, Notes, SortOrder, IsActive, TopLeftLocationNbr, Row_Count, Column_Count
+--from MLA.dbo.Incubator a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.Incubator where IncubatorID = a.IncubatorID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Incubator OFF
+------
+
+------ OrderIncubator
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderIncubator ON 
+--INSERT into MLA_Phase2Dev.dbo.OrderIncubator (OrderIncubatorID, OrderID, IncubatorID, PlannedQty, ActualQty, ProfileNumber, StartDateTime, ProgramBy, CheckedByPrimary, CheckedBySecondary, SetDate, CandleDate)
+--select OrderIncubatorID, OrderID, IncubatorID, PlannedQty, ActualQty, ProfileNumber, StartDateTime, ProgramBy, CheckedByPrimary, CheckedBySecondary, SetDate, CandleDate
+--from MLA.dbo.OrderIncubator a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.OrderIncubator where OrderIncubatorID = a.OrderIncubatorID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderIncubator OFF
+------
+
+------ IncubatorCart
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.IncubatorCart ON 
+--INSERT into MLA_Phase2Dev.dbo.IncubatorCart (IncubatorCartID, IncubatorCart, SortOrder, IsActive, CartNumber, IncubatorLocationNumber, CoolerID, IncubatorID, LoadDateTime)
+--select IncubatorCartID, IncubatorCart, SortOrder, IsActive, CartNumber, IncubatorLocationNumber, CoolerID, IncubatorID, LoadDateTime
+--from MLA.dbo.IncubatorCart a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.IncubatorCart where IncubatorCartID = a.IncubatorCartID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.IncubatorCart OFF
+------
+
+------ OrderIncubatorCart
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderIncubatorCart ON 
+--INSERT into MLA_Phase2Dev.dbo.OrderIncubatorCart (OrderIncubatorCartID, OrderIncubatorID, IncubatorCartID, PlannedQty, ActualQty, ClutchID)
+--select OrderIncubatorCartID, OrderIncubatorID, IncubatorCartID, PlannedQty, ActualQty, ClutchID
+--from MLA.dbo.OrderIncubatorCart a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.OrderIncubatorCart where OrderIncubatorCartID = a.OrderIncubatorCartID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderIncubatorCart OFF
+------
+------ OrderIncubatorEggsSetBy
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderIncubatorEggsSetBy ON 
+--INSERT into MLA_Phase2Dev.dbo.OrderIncubatorEggsSetBy (OrderIncubatorEggsSetByID, OrderIncubatorID, ContactID)
+--select OrderIncubatorEggsSetByID, OrderIncubatorID, ContactID
+--from MLA.dbo.OrderIncubatorEggsSetBy a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.OrderIncubatorEggsSetBy where OrderIncubatorEggsSetByID = a.OrderIncubatorEggsSetByID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderIncubatorEggsSetBy OFF
+------
+------ OrderInvoice
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderInvoice ON 
+--INSERT into MLA_Phase2Dev.dbo.OrderInvoice (OrderInvoiceID, OrderID, InvoiceID)
+--select OrderInvoiceID, OrderID, InvoiceID
+--from MLA.dbo.OrderInvoice a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.OrderInvoice where OrderInvoiceID = a.OrderInvoiceID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderInvoice OFF
+------
+------ HoldingIncubator
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.HoldingIncubator ON 
+--INSERT into MLA_Phase2Dev.dbo.HoldingIncubator (HoldingIncubatorID, HoldingIncubator, CartCapacity, Notes, SortOrder, IsActive, TopLeftLocationNbr)
+--select HoldingIncubatorID, HoldingIncubator, CartCapacity, Notes, SortOrder, IsActive, TopLeftLocationNbr
+--from MLA.dbo.HoldingIncubator a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.HoldingIncubator where HoldingIncubatorID = a.HoldingIncubatorID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.HoldingIncubator OFF
+------
+
+---- Delivery
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Delivery ON 
+--INSERT into MLA_Phase2Dev.dbo.Delivery (DeliveryID, DeliveryDescription, PlannedQty, ActualQty, TruckID, TimeOfDelivery, DriverID, InvoiceID, HoldingIncubatorID, HoldingIncubatorNotes)
+--select DeliveryID, DeliveryDescription, PlannedQty, ActualQty, TruckID, TimeOfDelivery, DriverID, InvoiceID, HoldingIncubatorID, HoldingIncubatorNotes
+--from MLA.dbo.Delivery a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.Delivery where DeliveryID = a.DeliveryID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.Delivery OFF
+------
+
+
+------ OrderDelivery
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderDelivery ON 
+--INSERT into MLA_Phase2Dev.dbo.OrderDelivery (OrderDeliveryID, OrderID, DeliveryID, DeliverySlip)
+--select OrderDeliveryID, OrderID, DeliveryID, DeliverySlip
+--from MLA.dbo.OrderDelivery a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.OrderDelivery where OrderDeliveryID = a.OrderDeliveryID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.OrderDelivery OFF
+------
+
+
+
+------ DeliveryCart
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.DeliveryCart ON 
+--INSERT into MLA_Phase2Dev.dbo.DeliveryCart (DeliveryCartID, DeliveryCart, SortOrder, IsActive, CartNumber, IncubatorLocationNumber, CoolerID, LoadDateTime, DeliveryID, OrderID)
+--select DeliveryCartID, DeliveryCart, SortOrder, IsActive, CartNumber, IncubatorLocationNumber, CoolerID, LoadDateTime, DeliveryID, OrderID
+--from MLA.dbo.DeliveryCart a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.DeliveryCart where DeliveryCartID = a.DeliveryCartID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.DeliveryCart OFF
+------
+------ DeliveryCartFlock
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.DeliveryCartFlock ON 
+--INSERT into MLA_Phase2Dev.dbo.DeliveryCartFlock (DeliveryCartFlockID, DeliveryCartID, PlannedQty, ActualQty, FlockID)
+--select DeliveryCartFlockID, DeliveryCartID, PlannedQty, ActualQty, FlockID
+--from MLA.dbo.DeliveryCartFlock a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.DeliveryCartFlock where DeliveryCartFlockID = a.DeliveryCartFlockID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.DeliveryCartFlock OFF
+------
+------ DeliveryFlock
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.DeliveryFlock ON 
+--INSERT into MLA_Phase2Dev.dbo.DeliveryFlock (DeliveryFlockID, DeliveryID, FlockID)
+--select DeliveryFlockID, DeliveryID, FlockID
+--from MLA.dbo.DeliveryFlock a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.DeliveryFlock where DeliveryFlockID = a.DeliveryFlockID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.DeliveryFlock OFF
+------
+
+------ EggTransaction
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.EggTransaction ON 
+--INSERT into MLA_Phase2Dev.dbo.EggTransaction (EggTransactionID, ClutchID, QtyChange, QtyChangeReasonID, QtyChangeActualDate, QtyChangeRecordedDate, UseName, ClutchQtyAfterTransaction, FlockID, CoolerClutchID, OrderIncubatorCartID, DeliveryCartFlockID)
+--select EggTransactionID, ClutchID, QtyChange, QtyChangeReasonID, QtyChangeActualDate, QtyChangeRecordedDate, UseName, ClutchQtyAfterTransaction, FlockID, CoolerClutchID, OrderIncubatorCartID, DeliveryCartFlockID
+--from MLA.dbo.EggTransaction a  
+--where not exists (select 1 from MLA_Phase2Dev.dbo.EggTransaction where EggTransactionID = a.EggTransactionID) 
+--SET IDENTITY_INSERT MLA_Phase2Dev.dbo.EggTransaction OFF
+------
+
+

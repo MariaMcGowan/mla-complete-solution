@@ -1,0 +1,16 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Quarterly Permformance Update">
+    <field fieldName="ScheduleDate" displayName="Schedule Date"/>
+    <field fieldName="AgeInDays" displayName="Age (in Days)" customValidateFunction="setScheduleDate({thisRecord}, {record})"/>
+    <field fieldName="Service" displayName="Service"/>
+    <field fieldName="Disease" displayName="Disease"/>
+    <field fieldName="VaccineDeliveryMethod" displayName="Method"/>
+    <field fieldName="Supplier" />
+    <field fieldName="ProductName" displayName="Product Name"/>
+    <field fieldName="ProductSerialNumber" displayName="Product Serial #"/>
+    <field fieldName="Administrator" />
+    <field fieldName="DateCompleted" displayName="Date Completed"/>
+		<field fieldName="SignedOffBy" displayName="Sign Off"/>
+    <field fieldName="SortOrder" displayName="Sort Order"/>
+  </section>
+</fieldList>

@@ -1,0 +1,8 @@
+<CargasConnect>
+  <Truck_InsertUpdate>
+    <TruckID/>
+    <Truck/>
+    <SortOrder/>
+    <IsActive/>
+  </Truck_InsertUpdate>
+</CargasConnect>

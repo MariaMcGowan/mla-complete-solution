@@ -1,0 +1,14 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Facility Survey" colunSpan="4">
+    <field fieldName="FarmID" multilineEdit="true" displayName="Farm">
+      <lookupList>
+        <source sql="exec Farm_Lookup"/>
+      </lookupList>
+    </field>
+    <field fieldName="PulletFacilityID" multilineEdit="true" displayName="Pullet Facility">
+      <lookupList>
+        <source sql="exec PulletFacility_Lookup"/>
+      </lookupList>
+    </field>    
+	</section>
+</fieldList>

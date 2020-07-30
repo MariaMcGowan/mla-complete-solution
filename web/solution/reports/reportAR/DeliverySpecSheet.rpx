@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="10935" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Times New Roman; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="GroupHeader" Name="OrderGroup" Height="3210" DataField="OrderID" GroupKeepTogether="2" BackColor="16777215" NewPage="1" CanShrink="1">
+      <Control Type="AR.Field" Name="PO" DataField="CustomerReferenceNbr" MOD="4" Left="6030" Top="1170" Width="1440" Height="270" Text="" Style="ddo-char-set: 0; font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Field" Name="DestinationBuilding" DataField="DestinationBuilding" MOD="4" Left="6570" Top="1710" Width="900" Height="270" Text="" Style="ddo-char-set: 0; font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label" MOD="4" Left="630" Top="90" Width="7290" Height="270" Caption="Delivery Sheet for Q_0286325 (Eggs 11 Day Embryonated)" Style="ddo-char-set: 1; font-weight: bold; font-size: 10pt; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="630" Top="2160" Width="9540" Height="270" Caption="Supplier has reviewed all items listed below.  All ordering specifications meet the listed acceptance criteria." Style="ddo-char-set: 1; font-weight: normal; font-style: italic; font-size: 10pt; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="630" Top="630" Width="900" Height="270" Caption="Supplier:" Style="ddo-char-set: 1; font-weight: bold; font-size: 10pt; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="630" Top="1170" Width="1710" Height="270" Caption="Delivery Slip(s) #s:" Style="ddo-char-set: 1; font-weight: bold; font-size: 10pt; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="630" Top="1710" Width="1530" Height="270" Caption="Date of Delivery:" Style="ddo-char-set: 1; font-weight: bold; font-size: 10pt; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="5400" Top="1170" Width="540" Height="270" Caption="PO#:" Style="ddo-char-set: 1; font-weight: bold; font-size: 10pt; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label6" MOD="4" Left="5400" Top="1710" Width="1080" Height="270" Caption="Building #" Style="ddo-char-set: 1; font-weight: bold; font-size: 10pt; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label7" MOD="4" Left="630" Top="2610" Width="990" Height="270" Caption="Signature:" Style="ddo-char-set: 1; font-weight: bold; font-size: 10pt; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="5400" Top="2610" Width="540" Height="270" Caption="Date:" Style="ddo-char-set: 1; font-weight: bold; font-size: 10pt; font-family: Times New Roman; " />
+      <Control Type="AR.Field" Name="Supplier" DataField="Supplier" MOD="4" Left="1530" Top="630" Width="3330" Height="270" Text="" Style="ddo-char-set: 0; font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Field" Name="DeliverySlips" DataField="DeliverySlips" MOD="4" Left="2430" Top="1170" Width="2880" Height="270" Text="" Multiline="0" Style="ddo-char-set: 0; font-weight: bold; font-size: 9pt; font-family: Times New Roman; white-space: nowrap; " />
+      <Control Type="AR.Field" Name="DeliveryDate" DataField="DeliveryDate" MOD="4" Left="2250" Top="1710" Width="1980" Height="270" Text="" Style="ddo-char-set: 0; font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Line" Name="Line6" MOD="4" X1="1710" Y1="2880" X2="5220" Y2="2880" />
+      <Control Type="AR.Line" Name="Line7" MOD="4" X1="6030" Y1="2880" X2="7740" Y2="2880" />
+      <Control Type="AR.Line" Name="Line3" MOD="4" X1="6210" Y1="9000" X2="6210" Y2="9000" />
+      <Control Type="AR.Line" Name="Line4" MOD="4" X1="3600" Y1="9000" X2="3600" Y2="9000" />
+      <Control Type="AR.Line" Name="Line5" MOD="4" X1="1440" Y1="9000" X2="1440" Y2="9000" />
+      <Control Type="AR.Line" Name="Line44" MOD="4" X1="1530" Y1="900" X2="4860" Y2="900" />
+      <Control Type="AR.Line" Name="Line45" MOD="4" X1="2430" Y1="1440" X2="5310" Y2="1440" />
+      <Control Type="AR.Line" Name="Line46" MOD="4" X1="2250" Y1="1980" X2="4230" Y2="1980" />
+      <Control Type="AR.Line" Name="Line47" MOD="4" X1="6030" Y1="1440" X2="7470" Y2="1440" />
+      <Control Type="AR.Line" Name="Line48" MOD="4" X1="6570" Y1="1980" X2="7470" Y2="1980" />
+      <Control Type="AR.Label" Name="Label136" MOD="4" Left="630" Top="2970" Width="9540" Height="180" Caption="" Style="ddo-char-set: 1; font-weight: normal; font-style: italic; font-family: Times New Roman; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="39825" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label36" MOD="4" Left="1980" Top="26730" Width="2250" Height="2520" Caption="When requested by Sanofi Pasteur, sanitize eggs prior  to delivery to the incubation facility, per manufacturer’s label claim, using one of the following approved chemicals: ECOLAB® Oxy- Sept® 333 or Austin’s A-1 Concentrated Bleach 8.25%" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label112" MOD="4" Left="2217.6" Top="22410.72" Width="1890" Height="2070" Caption="Flocks have been tested for Avian Influenza    (AI), Mycoplasma gallisepticum (MG), Mycoplasma synoviae (MS), Chicken anemia virus (CAV) if not vaccinated" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.CheckBox" Name="chkNAForComments" DataField="NAForComments" MOD="4" Left="5220" Top="35910" Width="630" Height="360" Caption="N/A" Style="ddo-char-set: 1; font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label148" MOD="4" Left="540" Top="35910" Width="4590" Height="360" Caption="Comments:" Style="font-weight: bold; background-color: Gainsboro; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label150" MOD="4" Left="2250" Top="6660" Width="1710" Height="810" Caption="11 days of embryological development" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Shape" Name="Shape" MOD="4" Left="90.72029" Top="2160" Width="10710" Height="4500" BackColor="16777215" />
+      <Control Type="AR.Shape" Name="Shape12" MOD="4" Left="90" Top="19170" Width="10710" Height="3150" BackColor="16777215" />
+      <Control Type="AR.Shape" Name="Shape19" MOD="4" Left="90" Top="8370" Width="10710" Height="630" BackColor="16777215" />
+      <Control Type="AR.Shape" Name="Shape16" MOD="4" Left="90" Top="31050" Width="10710" Height="630" BackColor="16777215" />
+      <Control Type="AR.Shape" Name="Shape9" MOD="4" Left="90" Top="16740" Width="10710" Height="810" BackColor="16777215" />
+      <Control Type="AR.Shape" Name="Shape10" MOD="4" Left="90" Top="12330" Width="10710" Height="4410" BackColor="16777215" />
+      <Control Type="AR.Shape" Name="Shape2" MOD="4" Left="90" Top="1260" Width="10710" Height="360" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label49" MOD="4" Left="4410" Top="12420" Width="2340" Height="4230" Caption="Age as noted on flock production sheet at farm and on Sanofi Pasteur's audit sheet" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Shape" Name="Shape21" MOD="4" Left="90" Top="6660" Width="10710" Height="810" BackColor="16777215" />
+      <Control Type="AR.Shape" Name="Shape8" MOD="4" Left="90" Top="11610" Width="10710" Height="720" BackColor="16777215" />
+      <Control Type="AR.Shape" Name="Shape20" MOD="4" Left="90" Top="7470" Width="10710" Height="900" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label151" MOD="4" Left="4342.5" Top="6750" Width="2340" Height="630" Caption="Incubation time as noted on the incubator log" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label45" MOD="4" Left="4455" Top="11700" Width="2250" Height="540" Caption="Test Method" Style="text-align: center; font-weight: bold; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label18" MOD="4" Left="2160" Top="1260" Width="1890" Height="360" Caption="USA, Canada" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label17" MOD="4" Left="336.9601" Top="1260" Width="1530" Height="360" Caption="Country of Origin" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Shape" Name="Shape3" MOD="4" Left="90" Top="1620" Width="10710" Height="540" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label27" MOD="4" Left="4387.5" Top="2250" Width="2250" Height="4320" Caption="Weigh eggs at pre-delivery candling" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label23" MOD="4" Left="4477.5" Top="1620" Width="2160" Height="540" Caption="As noted on the Report of Sale of Chicks" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Shape" Name="Shape4" MOD="4" Left="90" Top="0" Width="10710" Height="720" BackColor="16777215" />
+      <Control Type="AR.Shape" Name="Shape1" MOD="4" Left="90" Top="720" Width="10710" Height="540" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label10" MOD="4" Left="2160" Top="90" Width="1890" Height="540" Caption="Acceptance Criteria" Style="text-align: center; font-weight: bold; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.CheckBox" Name="lblNA03_Checked" Visible="0" MOD="4" Left="630.72" Top="34970.4" Width="630" Height="360" Caption="N/A" Value="1" Style="ddo-char-set: 1; font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.CheckBox" Name="lblNA03_Unchecked" Visible="0" MOD="4" Left="630.72" Top="34970.4" Width="630" Height="360" Caption="N/A" Style="ddo-char-set: 1; font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDeliverySlip02" MOD="4" Left="630" Top="34650" Width="1350" Height="270" Caption="Delivery Slip #" Style="font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDeliverySlip01" MOD="4" Left="630" Top="34290" Width="1350" Height="270" Caption="Delivery Slip #" Style="font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Line" Name="lnDeliverySlip04_NA" Visible="0" MOD="4" X1="2699.28" Y1="35589.6" X2="3869.28" Y2="35589.6" />
+      <Control Type="AR.Label" Name="lblDriverSig03_NA" MOD="4" Left="4230" Top="35010" Width="2340" Height="270" Caption="Driver's Signature &amp; Date" Style="font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label51" MOD="4" Left="2127.6" Top="16830" Width="1980" Height="720" Caption="Sanofi Pasteur must approve all flocks prior to use" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Shape" Name="Shape14" MOD="4" Left="90" Top="29250" Width="10710" Height="1800" BackColor="16777215" />
+      <Control Type="AR.Shape" Name="Shape11" MOD="4" Left="90" Top="17550" Width="10710" Height="1620" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label20" MOD="4" Left="7245" Top="1260" Width="3240" Height="360" Caption="USA, Canada" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label19" MOD="4" Left="4387.5" Top="1260" Width="2250" Height="360" Caption="Documentation Check" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label14" MOD="4" Left="2160" Top="720" Width="1890" Height="540" Caption="Avian" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label13" MOD="4" Left="336.9601" Top="810" Width="1530" Height="360" Caption="Animal Origin" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label16" MOD="4" Left="7245" Top="720" Width="3240" Height="540" Caption="Avian" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label128" MOD="4" Left="2115" Top="31140" Width="2070" Height="450" Caption="No dirty or cracked eggs" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label124" MOD="4" Left="2025" Top="30330" Width="2250" Height="540" Caption="Holding room temperature must be controlled" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label123" MOD="4" Left="2025" Top="30060" Width="2250" Height="270" Caption="Target hold time 4 - 7 days" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label53" MOD="4" Left="7110" Top="16830" Width="3420" Height="630" Caption="Flock approval on file in Supplier Quality Trackwise database" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label52" MOD="4" Left="4455" Top="16920" Width="2250" Height="540" Caption="Documentation Verification" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label50" MOD="4" Left="292.5" Top="16920" Width="1530" Height="540" Caption="Flock Number" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label15" MOD="4" Left="4477.5" Top="720" Width="2160" Height="540" Caption="As noted on the Report of Sale of Chicks" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label107" MOD="4" Left="247.5" Top="19260" Width="1620" Height="2970" Caption="Flock Vaccination" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlock01" DataField="Flock01" MOD="4" Left="7830" Top="2530" Width="1080" Height="273.6" Text="Flock01" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlock02" DataField="Flock02" MOD="4" Left="7830" Top="2780" Width="1080" Height="273.6" Text="Flock02" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlock03" DataField="Flock03" MOD="4" Left="7830" Top="3030" Width="1080" Height="273.6" Text="Flock03" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlock04" DataField="Flock04" MOD="4" Left="7830" Top="3280" Width="1080" Height="273.6" Text="Flock04" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlock05" DataField="Flock05" MOD="4" Left="7830" Top="3530" Width="1080" Height="273.6" Text="Flock05" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlock06" DataField="Flock06" MOD="4" Left="7830" Top="3780" Width="1080" Height="273.6" Text="Flock06" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlock07" DataField="Flock07" MOD="4" Left="7830" Top="4030" Width="1080" Height="273.6" Text="Flock07" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlock08" DataField="Flock08" MOD="4" Left="7830" Top="4280" Width="1080" Height="273.6" Text="Flock08" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlock09" DataField="Flock09" MOD="4" Left="7830" Top="4530" Width="1080" Height="273.6" Text="Flock09" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlock10" DataField="Flock10" MOD="4" Left="7830" Top="4780" Width="1080" Height="273.6" Text="Flock10" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlock11" DataField="Flock11" MOD="4" Left="7830" Top="5030" Width="1080" Height="273.6" Text="Flock11" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlock12" DataField="Flock12" MOD="4" Left="7830" Top="5280" Width="1080" Height="273.6" Text="Flock12" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlock13" DataField="Flock13" MOD="4" Left="7830" Top="5530" Width="1080" Height="273.6" Text="Flock13" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlock14" DataField="Flock14" MOD="4" Left="7830" Top="5780" Width="1080" Height="273.6" Text="Flock14" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlock15" DataField="Flock15" MOD="4" Left="7830" Top="6030" Width="1080" Height="273.6" Text="Flock15" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="txtFlock16" DataField="Flock16" MOD="4" Left="7830" Top="6280" Width="1080" Height="273.6" Text="Flock16" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="FlockWgt01" DataField="Wgt01" MOD="4" Left="9080" Top="2530" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="FlockWgt02" DataField="Wgt02" MOD="4" Left="9080" Top="2780" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="FlockWgt03" DataField="Wgt03" MOD="4" Left="9080" Top="3030" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="FlockWgt04" DataField="Wgt04" MOD="4" Left="9080" Top="3280" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="FlockWgt05" DataField="Wgt05" MOD="4" Left="9080" Top="3530" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="FlockWgt06" DataField="Wgt06" MOD="4" Left="9080" Top="3780" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="FlockWgt07" DataField="Wgt07" MOD="4" Left="9080" Top="4030" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="FlockWgt08" DataField="Wgt08" MOD="4" Left="9080" Top="4280" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="FlockWgt09" DataField="Wgt09" MOD="4" Left="9080" Top="4530" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="FlockWgt10" DataField="Wgt10" MOD="4" Left="9080" Top="4780" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="FlockWgt11" DataField="Wgt11" MOD="4" Left="9080" Top="5030" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="FlockWgt12" DataField="Wgt12" MOD="4" Left="9080" Top="5280" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="FlockWgt13" DataField="Wgt13" MOD="4" Left="9080" Top="5530" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="FlockWgt14" DataField="Wgt14" MOD="4" Left="9080" Top="5780" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="FlockWgt15" DataField="Wgt15" MOD="4" Left="9080" Top="6030" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="FlockWgt16" DataField="Wgt16" MOD="4" Left="9080" Top="6280" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="4230" Y1="0" X2="4230" Y2="9000" />
+      <Control Type="AR.Line" Name="Line2" MOD="4" X1="6840" Y1="0" X2="6840" Y2="9000" />
+      <Control Type="AR.Label" Name="Label9" MOD="4" Left="336.9601" Top="90" Width="1530" Height="540" Caption="Ordering Specification" Style="text-align: center; font-weight: bold; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label11" MOD="4" Left="4387.5" Top="90" Width="2250" Height="540" Caption="Test Method" Style="text-align: center; font-weight: bold; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label12" MOD="4" Left="7245" Top="90" Width="3240" Height="540" Caption="Test Results (Specify if other than Acceptance Criteria)" Style="text-align: center; font-weight: bold; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Line" Name="Line10" MOD="4" X1="2070" Y1="0" X2="2070" Y2="9000" />
+      <Control Type="AR.Label" Name="Label21" MOD="4" Left="336.9601" Top="1710" Width="1530" Height="360" Caption="Tissue" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label22" MOD="4" Left="2160" Top="1710" Width="1890" Height="360" Caption="Egg" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label24" MOD="4" Left="7245" Top="1710" Width="3240" Height="360" Caption="Egg" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label25" MOD="4" Left="336.9601" Top="2250" Width="1530" Height="4320" Caption="Minimum Weight" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label26" MOD="4" Left="2289.6" Top="2250.72" Width="1710" Height="4320" Caption="600 gms/dozen (21.2 ounces/dozen)" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label28" MOD="4" Left="7110" Top="2250" Width="3240" Height="270" Caption="List flock &amp; weight below:" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="lblWgt01" MOD="4" Left="9630" Top="2530" Width="630.72" Height="273.6" Caption="oz/doz" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblWgt02" MOD="4" Left="9630" Top="2780" Width="630.72" Height="273.6" Caption="oz/doz" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblWgt03" MOD="4" Left="9630" Top="3030" Width="630.72" Height="273.6" Caption="oz/doz" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblWgt04" MOD="4" Left="9630" Top="3280" Width="630.72" Height="273.6" Caption="oz/doz" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblWgt05" MOD="4" Left="9630" Top="3530" Width="630.72" Height="273.6" Caption="oz/doz" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblWgt06" MOD="4" Left="9630" Top="3780" Width="630.72" Height="273.6" Caption="oz/doz" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblWgt07" MOD="4" Left="9630" Top="4030" Width="630.72" Height="273.6" Caption="oz/doz" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblWgt08" MOD="4" Left="9630" Top="4280" Width="630.72" Height="273.6" Caption="oz/doz" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblWgt09" MOD="4" Left="9630" Top="4530" Width="630.72" Height="273.6" Caption="oz/doz" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblWgt10" MOD="4" Left="9630" Top="4780" Width="630.72" Height="273.6" Caption="oz/doz" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblWgt11" MOD="4" Left="9630" Top="5030" Width="630.72" Height="273.6" Caption="oz/doz" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblWgt12" MOD="4" Left="9630" Top="5280" Width="630.72" Height="273.6" Caption="oz/doz" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblWgt13" MOD="4" Left="9630" Top="5530" Width="630.72" Height="273.6" Caption="oz/doz" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblWgt14" MOD="4" Left="9630" Top="5780" Width="630.72" Height="273.6" Caption="oz/doz" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblWgt15" MOD="4" Left="9630" Top="6030" Width="630.72" Height="273.6" Caption="oz/doz" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblWgt16" MOD="4" Left="9630" Top="6280" Width="630.72" Height="273.6" Caption="oz/doz" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDash01" MOD="4" Left="8910" Top="2530" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDash02" MOD="4" Left="8910" Top="2780" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDash03" MOD="4" Left="8910" Top="3030" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDash04" MOD="4" Left="8910" Top="3280" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDash05" MOD="4" Left="8910" Top="3530" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDash06" MOD="4" Left="8910" Top="3780" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDash07" MOD="4" Left="8910" Top="4030" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDash08" MOD="4" Left="8910" Top="4270" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDash09" MOD="4" Left="8910" Top="4530" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDash10" MOD="4" Left="8910" Top="4780" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDash11" MOD="4" Left="8910" Top="5030" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDash12" MOD="4" Left="8910" Top="5280" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDash13" MOD="4" Left="8910" Top="5530" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDash14" MOD="4" Left="8910" Top="5780" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDash15" MOD="4" Left="8910" Top="6030" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDash16" MOD="4" Left="8910" Top="6280" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblFlock01" MOD="4" Left="7290" Top="2530" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblFlock02" MOD="4" Left="7290" Top="2780" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblFlock03" MOD="4" Left="7290" Top="3030" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblFlock04" MOD="4" Left="7290" Top="3280" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblFlock05" MOD="4" Left="7290" Top="3530" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblFlock06" MOD="4" Left="7290" Top="3780" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblFlock07" MOD="4" Left="7290" Top="4030" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblFlock08" MOD="4" Left="7290" Top="4280" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblFlock09" MOD="4" Left="7290" Top="4530" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblFlock10" MOD="4" Left="7290" Top="4780" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblFlock11" MOD="4" Left="7290" Top="5030" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblFlock12" MOD="4" Left="7290" Top="5280" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblFlock13" MOD="4" Left="7290" Top="5530" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblFlock14" MOD="4" Left="7290" Top="5780" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblFlock15" MOD="4" Left="7290" Top="6030" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblFlock16" MOD="4" Left="7290" Top="6280" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Line" Name="lnFlock01" MOD="4" X1="7830" Y1="2780" X2="8910" Y2="2780" />
+      <Control Type="AR.Line" Name="lnFlock02" MOD="4" X1="7830" Y1="3030" X2="8910" Y2="3030" />
+      <Control Type="AR.Line" Name="lnFlock03" MOD="4" X1="7830" Y1="3280" X2="8910" Y2="3280" />
+      <Control Type="AR.Line" Name="lnFlock04" MOD="4" X1="7830" Y1="3530" X2="8910" Y2="3530" />
+      <Control Type="AR.Line" Name="lnFlock05" MOD="4" X1="7830" Y1="3780" X2="8910" Y2="3780" />
+      <Control Type="AR.Line" Name="lnFlock06" MOD="4" X1="7830" Y1="4030" X2="8910" Y2="4030" />
+      <Control Type="AR.Line" Name="lnFlock07" MOD="4" X1="7830" Y1="4280" X2="8910" Y2="4280" />
+      <Control Type="AR.Line" Name="lnFlock08" MOD="4" X1="7830" Y1="4530" X2="8910" Y2="4530" />
+      <Control Type="AR.Line" Name="lnFlock09" MOD="4" X1="7830" Y1="4780" X2="8910" Y2="4780" />
+      <Control Type="AR.Line" Name="lnFlock10" MOD="4" X1="7830" Y1="5030" X2="8910" Y2="5030" />
+      <Control Type="AR.Line" Name="lnFlock11" MOD="4" X1="7830" Y1="5280" X2="8910" Y2="5280" />
+      <Control Type="AR.Line" Name="lnFlock12" MOD="4" X1="7830" Y1="5530" X2="8910" Y2="5530" />
+      <Control Type="AR.Line" Name="lnFlock13" MOD="4" X1="7830" Y1="5780" X2="8910" Y2="5780" />
+      <Control Type="AR.Line" Name="lnFlock14" MOD="4" X1="7830" Y1="6030" X2="8910" Y2="6030" />
+      <Control Type="AR.Line" Name="lnFlock15" MOD="4" X1="7830" Y1="6280" X2="8910" Y2="6280" />
+      <Control Type="AR.Line" Name="lnFlock16" MOD="4" X1="7830" Y1="6530" X2="8910" Y2="6530" />
+      <Control Type="AR.Line" Name="lnWgt01" MOD="4" X1="9090" Y1="2780" X2="9630" Y2="2780" />
+      <Control Type="AR.Line" Name="lnWgt02" MOD="4" X1="9090" Y1="3030" X2="9630" Y2="3030" />
+      <Control Type="AR.Line" Name="lnWgt03" MOD="4" X1="9090" Y1="3280" X2="9630" Y2="3280" />
+      <Control Type="AR.Line" Name="lnWgt04" MOD="4" X1="9090" Y1="3530" X2="9630" Y2="3530" />
+      <Control Type="AR.Line" Name="lnWgt05" MOD="4" X1="9090" Y1="3780" X2="9630" Y2="3780" />
+      <Control Type="AR.Line" Name="lnWgt06" MOD="4" X1="9090" Y1="4030" X2="9630" Y2="4030" />
+      <Control Type="AR.Line" Name="lnWgt07" MOD="4" X1="9090" Y1="4280" X2="9630" Y2="4280" />
+      <Control Type="AR.Line" Name="lnWgt08" MOD="4" X1="9090" Y1="4530" X2="9630" Y2="4530" />
+      <Control Type="AR.Line" Name="lnWgt09" MOD="4" X1="9090" Y1="4780" X2="9630" Y2="4780" />
+      <Control Type="AR.Line" Name="lnWgt10" MOD="4" X1="9090" Y1="5030" X2="9630" Y2="5030" />
+      <Control Type="AR.Line" Name="lnWgt11" MOD="4" X1="9090" Y1="5280" X2="9630" Y2="5280" />
+      <Control Type="AR.Line" Name="lnWgt12" MOD="4" X1="9090" Y1="5530" X2="9630" Y2="5530" />
+      <Control Type="AR.Line" Name="lnWgt13" MOD="4" X1="9090" Y1="5780" X2="9630" Y2="5780" />
+      <Control Type="AR.Line" Name="lnWgt14" MOD="4" X1="9090" Y1="6030" X2="9630" Y2="6030" />
+      <Control Type="AR.Line" Name="lnWgt15" MOD="4" X1="9090" Y1="6280" X2="9630" Y2="6280" />
+      <Control Type="AR.Line" Name="lnWgt16" MOD="4" X1="9090" Y1="6530" X2="9630" Y2="6530" />
+      <Control Type="AR.PageBreak" Name="PageBreak" MOD="4" Top="11171" Left="0" Width="0" Height="0" />
+      <Control Type="AR.Label" Name="Label47" MOD="4" Left="247.5" Top="12420" Width="1620" Height="4230" Caption="Flock Age" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label48" MOD="4" Left="2172.6" Top="12420" Width="1980" Height="4230" Caption="Eggs must be from flocks that are not older than 65 weeks old" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label55" MOD="4" Left="292.5" Top="17640" Width="1530" Height="1440" Caption="Feed" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label104" MOD="4" Left="2126.88" Top="17640" Width="1981.44" Height="691.2" Caption="Flocks have not been fed with feed" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label105" MOD="4" Left="4365" Top="17640" Width="2340" Height="1440" Caption="Feed delivery slips on file at farm containing list of ingredients" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label106" MOD="4" Left="7110" Top="17640" Width="3510" Height="1440" Caption="Feed does not contain antibiotics or other medication.  Also listed on Sanofi Pasteur's audit sheet stored in Supplier Quality files" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label108" MOD="4" Left="2262.6" Top="19260.72" Width="1890" Height="2970" Caption="Marek's disease, Coccidiosis, New Castle/Bronchitis, Infectious Bursal Disease, Fowl Pox, Laryngotrachelitis, Avian Encephalomyletis, Mycoplasm galliseptium, Salmonella enteritidis, Chicken anemia virus if not tested" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label109" MOD="4" Left="4455" Top="19260" Width="2250" Height="2970" Caption="Vaccinations administered by qualified poultry service personnel" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label110" MOD="4" Left="6975" Top="19260" Width="3690" Height="2970" Caption="Vaccination Schedule on file at hatchery and copy in Sanofi Pasteur Supplier Quality files" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Shape" Name="Shape13" MOD="4" Left="90" Top="22320" Width="10710" Height="2160" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label111" MOD="4" Left="337.5" Top="22500" Width="1440" Height="1800" Caption="Flock Testing" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label113" MOD="4" Left="4500" Top="22590" Width="2160" Height="810" Caption="AI, MG, MS Tested by independent lab" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label114" MOD="4" Left="6930" Top="22500" Width="3690" Height="1620" Caption="Results on file at hatchery and copy in Sanofi Pasteur Supplier Quality files" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label115" MOD="4" Left="4410" Top="23400" Width="2250" Height="720" Caption="CAV test at 10-12 weeks if not vaccinated" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: top; " />
+      <Control Type="AR.Label" Name="Label116" MOD="4" Left="360" Top="29340" Width="1530" Height="1530" Caption="Pre-incubation holding" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label117" MOD="4" Left="2025" Top="29340" Width="2250" Height="720" Caption="Eggs must not be held more than 10 days prior to incubation" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label118" MOD="4" Left="4500" Top="29520" Width="2160" Height="630" Caption="Date collected as noted on each cart" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label119" MOD="4" Left="6975" Top="29430.72" Width="3690" Height="630" Caption="Date collected not more than 10 days prior to incubation set date" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Shape" Name="Shape15" MOD="4" Left="90" Top="31680" Width="10710" Height="2430" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label120" MOD="4" Left="360" Top="31770" Width="1530" Height="2250" Caption="Incubation" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label121" MOD="4" Left="2115" Top="31770" Width="1980" Height="990" Caption="Incubation shall be sufficient to produce 11 days of embryological development at delivery" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label122" MOD="4" Left="6975" Top="32220" Width="3780" Height="450" Caption="11 day days of embryological development." Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label125" MOD="4" Left="4500" Top="30150" Width="2070" Height="540" Caption="Temperature records available" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label126" MOD="4" Left="7290" Top="30150" Width="3150" Height="720" Caption="Temperature range listed on Sanofi Pasteur's audit sheet stored in Supplier Quality files" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label127" MOD="4" Left="360" Top="31140" Width="1530" Height="450" Caption="Pre-incubation inspection" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label129" MOD="4" Left="4500" Top="31140" Width="2160" Height="450" Caption="Visual inspection" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label130" MOD="4" Left="7200" Top="31140" Width="3240" Height="450" Caption="No dirty or cracked eggs" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label131" MOD="4" Left="2025" Top="32767.2" Width="2250" Height="540" Caption="Target embryo weight 2.8g - 3.2g" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: top; " />
+      <Control Type="AR.Label" Name="Label132" MOD="4" Left="2070" Top="33210" Width="2250" Height="720" Caption="Incubation parameters (temperature and humidity) must be recorded" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: top; " />
+      <Control Type="AR.Label" Name="Label133" MOD="4" Left="4410" Top="32040" Width="2340" Height="810" Caption="Check incubator log for time/date incubation started and completed" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label134" MOD="4" Left="4500" Top="33030" Width="2160" Height="630" Caption="Temperature and humidity logs available." Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label135" MOD="4" Left="7200" Top="32760" Width="3240" Height="900" Caption="Audit listing incubation parameters (temperature and humidity) on file at hatchery and in Sanofi Pasteur Supplier Quality files." Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="lblDriverSig01" MOD="4" Left="4140" Top="34290" Width="2340" Height="270" Caption="Driver's Signature &amp; Date" Style="font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Line" Name="lnDriverSig01" MOD="4" X1="6480" Y1="34560" X2="10080" Y2="34560" />
+      <Control Type="AR.CheckBox" Name="lblNA04_Checked" Visible="0" MOD="4" Left="630" Top="35326.8" Width="630" Height="360" Caption="N/A" Value="1" Style="ddo-char-set: 1; font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDriverSig02" MOD="4" Left="4140" Top="34650" Width="2340" Height="270" Caption="Driver's Signature &amp; Date" Style="font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Line" Name="lnDriverSig02" MOD="4" X1="6480" Y1="34920" X2="10080" Y2="34920" />
+      <Control Type="AR.Line" Name="lnDriverSig03" MOD="4" X1="6570" Y1="35280" X2="10170" Y2="35280" />
+      <Control Type="AR.Label" Name="lblDriverSig04_NA" MOD="4" Left="4230" Top="35370" Width="2340" Height="270" Caption="Driver's Signature &amp; Date" Style="font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Line" Name="lnDriverSig04" MOD="4" X1="6570" Y1="35640" X2="10170" Y2="35640" />
+      <Control Type="AR.Line" Name="Line57" MOD="4" X1="540" Y1="36270" X2="10170" Y2="36270" />
+      <Control Type="AR.Line" Name="Line58" MOD="4" X1="5130" Y1="35910" X2="5130" Y2="36270" />
+      <Control Type="AR.Field" Name="txtDeliverySlip01" DataField="DeliverySlip01" MOD="4" Left="2070" Top="34290" Width="1170" Height="270" Text="" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Line" Name="lnDeliverySlip01" MOD="4" X1="2070" Y1="34560" X2="3240" Y2="34560" />
+      <Control Type="AR.Field" Name="txtDeliverySlip02" DataField="DeliverySlip02" MOD="4" Left="2070" Top="34650" Width="1170" Height="270" Text="" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Line" Name="lnDeliverySlip02" MOD="4" X1="2070" Y1="34920" X2="3240" Y2="34920" />
+      <Control Type="AR.Field" Name="txtDeliverySlip03" DataField="DeliverySlip03" MOD="4" Left="2700" Top="35010" Width="1170" Height="270" Text="" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDeliverySlip03_NA" MOD="4" Left="1260" Top="35010" Width="1350" Height="270" Caption="Delivery Slip #" Style="font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Line" Name="lnDeliverySlip03" MOD="4" X1="2700" Y1="35280" X2="3870" Y2="35280" />
+      <Control Type="AR.Field" Name="txtDeliverySlip04" DataField="DeliverySlip04" MOD="4" Left="2699.28" Top="35319.6" Width="1170" Height="270" Text="" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="lblDeliverySlip04_NA" MOD="4" Left="1260" Top="35370" Width="1350" Height="270" Caption="Delivery Slip #" Style="font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label137" MOD="4" Left="180" Top="10260" Width="9540" Height="810" Caption="Page 1 of 3" Style="ddo-char-set: 0; text-align: center; font-weight: normal; font-size: 10pt; font-family: Times New Roman; vertical-align: bottom; " />
+      <Control Type="AR.Line" Name="lnDeliverySlip04" MOD="4" X1="2700" Y1="35640" X2="3870" Y2="35640" />
+      <Control Type="AR.CheckBox" Name="lblNA04_Unchecked" Visible="0" MOD="4" Left="630" Top="35326.8" Width="630" Height="360" Caption="N/A" Style="ddo-char-set: 1; font-weight: bold; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label147" MOD="4" Left="4477.5" Top="7560" Width="2070" Height="720" Caption="Documentation Check As certified with drivers signature on page 3" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label149" MOD="4" Left="336.9601" Top="6750" Width="1530" Height="630" Caption="Age of Embryos" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label152" MOD="4" Left="7020" Top="6840" Width="3690" Height="270" Caption="11 days of embryological development" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label153" MOD="4" Left="7020" Top="7110" Width="3690" Height="270" Caption="Target embryo weight 2.8g - 3.2g" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: top; " />
+      <Control Type="AR.Label" Name="Label154" MOD="4" Left="291.9601" Top="7560.72" Width="1620" Height="630" Caption="Temperature" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label155" MOD="4" Left="2160" Top="7560" Width="1890" Height="630" Caption="86-100 F" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label156" MOD="4" Left="7020" Top="7560" Width="3690" Height="630" Caption="86-100 F during transportation" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label43" MOD="4" Left="292.5" Top="11700" Width="1530" Height="540" Caption="Ordering Specification" Style="text-align: center; font-weight: bold; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label44" MOD="4" Left="2127.6" Top="11700" Width="2070" Height="540" Caption="Acceptance Criteria" Style="text-align: center; font-weight: bold; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label46" MOD="4" Left="7200" Top="11700" Width="3240" Height="540" Caption="Test Results (Specify if other than Acceptance Criteria)" Style="text-align: center; font-weight: bold; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.PageBreak" Name="PageBreak2" MOD="4" Top="25481" Left="0" Width="0" Height="0" />
+      <Control Type="AR.Shape" Name="Shape6" MOD="4" Left="90" Top="26640" Width="10710" Height="2610" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label35" MOD="4" Left="405" Top="26730" Width="1440" Height="2430" Caption="Sanitization" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label37" MOD="4" Left="4410" Top="26730" Width="2340" Height="2430" Caption="Documentation Verification at receipt" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label38" MOD="4" Left="7020" Top="26730" Width="3600" Height="2430" Caption="Documentation confirming approved sanitizer utilized at Day 0 of embryo growth prior to delivery to the incubation facility" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label30" MOD="4" Left="180" Top="24570" Width="9540" Height="810" Caption="Page 2 of 3" Style="ddo-char-set: 0; text-align: center; font-weight: normal; font-size: 10pt; font-family: Times New Roman; vertical-align: bottom; " />
+      <Control Type="AR.Label" Name="Label101" MOD="4" Left="180" Top="38880" Width="9540" Height="810" Caption="Page 3 of 3" Style="ddo-char-set: 0; text-align: center; font-weight: normal; font-size: 10pt; font-family: Times New Roman; vertical-align: bottom; " />
+      <Control Type="AR.Line" Name="Line13" MOD="4" X1="2070" Y1="11610" X2="2070" Y2="24480.72" />
+      <Control Type="AR.Line" Name="Line12" MOD="4" X1="6840" Y1="11610" X2="6840" Y2="24481.44" />
+      <Control Type="AR.Line" Name="Line11" MOD="4" X1="4230" Y1="11610" X2="4230" Y2="24481.44" />
+      <Control Type="AR.Label" Name="Label159" MOD="4" Left="7020" Top="8460" Width="3690" Height="360" Caption="Eggs not cleaned" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label158" MOD="4" Left="4387.5" Top="8460" Width="2250" Height="360" Caption="Visual inspection" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label157" MOD="4" Left="336.96" Top="8460" Width="1530" Height="360" Caption="Cleaning" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label146" MOD="4" Left="2160" Top="8460" Width="1980" Height="450" Caption="Eggs not cleaned in any manner" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox" DataField="Flock01" MOD="4" Left="7830" Top="12700" Width="1080" Height="273.6" Text="Flock01" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox1" DataField="Flock02" MOD="4" Left="7830" Top="12950" Width="1080" Height="273.6" Text="Flock02" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox2" DataField="Flock03" MOD="4" Left="7830" Top="13200" Width="1080" Height="273.6" Text="Flock03" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox3" DataField="Flock04" MOD="4" Left="7830" Top="13450" Width="1080" Height="273.6" Text="Flock04" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox4" DataField="Flock05" MOD="4" Left="7830" Top="13700" Width="1080" Height="273.6" Text="Flock05" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox5" DataField="Flock06" MOD="4" Left="7830" Top="13950" Width="1080" Height="273.6" Text="Flock06" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox6" DataField="Flock07" MOD="4" Left="7830" Top="14200" Width="1080" Height="273.6" Text="Flock07" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox7" DataField="Flock08" MOD="4" Left="7830" Top="14450" Width="1080" Height="273.6" Text="Flock08" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox8" DataField="Flock09" MOD="4" Left="7830" Top="14700" Width="1080" Height="273.6" Text="Flock09" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox9" DataField="Flock10" MOD="4" Left="7830" Top="14950" Width="1080" Height="273.6" Text="Flock10" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox10" DataField="Flock11" MOD="4" Left="7830" Top="15200" Width="1080" Height="273.6" Text="Flock11" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox11" DataField="Flock12" MOD="4" Left="7830" Top="15450" Width="1080" Height="273.6" Text="Flock12" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox12" DataField="Flock13" MOD="4" Left="7830" Top="15700" Width="1080" Height="273.6" Text="Flock13" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox13" DataField="Flock14" MOD="4" Left="7830" Top="15950" Width="1080" Height="273.6" Text="Flock14" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox14" DataField="Flock15" MOD="4" Left="7830" Top="16200" Width="1080" Height="273.6" Text="Flock15" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox15" DataField="Flock16" MOD="4" Left="7830" Top="16450" Width="1080" Height="273.6" Text="Flock16" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox16" DataField="Wks01" MOD="4" Left="9080" Top="12700" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox17" DataField="Wks02" MOD="4" Left="9080" Top="12950" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox18" DataField="Wks03" MOD="4" Left="9080" Top="13200" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox19" DataField="Wks04" MOD="4" Left="9080" Top="13450" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox20" DataField="Wks05" MOD="4" Left="9080" Top="13700" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox21" DataField="Wks06" MOD="4" Left="9080" Top="13950" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox22" DataField="Wks07" MOD="4" Left="9080" Top="14200" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox23" DataField="Wks08" MOD="4" Left="9080" Top="14450" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox24" DataField="Wks09" MOD="4" Left="9080" Top="14700" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox25" DataField="Wks10" MOD="4" Left="9080" Top="14950" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox26" DataField="Wks11" MOD="4" Left="9080" Top="15200" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox27" DataField="Wks12" MOD="4" Left="9080" Top="15450" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox28" DataField="Wks13" MOD="4" Left="9080" Top="15700" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox29" DataField="Wks14" MOD="4" Left="9080" Top="15950" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox30" DataField="Wks15" MOD="4" Left="9080" Top="16200" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="TextBox31" DataField="Wks16" MOD="4" Left="9080" Top="16450" Width="540" Height="273.6" Text="" Style="text-align: center; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label39" MOD="4" Left="7110" Top="12420" Width="3240" Height="270" Caption="List flock &amp; age below:" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label41" MOD="4" Left="9630" Top="12700" Width="630.72" Height="273.6" Caption="wks" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label42" MOD="4" Left="9630" Top="12950" Width="630.72" Height="273.6" Caption="wks" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label54" MOD="4" Left="9630" Top="13200" Width="630.72" Height="273.6" Caption="wks" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label56" MOD="4" Left="9630" Top="13450" Width="630.72" Height="273.6" Caption="wks" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label57" MOD="4" Left="9630" Top="13700" Width="630.72" Height="273.6" Caption="wks" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label58" MOD="4" Left="9630" Top="13950" Width="630.72" Height="273.6" Caption="wks" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label59" MOD="4" Left="9630" Top="14200" Width="630.72" Height="273.6" Caption="wks" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label60" MOD="4" Left="9630" Top="14450" Width="630.72" Height="273.6" Caption="wks" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label61" MOD="4" Left="9630" Top="14700" Width="630.72" Height="273.6" Caption="wks" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label62" MOD="4" Left="9630" Top="14950" Width="630.72" Height="273.6" Caption="wks" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label63" MOD="4" Left="9630" Top="15200" Width="630.72" Height="273.6" Caption="wks" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label64" MOD="4" Left="9630" Top="15450" Width="630.72" Height="273.6" Caption="wks" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label65" MOD="4" Left="9630" Top="15700" Width="630.72" Height="273.6" Caption="wks" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label66" MOD="4" Left="9630" Top="15950" Width="630.72" Height="273.6" Caption="wks" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label67" MOD="4" Left="9630" Top="16200" Width="630.72" Height="273.6" Caption="wks" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label68" MOD="4" Left="9630" Top="16450" Width="630.72" Height="273.6" Caption="wks" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label69" MOD="4" Left="8910" Top="12700" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label70" MOD="4" Left="8910" Top="12950" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label71" MOD="4" Left="8910" Top="13200" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label72" MOD="4" Left="8910" Top="13450" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label73" MOD="4" Left="8910" Top="13700" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label74" MOD="4" Left="8910" Top="13950" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label75" MOD="4" Left="8910" Top="14200" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label76" MOD="4" Left="8910" Top="14440" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label77" MOD="4" Left="8910" Top="14700" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label78" MOD="4" Left="8910" Top="14950" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label79" MOD="4" Left="8910" Top="15200" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label80" MOD="4" Left="8910" Top="15450" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label81" MOD="4" Left="8910" Top="15700" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label82" MOD="4" Left="8910" Top="15950" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label83" MOD="4" Left="8910" Top="16200" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label84" MOD="4" Left="8910" Top="16450" Width="144" Height="273.6" Caption="-" Style="text-align: center; font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label85" MOD="4" Left="7290" Top="12700" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label86" MOD="4" Left="7290" Top="12950" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label87" MOD="4" Left="7290" Top="13200" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label88" MOD="4" Left="7290" Top="13450" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label89" MOD="4" Left="7290" Top="13700" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label90" MOD="4" Left="7290" Top="13950" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label91" MOD="4" Left="7290" Top="14200" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label92" MOD="4" Left="7290" Top="14450" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label93" MOD="4" Left="7290" Top="14700" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label94" MOD="4" Left="7290" Top="14950" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label95" MOD="4" Left="7290" Top="15200" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label96" MOD="4" Left="7290" Top="15450" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label97" MOD="4" Left="7290" Top="15700" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label98" MOD="4" Left="7290" Top="15950" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label99" MOD="4" Left="7290" Top="16200" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Label" Name="Label100" MOD="4" Left="7290" Top="16450" Width="540" Height="273.6" Caption="Flock" Style="font-family: Times New Roman; " />
+      <Control Type="AR.Line" Name="Line14" MOD="4" X1="7830" Y1="12950" X2="8910" Y2="12950" />
+      <Control Type="AR.Line" Name="Line15" MOD="4" X1="7830" Y1="13200" X2="8910" Y2="13200" />
+      <Control Type="AR.Line" Name="Line16" MOD="4" X1="7830" Y1="13450" X2="8910" Y2="13450" />
+      <Control Type="AR.Line" Name="Line17" MOD="4" X1="7830" Y1="13700" X2="8910" Y2="13700" />
+      <Control Type="AR.Line" Name="Line18" MOD="4" X1="7830" Y1="13950" X2="8910" Y2="13950" />
+      <Control Type="AR.Line" Name="Line19" MOD="4" X1="7830" Y1="14200" X2="8910" Y2="14200" />
+      <Control Type="AR.Line" Name="Line20" MOD="4" X1="7830" Y1="14450" X2="8910" Y2="14450" />
+      <Control Type="AR.Line" Name="Line21" MOD="4" X1="7830" Y1="14700" X2="8910" Y2="14700" />
+      <Control Type="AR.Line" Name="Line22" MOD="4" X1="7830" Y1="14950" X2="8910" Y2="14950" />
+      <Control Type="AR.Line" Name="Line23" MOD="4" X1="7830" Y1="15200" X2="8910" Y2="15200" />
+      <Control Type="AR.Line" Name="Line24" MOD="4" X1="7830" Y1="15450" X2="8910" Y2="15450" />
+      <Control Type="AR.Line" Name="Line25" MOD="4" X1="7830" Y1="15700" X2="8910" Y2="15700" />
+      <Control Type="AR.Line" Name="Line26" MOD="4" X1="7830" Y1="15950" X2="8910" Y2="15950" />
+      <Control Type="AR.Line" Name="Line27" MOD="4" X1="7830" Y1="16200" X2="8910" Y2="16200" />
+      <Control Type="AR.Line" Name="Line28" MOD="4" X1="7830" Y1="16450" X2="8910" Y2="16450" />
+      <Control Type="AR.Line" Name="Line29" MOD="4" X1="7830" Y1="16700" X2="8910" Y2="16700" />
+      <Control Type="AR.Line" Name="Line30" MOD="4" X1="9090" Y1="12950" X2="9630" Y2="12950" />
+      <Control Type="AR.Line" Name="Line31" MOD="4" X1="9090" Y1="13200" X2="9630" Y2="13200" />
+      <Control Type="AR.Line" Name="Line32" MOD="4" X1="9090" Y1="13450" X2="9630" Y2="13450" />
+      <Control Type="AR.Line" Name="Line33" MOD="4" X1="9090" Y1="13700" X2="9630" Y2="13700" />
+      <Control Type="AR.Line" Name="Line34" MOD="4" X1="9090" Y1="13950" X2="9630" Y2="13950" />
+      <Control Type="AR.Line" Name="Line35" MOD="4" X1="9090" Y1="14200" X2="9630" Y2="14200" />
+      <Control Type="AR.Line" Name="Line36" MOD="4" X1="9090" Y1="14450" X2="9630" Y2="14450" />
+      <Control Type="AR.Line" Name="Line37" MOD="4" X1="9090" Y1="14700" X2="9630" Y2="14700" />
+      <Control Type="AR.Line" Name="Line38" MOD="4" X1="9090" Y1="14950" X2="9630" Y2="14950" />
+      <Control Type="AR.Line" Name="Line39" MOD="4" X1="9090" Y1="15200" X2="9630" Y2="15200" />
+      <Control Type="AR.Line" Name="Line40" MOD="4" X1="9090" Y1="15450" X2="9630" Y2="15450" />
+      <Control Type="AR.Line" Name="Line41" MOD="4" X1="9090" Y1="15700" X2="9630" Y2="15700" />
+      <Control Type="AR.Line" Name="Line42" MOD="4" X1="9090" Y1="15950" X2="9630" Y2="15950" />
+      <Control Type="AR.Line" Name="Line43" MOD="4" X1="9090" Y1="16200" X2="9630" Y2="16200" />
+      <Control Type="AR.Line" Name="Line49" MOD="4" X1="9090" Y1="16450" X2="9630" Y2="16450" />
+      <Control Type="AR.Line" Name="Line50" MOD="4" X1="9090" Y1="16700" X2="9630" Y2="16700" />
+      <Control Type="AR.Shape" Name="Shape7" MOD="4" Left="90" Top="25920" Width="10710" Height="720" BackColor="16777215" />
+      <Control Type="AR.Label" Name="Label29" MOD="4" Left="4455" Top="26010" Width="2250" Height="540" Caption="Test Method" Style="text-align: center; font-weight: bold; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label138" MOD="4" Left="360" Top="26010" Width="1530" Height="540" Caption="Ordering Specification" Style="text-align: center; font-weight: bold; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label139" MOD="4" Left="2115" Top="26010" Width="2070" Height="540" Caption="Acceptance Criteria" Style="text-align: center; font-weight: bold; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="Label144" MOD="4" Left="7200" Top="26010" Width="3240" Height="540" Caption="Test Results (Specify if other than Acceptance Criteria)" Style="text-align: center; font-weight: bold; font-family: Times New Roman; vertical-align: middle; " />
+      <Control Type="AR.Line" Name="Line51" MOD="4" X1="1980" Y1="25920" X2="1980" Y2="34110.72" />
+      <Control Type="AR.Line" Name="Line52" MOD="4" X1="6840" Y1="25920" X2="6840" Y2="34111.44" />
+      <Control Type="AR.Line" Name="Line53" MOD="4" X1="4320" Y1="25920" X2="4320" Y2="34111.44" />
+      <Control Type="AR.Label" Name="Label31" MOD="4" Left="2126.88" Top="18331.2" Width="2071.44" Height="691.2" Caption="containing antibiotics or other medication" Style="text-align: center; font-weight: normal; font-family: Times New Roman; vertical-align: top; " />
+      <Control Type="AR.Field" Name="txtDeliverySpecComments" DataField="DeliverySpecComments" MOD="4" Left="810" Top="36450" Width="9180" Height="1890" Text="" />
+      <Control Type="AR.Shape" Name="Shape17" MOD="4" Left="540" Top="35910" Width="9630" Height="2520" BackColor="16777215" />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="PageFooter" Name="PageFooter" Height="30" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <OleDbDataSource ConnectE="VGDvWfkCexLBkCU3jmz1dAMPLrDwpba7ioJB+vnN5NXEQneFW+YeHn/CMuEpQYDT+3kPc1QZ+WN2gGwUMV3nuuC8/HsCG+FdKc2B5NnY/sskh/1WtVEpGcORBtrVtRWttzizr6grRbbAP2Ml5myTCpLWfvzSanC+qTio8gGdmwhbvDPbIaoOFOiz4d+lbXLpfnQxy1C5xszybddPNnxxGA==" SQL="execute [rptDeliverySpecSheet] @DeliveryDate ='02/02/2018', @LotNbr = '1859024'" />
+  </DataSources>
+  <Script><![CDATA[public void Detail_Format()
+{
+	if(this.txtDeliverySlip03.Text=="")
+	{
+		this.lblNA03_Checked.Visible = true;
+		this.lblNA03_Unchecked.Visible = false;
+	}
+	else
+	{
+		this.lblNA03_Checked.Visible = false;
+		this.lblNA03_Unchecked.Visible = true;
+	}
+	
+	if(this.txtDeliverySlip04.Text=="")
+	{
+		this.lblNA04_Checked.Visible = true;
+		this.lblNA04_Unchecked.Visible = false;
+	}
+	else
+	{
+		this.lblNA04_Checked.Visible = false;
+		this.lblNA04_Unchecked.Visible = true;
+	}
+	
+}
+]]></Script>
+  <PageSettings LeftMargin="864" RightMargin="288" TopMargin="648" BottomMargin="288" />
+</ActiveReportsLayout>

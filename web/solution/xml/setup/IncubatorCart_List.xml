@@ -1,0 +1,13 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Setup - Incubator Cart">
+
+		<field fieldName="IncubatorCart" multilineEdit="true" displayName="Incubator Cart"/>
+		<field fieldName="ShelfCnt" multilineEdit="true" displayName="Shelf Cnt"/>
+		<field fieldName="EggCapacityPerShelf" multilineEdit="true" displayName="Egg Capacity Per Shelf"/>
+		<field fieldName="EggCapacity" multilineEdit="true" displayName="Egg Capacity"/>
+		<field fieldName="Notes" multilineEdit="true" displayName="Notes"/>
+		<field fieldName="SortOrder" multilineEdit="true" displayName="Sort Order"/>
+		<field fieldName="IsActive" multilineEdit="true" displayName="Is Active"/>
+		<field fieldName="IncubatorCartID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="IncubatorCart_Delete" visibleFieldName="IncubatorCartID.toString()!" visibleFieldValue="0"/>
+	</section>
+</fieldList>

@@ -1,0 +1,9 @@
+<CargasConnect>
+  <EggTransaction_Incubator_InsertUpdate>
+    <OrderIncubatorCartID/>
+    <QtyChange/>
+    <QtyChangeReasonID/>
+    <QtyChangeActualDate/>
+    <UserName/>
+  </EggTransaction_Incubator_InsertUpdate>
+</CargasConnect>

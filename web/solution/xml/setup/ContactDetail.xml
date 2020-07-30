@@ -1,0 +1,18 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Setup - Contact" columnSpan="3">
+		<field fieldName="ContactTypeID" multilineEdit="true" displayName="Contact Type" padding="1">		
+			<lookupList>
+				<source sql="exec ContactType_Lookup" />
+			</lookupList>
+		</field>
+		<field fieldName="IsActive" multilineEdit="true" displayName="Is Active"/>
+		<field fieldName="FirstName" multilineEdit="true" displayName="First Name"/>
+		<field fieldName="LastName" multilineEdit="true" displayName="Last Name"/>
+		<field fieldName="Email" multilineEdit="true" displayName="Email"/>
+		<field fieldName="OfficePhone" multilineEdit="true" displayName="Office Phone"/>
+		<field fieldName="MobilePhone" multilineEdit="true" displayName="Mobile Phone"/>
+		<field fieldName="FaxNumber" multilineEdit="true" displayName="Fax Number"/>
+		<field fieldName="PrimaryMethodOfContact" multilineEdit="true" displayName="Primary Method Of Contact"/>
+		<field fieldName="Notes" multilineEdit="true" displayName="Notes"/>
+	</section>
+</fieldList>

@@ -1,0 +1,8 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Quarterly Performance Audit Sections" columnSpan ="4">
+    <field fieldName="QtrlyPerformAuditTemplateSectionID" displayName="Edit" type="link icon edit" ScreenID="QtrlyPerformAuditTemplateSection_Form" hideWhenNull="true"/>
+    <field fieldName="SectionText" displayName="Section Text"/>
+    <field fieldName="SortOrder" displayName="Sort Order"/>
+    <field fieldName="DeleteSection" displayName="Delete" format="bit"/>
+  </section>
+</fieldList>

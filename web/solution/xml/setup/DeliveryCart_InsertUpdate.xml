@@ -1,0 +1,12 @@
+<CargasConnect>
+  <DeliveryCart_InsertUpdate>
+    <DeliveryCartID/>
+    <DeliveryCart/>
+    <SortOrder/>
+    <IsActive/>
+    <CartNumber/>
+    <IncubatorLocationNumber/>
+    <CoolerID/>
+    <OrderHoldingIncubatorID/>
+  </DeliveryCart_InsertUpdate>
+</CargasConnect>

@@ -1,0 +1,16 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="" columnSpan="4">
+    <field fieldName="CoolerID" multilineEdit="true" displayName="CoolerID">
+      <lookupList>
+        <source sql="exec Cooler_Lookup @includeBlank=1, @includeAll=0"/>
+      </lookupList>
+    </field>
+    <field fieldName="FlockID" multilineEdit="true" displayName="Flock">
+      <lookupList>
+        <source sql="exec Flock_Lookup @includeBlank=1, @includeAll=0"/>
+      </lookupList>
+    </field>
+    <field fieldName="LayDate" multilineEdit="true" displayName="Lay Date"/>
+    <field fieldName="HistoricalLayDate" multilineEdit="true" displayName="Historical"/>
+  </section>
+</fieldList>

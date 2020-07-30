@@ -1,0 +1,14 @@
+﻿<div text-align:center;">
+	<div ng-if="thisRecord.PADLSSamplingScheduleID!='0'">
+		<a name="PADLSSamplingScheduleID" id="PADLSSamplingScheduleID" href="Form.html?screenID=PADLSSamplingSchedule_Form&amp;p={{thisRecord.PADLSSamplingScheduleID}}">
+			<i id="PADLSSamplingSchedule" class="center material-icons ng-binging ng-scope">mode_edit</i>
+		</a>
+		<md-tooltip md-direction="bottom">Edit</md-tooltip>
+	</div>
+	<div ng-if="thisRecord.PADLSSamplingScheduleID=='0'">
+		<a name="PADLSSamplingScheduleID" id="PADLSSamplingScheduleID" href="runProcess.aspx?screenID=NewPADLSSamplingSchedule&amp;p={{thisRecord.FlockID}}">
+			<i id="PADLSSamplingSchedule" class="center material-icons ng-binging ng-scope">add</i>
+		</a>
+		<md-tooltip md-direction="bottom">Create New</md-tooltip>
+	</div>
+</div>

@@ -1,0 +1,13 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="PADLS - All Flocks" >
+    <field fieldName="Flock" displayName="Flock" />
+    <field fieldName="Week14_DateTargeted" displayName="14 Week AI Blood MG MS Swabs&lt;br/&gt;Date Targeted"/>
+    <field fieldName="Week14_DateCompleted" displayName="14 Week AI Bloo MG MS Swabs&lt;br/&gt;Date Completed"/>
+    <field fieldName="Week40_DateTargeted" displayName="40 week SE Swabs&lt;br/&gt;Date Targeted"/>
+    <field fieldName="Week40_DateCompleted" displayName="40 week SE Swabs&lt;br/&gt;Date Completed"/>
+    <field fieldName="QuarterlyAI_DateTargeted" displayName="Quarterly AI&lt;br/&gt;Date Targeted"/>
+    <field fieldName="QuarterlyAI_DateCompleted" displayName="Quarterly AI&lt;br/&gt;Date Completed"/>
+    <field fieldName="SpentFowlBlood_DateTargeted" displayName="Spent Fowl Blood&lt;br/&gt;Date Targeted"/>
+    <field fieldName="SpentFowlBlood_DateCompleted" displayName="Spent Fowl Blood&lt;br/&gt;Date Completed"/>
+  </section>
+</fieldList>

@@ -1,0 +1,19 @@
+<div text-align:center;">
+    <div ng-if="thisRecord.CommentCount!='0'">
+        <a name="PulletFarmPlanID" id="PulletFarmPlanID" onclick="fireCSBLink(this); return false;"
+			csb-link="showInDialog('List.html?screenID=FlockComment_List_Pullet&amp;p={{thisRecord.PulletFarmPlanID}}&amp;p={{thisRecord.PulletFarmPlanID}}','View Comments',1050,600)"		
+			href>
+            <i id="PulletFarmPlanID" class="center material-icons ng-binging ng-scope">short_text</i>
+        </a>
+        <md-tooltip md-direction="bottom">View Comments</md-tooltip>
+    </div>
+    <div ng-if="thisRecord.CommentCount=='0'">
+        <a name="PulletFarmPlanID" id="PulletFarmPlanID" onclick="fireCSBLink(this); return false;"
+			csb-link="showInDialog('List.html?screenID=FlockComment_List_Pullet&amp;p={{thisRecord.PulletFarmPlanID}}&amp;p={{thisRecord.PulletFarmPlanID}}','View Comments',1050,600)"		
+			href>
+            <i id="PulletFarmPlanID" class="center material-icons ng-binging ng-scope">add</i>
+        </a>
+        <md-tooltip md-direction="bottom">Add a Comment</md-tooltip>
+    </div>
+</div> 
+

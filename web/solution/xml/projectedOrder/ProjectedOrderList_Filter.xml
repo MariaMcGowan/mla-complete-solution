@@ -1,0 +1,25 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="" columnSpan="10">
+    <field fieldName="DeliveryDate_Start" multilineEdit="true" displayName="Delivery From"/>
+    <field fieldName="DeliveryDate_End" multilineEdit="true" displayName="Delivery To"/>
+    <field fieldName="SetDate_Start" multilineEdit="true" displayName="Set From"/>
+    <field fieldName="SetDate_End" multilineEdit="true" displayName="Set To"/>
+    <field fieldName="DayOfWeekID" multilineEdit="true" displayName="Day of Week">
+      <lookupList>
+        <source sql="exec DayOfWeek_Lookup @IncludeBlank=0, @IncludeAll=1" />
+      </lookupList>
+    </field>
+    <field fieldName="DestinationBuildingID" multilineEdit="true" displayName="Destination Building">
+      <lookupList>
+        <source sql="exec DestinationBuilding_Lookup @includeBlank=1, @includeAll=0"/>
+      </lookupList>
+    </field>
+    <field fieldName="ContractTypeID" multilineEdit="true" displayName="Contract Type">
+      <lookupList>
+        <source sql="exec ContractType_Lookup @includeBlank=1"/>
+      </lookupList>
+    </field>
+
+
+  </section>
+</fieldList>

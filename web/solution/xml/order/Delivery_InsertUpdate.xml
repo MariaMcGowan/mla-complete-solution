@@ -1,0 +1,15 @@
+<CargasConnect>
+  <Delivery_InsertUpdate>
+    <DeliveryID/>
+    <OrderID/>
+    <DeliveryDescription/>
+    <HoldingIncubatorID/>
+    <PlannedQty/>
+    <ActualQty/>
+    <TruckID/>
+    <TimeOfDelivery/>
+    <DriverID/>
+	<HoldingIncubatorNotes/>
+	<DeliverySlip/>
+  </Delivery_InsertUpdate>
+</CargasConnect>

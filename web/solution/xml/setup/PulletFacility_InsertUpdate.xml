@@ -1,0 +1,25 @@
+﻿<CargasConnect>
+	<PulletFacility_InsertUpdate>
+		<PulletFacilityID/>
+		<PulletFacility/>
+		<PrimaryContactID/>
+		<SecondaryContactID/>
+		<Address1/>
+		<Address2/>		
+		<City/>
+		<State/>
+		<Zip/>
+    <MailingAddress1/>
+    <MailingAddress2/>
+    <MailingCity/>
+    <MailingState/>
+    <MailingZip/>    
+		<OwnedBy/>
+		<ContractedBy/>
+    <FacilityOwner/>
+		<SortOrder/>
+    <ShavingAmounts/>
+    <ShavingCompany/>
+    <ShavingComments/>
+	</PulletFacility_InsertUpdate>
+</CargasConnect>

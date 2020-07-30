@@ -1,0 +1,6 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="PADLS Template" columnSpan ="4"> 
+    <field fieldName="PADLSTemplateDescr" displayName="Template Description" />
+    <field fieldName="IsActive" displayName="IsActive" readOnly="true" />
+	</section>
+</fieldList>

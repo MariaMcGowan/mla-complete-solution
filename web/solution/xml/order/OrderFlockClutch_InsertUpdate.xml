@@ -1,0 +1,11 @@
+﻿<CargasConnect>
+  <OrderFlockClutch_InsertUpdate>
+    <OrderFlockClutchID/>
+    <OrderFlockID/>
+    <LayDate/>
+    <PlannedQty/>
+    <ActualQty/>
+    <OrderDestinationBuildingID/>
+    <UserName/>
+  </OrderFlockClutch_InsertUpdate>
+</CargasConnect>

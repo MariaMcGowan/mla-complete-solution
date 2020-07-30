@@ -1,0 +1,6 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="" displayStyle="paging:none" columnSpan="4">
+    <field fieldName="StartDate" displayName="Start Date"/>
+    <field fieldName="EndDate" displayName="End Date"/>
+  </section>
+</fieldList>

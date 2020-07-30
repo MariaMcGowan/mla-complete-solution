@@ -1,0 +1,8 @@
+﻿<CargasConnect>
+	<Customer_InsertUpdate>
+		<CustomerID/>
+		<CustomerTypeID/>
+		<CustomerName/>
+		<SortOrder/>
+	</Customer_InsertUpdate>
+</CargasConnect>

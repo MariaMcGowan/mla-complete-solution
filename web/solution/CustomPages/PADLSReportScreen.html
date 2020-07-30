@@ -1,0 +1,83 @@
+﻿<table class="flockScheduleTable" fixed-header="1" offset-from-element=".contextBar md-toolbar" style="font-size:8px">
+	<thead style="background-color:white;">
+
+		<tr>
+			<th dynamic-width="7.5%" sticky-header sticky-anchor-selector=".mainContentContainer">Flock</th>
+
+			<th ng-bind-html="columnRecord.ColumnName | unsafe" sticky-header sticky-anchor-selector=".mainContentContainer" ng-repeat="columnRecord in data.detailRecords[0].PADLS_TaskList" class="hiderotateText">
+				{{::columnRecord.ColumnName}}
+			</th>
+
+			<!--<th style="display: none;" ng-init="data.setAdvancedSearchFields(data.detailRecords[0].PADLSColumnDef)"></th>-->
+
+		</tr>
+
+	</thead>
+
+	<tr table-content-main-row="table-content-main-row" dir-paginate="thisRecord in data.records | itemsPerPage: 2000 " current-page="data.currentPage">
+		<td class="flockScheduleCell">{{::thisRecord.Flock}}</td>
+
+		<td ng-if="thisRecord.Task01_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task01_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task01_Visible=='1'"><div>{{::thisRecord.Task01_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task02_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task02_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task02_Visible=='1'"><div>{{::thisRecord.Task02_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task03_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task03_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task03_Visible=='1'"><div>{{::thisRecord.Task03_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task04_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task04_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task04_Visible=='1'"><div>{{::thisRecord.Task04_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task05_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task05_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task05_Visible=='1'"><div>{{::thisRecord.Task05_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task06_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task06_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task06_Visible=='1'"><div>{{::thisRecord.Task06_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task07_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task07_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task07_Visible=='1'"><div>{{::thisRecord.Task07_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task08_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task08_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task08_Visible=='1'"><div>{{::thisRecord.Task08_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task09_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task09_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task09_Visible=='1'"><div>{{::thisRecord.Task09_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task10_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task10_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task10_Visible=='1'"><div>{{::thisRecord.Task10_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task11_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task11_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task11_Visible=='1'"><div>{{::thisRecord.Task11_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task12_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task12_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task12_Visible=='1'"><div>{{::thisRecord.Task12_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task13_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task13_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task13_Visible=='1'"><div>{{::thisRecord.Task13_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task14_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task14_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task14_Visible=='1'"><div>{{::thisRecord.Task14_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task15_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task15_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task15_Visible=='1'"><div>{{::thisRecord.Task15_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task16_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task16_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task16_Visible=='1'"><div>{{::thisRecord.Task16_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task17_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task17_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task17_Visible=='1'"><div>{{::thisRecord.Task17_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task18_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task18_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task18_Visible=='1'"><div>{{::thisRecord.Task18_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task19_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task19_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task19_Visible=='1'"><div>{{::thisRecord.Task19_CompletedDate}}</div></td>
+
+		<td ng-if="thisRecord.Task20_OmitDateTargetedFromReport=='0'"><div>{{::thisRecord.Task20_TargetedDate}}</div></td>
+		<td ng-if="thisRecord.Task20_Visible=='1'"><div>{{::thisRecord.Task20_CompletedDate}}</div></td>
+
+
+	</tr>
+</table>
+

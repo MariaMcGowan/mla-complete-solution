@@ -1,0 +1,9 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="" displayStyle="paging:none" columnSpan="10">
+		<field fieldName="EggWeightClassificationID" multilineEdit="true" displayName="Egg Weight">
+			<lookupList>
+				<source sql="exec EggWeightClassification_Lookup" />
+			</lookupList>
+		</field>
+	</section>
+</fieldList>

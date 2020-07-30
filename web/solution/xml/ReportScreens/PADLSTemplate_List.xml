@@ -1,0 +1,7 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="PADLS Sampling Schedule" columnSpan ="4">
+    <field fieldName="PADLSTemplateID" displayName="Add/Edit" type="htmlfile ~\solution\CustomPages\PADLSTemplateAddEdit.html"/>
+    <field fieldName="PADLSTemplateDescr" displayName="Template Description"/>
+    <field fieldName="IsActive" displayName="Active"/>
+  </section>
+</fieldList>

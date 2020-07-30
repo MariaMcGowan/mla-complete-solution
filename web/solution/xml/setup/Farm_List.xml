@@ -1,0 +1,12 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Setup - Farm" displayStyle="paging:none">
+		<field fieldName="FarmID" displayName="Edit" type="link icon edit" ScreenID="FarmDetail" hideWhenNull="true"/>
+		<field fieldName="Farm" displayName="Farm"/>
+		<field fieldName="FarmNumber" displayName="Farm Number"/>
+		<field fieldName="PlanningGroup" displayName="Planning Group" className="{{thisRecord.PlanningColor}}" readOnly="true" />
+		<field fieldName="PrimaryContact" displayName="Primary Contact"/>
+		<field fieldName="SortOrder" multilineEdit="true" displayName="Sort Order"/>
+		<field fieldName="IsActive" multilineEdit="true" displayName="Active"/>
+		<field fieldName="FarmID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="Farm_Delete" visibleFieldName="FarmID.toString()!" visibleFieldValue="0"/>
+	</section>
+</fieldList>

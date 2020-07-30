@@ -1,0 +1,7 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Order Flock Lay Date" mobileLayoutSize="none">
+    <field fieldName="LayDate" multilineEdit="true" displayName="Lay Date"/>
+    <field fieldName="PlannedQty" multilineEdit="true" displayName="Planned Qty"/>
+    <field fieldName="OrderFlockClutchID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="OrderFlockClutch_Delete" visibleFieldName="OrderFlockClutchID.toString()!" visibleFieldValue="0"/>
+  </section>
+</fieldList>

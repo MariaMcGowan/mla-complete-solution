@@ -1,0 +1,18 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Flock Plan Summary" displayStyle="paging:100">
+    <field fieldName="PlannedOrActual" displayName="P/A" className="{{thisRecord.FarmColor}}" readOnly="true"/>
+    <field fieldName="FlockNumber" displayName="Flock Code" className="{{thisRecord.FarmColor}}" readOnly="true"/>
+		<field fieldName="PulletFacility" displayName="Pullet Facility" className="{{thisRecord.FarmColor}}"  readOnly="true"/>
+    <field fieldName="PulletQtyAt16Weeks" displayName="Pullet Qty" className="{{thisRecord.FarmColor}}" readOnly="true"/>
+    
+    <field fieldName="HatchDate" displayName="Hatch Date" className="{{thisRecord.FarmColor}} shrinkFontSize_95 width75"  readOnly="true"/>
+		<field fieldName="Week24" displayName="24 Week Date" className="{{thisRecord.FarmColor}} shrinkFontSize_95 width75"  readOnly="true"/>
+    <field fieldName="Week65" displayName="65 Week Date" className="{{thisRecord.FarmColor}} shrinkFontSize_95 width75"  readOnly="true"/>
+    <field fieldName="StartDate" displayName="Start Date" className="{{thisRecord.FarmColor}} shrinkFontSize_95 width75" />
+    <field fieldName="EndDate" displayName="End Date" className="{{thisRecord.FarmColor}} shrinkFontSize_95 width75" />
+    
+    <field fieldName="PulletFacility_RemoveDate" displayName="Pullet Facility&lt;br/&gt;Remove Date" className="{{thisRecord.FarmColor}}"  readOnly="true"/>
+    <field fieldName="ProductionFarm_RemoveDate" displayName="Production Farm&lt;br/&gt;Remove Date" className="{{thisRecord.FarmColor}}"  readOnly="true"/>
+   
+	</section>
+</fieldList>

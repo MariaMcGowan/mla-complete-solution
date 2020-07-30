@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="11490" DocumentName="ARNet Document" ScriptLang="C#">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="1724" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label" MOD="4" Left="90" Top="90" Width="11250" Height="540" Caption="Shavings Template" Style="text-align: center; font-weight: bold; font-size: 18pt; font-family: Calibri; " />
+      <Control Type="AR.Label" Name="lblPulletFacilities" MOD="4" Left="180" Top="1170" Width="2790" Height="360" Caption="Pullet Facilities" Style="text-align: center; font-weight: bold; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="lblShavingAmounts" MOD="4" Left="3150" Top="1170" Width="2070" Height="360" Caption="Shaving Amounts" Style="text-align: center; font-weight: bold; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="lblShavingCompany" MOD="4" Left="5400" Top="1170" Width="1710" Height="360" Caption="Company" Style="text-align: center; font-weight: bold; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="lblShavingComments" MOD="4" Left="7290" Top="1170" Width="3960" Height="360" Caption="Comments" Style="text-align: center; font-weight: bold; vertical-align: middle; " />
+      <Control Type="AR.Line" Name="Line" MOD="4" X1="11340.72" Y1="900" X2="11340.72" Y2="1710" />
+      <Control Type="AR.Line" Name="Line1" MOD="4" X1="5310" Y1="900" X2="5310" Y2="1710" />
+      <Control Type="AR.Line" Name="Line2" MOD="4" X1="90" Y1="900" X2="90" Y2="1710" />
+      <Control Type="AR.Line" Name="Line3" MOD="4" X1="7200" Y1="900" X2="7200" Y2="1710" />
+      <Control Type="AR.Line" Name="Line4" MOD="4" X1="3060" Y1="900" X2="3060" Y2="1710" />
+      <Control Type="AR.Line" Name="Line10" MOD="4" X1="90" Y1="900" X2="11340" Y2="900" />
+      <Control Type="AR.Line" Name="Line11" MOD="4" X1="90" Y1="1710" X2="11340" Y2="1710" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="480" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtPulletFacility" DataField="PulletFacility" MOD="4" Left="180" Top="90" Width="2790" Height="270.72" Text="" Style="font-family: Calibri; " />
+      <Control Type="AR.Field" Name="txtShavingAmounts" DataField="ShavingAmounts" MOD="4" Left="3150" Top="90" Width="2070.72" Height="270.72" Text="" Style="font-family: Calibri; " />
+      <Control Type="AR.Field" Name="txtShavingCompany" DataField="ShavingCompany" MOD="4" Left="5400" Top="90" Width="1710" Height="270" Text="" Style="font-family: Calibri; " />
+      <Control Type="AR.Field" Name="txtShavingComments" DataField="ShavingComments" MOD="4" Left="7290" Top="90" Width="3960" Height="270" Text="" Style="font-family: Calibri; " />
+      <Control Type="AR.Line" Name="Line5" MOD="4" X1="11340" Y1="0" X2="11340" Y2="450" />
+      <Control Type="AR.Line" Name="Line6" MOD="4" X1="7200" Y1="0" X2="7200" Y2="450" />
+      <Control Type="AR.Line" Name="Line7" MOD="4" X1="5310" Y1="0" X2="5310" Y2="450" />
+      <Control Type="AR.Line" Name="Line8" MOD="4" X1="3060" Y1="0" X2="3060" Y2="450" />
+      <Control Type="AR.Line" Name="Line9" MOD="4" X1="90" Y1="0" X2="90" Y2="450" />
+      <Control Type="AR.Line" Name="Line12" MOD="4" X1="90" Y1="450" X2="11340" Y2="450" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="1005" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="180" Top="180" Width="720" Height="270" Caption="Note:" />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="180" Top="540" Width="2160" Height="270" Caption="4.2 bags per yard" />
+    </Section>
+  </Sections>
+  <PageSettings />
+</ActiveReportsLayout>

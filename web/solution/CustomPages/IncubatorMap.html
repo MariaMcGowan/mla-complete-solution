@@ -1,0 +1,38 @@
+
+<!--data.detailRecords[0].IncubatorLoad_Details[0].Flock-->
+<div style="text-align:center;">
+<table style="width:100%;" flex="100" border="1">
+    <tr ng-repeat="detailRow in data.detailRecords[0].IncubatorLoad_Rows">
+        <td ng-class="detailColumn.className" style="vertical-align:top;" ng-repeat="detailColumn in data.detailRecords[0].IncubatorLoad_Locations | filter:{RowNumber:detailRow.RowNumber}">
+            <div ng-if="detailColumn.LocationNumber>0">
+                {{detailColumn.LocationNumber}}
+            </div>
+            <div ng-if="detailColumn.LocationNumber==-1" style="text-align:center;">
+                <!--{{detailColumn.displayOverride}}-->
+                <img src="solution\images\FAN.png" style="width:100px;padding-top:57px;" />
+            </div>
+            <div ng-class="detailRecord.className" ng-repeat="detailRecord in data.detailRecords[0].IncubatorLoad_Details | filter:{LocationNumber:detailColumn.LocationNumber}:true">
+                <!--cell content-->{{detailRecord.ErrorMessage}}
+                <div layout="row" layout-sm="column" layout-md="column" layout-wrap="">
+                    <md-input-container flex="100" class=""><label for="FlockID" class="md-no-float csb-md-simulate-has-value">Flock</label><md-select ng-change="data.changeFunction('defaultIncubatorCartQuantity({detailRecords},{thisRecord})', 'FlockID', true, detailRecord, 'FlockID');" ng-model="detailRecord.FlockID" name="FlockID" id="FlockID{{$parent.$parent.$index + '_' + $parent.$index + '_' + $index}}" class="md-input"><md-option ng-value="listItem.value" ng-repeat="listItem in dropdownJSON.FlockID">{{listItem.display}}</md-option></md-select></md-input-container>
+                    <md-input-container flex="100" class=""><div><label for="LayDate" class="form-label" style="padding-left:40px;">Lay Date</label><div layout="rows"><input style="color:black;" ng-change="data.changeFunction('incubatorLoadFieldChange({detailRecords},{thisRecord},\'LayDate\')', 'LayDate', true, detailRecord, 'LayDate');" ng-model="detailRecord.LayDate" name="LayDate" id="LayDate{{$parent.$parent.$index + '_' + $parent.$index + '_' + $index}}" jq-date="" valid-date="" size="8" class="md-input" type="text"></div></div><div class="csb-error-message" ng-messages="csbForm.LayDate.$error"><div ng-message="validDate">*invalid date</div></div></md-input-container>
+                    
+                
+                <md-input-container flex="100" class=""><label for="ActualQty" class="form-label ">Qty</label><input ng-model="detailRecord.ActualQty" ng-change="data.changeFunction('incubatorLoadFieldChange({detailRecords},{thisRecord},\'ActualQty\')', 'ActualQty', true, detailRecord, 'ActualQty');"  name="ActualQty" id="ActualQty{{$parent.$parent.$index + '_' + $parent.$index + '_' + $index}}" style="color:black;" class="md-input" type="text"><div class="csb-error-message" ng-messages="csbForm.ActualQty.$error"></div></md-input-container>
+
+                </div>
+            </div>
+        </td>
+    </tr>
+   <tr>
+</table>
+<table style="width:100%;border-collapse:collapse;" flex="100">
+    <tr>
+        <td style="width:50%;;border:none;font-size:xx-large">DOOR</td>
+        <td style="width:50%;;border:none;font-size:xx-large">DOOR</td>
+    </tr>
+   <tr>
+</table>
+
+</div> 
+

@@ -1,0 +1,19 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Lay Date List" mobileLayoutSize="none">
+    <field fieldName="OrderID" multilineEdit="true" displayName="Order Number" readOnly="true">
+      <lookupList>
+        <source sql="execute Order_Lookup"></source>
+      </lookupList>
+    </field>
+    <field fieldName="FlockID" multilineEdit="true" displayName="Flock" readOnly="true">
+      <lookupList>
+        <source sql="execute Flock_Lookup"></source>
+      </lookupList>
+    </field>
+    <field fieldName="LayDate" multilineEdit="true" displayName="Lay Date" readOnly="true"/>
+    <field fieldName="PlannedQty" multilineEdit="true" displayName="Planned Qty"/>
+    <field fieldName="OrderFlockClutchID" readOnly="true" displayName="Assign Cooler(s)" type="link icon queue" ScreenID="OrderClutchCooler_ListPopup" hideWhenNull="true"/>
+    <field fieldName="OrderFlockClutchID" readOnly="true" displayName="Assign Incubator(s)" type="link icon queue" ScreenID="OrderClutchIncubator_ListPopup" hideWhenNull="true"/>
+    <!--<field fieldName="OrderFlockClutchID" readOnly="true" displayName="Assign Holding Incubator(s)" type="link icon queue" ScreenID="OrderHoldingIncubator_ListPopup" hideWhenNull="true"/>-->
+  </section>
+</fieldList>

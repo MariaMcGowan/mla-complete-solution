@@ -1,0 +1,13 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Order Holding Incubator">
+    <field fieldName="OrderHoldingIncubatorID" displayName="Add/Edit" type="htmlfile ~\solution\CustomPages\OrderHoldingIncubatorAddEdit.html"/>
+    <field fieldName="OrderHoldingIncubatorID" className="width150" displayName="Assign Carts" type="link display AssignCartsDisplay" ScreenID="DeliveryCart"/>
+    <field fieldName="HoldingIncubator" multilineEdit="true" displayName="Incubator">
+    </field>
+    <field fieldName="PlannedQty" multilineEdit="true" displayName="Planned Qty"/>
+    <field fieldName="ActualQty" multilineEdit="true" displayName="Actual Qty"/>
+    <field fieldName="ProfileNumber" multilineEdit="true" displayName="Profile Number"/>
+    <field fieldName="StartDateTime" multilineEdit="true" displayName="Start Date Time"/>
+    <field fieldName="OrderHoldingIncubatorID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="OrderHoldingIncubator_Delete" visibleFieldName="OrderHoldingIncubatorID.toString()!" visibleFieldValue="0"/>
+  </section>
+</fieldList>

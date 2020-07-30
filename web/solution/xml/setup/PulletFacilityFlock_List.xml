@@ -1,0 +1,20 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Pullet Facility Flock">
+		<field fieldName="PulletQtyAt16Weeks" displayName="Planned Pullet Qty At 16 Weeks" readOnly="true" format="numeric 0"/>
+		<field fieldName="Planned24WeekDate" displayName="Planned 24 Week Date" readOnly="true"/>
+		<field fieldName="PlannedHatchDate" displayName="Planned Hatch Date" readOnly="true"/>
+		<field fieldName="Planned16WeekDate" displayName="Planned 16 Week Date" readOnly="true"/>
+		<field fieldName="Planned65WeekDate" displayName="Planned 65 Week Date" readOnly="true"/>
+		<field fieldName="PlannedFemaleOrderQty" displayName="Planned Female Order Qty" readOnly="true" format="numeric 0"/>
+		<field fieldName="PlannedMaleOrderQty" displayName="Planned Male Order Qty" readOnly="true" format="numeric 0"/>
+		<field fieldName="ActualFemaleOrderQty" displayName="Actual Female Order Qty" format="numeric 0" readOnly="true"/>
+		<field fieldName="ActualMaleOrderQty" displayName="Actual Male Order Qty" format="numeric 0" readOnly="true"/>
+		<field fieldName="ActualHatchDate" displayName="Actual Hatch Date" readOnly="true"/>
+		<field fieldName="FarmID" displayName="Production Farm" readOnly="true">
+			<lookupList>
+				<source sql="exec Farm_Lookup"/>
+			</lookupList>
+		</field>
+		<field fieldName="FlockNumber" displayName="Flock Number" readOnly="true"/>
+	</section>
+</fieldList>

@@ -1,0 +1,15 @@
+<CargasConnect>
+  <OrderHoldingIncubator_InsertUpdate>
+    <OrderHoldingIncubatorID/>
+    <OrderID/>
+    <HoldingIncubatorID/>
+    <PlannedQty/>
+    <ActualQty/>
+    <ProfileNumber/>
+    <StartDate/>
+    <StartTime/>
+    <ProgramBy/>
+    <CheckedByPrimary/>
+    <CheckedBySecondary/>
+  </OrderHoldingIncubator_InsertUpdate>
+</CargasConnect>

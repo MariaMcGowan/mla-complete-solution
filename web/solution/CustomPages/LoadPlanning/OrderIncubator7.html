@@ -1,0 +1,11 @@
+<div ng-if="thisRecord.OrderIncubatorID7!=0">
+    <a href="Form.html?screenID=IncubatorLoad&p={{thisRecord.OrderIncubatorID7}}&p=7">
+        {{thisRecord.LotNbr7}}<br />
+        Inc #{{thisRecord.Incubator7}}
+    </a>
+</div>
+<div ng-if="thisRecord.OrderIncubatorID7==0">
+    <a onclick="fireCSBLink(this); return false;" csb-link="showInDialog('Form.html?screenID=LoadPlanning_CreateOrderIncubator&p={{thisRecord.LoadPlanningID}}&p=7', 'Assign Lay Dates to Order', 1000,500)" href="">
+        Select Order/Incubator
+    </a>
+</div>

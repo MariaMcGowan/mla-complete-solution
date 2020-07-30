@@ -1,0 +1,17 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="" displayStyle="paging:none" columnSpan="10">
+		<field fieldName="PlanningStartDate" multilineEdit="true" displayName="Start Date"/>
+		<field fieldName="PlanningEndDate" multilineEdit="true" displayName="End Date" padding="1"/>
+		<field fieldName="FlockCode" multilineEdit="true" displayName="Flock Code"></field>
+		<field fieldName="PulletFacilityID" multilineEdit="true" displayName="Pullet Facility" columnSpan="2">
+			<lookupList>
+				<source sql="exec PulletFacility_Lookup @IncludeBlank=1, @IncludeAll=0" />
+			</lookupList>
+		</field>
+		<field fieldName="FarmID" multilineEdit="true" displayName="Farm" columnSpan="2">
+			<lookupList>
+				<source sql="exec Farm_Lookup @IncludeBlank=1, @IncludeAll=0" />
+			</lookupList>
+		</field>
+	</section>
+</fieldList>

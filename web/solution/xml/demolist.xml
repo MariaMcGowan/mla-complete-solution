@@ -1,0 +1,8 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">   
+<section displayName="demolist">
+  <field fieldName="GPTableName" displayName="GP Table Name" readonly="true"/>
+  <field fieldName="GPColumnName" displayName="GP Column Name" readonly="true"/>
+  <field fieldName="GPColumnDescription" displayName="Column Description"/>
+
+  </section>  
+ </fieldList>

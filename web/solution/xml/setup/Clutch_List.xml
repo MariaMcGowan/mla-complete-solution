@@ -1,0 +1,15 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Setup - Lay Date(s)">
+		<field fieldName="FlockID" displayName="Add/Edit" type="htmlfile ~\solution\CustomPages\ClutchAddEdit.html"/>
+		<field fieldName="LayDate" multilineEdit="true" displayName="Lay Date"/>
+		<field fieldName="Clutch" multilineEdit="true" displayName="Description"/>
+		<field fieldName="RackCnt" multilineEdit="true" displayName="Rack Count"/>
+		<field fieldName="CaseCnt" multilineEdit="true" displayName="Case Count"/>
+		<field fieldName="PlannedQty" multilineEdit="true" displayName="Planned Qty"/>
+		<field fieldName="ActualQty" multilineEdit="true" displayName="Actual Qty"/>
+		<field fieldName="WgtPerDozen" multilineEdit="true" displayName="Wgt / Dozen"/>
+		<field fieldName="SortOrder" multilineEdit="true" displayName="Sort Order"/>
+		<field fieldName="IsActive" multilineEdit="true" displayName="Is Active"/>
+		<field fieldName="ClutchID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="Clutch_Delete" visibleFieldName="ClutchID.toString()!" visibleFieldValue="0"/>
+	</section>
+</fieldList>

@@ -1,0 +1,46 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="PADLS Sampling Schedule">
+		<field fieldName="FlockCode" displayName="HELP" readOnly="true" className="{{thisRecord.DynamicFormatting}}" />
+
+    <field fieldName="ItemText_01" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+    <field fieldName="DateTargeted_01" displayName="" className="{{thisRecord.DynamicFormatting}}" column-ng-show="thisRecord.ShowDateTargeted_01=='1'"/>
+		<field fieldName="DateCompleted_01" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+    <field fieldName="CompletedBy_01" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+
+    <field fieldName="ItemText_02" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+    <field fieldName="DateTargeted_02" displayName="" className="{{thisRecord.DynamicFormatting}}" column-ng-if="data.firstRow().ShowDateTargeted_02=='1'" />
+    <field fieldName="DateCompleted_02" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+    <field fieldName="CompletedBy_02" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+
+    <field fieldName="ItemText_03" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+    <field fieldName="DateTargeted_03" displayName="" className="{{thisRecord.DynamicFormatting}}" column-ng-if="data.firstRow().ShowDateTargeted_03=='1'" />
+    <field fieldName="DateCompleted_03" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+    <field fieldName="CompletedBy_03" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+
+    <field fieldName="ItemText_04" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+    <field fieldName="DateTargeted_04" displayName="DateTargeted_04" className="{{thisRecord.DynamicFormatting}}" column-ng-if="data.firstRow().ShowDateTargeted_04=='1'" />
+    <field fieldName="DateCompleted_04" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+    <field fieldName="CompletedBy_04" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+
+    <field fieldName="ItemText_05" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+    <field fieldName="DateTargeted_05" displayName="" className="{{thisRecord.DynamicFormatting}}" column-ng-if="data.firstRow().ShowDateTargeted_05=='1'" />
+    <field fieldName="DateCompleted_05" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+    <field fieldName="CompletedBy_05" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+
+    <field fieldName="ItemText_06" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+    <field fieldName="DateTargeted_06" displayName="" className="{{thisRecord.DynamicFormatting}}" column-ng-if="data.firstRow().ShowDateTargeted_06=='1'" />
+    <field fieldName="DateCompleted_06" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+    <field fieldName="CompletedBy_06" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+
+    <field fieldName="ItemText_07" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+    <field fieldName="DateTargeted_07" displayName="" className="{{thisRecord.DynamicFormatting}}" column-ng-if="data.firstRow().ShowDateTargeted_07=='1'" />
+    <field fieldName="DateCompleted_07" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+    <field fieldName="CompletedBy_07" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+
+    <field fieldName="ItemText_08" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+    <field fieldName="DateTargeted_08" displayName="" className="{{thisRecord.DynamicFormatting}}" column-ng-if="data.firstRow().ShowDateTargeted_08=='1'" />
+    <field fieldName="DateCompleted_08" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+    <field fieldName="CompletedBy_08" displayName="" className="{{thisRecord.DynamicFormatting}}" />
+
+  </section>
+</fieldList>

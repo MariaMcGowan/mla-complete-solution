@@ -1,0 +1,12 @@
+<CargasConnect>
+  <dbo.Destination_InsertUpdate>
+	<DestinationID/>
+	<Destination/>
+	<PrimaryContactID/>
+	<SecondaryContactID/>
+	<Notes/>
+	<SortOrder/>
+	<IsActive/>
+	<UserName/>
+  </dbo.Destination_InsertUpdate>
+</CargasConnect>

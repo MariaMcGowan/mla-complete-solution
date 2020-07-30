@@ -1,0 +1,27 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Chick Ordering" displayStyle="paging:100">
+		<field fieldName="FlockNumber" readOnly="true" displayName="Flock Code"/>
+		<field fieldName="PulletFacilityID" displayName="Pullet Facility" className="width250">
+			<lookupList>
+				<source sql="exec PulletFacility_Lookup"/>
+			</lookupList>
+		</field>
+		<field fieldName="ActualHatchDate" displayName="Actual&lt;br/&gt;Hatch Date" className="{{thisRecord.DynamicFormatting}}" customValidateFunction="DateAdd({thisRecord}, \'ActualHatchDate\', \'Actual24WeekDate\', \'168\')"/>
+		<field fieldName="PlannedHatchDate" readOnly="true" displayName="Planned&lt;br/&gt;Hatch Date" />
+		<field fieldName="FemaleBreed" displayName="Female Breed" className="width100"/>
+		<field fieldName="PlannedFemaleOrder" format="numeric 0" readOnly="true" displayName="Planned&lt;br/&gt;Female Order"/>
+		<field fieldName="ActualFemaleOrderQty" format="numeric 0" displayName="Actual&lt;br/&gt;Female Order"/>
+		<field fieldName="MaleBreed" displayName="Male Breed" className="width100"/>
+		<field fieldName="PlannedMaleOrder" format="numeric 0" readOnly="true" displayName="Planned&lt;br/&gt;Male Order"/>
+		<field fieldName="ActualMaleOrderQty" format="numeric 0" displayName="Actual&lt;br/&gt;Male Order"/>
+		<field fieldName="PulletQtyAt16Weeks"  format="numeric 0" readOnly="true" displayName="Planned&lt;br/&gt;Female Count&lt;br/&gt;at 16 Weeks"/>
+		<field fieldName="Actual24WeekDate" readOnlyOneWayBinding="false" readOnly="true" displayName="Actual&lt;br/&gt;24 Week Date" className="width100"/>    
+		<field fieldName="Planned24WeekDate" readOnly="true"  displayName="Planned&lt;br/&gt;24 Week Date" className="width100"/>
+		<field fieldName="Vaccine"/>
+		<field fieldName="ContractType"  readOnly="true" displayName="Contract Type"/>
+		<field fieldName="FarmName"  readOnly="true" displayName="Farm"/>
+		<field fieldName="PulletFarmPlanID" displayName="Comments" type="htmlfile ~\solution\CustomPages\FlockComments_ChickOrder.html"/>		
+		<field fieldName="Delete_PulletFarmPlanID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="PulletFarmPlan_Delete" visibleFieldName="Delete_PulletFarmPlanID.toString()!" visibleFieldValue="0" hideWhenNull="true"/>
+	</section>
+</fieldList>
+

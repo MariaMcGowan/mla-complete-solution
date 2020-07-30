@@ -1,0 +1,13 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Cooler Inventory">
+    <field fieldName="CoolerClutchID" displayName="Change Quantity" type="link icon edit" ScreenID="ClutchTransaction_Cooler" hideWhenNull="true"  className="{{thisRecord.className}}"/>
+    <field fieldName="CoolerClutchID" displayName="Show ALL Quantity Changes" type="link icon playlist" ScreenID="EggTransaction_List" hideWhenNull="true" className="{{thisRecord.className}}"/>
+    <field fieldName="Flock" multilineEdit="true" displayName="Flock" className="{{thisRecord.className}}"/>
+    <field fieldName="LayDate" multilineEdit="true" displayName="Lay Date" className="{{thisRecord.className}}"/>
+    <field fieldName="InitialQtyCarts" multilineEdit="true" displayName="Initial Qty (Carts)" customValidateFunction="convertEggQty({thisRecord}, \'InitialQtyCarts\', \'InitialQty\', \'incubatorCart\', \'egg\')" className="{{thisRecord.className}}"/>
+    <field fieldName="InitialQty" multilineEdit="true" displayName="Initial Qty (Eggs)" customValidateFunction="convertEggQty({thisRecord}, \'InitialQty\', \'InitialQtyCarts\', \'egg\', \'incubatorCart\')" className="{{thisRecord.className}}"/>
+    <field fieldName="ActualQtyCarts" multilineEdit="true" displayName="Actual Qty (Carts)" customValidateFunction="convertEggQty({thisRecord}, \'ActualQtyCarts\', \'ActualQty\', \'incubatorCart\', \'egg\')" className="{{thisRecord.className}}"/>
+    <field fieldName="ActualQty" multilineEdit="true" displayName="Actual Qty (Eggs)" customValidateFunction="convertEggQty({thisRecord}, \'ActualQty\', \'ActualQtyCarts\', \'egg\', \'incubatorCart\')" className="{{thisRecord.className}}"/>   
+    <!--<field fieldName="CoolerClutchID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="CoolerClutch_Delete" visibleFieldName="CoolerClutchID.toString()!" visibleFieldValue="0"/>-->
+  </section>
+</fieldList>

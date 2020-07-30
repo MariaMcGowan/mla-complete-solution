@@ -1,0 +1,25 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Projected Order List">
+    <field fieldName="SetDate" multilineEdit="true" displayName="Set Date"/>         
+		<field fieldName="DeliveryDate" multilineEdit="true" displayName="Delivery Date"/>
+    <field fieldName="DayOfWeek" multilineEdit="true" displayName="Day of Week (Delivery)"/>
+    <field fieldName="DestinationID" multilineEdit="true" displayName="Destination">
+      <lookupList>
+        <source sql="execute Destination_Lookup"></source>
+      </lookupList>
+    </field>      
+    <field fieldName="DestinationBuildingID" multilineEdit="true" displayName="Destination Building">
+      <lookupList>
+        <source sql="execute DestinationBuilding_Lookup"></source>
+      </lookupList>
+    </field>
+    <field fieldName="Qty" multilineEdit="true" displayName="Quantity"/>
+    <field fieldName="CustomIncubation" multilineEdit="true" displayName="Custom Incubation"/>
+    <field fieldName="ContractTypeID" multilineEdit="true" displayName="Contract Type">
+      <lookupList>
+        <source sql="execute ContractType_Lookup"></source>
+      </lookupList>
+    </field>   
+    <field fieldName="ProjectedOrderID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="ProjectedOrder_Delete" visibleFieldName="ProjectedOrderID.toString()!" visibleFieldValue="0"/>
+	</section>
+</fieldList>

@@ -1,0 +1,7 @@
+﻿<CargasConnect>
+  <PulletFarmPlanSummary_InsertUpdate>
+		<PulletFarmPlanID/>
+		<StartDate/>
+		<EndDate/>
+	</PulletFarmPlanSummary_InsertUpdate>
+</CargasConnect>

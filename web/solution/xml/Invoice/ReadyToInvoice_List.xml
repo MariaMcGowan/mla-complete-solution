@@ -1,0 +1,19 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Ready To Invoice">
+    <field fieldName="Selected" multilineEdit="true" displayName="Create Invoice"/>
+    <field fieldName="LotNbr" multilineEdit="true" readOnly="true" displayName="Lot Number"/>
+    <field fieldName="DestinationBuildingID" multilineEdit="true" readOnly="true" displayName="Building">
+      <lookupList>
+        <source sql="execute DestinationBuilding_Lookup"></source>
+      </lookupList>
+    </field>
+    <field fieldName="DeliveryDate" multilineEdit="true" readOnly="true" displayName="Delivery Date"/>
+    <field fieldName="DeliveryCnt" multilineEdit="true" readOnly="true" displayName="Delivery Count"/>
+    <field fieldName="DeliveredQty" multilineEdit="true" displayName="Total Eggs Delivered"/>
+    <field fieldName="InvoiceQty" multilineEdit="true" displayName="Total Eggs for Invoice"/>
+    <field fieldName="CummulativeQty" multilineEdit="true" readOnly ="true" displayName="Cummulative Invoice Egg Count"/>
+    <field fieldName="UnitPrice" multilineEdit="true" displayName="UnitPrice"/>
+    <field fieldName="DeliveryCharge" multilineEdit="true" displayName="DeliveryCharge"/>
+    <field fieldName="Terms" multilineEdit="true" displayName="Terms"/>
+	</section>
+</fieldList>

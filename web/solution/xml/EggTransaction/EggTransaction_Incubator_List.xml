@@ -1,0 +1,11 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Incubator Inventory">
+    <field fieldName="OrderIncubatorCartID" displayName="Change Quantity" type="link icon edit" ScreenID="EggTransaction_Incubator" hideWhenNull="true"/>
+    <field fieldName="OrderIncubatorCartID" displayName="Show ALL Quantity Changes" type="link icon playlist" ScreenID="EggTransaction_IncubatorChanges" hideWhenNull="true"/>
+    <field fieldName="IncubatorLocationNumber" displayName="Location Number"/>
+    <field fieldName="Flock" displayName="Flock"/>
+    <field fieldName="LayDate" displayName="Lay Date"/>
+    <field fieldName="IncubatorQtyCarts" displayName="Incubator Qty (Carts)"/>
+    <field fieldName="IncubatorQty" displayName="Incubator Qty"/>
+  </section>
+</fieldList>

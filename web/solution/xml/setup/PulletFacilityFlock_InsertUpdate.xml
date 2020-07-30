@@ -1,0 +1,15 @@
+﻿<CargasConnect>
+	<PulletFacilityFlock_InsertUpdate>
+		<PulletFarmPlanID/>
+		<FarmID/>
+		<TargetPulletQtyAt16Weeks/>
+		<Target24WeekDate/>
+		<ExpectedLivabilityRatio/>
+		<MaleToFemaleBirdRatio/>
+		<ActualFemaleOrderQty/>
+		<ActualMaleOrderQty/>
+		<PulletFacilityID/>
+		<ActualHatchDate/>
+		<FlockNumber/>
+	</PulletFacilityFlock_InsertUpdate>
+</CargasConnect>

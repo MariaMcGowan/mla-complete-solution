@@ -1,0 +1,17 @@
+﻿<CargasConnect>
+  <VaccinationServiceTemplateItem_InsertUpdate>
+    <VaccinationServiceTemplateID/>
+    <VaccinationServiceTemplateItemID/>
+    <ServiceOrDisease/>
+    <AgeInDays/>
+    <Service/>
+    <Disease/>
+    <VaccineDeliveryMethod/>
+    <Supplier/>
+    <ProductName/>
+    <ProductSerialNumber/>
+    <Administrator/>
+    <SortOrder/>
+    <DeleteItem/>
+  </VaccinationServiceTemplateItem_InsertUpdate>
+</CargasConnect>

@@ -1,0 +1,10 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Commercial Commitment - Choose Flocks">
+		<field fieldName="Selected" displayName="Select" className="{{thisRecord.DynamicFormatting}}"  />
+		<field fieldName="WeekEndingDate" displayName="Week Ending Date" readOnly="true"  className="{{thisRecord.DynamicFormatting}}" />
+		<field fieldName="Flock" displayName="Flock" readOnly="true" className="{{thisRecord.DynamicFormatting}}"  />
+		<field fieldName="EggWeightClassification" displayName="Egg Weight" readOnly="true" className="{{thisRecord.DynamicFormatting}}" />
+		<field fieldName="ReservedQty_InCases" displayName="Reserved Quantity (cases)" className="{{thisRecord.DynamicFormatting}}"  />
+    <field fieldName="ReservedQty_AveragePerDay_InCases" displayName="Average Cases Per Day" className="{{thisRecord.DynamicFormatting}}" readOnly="true"  />
+	</section>
+</fieldList>

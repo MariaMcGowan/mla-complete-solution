@@ -1,0 +1,78 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="" displayStyle="paging:none" columnSpan="5">
+		<field fieldName="Farm" multilineEdit="true" displayName="Farm" />
+    <field fieldName="FarmNumber" multilineEdit="true" displayName="Farm Number" />
+    <field fieldName="PlanningColorID" multilineEdit="true" displayName="Planning Group" className="{{thisRecord.PlanningColor}}"  padding="2">
+      <lookupList>
+        <source sql="exec PlanningColor_Lookup @IncludeBlank =1"/>
+      </lookupList>
+    </field>
+  
+    <field fieldName="FacilityOwner" displayName="Facility Owner"/>
+    <field fieldName="PrimaryContactID" multilineEdit="true" displayName="Primary Contact" >
+      <lookupList>
+        <source sql="exec Contact_Lookup @ContactTypeID=3"/>
+      </lookupList>
+    </field>
+    <field fieldName="SecondaryContactID" multilineEdit="true" displayName="Secondary Contact" >
+      <lookupList>
+        <source sql="exec Contact_Lookup @ContactTypeID=3"/>
+      </lookupList>
+    </field>
+    <field fieldName="ConservativeFactor" displayName="Conservative Factor"/>
+  </section>
+  <section displayName="Physical Address" displayStyle="paging:none" columnSpan="5" collapsed="true">
+		<field fieldName="Address1" multilineEdit="true" displayName="Address Line 1"/>
+		<field fieldName="Address2" multilineEdit="true" displayName="Address Line 2"/> 
+		<field fieldName="City" multilineEdit="true" displayName="City"/>
+		<field fieldName="State" multilineEdit="true" displayName="State"/>
+		<field fieldName="Zip" multilineEdit="true" displayName="Zip"/>
+	</section>
+  <section displayName="Mailing Address" displayStyle="paging:none" columnSpan="5" collapsed="true">
+		<field fieldName="MailingAddress1" multilineEdit="true" displayName="Address Line 1"/>
+		<field fieldName="MailingAddress2" multilineEdit="true" displayName="Address Line 2"/> 
+		<field fieldName="MailingCity" multilineEdit="true" displayName="City"/>
+		<field fieldName="MailingState" multilineEdit="true" displayName="State"/>
+		<field fieldName="MailingZip" multilineEdit="true" displayName="Zip"/>
+	</section>
+  <section displayName="Facility Information" displayStyle="paging:none" columnSpan="4" collapsed="true">
+    <field fieldName="BirdAreaDimensions" displayName="Inside dimensions of bird area"/>
+    <field fieldName="FeedlinePerching" displayName="Perching on feedlines" padding="2"/>
+    <field fieldName="PenCount" displayName="# of pens in building"/>
+    <field fieldName="PerchingLinearFt" displayName="Total linear feet of perching" padding="2"/>
+    <field fieldName="ActualFloorSqFt_wNest" displayName="Actual floor space (including nest)"/>
+    <field fieldName="FeedPanDiameter" displayName="Diameter of feed pans" padding="2" />
+    <field fieldName="ActualFloorSqFt_woNest" displayName="Actual floor space (not including nest)"/>
+    <field fieldName="LightingType" displayName="Type of lighting (Spacing, Dimmer Y/N, Dusk/Dawn Y/N)" padding="2"/>
+    <field fieldName="ScratchAreaSqFt" displayName="Total Scratch Area" padding="3"/>
+    <field fieldName="WateringEquipBrand" displayName="Brand of watering equip."/>
+    <field fieldName="PitFans" displayName="Pit fans" padding="2"/>
+    <field fieldName="NippleCount" displayName="# of nipples"/>
+    <field fieldName="InsideAccessToPit" displayName="Inside access to pit" padding="2"/>
+    <field fieldName="NippleSpacingIn" displayName="Nipple spacing"/>
+    <field fieldName="NestPitLights" displayName="Nest or pit lights" padding="2"/>
+    <field fieldName="WaterlinePerching" displayName="Perching on waterlines"/>
+    <field fieldName="NestBrand" displayName="Brand of nests" padding="2"/>
+    <field fieldName="WaterlineCount" displayName="# of waterlines"/>
+    <field fieldName="NestCount" displayName="# of nests" padding="2"/>
+    <field fieldName="FeedingEquipBrand" displayName="Brand of feeding equip."/>
+    <field fieldName="NestPadType" displayName="Type of nest pads" padding="2"/>
+    <field fieldName="FeedLineCountLoop" displayName="# of feed lines/loops"/>
+    <field fieldName="NestDimensions" displayName="Inside dimension of nest floor" padding="2"/>
+    <field fieldName="PanCountOrLinearFt" displayName="# of pans or linear feet of trough"/>
+    <field fieldName="PackerTypeModel" displayName="Type of packer and model #" padding="2"/>
+    <field fieldName="VentilationFanCountSize" displayName="# and size of ventilation fans"/>
+    <field fieldName="EmbryoCoolerDimensions" displayName="Dimensions of embryo cooler" padding="2"/>
+    <field fieldName="PitType" displayName="Deep pit/shallow pit/scraper barn"/>
+    <field fieldName="CommericalCoolerDimensions" displayName="Dimensions of commercial cooler" padding="2"/>
+    <field fieldName="FloorType" displayName="Type of flooring"/>
+    <field fieldName="CommercialProductionEmbryoCoolerUse" displayName="Embryo cooler used during commercial production" padding="2"/>
+    <field fieldName="GeneratorKW" displayName="Generator KW"/>
+    <field fieldName="WellCount" displayName="Number of wells" padding="2"/>
+    <field fieldName="StandardBirdCount_woNests" displayName="Bird #'s @ (.9) w/o nests" padding="3"/>
+    <field fieldName="StandardBirdCount_wNests" displayName="Bird #'s @ (.9) w/ nests" padding="3"/>
+    <field fieldName="StandardNippleCount" displayName="Nipple" padding="3"/>
+    <field fieldName="StandardFeedSpace" displayName="Feeder Space" padding="3"/>
+    <field fieldName="StandardSupportedHenCount" displayName="# of hens supported by nests"/>
+  </section>
+</fieldList>

@@ -1,0 +1,10 @@
+<CargasConnect>
+  <LoadPlanning_InsertUpdate>
+    <LoadPlanningID/>
+    <DeliveryDate/>
+    <SetDate/>
+    <OverflowFlockID/>
+    <PercentCushion/>
+    <TargetQty/>
+  </LoadPlanning_InsertUpdate>
+</CargasConnect>

@@ -1,0 +1,50 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Holding Incubator Load" columnSpan="2">
+    
+    <field fieldName="HoldingIncubator" displayName="Holding Incubator" readOnly="true">
+    </field>
+    <field fieldName="LotNumber" dislayName="Lot #" readOnly="true"/>
+    <field fieldName="DestinationBuilding" dislayName="Destination Building" readOnly="true"/>
+
+    <field fieldName="DeliveryDescription" multilineEdit="true" displayName="Delivery Description"/>
+    
+    <field fieldName="DeliveryDate" dislayName="Delivery Date" readOnly="true"/>
+    <field fieldName="TimeOfDelivery" multilineEdit="true" displayName="Time of Delivery"/>
+
+    <!--<field fieldName="ActualQty" readOnly="true" displayName="Actual Qty"/>-->
+    <field fieldName="TruckID" multilineEdit="true" displayName="Truck">
+      <lookupList>
+        <source sql="exec Truck_Lookup"/>
+      </lookupList>
+    </field>
+    <field fieldName="DriverID" multilineEdit="true" displayName="Driver">
+      <lookupList>
+        <source sql="exec Contact_Lookup @ContactTypeID=5"/>
+      </lookupList>
+    </field>
+
+    <field fieldName="HoldingIncubatorNotes" multilineEdit="true" displayName="Notes" columnSpan="2"/>
+    
+    <field fieldName="DeliveryID" type="htmlfile ~\solution\CustomPages\HoldingIncubatorLoad_DeliverySummary.html" columnSpan="1" />
+    <field fieldName="DeliveryID" type="htmlfile ~\solution\CustomPages\HoldingIncubatorLoad_BuildingSummary.html" columnSpan="1" />
+
+    <field fieldName="DeliveryID" displayName="Show Flock Summary" type="link icon details" ScreenID="HoldingIncubatorLoad_FlockSummary" hideWhenNull="true" columnSpan="2"/>
+    
+    <field fieldName="DeliveryID" type="htmlfile ~\solution\CustomPages\HoldingIncubatorMap.html" columnSpan="2"/>
+    <field fieldName="FlockID1" hidden="true">
+      <lookupList>
+        <source sql="exec Flock_Lookup_byDeliveryID @DeliveryID='{0}'"/>
+      </lookupList>
+    </field>
+    <field fieldName="FlockID2" hidden="true">
+      <lookupList>
+        <source sql="exec Flock_Lookup_byDeliveryID @DeliveryID='{0}'"/>
+      </lookupList>
+    </field>
+    <field fieldName="OrderID" hidden="true">
+      <lookupList>
+        <source sql="exec Order_LookupForDelivery  @DeliveryID='{0}'"/>
+      </lookupList>
+    </field>
+	</section>
+</fieldList>

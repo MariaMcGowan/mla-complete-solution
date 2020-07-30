@@ -1,0 +1,6 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="System Constant">
+		<field fieldName="ConstantName" displayName="Constant Name"/>
+		<field fieldName="ConstantValue" displayName="Constant Value"/>
+	</section>
+</fieldList>

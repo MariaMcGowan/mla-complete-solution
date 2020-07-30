@@ -1,0 +1,8 @@
+<CargasConnect>
+  <dbo.FarmList_InsertUpdate>
+	<FarmID/>
+	<SortOrder/>
+	<IsActive/>
+	<UserName/>
+  </dbo.FarmList_InsertUpdate>
+</CargasConnect>

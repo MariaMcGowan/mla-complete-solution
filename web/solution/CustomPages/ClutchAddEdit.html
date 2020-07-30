@@ -1,0 +1,15 @@
+<div text-align:center;">
+    <div ng-if="thisRecord.ClutchID!='0'">
+        <a name="ClutchID" id="ClutchID" href="Form.html?screenID=ClutchDetail&amp;p={{thisRecord.ClutchID}}">
+            <i id="Clutch" class="center material-icons ng-binging ng-scope">mode_edit</i>
+        </a>
+        <md-tooltip md-direction="bottom">Edit</md-tooltip>
+    </div>
+    <div ng-if="thisRecord.ClutchID=='0'">
+        <a name="ClutchID" id="ClutchID" href="runProcess.aspx?screenID=NewClutch&amp;p={{thisRecord.FlockID}}">
+            <i id="Clutch" class="center material-icons ng-binging ng-scope">add</i>
+        </a>
+        <md-tooltip md-direction="bottom">Create New</md-tooltip>
+    </div>
+</div> 
+

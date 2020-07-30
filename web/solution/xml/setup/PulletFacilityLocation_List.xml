@@ -1,0 +1,7 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="">
+    <field fieldName="PulletFacilityLocationID" displayName="Add/Edit" type="htmlfile ~\solution\CustomPages\PulletFacilityLocationAddEdit.html"/>
+    <field fieldName="LocationName" displayName="Location Name"/>
+    <field fieldName="PulletFacilityLocationID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="PulletFacilityLocationID_Delete" visibleFieldName="PulletFacilityLocationID.toString()!" visibleFieldValue="0"/>
+  </section>
+</fieldList>

@@ -1,0 +1,10 @@
+<CargasConnect>
+  <OrderDestinationBuilding_InsertUpdate>
+	<OrderID/>
+	<DestinationBuildingID/>
+	<OrderDestinationBuildingID/>
+	<PlannedQty/>
+	<OrderQty/>
+	<UserName/>
+  </OrderDestinationBuilding_InsertUpdate>
+</CargasConnect>

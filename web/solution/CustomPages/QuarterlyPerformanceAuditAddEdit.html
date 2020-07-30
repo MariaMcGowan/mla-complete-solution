@@ -1,0 +1,14 @@
+﻿<div text-align:center;">
+	<div ng-if="thisRecord.QuarterlyPerformanceAuditID!='0'">
+		<a name="QuarterlyPerformanceAuditID" id="QuarterlyPerformanceAuditID" href="Form.html?screenID=QuarterlyPeformanceAudit_Form&amp;p={{thisRecord.QuarterlyPerformanceAuditID}}">
+			<i id="QuarterlyPerformanceAudit" class="center material-icons ng-binging ng-scope">mode_edit</i>
+		</a>
+		<md-tooltip md-direction="bottom">Edit</md-tooltip>
+	</div>
+	<div ng-if="thisRecord.QuarterlyPerformanceAuditID=='0'">
+		<a name="QuarterlyPerformanceAuditID" id="QuarterlyPerformanceAuditID" href="runProcess.aspx?screenID=NewQuarterlyPerformanceAudit&amp;p={{thisRecord.FlockID}}">
+			<i id="QuarterlyPerformanceAudit" class="center material-icons ng-binging ng-scope">add</i>
+		</a>
+		<md-tooltip md-direction="bottom">Create New</md-tooltip>
+	</div>
+</div>

@@ -1,0 +1,82 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Facility Survey" displayStyle="paging:none" columnSpan="2">
+		<field fieldName="Farm" displayName="Facility Name" />
+    <field fieldName="Address" displayName="Physical Address" />
+    <field fieldName="FarmNumber" displayName="Facility Code" />
+    <field fieldName="MailingAddress" displayName="Mailing Address" />
+		<field fieldName="FacilityOwner" displayName="Facility Owner"/>
+    <field fieldName="PulletOrLayer" displayName="Pullet/Layer Facility"/>
+    <field fieldName="BirdAreaDimensions" displayName="Inside dimensions of bird area"/>
+    <field fieldName="FeedlinePerching" displayName="Perching on feedlines"/>
+    <field fieldName="PenCount" displayName="# of pens in building"/>
+    <field fieldName="PerchingLinearFt" displayName="Total linear feet of perching "/>
+    <field fieldName="ActualFloorSqFt_woNest" displayName="Actual floor space (not including nest)"/>
+    <field fieldName="FeedPanDiameter" displayName="Diameter of feed pans"/>
+    <field fieldName="ActualFloorSqFt_wNest" displayName="Actual floor space (including nest)"/>
+    <field fieldName="Lighting" displayName="Type of lighting (Spacing, Dimmer Y/N, Dusk/Dawn Y/N)"/>
+    <field fieldName="ScratchAreaSqFt" displayName="Total Scratch Area" columnSpan="2"/>
+    <field fieldName="WateringEquipBrand" displayName="Brand of watering equip."/>
+    <field fieldName="PitFans" displayName="Pit fans"/>
+    <field fieldName="NippleCount" displayName="# of nipples"/>
+    <field fieldName="InsideAccessToPit" displayName="Inside access to pit"/>
+    <field fieldName="NippleSpacingIn" displayName="Nipple spacing"/>
+    <field fieldName="NestPitLights" displayName="Nest or pit lights"/>
+    <field fieldName="WaterlinePerching" displayName="Perching on waterlines"/>
+    <field fieldName="NestBrand" displayName="Brand of nests"/>
+    <field fieldName="WaterlineCount" displayName="# of waterlines"/>
+    <field fieldName="NestCount" displayName="# of nests"/>
+    <field fieldName="FeedingEquipBrand" displayName="Brand of feeding equip."/>
+    <field fieldName="NestPadType" displayName="Type of nest pads"/>
+    <field fieldName="FeedLineCountLoop" displayName="# of feed lines/loops"/>
+    <field fieldName="NestDimensions" displayName="Inside dimension of nest floor"/>
+    <field fieldName="PanCountOrTroughFt" displayName="# of pans or linear feet of trough"/>
+    <field fieldName="PackerTypeModel" displayName="Type of packer and model #"/>
+    <field fieldName="VentilationFanCountSize" displayName="# and size of ventilation fans"/>
+    <field fieldName="EmbryoCoolerDimensions" displayName="Dimensions of embryo cooler"/>
+    <field fieldName="PitType" displayName="Deep pit/shallow pit/scraper barn"/>
+    <field fieldName="CommericalCoolerDimensions" displayName="Dimensions of commercial cooler"/>
+    <field fieldName="FloorType" displayName="Type of flooring"/>
+    <field fieldName="CommercialProductionEmbryoCoolerUse" displayName="Embryo cooler used during commercial production"/>
+    <field fieldName="GeneratorKW" displayName="Generator KW"/>
+    <field fieldName="WellCount" displayName="Number of wells"/>
+    <field fieldName="MaximumBirdCount" displayName=""/>
+    <field fieldName="StandardBirdCount_woNests" displayName=""/>
+    <field fieldName="StandardBirdCount_wNests" displayName=""/>
+    <field fieldName="StandardNippleCount" displayName=""/>
+    <field fieldName="StandardFeedSpace" displayName=""/>
+    <field fieldName="StandardSupportedHenCount" displayName=""/>
+           
+           
+           
+           
+           
+           
+           
+           
+           <field fieldName="IsActive" multilineEdit="true" displayName="Is Active"/>
+    <field fieldName="PrimaryContactID" multilineEdit="true" displayName="Primary Contact" >
+      <lookupList>
+        <source sql="exec Contact_Lookup @ContactTypeID=3"/>
+      </lookupList>
+    </field>
+    <field fieldName="SecondaryContactID" multilineEdit="true" displayName="Secondary Contact" >
+      <lookupList>
+        <source sql="exec Contact_Lookup @ContactTypeID=3"/>
+      </lookupList>
+    </field>
+  </section>
+  <section displayName="Physical Address" displayStyle="paging:none" columnSpan="5" collapsed="true">
+		<field fieldName="Address1" multilineEdit="true" displayName="Address Line 1"/>
+		<field fieldName="Address2" multilineEdit="true" displayName="Address Line 2"/> 
+		<field fieldName="City" multilineEdit="true" displayName="City"/>
+		<field fieldName="State" multilineEdit="true" displayName="State"/>
+		<field fieldName="Zip" multilineEdit="true" displayName="Zip"/>
+	</section>
+  <section displayName="Mailing Address" displayStyle="paging:none" columnSpan="5" collapsed="true">
+		<field fieldName="MailingAddress1" multilineEdit="true" displayName="Address Line 1"/>
+		<field fieldName="MailingAddress2" multilineEdit="true" displayName="Address Line 2"/> 
+		<field fieldName="MailingCity" multilineEdit="true" displayName="City"/>
+		<field fieldName="MailingState" multilineEdit="true" displayName="State"/>
+		<field fieldName="MailingZip" multilineEdit="true" displayName="Zip"/>
+	</section>  
+</fieldList>

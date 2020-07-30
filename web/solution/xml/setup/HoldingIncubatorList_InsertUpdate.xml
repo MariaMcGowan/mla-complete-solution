@@ -1,0 +1,10 @@
+<CargasConnect>
+  <dbo.HoldingIncubatorList_InsertUpdate>
+	<HoldingIncubatorID/>
+	<HoldingIncubator/>
+	<CartCapacity/>
+	<SortOrder/>
+	<IsActive/>
+	<UserName/>
+  </dbo.HoldingIncubatorList_InsertUpdate>
+</CargasConnect>

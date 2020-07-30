@@ -1,0 +1,11 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="" displayStyle="paging:100" columnSpan="10">
+		<field fieldName="PlanningStartDate" multilineEdit="true" displayName="Start Date"></field>
+		<field fieldName="PlanningEndDate" multilineEdit="true" displayName="End Date"></field>
+		<field fieldName="ShowEmbryoOrPulletQtyID" multilineEdit="true" displayName="DisplayType">
+			<lookupList>
+				<source sql="exec EmbryoOrPullet_Lookup"/>
+			</lookupList>
+		</field>
+	</section>
+</fieldList>

@@ -1,0 +1,16 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Pullet Only Flock" columnSpan="4" mobileLayoutSize="none" >
+    <field fieldName="PulletFacilityID" displayName="Pullet Facility" className="width250" >
+      <lookupList>
+        <source sql="exec PulletFacility_Lookup"/>
+      </lookupList>
+    </field>
+    <field fieldName="PulletQtyAt16Weeks" displayName="Pullet Quantity at 16 Weeks" format="numeric 0" customValidateFunction="calcPlannedMaleOrder({thisRecord})"/>
+    <field fieldName="Destination" padding="1"/>
+    <field fieldName="FemaleBreed" displayName="Female Breed"/>
+    <field fieldName="MaleBreed" displayName="Male Breed"/>
+    <field fieldName="PlannedMaleOrderQty" displayName="Planned Male Order" padding="1" customValidateFunction="calcPulletQtyAt16Wks({thisRecord})"/>  
+    <field fieldName="PlannedHatchDate" displayName="Planned Hatch Date"/>
+    <field fieldName="ActualHatchDate" displayName="Actual Hatch Date" />
+  </section>
+</fieldList>

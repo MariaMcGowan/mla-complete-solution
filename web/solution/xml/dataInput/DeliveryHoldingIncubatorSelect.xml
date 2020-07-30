@@ -1,0 +1,10 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Select Holding Incubator">
+    
+    <field fieldName="HoldingIncubatorID" displayName="Holding Incubator" multilineEdit="true">
+      <lookupList>
+        <source sql="exec HoldingIncubator_Lookup @includeAll=0, @includeBlank=0"/>
+      </lookupList>
+    </field>
+	</section>
+</fieldList>

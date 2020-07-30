@@ -1,0 +1,16 @@
+<CargasConnect>
+  <Order_InsertUpdate>
+	  <OrderID/>
+    <CustomerReferenceNbr/>
+    <IncubationDayCnt/>
+    <DeliveryDate/>
+    <DestinationID/>
+    <DestinationBuildingID/>
+    <PlannedQty/>
+    <OrderQty/>
+    <OrderStatusID/>
+    <PlannedSetDate/>
+    <DeliverySpecComments/>
+    <UserName/>
+  </Order_InsertUpdate>
+</CargasConnect>

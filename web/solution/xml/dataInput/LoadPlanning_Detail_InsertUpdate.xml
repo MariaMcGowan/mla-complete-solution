@@ -1,0 +1,10 @@
+<CargasConnect>
+  <LoadPlanning_Detail_InsertUpdate>
+    <LoadPlanning_DetailID/>
+    <LoadPlanningID/>
+    <FlockID/>
+    <IsOverflow/>
+    <FlockQty/>
+    <LastCandleoutPercent/>
+  </LoadPlanning_Detail_InsertUpdate>
+</CargasConnect>

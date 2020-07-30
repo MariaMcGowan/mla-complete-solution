@@ -1,0 +1,49 @@
+﻿<!--<table class="table table-striped table-bordered table-condensed md-default-theme">
+       <thead >
+           <tr table-header-content></tr>
+       </thead>
+       <tr table-body-content="" table-screen-id="{{screenId}}" pagination-id="screenId" dir-paginate="thisRecord in theseRecords | orderBy: theseRecords.sortString:theseRecords.sortReverse | itemsPerPage: pageSize " current-page="theseRecords.currentPage"></tr>
+
+   </table>-->
+<div style="float:left;">
+    <md-button style="margin-left:4px;margin-right:16px;" ng-if="data.screenPropertySet[screenId].newRecord" accesskey="N" ng-click="data.additionalActionsClick(data.screenPropertySet[screenId].newRecord)" class=" md-raised md-primary md-hue-1 csb-button">
+        <md-tooltip>{{data.screenPropertySet[screenId].newRecordDisplay}}</md-tooltip>
+        <i class="material-icons">{{data.screenPropertySet[screenId].newRecordIcon}}</i>
+    </md-button>
+    <md-button style="margin-left:4px;margin-right:16px;" ng-if="(data.screenPropertySet[screenId].additionalActions[0].validateForLink&&csbForm.$valid)||!data.screenPropertySet[screenId].validateForLink" ng-repeat="item in data.screenPropertySet[screenId]" ng-click="data.additionalActionsClick(item)" class="md-raised md-primary md-hue-1 csb-button">
+        <md-tooltip>{{item.label}}</md-tooltip>
+        <i class="material-icons" ng-if="item.displayStyle.substring(0,4)=='icon'">{{item.displayStyle.substring(5,item.displayStyle.length)}}</i>
+        <img ng-if="item.displayStyle.substring(0,5)=='image'" ng-src="{{item.displayStyle.substring(6,item.displayStyle.length)}}" />
+        <span ng-if="item.displayStyle.substring(0,4)!='icon'&&item.displayStyle.substring(0,5)!='image'">{{item.label}}</span>
+    </md-button>
+</div>
+
+<input type="text" style="float:left; margin: 0px 0px 5px 1px;" ng-model="data.searchString" placeholder="quick search..." class="csb-quick-search" ng-if="data.screenPropertySet.hideSearch!='true'" />
+<md-button ng-if="data.screenPropertySet.hideSearch!='true'" ng-controller="mainDialog as mainDialog" style="font-size: inherit; height: 24px; min-height:24px; line-height: 24px; margin: 0px; min-width: inherit; width: auto; padding:0px; float: left;" ng-click="mainDialog.singleRecordTemplate('TemplateHtml/AdvancedFilter_Tab.html', data, $event)">
+    <i class="material-icons" style="font-size: 20px">search</i>
+    <md-tooltip>Advanced Search</md-tooltip>
+</md-button>
+
+<span style="float:right; font-size: smaller" ng-if="data.screenPropertySet.hidePaging!='true'">
+    Records per page:
+    <select ng-model="data.pageSize">
+        <option ng-if="theseRecords.length>20" value="10">10</option>
+        <option ng-if="theseRecords.length>50" value="25">25</option>
+        <option ng-if="theseRecords.length>100" value="50">50</option>
+        <option ng-if="theseRecords.length>200" value="100">100</option>
+        <option ng-if="theseRecords.length>1000" value="500">500</option>
+        <option ng-if="theseRecords.length>2000" value="1000">1000</option>
+        <option ng-if="theseRecords.length<5000" value="{{theseRecords.length}}">All</option>
+    </select>
+</span>
+
+<table table-content="table-content" page-size="pageSize" current-tab-index="currentTabIndex" data="data" these-records="theseRecords" table-screen-id="{{screenId}}" class="table table-striped table-bordered table-condensed md-default-theme"></table>
+<div class="dir-pagination-controls-wrap" style="float:left;">
+    <dir-pagination-controls class="dir-pagination-controls" pagination-id="screenId" boundary-links="true" template-url="TemplateHtml/dirPagination.tpl.html" />
+
+</div>
+
+<md-button class="md-button ng-scope md-default-theme" dropdown-j-s-o-n="dropdownJSON" ng-click="thisExport.Export_JSON_To_Excel(theseRecords, currentTabDisplayName, true, data.getAdvancedSearchFieldsFiltered(), data.searchString, data.sortString, dropdownJSON)" ng-controller="exportToExcel as thisExport" style="float:right; font-size: inherit; height: 24px; min-height:24px; line-height: 24px; margin: 0px; min-width: inherit; width: auto; padding:0px;">
+    <i class="material-icons ng-scope">file_download</i>
+    <div class="md-ripple-container"></div>
+</md-button>

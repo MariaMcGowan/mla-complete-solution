@@ -1,0 +1,11 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="" displayStyle="paging:none" columnSpan="3" mobileLayoutSize="none">
+    <field fieldName="StartDate" multilineEdit="true" displayName="Start Date"/>
+    <field fieldName="EndDate" multilineEdit="true" displayName="End Date"/>
+    <field fieldName="ContractTypeID" multilineEdit="true" displayName="Type">
+      <lookupList>
+        <source sql="exec ContractType_Lookup @IncludeCommercial = 0"/>
+      </lookupList>
+    </field>
+  </section>
+</fieldList>

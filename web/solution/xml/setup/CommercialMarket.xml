@@ -1,0 +1,15 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Commercial Market" columnSpan ="5">
+		<field fieldName="CommercialMarket" displayName="Commercial Market" />
+		<field fieldName="PrimaryContactID" multilineEdit="true" displayName="Primary Contact">
+			<lookupList>
+				<source sql="exec Contact_Lookup @ContactTypeID=7"/>
+			</lookupList>
+		</field>
+		<field fieldName="SecondaryContactID" multilineEdit="true" displayName="Secondary Contact">
+			<lookupList>
+				<source sql="exec Contact_Lookup @ContactTypeID=7"/>
+			</lookupList>
+		</field>
+	</section>
+</fieldList>

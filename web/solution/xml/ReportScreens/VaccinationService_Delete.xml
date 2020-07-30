@@ -1,0 +1,5 @@
+<CargasConnect>
+  <dbo.VaccinationService_Delete>
+	<VaccinationServiceID/>
+  </dbo.VaccinationService_Delete>
+</CargasConnect>

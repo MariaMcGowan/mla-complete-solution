@@ -1,0 +1,15 @@
+﻿<?xml
+<div text-align:center="";">
+  <div ng-if="thisRecord.QtrlyPerformAuditTemplateID!='0'">
+    <a name="QtrlyPerformAuditTemplateID" id="QtrlyPerformAuditTemplateID" href="Form.html?screenID=QtrlyPerformAuditTemplate_ActiveForm&amp;p={{thisRecord.QtrlyPerformAuditTemplateID}}">
+      <i id="QtrlyPerformAuditTemplate" class="center material-icons ng-binging ng-scope">mode_edit</i>
+    </a>
+    <md-tooltip md-direction="bottom">Edit</md-tooltip>
+  </div>
+  <div ng-if="thisRecord.QtrlyPerformAuditTemplateID=='0'">
+    <a name="QtrlyPerformAuditTemplateID" id="QtrlyPerformAuditTemplateID" href="runProcess.aspx?screenID=NewQtrlyPerformAuditTemplate&amp;p={{thisRecord.QtrlyPerformAuditTemplateID}}">
+      <i id="QtrlyPerformAuditTemplate" class="center material-icons ng-binging ng-scope">add</i>
+    </a>
+    <md-tooltip md-direction="bottom">Create New</md-tooltip>
+  </div>
+</div>

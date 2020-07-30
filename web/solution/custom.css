@@ -1,0 +1,682 @@
+/* Solution-specific styles go here. */
+test{
+    background-color:orange;
+}
+
+.fixed-header {
+	z-index:2;
+}
+
+.fixedTop {
+	position: fixed;
+	top: 100px;
+}
+
+.mobile .fixedTop {
+	top: 40px !important;
+}
+
+.fixedTop > tr {
+	width: 100%;
+	position: fixed;
+}
+
+	.fixedTop > tr > td {
+		background: white;
+		position: fixed;
+	}
+
+
+.whiteBackground{
+    background-color:white;
+}
+
+.candleoutDifference{
+    background-color:yellow;
+}
+
+.candleoutWeightDifference {
+	background-color: yellow !important;
+}
+
+.InvalidClutchQty{
+    background-color:red !important;
+}
+
+.backColorTransparent {
+	background-color:transparent !important;
+}
+
+.flockScheduleHeader:hover {
+	background-color:transparent !important;
+}
+
+.flockScheduleHeader * .md-errors-spacer{
+	display:none;
+}
+
+.leftBorderForGroup {
+	border-left:thick !important;
+	border-left-color: black !important;
+}
+
+leftBorderForGroup {
+	border-left: thick !important;
+	border-left-color: black !important;
+}
+
+.PastPlan {
+	font-style: italic !important;
+	box-shadow: inset .25em .15em silver !important;
+}
+
+.OrderConfirmPlan {
+	font-weight: 900 !important;
+	font-size:larger !important;
+	box-shadow: inset .25em .15em slategray !important;
+}
+
+.hide {
+	color: transparent !important;
+}
+
+LongTermPlan {
+	font-weight: 900 !important;
+}
+
+.FlockPlanWarning {
+	border-right-color: red !important;
+	border-right-width: thick !important;
+
+	border-left-color: red !important;
+	border-left-width: thick !important;
+}
+
+
+.DodgerBlueBackground {
+	background-color: dodgerblue !important;
+}
+
+.LimeBackground {
+	background-color: lime !important;
+}
+
+.LimeGreenBackground {
+	background-color: limegreen !important;
+}
+
+.OrangeBackground {
+	background-color: orange !important;
+}
+
+.VioletBackground {
+	background-color: violet !important;
+}
+
+.AliceBlueBackground {
+	background-color: aliceblue !important;
+	color:black !important;
+}
+
+.AquaBackground {
+	background-color: aqua !important;
+}
+
+.KhakiBackground {
+	background-color:khaki !important;
+}
+
+.AquamarineBackground {
+	background-color:aquamarine !important;
+}
+
+.MistyRoseBackground {
+	background-color: mistyrose !important;
+}
+
+.PowderBlueBackground {
+	background-color: powderblue !important;
+}
+
+.bold {
+	font-weight: bold !important;
+}
+.redBox {
+	border: 3px solid red !important;
+}
+
+.blueBox {
+	border: 3px solid blue !important;
+}
+
+.EmphasizeFont {
+	color: red !important;
+	font-weight: 900 !important;
+	font-size: larger !important;
+	box-shadow: inset .25em .15em slategray !important;
+}
+
+.fontSize_Small {
+	font-size:small !important;
+}
+
+.fontSize_Smaller {
+	font-size: smaller !important;
+}
+
+.StayHere .table {
+	position: fixed;
+}
+
+.shrinkFontSize_95 {
+	font-size: 95% !important;
+}
+
+.rotateText {
+	height:140px;
+}
+
+th.rotateText > div {
+	transform:rotate(270deg);
+}
+
+.NotInLoadPlan {
+	background-color: orange !important;
+}
+
+.yellowBackground{
+    background-color:yellow;
+}
+
+.redFont * {
+	color:red !important;
+}
+
+.blackFont * {
+	color: black !important;
+}
+
+.grayFont * {
+	color: gray !important;
+}
+
+.rightAlign md-input-container{
+    text-align:right !important;
+}
+
+.centerAlign md-input-container{
+    text-align:center !important;
+}
+
+.smallCheckbox {
+
+}
+
+
+.width25 {
+	width: 25px !important;
+}
+
+.width35 {
+	width: 25px !important;
+}
+
+.width50{
+    width:50px !important;
+}
+
+.width60 {
+	width: 60px !important;
+}
+
+.width75{
+    width:75px !important;
+}
+
+.width85 {
+	width: 85px !important;
+}
+
+.width100 {
+	width:100px;
+}
+
+.width150{
+    width:150px;
+}
+
+.width200 {
+	width: 150px;
+}
+
+.width250{
+    width:250px;
+}
+
+.min_width25 {
+	min-width: 25px !important;
+}
+
+.min_width35 {
+	min-width: 25px !important;
+}
+
+.min_width50{
+    min-width:50px !important;
+}
+
+.min_width60 {
+	min-width: 60px !important;
+}
+
+.min_width75{
+    min-width:75px !important;
+}
+
+.min_width85 {
+	min-width: 85px !important;
+}
+
+.min_width100 {
+	min-width:100px;
+}
+
+.min_width150{
+    min-width:150px;
+}
+
+.min_width200 {
+	min-width: 150px;
+}
+
+.min_width250{
+    min-width:250px;
+}
+
+
+.UserMessage {
+	text-align: center !important;
+	vertical-align: top !important;
+	font-weight: bold !important;
+	color: black !important;
+	font-size: 95% !important;
+}
+
+.DateWarning {
+	font-weight: bold !important;
+	color: red !important;
+}
+
+.ModifiedAfterWarning {
+	background-color: yellow !important;
+}
+
+.ModifiedAfterAndNegWarning {
+	font-weight: bold !important;
+	color: red !important;
+	background-color: yellow !important;
+}
+
+.NegativeRemainingQtyWarning {
+	font-weight: bold !important;
+	color: red !important;
+}
+
+.LeftAlign {
+	text-align: left !important;
+}
+
+.incubatorColumn{
+    height:100px;
+    width:15% !important;
+}
+.incubatorColumn_01{
+    height:100px;
+    width:90% !important;
+}
+.incubatorColumn_02{
+    height:100px;
+    width:45% !important;
+}.incubatorColumn_03{
+    height:100px;
+    width:30% !important;
+}.incubatorColumn_04{
+    height:100px;
+    width:22% !important;
+}.incubatorColumn_05{
+    height:100px;
+    width:18% !important;
+}
+.incubatorColumn_06{
+    height:100px;
+    width:15% !important;
+}
+.incubatorColumn_07{
+    height:100px;
+    width:12% !important;
+}
+.incubatorColumn_08{
+    height:100px;
+    width:11% !important;
+}
+.incubatorColumn_09
+{
+    height: 100px;
+    width: 10% !important;
+}
+.holdingIncubatorColumn{
+    height:100px;
+    width:20% !important;
+}
+.incubatorColumnEmpty
+{
+    width:6% !important;
+}
+.incubatorColumnEmpty, .holdingIncubatorColumnEmpty{
+    background-color:gray;
+}
+
+.incubatorColumnFans, .holdingIncubatorColumnFans{
+    font-size:xx-large; 
+    text-align:center;
+    vertical-align:middle;
+
+}
+
+.HIDE_holdingIncubatorLoadDoors{
+    -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+  font-size:large;
+}
+
+.incubatorLoadDoors{
+    font-size:large;
+    text-align:center; 
+}
+
+.LoginTitle{
+    background-color:rgb(27,94,32);
+    font-size: 14px;
+    line-height: 1.42857143;
+    box-sizing: border-box;
+    font-family: RobotoDraft,Roboto,'Helvetica Neue',sans-serif;
+    z-index: 10;
+    min-height: 70px;
+    float: left;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF !important;
+    width: 100%;
+}
+#SiteLogo{
+    padding:0px !important;
+}
+
+.highlightBlue
+{
+    background-color: #99CCFF !important;
+}
+
+.center{
+    text-align:center;
+}
+
+.fixedTop {
+  position: fixed;
+  top:50px;
+  width:100%;
+}
+.fixedTop>tr{
+    width:100%;
+}
+.fixedTop>tr>td{
+    background:white;
+}
+
+.chicken{
+    /*display:inline-block;*/
+    /*position:absolute;*/
+    width:200px;
+}
+.chickenLabel{
+        /*text-align:left !important;
+        padding:0px !important;    */
+        float:left;
+}
+.homePageHeaderContainer{
+    text-align:center;
+}
+
+.cow{
+    
+}
+.cowLabel{
+    /*position:absolute;
+    text-align:right !important;*/
+    float: right;
+}
+
+@media (max-width: 767px)
+{
+    .chicken {
+        position:relative !important;
+        width:100px !important;
+    }
+    .chickenLabel{
+        text-align:center !important;
+        width:100%;
+    }
+    .cowLabel{
+        display:none;
+    }
+    .caption{
+        padding-bottom:10px;
+    }
+    .favorite{
+        display:none;   
+    }
+    .HomePageWelcome{
+    display:relative;
+    width:100%;
+    }
+}
+
+.linkImageWithCaption{
+    text-align:center;
+}
+.linkImageWithCaption a:hover{
+    color: #000000;
+}
+.captionLink{
+    margin:0px 20px;
+    display:inline-block;
+}
+.captionLink a{
+    color:black;
+    text-decoration:none;
+}
+.caption{
+    font-size:24px;
+}
+.hiddenMessage{
+    display:none !important;
+}
+
+.menuTitle{
+    font-weight:bold;
+    text-decoration: underline;
+    pointer-events: none;
+    cursor: default;
+}
+
+.menuTitle>a{
+    padding-bottom: 0px !important;
+}
+
+
+
+
+.indentMenu{
+    padding-left:15px ;
+    font-size: 15px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*.hiddenFieldVisibleLbl{
+    display: none;
+}*/
+
+.hiddenField {
+    display: none;
+}
+.hiddenFieldfieldlabel {
+    display: none;
+}
+
+hr
+{
+    color:black;
+    border-top:1px solid black;
+}
+
+.FAQQuestion
+{
+    text-align: left !important;
+}
+
+.HomePageWelcome{
+    font-weight: bold !important;
+    font-size: 150% !important;
+}
+
+.HomePage_CustomerLabel{
+    font-weight:bold;
+    font-size:16px;
+    color:#101010;
+}
+
+.CustomerMessage{
+    border:1px solid black;
+    border-radius: 15px;
+    padding:10px;
+    margin-bottom:10px;
+    display: inline-block;
+    color:white;
+
+    /*www.colorzilla.com/gradient-editor*/
+   background: rgb(180,221,180); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(180,221,180,1) 0%, rgba(131,199,131,1) 17%, rgba(82,177,82,1) 33%, rgba(0,138,0,1) 67%, rgba(0,87,0,1) 94%, rgba(0,36,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(180,221,180,1)), color-stop(17%,rgba(131,199,131,1)), color-stop(33%,rgba(82,177,82,1)), color-stop(67%,rgba(0,138,0,1)), color-stop(94%,rgba(0,87,0,1)), color-stop(100%,rgba(0,36,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(180,221,180,1) 0%,rgba(131,199,131,1) 17%,rgba(82,177,82,1) 33%,rgba(0,138,0,1) 67%,rgba(0,87,0,1) 94%,rgba(0,36,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(180,221,180,1) 0%,rgba(131,199,131,1) 17%,rgba(82,177,82,1) 33%,rgba(0,138,0,1) 67%,rgba(0,87,0,1) 94%,rgba(0,36,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(180,221,180,1) 0%,rgba(131,199,131,1) 17%,rgba(82,177,82,1) 33%,rgba(0,138,0,1) 67%,rgba(0,87,0,1) 94%,rgba(0,36,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(180,221,180,1) 0%,rgba(131,199,131,1) 17%,rgba(82,177,82,1) 33%,rgba(0,138,0,1) 67%,rgba(0,87,0,1) 94%,rgba(0,36,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=0 ); /* IE6-9 */
+
+}
+
+#btnLogin
+{
+	background-color: rgb(0, 102, 0);
+}
+
+body
+{
+	/*background-color: #FEFFC7;*/
+	background: url('images/bg.png') repeat-x top left;
+    
+}
+
+.navbar-inverse
+{
+    background-color: #006600 !important;
+	color: #FFFFFF !important;
+    background-image: none;
+}
+
+.navbar-brand
+{
+	color: #FFFFFF !important;
+}
+
+.navbar-nav > li > a
+{
+	color: #FFFFFF !important;
+}
+.navbar-nav > li > a:hover
+{
+	color: #B2B2B2 !important;
+}
+.nav-sidebar > li > a:hover
+{
+	background-color: #006600 !important;
+}
+
+.sidebar
+{
+    background-color: #66A366; /*I like this color, but the color below is what's on their current website*/
+	/*background-color: #FFD685;*/
+    color: #FFFFFF !important;
+}
+
+.sidebar a
+{
+	color: #FFFFFF !important;
+}
+
+.main
+{
+	padding-left: 0px;
+}
+
+.flockScheduleTable {
+  table-layout: fixed; 
+}
+
+.flockScheduleHeaderRow,
+.flockScheduleHeaderRow > * {
+  opacity:100%;
+  background-color: rgb(27,94,32);
+  z-index:50;
+}
+
+.col-week-ending {
+  width: 7.5%;
+}
+
+.col-calc-total {
+  width: 5%;
+}
+
+.col-eggs-needed {
+  width: 5%;
+}
+
+.col-excess-birds {
+  width: 5%;
+}
+
+.green-header,
+.green-header > th {
+  background-color: rgb(27,94,32);
+  z-index: 50;
+}
+
+.table.md-default-theme > thead > tr > th {
+  background-color: rgb(27,94,32);
+  z-index: 50;
+}
+
+#ui-datepicker-div {
+  z-index: 100 !important;
+}
+

@@ -1,0 +1,7 @@
+﻿<CargasConnect>
+  <VaccinationServiceTemplate_InsertUpdate>
+    <VaccinationServiceTemplateID/>
+    <VaccinationServiceTemplateDescr/>
+    <IsActive/>
+  </VaccinationServiceTemplate_InsertUpdate>
+</CargasConnect>

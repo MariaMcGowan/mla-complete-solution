@@ -1,0 +1,10 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Lay Date Quantity Changes" columnSpan="3">
+    <!--<field fieldName="ClutchID" type="link icon edit" ScreenID="ClutchTransaction" displayName="Edit"/>-->
+    <field fieldName="Flock" multilineEdit="true" readOnly="true"/>
+    <field fieldName="LayDate" multilineEdit="true" displayName="Lay Date" readOnly="true" padding="1"/>
+    <field fieldName="QtyChangeActualDate" multilineEdit="true" displayName="Change Date" readOnly="true" padding="1"/>
+    <field fieldName="QtyChange" multilineEdit="true" displayName="Quantity Change"/>
+    <field fieldName="QuantityChangeReason" multilineEdit="true" displayName="Change Reason"/>
+  </section>
+</fieldList>

@@ -1,0 +1,12 @@
+<CargasConnect>
+  <ProjectedOrder_InsertUpdate>
+    <ProjectedOrderID/>
+    <DestinationID/>
+    <DestinationBuildingID/>
+    <SetDate/>
+    <DeliveryDate/>
+    <Qty/>
+    <ContractTypeID/>
+    <CustomIncubation/>
+  </ProjectedOrder_InsertUpdate>
+</CargasConnect>

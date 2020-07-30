@@ -1,0 +1,26 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Contracts">
+		<field fieldName="CustomerID" displayName="Customer">
+			<lookupList>
+				<source sql="exec Customer_Lookup @includeBlank=1, @includeAll=0"/>
+			</lookupList>
+		</field>
+		<field fieldName="ContractTypeID" displayName="Contract Type">
+			<lookupList>
+				<source sql="exec ContractType_Lookup @includeBlank=1, @includeAll=0"/>
+			</lookupList>
+		</field>		
+		<field fieldName="ProductTypeID" displayName="Product Type ">
+			<lookupList>
+				<source sql="exec ProductType_Lookup @includeBlank=1, @includeAll=0"/>
+			</lookupList>
+		</field>
+		<field fieldName="EffectiveDateStart" displayName="Effective Start Date"/>
+		<field fieldName="EffectiveDateEnd" displayName="Effective End Date"/>
+		<field fieldName="CaseWeightMin" displayName="Minimum Case Weight (pounds)"/>
+		<field fieldName="FlockAgeInWeeksMax" displayName="Maximum Flock Age (weeks)"/>
+		<field fieldName="ContractID" readOnly="true" displayName="View Weekly Schedule" type="link icon queue" ScreenID="ContractVolume_List" hideWhenNull="true"/>
+		<field fieldName="ContractID" readOnly="true" displayName="Edit Schedule" type="link icon queue" ScreenID="ContractVolume_RolledUp_List" hideWhenNull="true"/>	
+		<field fieldName="ContractID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="Contract_Delete" visibleFieldName="ContractID.toString()!" visibleFieldValue="0"/>
+	</section>
+</fieldList>

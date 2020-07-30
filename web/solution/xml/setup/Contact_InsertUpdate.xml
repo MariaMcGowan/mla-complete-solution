@@ -1,0 +1,17 @@
+<CargasConnect>
+	<dbo.Contact_InsertUpdate>
+		<ContactID/>
+		<FirstName/>
+		<LastName/>
+		<Email/>
+		<OfficePhone/>
+		<MobilePhone/>
+		<FaxNumber/>
+		<PrimaryMethodOfContact/>
+		<Notes/>
+		<SortOrder/>
+		<IsActive/>
+    <ContactTypeID/>
+		<UserName/>
+	</dbo.Contact_InsertUpdate>
+</CargasConnect>

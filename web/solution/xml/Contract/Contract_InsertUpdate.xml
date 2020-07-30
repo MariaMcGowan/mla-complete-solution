@@ -1,0 +1,13 @@
+﻿<CargasConnect>
+	<Contract_InsertUpdate>
+		<ContractID/>
+		<ContractTypeID/>
+		<CustomerID/>
+		<EffectiveDateStart/>
+		<EffectiveDateEnd/>
+		<CaseWeightMin/>
+		<IsActive/>
+		<FlockAgeInWeeksMax/>
+		<ProductTypeID/>
+	</Contract_InsertUpdate>
+</CargasConnect>

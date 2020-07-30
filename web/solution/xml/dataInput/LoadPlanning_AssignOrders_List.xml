@@ -1,0 +1,9 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Load Planning">
+    <field fieldName="Selected" multilineEdit="true" displayName="Include Lot Number"/>
+    <field fieldName="DeliveryDate" readOnly="true" displayName="Delivery Date"/>
+    <field fieldName="SetDate" readOnly="true" displayName="Set Date"/>
+    <field fieldName="LotNbr" readOnly="true" displayName="Lot Number"/>
+    <field fieldName="PlannedQty" readOnly="true" displayName="Planned Quantity"/>
+  </section>
+</fieldList>

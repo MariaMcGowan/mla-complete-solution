@@ -1,0 +1,37 @@
+﻿<table style="width:100%;" flex="100" border="1">
+	<tr class="background700">
+		<th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Selected</th>
+		<th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Farm</th>
+		<th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Week Ending Date</th>
+		<td style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Egg Weight</td>
+		<td style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Commercial Qty (In Carts)</td>
+		<th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Committed Qty (In Carts)</th>
+		<th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Remaining Qty (In Carts)</th>
+		<th style="border:solid; border-width:1px; color:rgb(232,245,233); font-size:smaller; padding-left:5px;">Reserve Qty (In Carts)</th>
+	</tr>
+	<tr ng-repeat="detailRecord in data.detailRecords[0].CommercialCommitment_SelectDetail" ng-class-even="'background100'">
+		<td><md-input-container class="md-default-theme"><md-checkbox ng-model="detailRecord.Selected" name="Selected0" id="Selected0" c class="md-primary  ng-pristine ng-untouched ng-valid md-default-theme md-checked" ng-true-value="'1'" ng-false-value="'0'" role="checkbox" tabindex="0" aria-checked="true" aria-invalid="false">
+		</td>
+		<td>
+			{{detailRecord.FarmNumber}}
+		</td>
+		<td>
+			{{detailRecord.WeekEndingDate}}
+		</td>
+		<td>
+			{{detailRecord.EggWeightClassification}}
+		</td>
+		<td>
+			{{detailRecord.CommercialQty_InCases}}
+		</td>
+		<td>
+			{{detailRecord.CommittedQty_InCases}}
+		</td>
+		<td>
+			{{detailRecord.RemainingQty_InCases}}
+		</td>
+		<td>
+			{{detailRecord.ReserveQty_InCases}}
+		</td>
+	</tr>
+</table>

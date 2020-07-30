@@ -1,0 +1,16 @@
+﻿<div text-align:center;">
+	<div ng-if="thisRecord.VaccinationServiceID!='0'">
+		<a name="VaccinationServiceID" id="VaccinationServiceID" href="Form.html?screenID=VaccinationService_Form&amp;p={{thisRecord.VaccinationServiceID}}">
+			<i id="VaccinationService" class="center material-icons ng-binging ng-scope">mode_edit</i>
+		</a>
+		<md-tooltip md-direction="bottom">Edit</md-tooltip>
+	</div>
+	<div ng-if="thisRecord.VaccinationServiceID=='0'">
+		<a name="VaccinationServiceID" id="VaccinationServiceID" onclick="fireCSBLink(this); return false;"
+			csb-link="showInDialog('Form.html?screenID=NewVaccinationService&amp;p={{thisRecord.FlockID}}','Choose Template',800,600)"		
+			href>
+			<i id="VaccinationService" class="center material-icons ng-binging ng-scope">add</i>
+		</a>
+		<md-tooltip md-direction="bottom">Create New</md-tooltip>
+	</div>
+</div>

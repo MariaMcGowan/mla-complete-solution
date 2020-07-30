@@ -1,0 +1,87 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName='{{thisRecord.UserMessage}}' columnSpan="5" mobileLayoutSize="none">
+    <field fieldName="FarmNumber"  readOnly="true" displayName="Farm" className="LeftAlign"/>
+    <field fieldName="FlockNumber" displayName="Flock" readOnly="true"/>
+    <field fieldName="ConservativeFactor"  displayName="Conservative Factor" />
+    <field fieldName="PulletQtyAt16Weeks" displayName="Pullet Qty at 16 Wks" format="numeric 0"/>
+    <field fieldName="OverrideModifiedAfterOrderConfirm" displayName="Turn Off Warnings (Red Highlighting)" />
+  </section>
+  <section displayName="Planned Flock Dates" columnSpan="4" mobileLayoutSize="none" collapsed="true">
+    <field fieldName="Original_PlannedStartDate" displayName="Original Planned Start Date" readOnly="true" ng-if="thisRecord.DisplayStyle_OriginalDates=='Visible'" />
+    <field fieldName="Original_ProductionFarm_PlannedRemoveDate" displayName="Original Planned Removal Date" ng-if="thisRecord.DisplayStyle_OriginalDates=='Visible'"/>
+    <field fieldName="BlankField" displayName="" readOnly="true" ng-if="thisRecord.DisplayStyle_OriginalDates=='Visible'"/>
+    <field fieldName="BlankField" displayName="" readOnly="true" ng-if="thisRecord.DisplayStyle_OriginalDates=='Visible'"/>
+    <field fieldName="Original_PlannedHatchDate" displayName="Original Planned Hatch Date" readOnly="true" ng-if="thisRecord.DisplayStyle_OriginalDates=='Visible'"/>
+    <field fieldName="Original_Planned16WeekDate" displayName="Original Planned 16 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_OriginalDates=='Visible'"/>    
+    <field fieldName="Original_Planned24WeekDate" displayName="Original Planned 24 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_OriginalDates=='Visible'"/>
+    <field fieldName="Original_Planned65WeekDate" displayName="Original Planned 65 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_OriginalDates=='Visible'"/>    
+
+    <field fieldName="PlannedStartDate" displayName="Planned Start Date" className="blackFont" ng-if="thisRecord.DisplayStyle_PlannedDates=='Not ReadOnly'"/>
+    <field fieldName="ProductionFarm_PlannedRemoveDate" displayName="Planned Removal Date" className="blackFont" ng-if="thisRecord.DisplayStyle_PlannedDates=='Not ReadOnly'"/>
+    <field fieldName="BlankField" displayName="" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='Not ReadOnly'"/>
+    <field fieldName="BlankField" displayName="" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='Not ReadOnly'"/>
+    <field fieldName="PlannedHatchDate" displayName="Planned Hatch Date" className="{{thisRecord.PlannedHatchDateFormat}} ng-pristine ng-untouched ng-valid md-input ng-not-empty" ng-if="thisRecord.DisplayStyle_PlannedDates=='Not ReadOnly'"/>
+    <field fieldName="Planned16WeekDate" displayName="Planned 16 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='Not ReadOnly'"/>
+    <field fieldName="Planned24WeekDate" displayName="Planned 24 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='Not ReadOnly'"/>
+    <field fieldName="Planned65WeekDate" displayName="Planned 65 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='Not ReadOnly'"/>
+
+    <field fieldName="PlannedStartDate" displayName="Planned Start Date" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='RemovalDate Not ReadOnly'" />
+    <field fieldName="ProductionFarm_PlannedRemoveDate" displayName="Planned Removal Date" className="blackFont" ng-if="thisRecord.DisplayStyle_PlannedDates=='RemovalDate Not ReadOnly'"/>
+    <field fieldName="BlankField" displayName="" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='RemovalDate Not ReadOnly'"/>
+    <field fieldName="BlankField" displayName="" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='RemovalDate Not ReadOnly'"/>
+    <field fieldName="PlannedHatchDate" displayName="Planned Hatch Date" readOnly="true" className="{{thisRecord.PlannedHatchDateFormat}} ng-pristine ng-untouched ng-valid md-input ng-not-empty" ng-if="thisRecord.DisplayStyle_PlannedDates=='RemovalDate Not ReadOnly'"/>
+    <field fieldName="Planned16WeekDate" displayName="Planned 16 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='RemovalDate Not ReadOnly'"/>
+    <field fieldName="Planned24WeekDate" displayName="Planned 24 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='RemovalDate Not ReadOnly'"/>
+    <field fieldName="Planned65WeekDate" displayName="Planned 65 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='RemovalDate Not ReadOnly'"/>
+
+    <field fieldName="PlannedStartDate" displayName="Planned Start Date" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='ReadOnly'" />
+    <field fieldName="ProductionFarm_PlannedRemoveDate" displayName="Planned Removal Date" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='ReadOnly'"/>
+    <field fieldName="BlankField" displayName="" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='ReadOnly'"/>
+    <field fieldName="BlankField" displayName="" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='ReadOnly'"/>
+    <field fieldName="PlannedHatchDate" displayName="Planned Hatch Date" readOnly="true" className="{{thisRecord.PlannedHatchDateFormat}} ng-pristine ng-untouched ng-valid md-input ng-not-empty" ng-if="thisRecord.DisplayStyle_PlannedDates=='ReadOnly'"/>
+    <field fieldName="Planned16WeekDate" displayName="Planned 16 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='ReadOnly'"/>
+    <field fieldName="Planned24WeekDate" displayName="Planned 24 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='ReadOnly'"/>
+    <field fieldName="Planned65WeekDate" displayName="Planned 65 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_PlannedDates=='ReadOnly'"/>
+  </section>
+  <section displayName="Actual Flock Dates" columnSpan="4" mobileLayoutSize="none" collapsed="true">
+    <field fieldName="ActualStartDate" displayName="Actual Start Date" className="blackFont" ng-if="thisRecord.DisplayStyle_ActualDates=='Not ReadOnly'" />
+    <field fieldName="ProductionFarm_RemoveDate" displayName="Actual Removal Date" className="blackFont" ng-if="thisRecord.DisplayStyle_ActualDates=='Not ReadOnly'" />
+    <field fieldName="ProductionFarm_RemovalDateConfirmed" displayName="Confirmed" className="blackFont" ng-if="thisRecord.DisplayStyle_ActualDates=='Not ReadOnly'" />
+    <field fieldName="BlankField" displayName="" readOnly="true" ng-if="thisRecord.DisplayStyle_ActualDates=='Not ReadOnly'"/>
+    <field fieldName="ActualHatchDate" displayName="Actual Hatch Date" className="blackFont" ng-if="thisRecord.DisplayStyle_ActualDates=='Not ReadOnly'"/>
+    <field fieldName="Actual16WeekDate" displayName="Actual 16 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_ActualDates=='Not ReadOnly'"/>
+    <field fieldName="Actual24WeekDate" displayName="Actual 24 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_ActualDates=='Not ReadOnly'"/>
+    <field fieldName="Actual65WeekDate" displayName="Actual 65 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_ActualDates=='Not ReadOnly'"/>
+
+    <field fieldName="ActualStartDate" displayName="Actual Start Date" ng-if="thisRecord.DisplayStyle_ActualDates=='ReadOnly'" />
+    <field fieldName="ProductionFarm_RemoveDate" displayName="Actual Removal Date" ng-if="thisRecord.DisplayStyle_ActualDates=='ReadOnly'" />
+	<field fieldName="ProductionFarm_RemovalDateConfirmed" displayName="Confirmed" ng-if="thisRecord.DisplayStyle_ActualDates=='ReadOnly'" />
+    <field fieldName="BlankField" displayName="" readOnly="true" ng-if="thisRecord.DisplayStyle_ActualDates=='ReadOnly'"/>
+    <field fieldName="ActualHatchDate" displayName="Actual Hatch Date" readOnly="true" ng-if="thisRecord.DisplayStyle_ActualDates=='ReadOnly'"/>
+    <field fieldName="Actual16WeekDate" displayName="Actual 16 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_ActualDates=='ReadOnly'"/>    
+    <field fieldName="Actual24WeekDate" displayName="Actual 24 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_ActualDates=='ReadOnly'"/>
+    <field fieldName="Actual65WeekDate" displayName="Actual 65 Week Date" readOnly="true" ng-if="thisRecord.DisplayStyle_ActualDates=='ReadOnly'"/>
+  </section>
+  <section displayName="Pullet Facility Dates" columnSpan="4" mobileLayoutSize="none" collapsed="true">
+    <field fieldName="PulletFacility_RemoveDate" displayName="Removal Date" className="{{thisRecord.PulletFacility_RemoveDateFormat}} ng-pristine ng-untouched ng-valid md-input ng-not-empty" />
+	<field fieldName="PulletFacility_RemovalDateConfirmed" displayName="Confirmed" className="{{thisRecord.PulletFacility_RemoveDateFormat}} ng-pristine ng-untouched ng-valid md-input ng-not-empty" />
+    <field fieldName="PulletFacility_WashDownDate" displayName="Washdown Date" className="{{thisRecord.PulletFacility_WashDownDateFormat}} ng-pristine ng-untouched ng-valid md-input ng-not-empty" />
+	<field fieldName="PulletFacility_WashDownDateConfirmed" displayName="Confirmed" className="{{thisRecord.PulletFacility_RemoveDateFormat}} ng-pristine ng-untouched ng-valid md-input ng-not-empty" />	
+    <field fieldName="PulletFacility_LitterDate" displayName="Litter Date" className="{{thisRecord.PulletFacility_LitterDateFormat}} ng-pristine ng-untouched ng-valid md-input ng-not-empty" />
+    <field fieldName="PulletFacility_LitterDateConfirmed" displayName="Confirmed" className="{{thisRecord.PulletFacility_RemoveDateFormat}} ng-pristine ng-untouched ng-valid md-input ng-not-empty" />
+	<field fieldName="PulletFacility_FumigationDate" displayName="Fumigation Date" className="{{thisRecord.PulletFacility_FumigationDateFormat}} ng-pristine ng-untouched ng-valid md-input ng-not-empty" />
+	<field fieldName="PulletFacility_FumigationDateConfirmed" displayName="Confirmed" className="{{thisRecord.PulletFacility_RemoveDateFormat}} ng-pristine ng-untouched ng-valid md-input ng-not-empty" />	
+  </section>
+  <section displayName="Production Farm Dates" columnSpan="4" mobileLayoutSize="none" collapsed="true">
+    <field fieldName="ProductionFarm_WashDownDate" displayName="Washdown Date" className="{{thisRecord.ProductionFarm_WashDownDateFormat}} ng-pristine ng-untouched ng-valid md-input ng-not-empty" />
+	<field fieldName="ProductionFarm_WashDownDateConfirmed" displayName="Confirmed" className="{{thisRecord.ProductionFarm_WashDownDateFormat}} ng-pristine ng-untouched ng-valid md-input ng-not-empty" />
+    <field fieldName="ProductionFarm_LitterDate" displayName="Litter Date" className="{{thisRecord.ProductionFarm_LitterDateFormat}} ng-pristine ng-untouched ng-valid md-input ng-not-empty" />
+	<field fieldName="ProductionFarm_LitterDateConfirmed" displayName="Confirmed" className="{{thisRecord.ProductionFarm_LitterDateFormat}} ng-pristine ng-untouched ng-valid md-input ng-not-empty" />	
+    <field fieldName="ProductionFarm_FumigationDate" displayName="Fumigation Date" className="{{thisRecord.ProductionFarm_FumigationDateFormat}} ng-pristine ng-untouched ng-valid md-input ng-not-empty" />
+	<field fieldName="ProductionFarm_FumigationDateConfirmed" displayName="Confirmed" className="{{thisRecord.ProductionFarm_FumigationDateFormat}} ng-pristine ng-untouched ng-valid md-input ng-not-empty" />
+  </section>
+  <section displayName="Delete Flock" columnSpan="1" mobileLayoutSize="none" collapsed="true">
+    <field fieldName="PulletFarmPlanID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="PulletFarmPlan_Delete" visibleFieldName="PulletFarmPlanID.toString()!" visibleFieldValue="0"/>
+  </section>
+
+</fieldList>

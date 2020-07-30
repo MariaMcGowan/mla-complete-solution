@@ -1,0 +1,12 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Destination Buildings">
+    <field fieldName="DestinationBuildingID" multilineEdit="true" displayName="Destination Building">
+      <lookupList>
+        <source sql="exec DestinationBuilding_Lookup" />
+      </lookupList>
+    </field>
+		<field fieldName="PlannedQty" multilineEdit="true" displayName="Eggs to Set"/>
+		<field fieldName="OrderQty" multilineEdit="true" displayName="Target Quantity"/>
+    <field fieldName="OrderDestinationBuildingID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="OrderDestinationBuilding_Delete" visibleFieldName="OrderDestinationBuildingID.toString()!" visibleFieldValue="0"/>
+	</section>
+</fieldList>

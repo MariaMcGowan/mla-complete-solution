@@ -1,0 +1,8 @@
+﻿<CargasConnect>
+  <ContractVolume_InsertUpdate>
+    <ContractID/>
+    <ContractVolumeID/>
+    <WeekEndingDate/>
+    <Volume/>
+  </ContractVolume_InsertUpdate>
+</CargasConnect>

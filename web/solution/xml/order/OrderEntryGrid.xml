@@ -1,0 +1,26 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Order">
+    <field fieldName="OrderID" displayName="Edit" type="link icon edit" ScreenID="OrderMaster" hideWhenNull="true"/>
+    <field fieldName="LotNbr" multilineEdit="true" readOnly="true" displayName="Lot Number"/>    
+    <field fieldName="CustomerReferenceNbr" multilineEdit="true" displayName="PO Number" padding="1"/>
+    <field fieldName="IncubationDayCnt" multilineEdit="true" displayName="Incubation Day Count"/>
+		<field fieldName="DeliveryDate" multilineEdit="true" displayName="Delivery Date" format="date"/>
+    <field fieldName="PlannedSetDate" multilineEdit="true" displayName="Planned Set Date" format="date"/>
+    <field fieldName="DestinationBuildingID" multilineEdit="true" displayName="Destination Building">
+      <lookupList>
+        <source sql="execute DestinationBuilding_Lookup"></source>
+      </lookupList>
+    </field>
+    <field fieldName="PlannedQty" multilineEdit="true" displayName="Planned Order Quantity"/>
+    <field fieldName="ClutchPlannedQty" readOnly="true" displayName="Planned Lay Date Quantity"/>
+    <!--<field fieldName="FlockList" multilineEdit="true" displayName="Flock(s)" readOnly="true"/>-->
+    <field fieldName="OrderID" readOnly="true" displayName="List Flocks" type="link icon queue" ScreenID="OrderFlockListPopup" hideWhenNull="true"/>
+    <field fieldName="OrderID" readOnly="true" displayName="Assign Flock(s)" type="link icon queue" ScreenID="OrderFlockPopup" hideWhenNull="true"/>
+    <field fieldName="OrderStatusID" multilineEdit="true" displayName="Order Status">
+      <lookupList>
+        <source sql="execute OrderStatus_Lookup"></source>
+      </lookupList>
+    </field>
+    <field fieldName="OrderID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="Order_Delete" visibleFieldName="OrderID.toString()!" visibleFieldValue="0" hideWhenNull="true"/>
+  </section>
+</fieldList>

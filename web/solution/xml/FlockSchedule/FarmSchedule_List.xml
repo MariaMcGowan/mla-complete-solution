@@ -1,0 +1,30 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Production-Move,Wash,Litter,Fog" displayStyle="paging:100">
+		<field fieldName="FlockNumber" displayName="Flock Code" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width100" readOnly="true"/>
+		<field fieldName="FarmName" displayName="Production Facility" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width150"  readOnly="true"/>
+		<field fieldName="FemaleBreed" displayName="Female&lt;br/&gt;Breed" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width50"  readOnly="true"/>
+		<field fieldName="PlannedFemalesAt16Weeks" format="numeric 0" displayName="Planned&lt;br/&gt;Female Count&lt;br/&gt;at 16 Weeks" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width75"  readOnly="true"/>
+		<field fieldName="PlannedFemalesToRemove" format="numeric 0" displayName="Planned&lt;br/&gt;Females to&lt;br/&gt;Remove" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width75"  readOnly="true"/>
+		<field fieldName="MaleBreed" displayName="Male&lt;br/&gt;Breed" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width50"  readOnly="true"/>		
+		<field fieldName="PlannedMaleQtyAt16Weeks" format="numeric 0" displayName="Planned&lt;br/&gt;Male Count&lt;br/&gt;at 16 Weeks" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width75" />
+		<field fieldName="PlannedMaleQtyToRemove" format="numeric 0" displayName="Planned&lt;br/&gt;Males to&lt;br/&gt;Remove" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width75" />
+
+		<field fieldName="Planned65WeekDate" displayName="Planned 65&lt;br/&gt;Week Date" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width75"  readOnly="true"/>		
+		<field fieldName="Actual65WeekDate" displayName="Actual 65&lt;br/&gt;Week Date" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width75"  readOnly="true"/>
+		
+		<field fieldName="ProductionFarm_RemoveDate" displayName="Actual Removal Date&lt;br/&gt;from Production&lt;br/&gt;Facility" className="{{thisRecord.InputColor}} {{thisRecord.DynamicFormattingForRemovalDate}} shrinkFontSize_95 min_width75" />		
+		<field fieldName="ProductionFarm_RemovalDateConfirmed" displayName="" format="bit" className="smallCheckbox"/>
+		<field fieldName="ProductionFarm_MoveDayCount" displayName="1 or 2&lt;br/&gt;Day&lt;br/&gt;Move" className="{{thisRecord.InputColor}} shrinkFontSize_95 min_width35" />
+		<field fieldName="ProductionFarm_WashDownDate" displayName="Washdown&lt;br/&gt;Date" className="{{thisRecord.InputColor}} shrinkFontSize_95 min_width75" />
+		<field fieldName="ProductionFarm_WashDownDateConfirmed" displayName="" format="bit" className="smallCheckbox"/>		
+		<field fieldName="ProductionFarm_LitterDate" displayName="Litter&lt;br/&gt;Date" className="{{thisRecord.InputColor}} shrinkFontSize_95 min_width75" />
+		<field fieldName="ProductionFarm_LitterDateConfirmed" displayName="" format="bit" className="smallCheckbox"/>
+		<field fieldName="ProductionFarm_FumigationDate" displayName="Fumigation&lt;br/&gt;Date" className="{{thisRecord.InputColor}} shrinkFontSize_95 min_width75" />
+		<field fieldName="ProductionFarm_FumigationDateConfirmed" displayName="" format="bit" className="smallCheckbox"/>
+		<field fieldName="ProductionFarm_WashDownContractor" displayName="Washdown&lt;br/&gt;Contractor" className="{{thisRecord.InputColor}} shrinkFontSize_95 min_width50" />
+		<field fieldName="PulletFacility_RemoveDate" displayName="Actual Pullet&lt;br/&gt;Move Date&lt;br/&gt;For Next Flock" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width75"  readOnly="true"/>
+		<field fieldName="DaysBetweenFlocks" format="numeric 0" displayName="Days Empty&lt;br/&gt;Between Flocks" className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width50"  readOnly="true" />
+		<field fieldName="FarmNumber"  className="{{thisRecord.FarmColor}} shrinkFontSize_95 min_width50"  readOnly="true" displayName="Farm"/>
+		<field fieldName="PulletFarmPlanID" displayName="Comments" type="htmlfile ~\solution\CustomPages\FlockComments_FarmSchedule.html"/>		
+	</section>
+</fieldList>

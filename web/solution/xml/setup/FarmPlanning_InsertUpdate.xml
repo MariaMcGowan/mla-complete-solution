@@ -1,0 +1,8 @@
+﻿<CargasConnect>
+	<FarmPlanning_InsertUpdate>
+		<FarmID/>
+		<DefaultPulletQty/>
+		<MaxPulletQty/>
+		<ConservativeFactor/>
+	</FarmPlanning_InsertUpdate>
+</CargasConnect>

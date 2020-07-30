@@ -1,0 +1,7 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="" displayStyle="paging:100" columnSpan="2" mobileLayoutSize="none">
+		<field fieldName="Date" displayName="Date" readOnly="true"></field>
+		<field fieldName="Farm" displayName="Farm" readOnly="true"></field>
+		<field fieldName="TotalEggCount" displayName="Total Egg Count" readOnly="true"></field>
+	</section>
+</fieldList>

@@ -1,0 +1,10 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Eggs Set By" mobileLayoutSize="none">
+    <field fieldName="ContactID" multilineEdit="true" displayName="Contact">
+      <lookupList>
+        <source sql="exec Contact_Lookup @ContactTypeID=4"/>
+      </lookupList>
+    </field>
+    <field fieldName="OrderIncubatorEggsSetByID" readOnly="true" displayName="Delete" type="command icon delete" ScreenID="OrderIncubatorEggsSetBy_Delete" visibleFieldName="OrderIncubatorEggsSetByID.toString()!" visibleFieldValue="0"/>
+  </section>
+</fieldList>

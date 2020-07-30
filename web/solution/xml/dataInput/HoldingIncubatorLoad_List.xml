@@ -1,0 +1,10 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Holding Incubator Load List">
+    <field fieldName="DeliveryID_forLink" hideWhenNull="true" type="link icon clear_all" ScreenID="HoldingIncubatorLoad" displayName="Load Holding Incubator"/>
+    <field fieldName="DeliveryDate" displayName="Delivery Date" readOnly="true"/>
+    <field fieldName="DeliveryDescription" displayName="Delivery Description" readOnly="true"/>
+    <field fieldName="HoldingIncubator" displayName="Holding Incubator" type="htmlfile ~\solution\CustomPages\HoldingIncubatorLoad_Add.html"/>
+    <field fieldName="LotNumbers" displayName="Lot Numbers" readOnly="true"/>
+    <field fieldName="DestinationBuildings" displayName="Destination Buildings" readOnly="true"/>
+	</section>
+</fieldList>

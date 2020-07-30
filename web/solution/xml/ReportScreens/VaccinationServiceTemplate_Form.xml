@@ -1,0 +1,6 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Vaccination Service Template" columnSpan ="4"> 
+    <field fieldName="VaccinationServiceTemplateDescr" displayName="Template Description" />
+    <field fieldName="IsActive" displayName="IsActive" />
+	</section>
+</fieldList>

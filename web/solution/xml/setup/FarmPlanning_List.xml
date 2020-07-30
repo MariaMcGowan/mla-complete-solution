@@ -1,0 +1,9 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Pullet Facility Flock">
+		<field fieldName="Farm" readOnly="true"/>
+		<field fieldName="FarmNumber" displayName="Farm Number" readOnly="true"/>
+		<field fieldName="DefaultPulletQty" displayName="Default Pullet Quantity For Planning" format="numeric 0"/>
+		<field fieldName="MaxPulletQty" displayName="Maximum Pullet Quantity For Planning" format="numeric 0"/>
+		<field fieldName="ConservativeFactor" displayName="Conservative Factor" format="numeric 4"/>
+	</section>
+</fieldList>

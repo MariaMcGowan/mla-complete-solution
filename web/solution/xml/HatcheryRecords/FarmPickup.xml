@@ -1,0 +1,7 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Farm Pickup" mobileLayoutSize="none">
+    <field fieldName="Date" multilineEdit="true" readOnly="true"/>
+    <field fieldName="FarmPickupQty" displayName="Farm Pickup (Cases)"/>
+    <field fieldName="UniqueRowID" hidden="true"/>
+  </section>
+</fieldList>

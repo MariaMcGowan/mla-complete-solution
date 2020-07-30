@@ -1,0 +1,23 @@
+﻿<CargasConnect>
+  <OrderInvoice_InsertUpdate>
+    <OrderInvoiceID/>
+    <OrderID/>
+    <InvoiceID/>
+    <InvoiceNbr/>
+    <InvoiceDate/>
+    <CreatedDate/>
+    <DueDate/>
+    <EggsDelivered/>
+    <EggsInvoiced/>
+    <UnitPrice/>
+    <DeliveryCharge/>
+    <Printed/>
+    <Mailed/>
+    <Paid/>
+    <Uploaded/>
+    <Cancelled/>
+    <CummulativeQty/>
+    <Notes/>
+  </OrderInvoice_InsertUpdate>
+</CargasConnect>
+

@@ -1,0 +1,13 @@
+<CargasConnect>
+  <OrderClutchCooler_InsertUpdate>
+<OrderClutchCoolerID/>
+<OrderFlockClutchID/>
+<CoolerID/>
+<PlannedQty/>
+<ActualQty/>
+<DateDelivered/>
+<TimeDelivered/>
+<DateMovedToIncubator/>
+<TimeMovedToIncubator/>
+  </OrderClutchCooler_InsertUpdate>
+</CargasConnect>

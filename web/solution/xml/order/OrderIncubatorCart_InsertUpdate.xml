@@ -1,0 +1,12 @@
+<CargasConnect>
+  <OrderIncubatorCart_InsertUpdate>
+    <OrderIncubatorCartID/>
+    <OrderIncubatorID/>
+    <IncubatorCartID/>
+    <IncubatorCart/>
+    <CartNumber/>
+    <IncubatorLocationNumber/>
+    <PlannedQty/>
+    <ActualQty/>
+  </OrderIncubatorCart_InsertUpdate>
+</CargasConnect>

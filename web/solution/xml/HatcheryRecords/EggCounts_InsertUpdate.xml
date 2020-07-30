@@ -1,0 +1,11 @@
+﻿<CargasConnect>
+	<EggCounts_InsertUpdate>
+		<PulletFarmPlanDetailID/>
+		<ActualPulletQty/>
+		<ActualTotalEggs/>
+		<ActualFloorEggs/>
+		<ActualCommercialEggs/>
+		<ActualSettableEggs/>
+		<ActualSellableEggs/>
+	</EggCounts_InsertUpdate>
+</CargasConnect>

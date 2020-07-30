@@ -1,0 +1,5 @@
+<CargasConnect>
+  <dbo.QuantityChangeReason_Delete>
+	<QuantityChangeReasonID/>
+  </dbo.QuantityChangeReason_Delete>
+</CargasConnect>

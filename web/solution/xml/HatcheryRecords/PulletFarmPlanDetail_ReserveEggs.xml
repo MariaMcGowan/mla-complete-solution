@@ -1,0 +1,15 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Reserve Eggs" >
+		<field fieldName="UserMessage" readOnly="true" displayName="" type="html" className="UserMessage"/>
+		<field fieldName="BlankFieldForSpace" displayName="" />
+		<field fieldName="Date" readOnly="true"/>
+		<field fieldName="FarmNumber" readOnly="true" displayName="Farm" className="LeftAlign"/>
+		<field fieldName="SettableEggs" readOnly="true" displayName="Estimated Settable Eggs"/>
+		<field fieldName="SettableEggs_Cases" readOnly="true" displayName="Estimated Settable Eggs (In Cases)"/>
+	</section>
+</fieldList>
+
+
+
+
+

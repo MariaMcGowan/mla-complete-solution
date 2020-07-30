@@ -1,0 +1,8 @@
+﻿<CargasConnect>
+	<UserPlanningSettings_InsertUpdate>
+		<UserID/>
+		<PlanningStartDate/>
+		<PlanningEndDate/>
+		<ShowEmbryoOrPulletQtyID/>
+	</UserPlanningSettings_InsertUpdate>
+</CargasConnect>

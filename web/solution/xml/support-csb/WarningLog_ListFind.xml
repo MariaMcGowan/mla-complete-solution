@@ -1,0 +1,21 @@
+<fieldList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://csb2018.cargascloud.com/xmlschemas/csbFormatXML.xsd">
+  <section displayStyle="fcSingleValue" columnSpan="10">
+    <field fieldName="SupportIntervalID" displayName="Support Interval">
+      <lookupList>
+        <source sql="exec csb.SupportInterval_GetList"/>
+      </lookupList>
+    </field>
+    <field fieldName="UserID" displayName="User">
+      <lookupList>
+        <source sql="exec csb.User_GetList @IncludeAll=1"/>
+      </lookupList>
+    </field>
+    <field fieldName="PagePartID" displayName="Page" columnSpan="2">
+      <lookupList>
+        <source sql="exec csb.PagePart_GetList @IncludeAll=1"/>
+      </lookupList>
+    </field>
+    <field fieldName="SourceFilter" columnSpan="2"/>
+    <field fieldName="WarningFilter" columnSpan="2"/>
+  </section>
+</fieldList>

@@ -1,0 +1,14 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Setup - Users" displayStyle="paging=500">
+    <field fieldName="UserID" displayName="Network Logon" textColumns="50" required="true" />
+    <field fieldName="EmailAddress" displayName="Email Address" textColumns="50" required="true" />
+    <field fieldName="UserGroupID" displayName="User Group" >
+      <lookupList>
+        <source sql="EXEC csb.UserGroup_GetSelectList" />
+      </lookupList>
+    </field>
+    <field fieldName="ContactName" displayName="Name" textColumns="50" required="true" />
+  </section>
+
+</fieldList>
+

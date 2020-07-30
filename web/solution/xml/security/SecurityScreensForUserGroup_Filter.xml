@@ -1,0 +1,9 @@
+<fieldList>
+  <section>
+    <field fieldName="UserGroup" displayName="Group">
+      <lookupList>
+        <source sql="exec csb.Get_UserGroupLookupForSecurity"/>
+      </lookupList>
+    </field>
+  </section>
+</fieldList>

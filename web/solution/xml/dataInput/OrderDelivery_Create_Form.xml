@@ -1,0 +1,11 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+  <section displayName="Select Holding Incubator">
+    <field fieldName="DeliveryDate" displayName="Delivery Date" multilineEdit="true"/>    
+    <field fieldName="OrderID" displayName="Order" multilineEdit="true">
+      <lookupList lookupListFilterField="DeliveryDate" lookupListFilterValue="fieldName:DeliveryDate">
+        <source sql="exec Order_LookupForDeliveryCreate"/>
+      </lookupList>
+    </field>
+    <field fieldName="DeliveryDescription" displayName="Delivery Description" multilineEdit="true"/>
+  </section>
+</fieldList>

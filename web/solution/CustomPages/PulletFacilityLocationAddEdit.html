@@ -1,0 +1,20 @@
+
+<div text-align:center;">
+    <div ng-if="thisRecord.PulletFacilityLocationID!='0'">
+        <a name="PulletFacilityLocationID" id="PulletFacilityLocationID" onclick="fireCSBLink(this); return false;"
+           csb-link="showInDialog('Form.html?screenID=PulletFacilityLocation_Form&amp;p={{thisRecord.PulletFacilityID}}&amp;p={{thisRecord.PulletFacilityLocationID}}','Edit Pullet Facility Location',1800,900)"
+           href>
+            <i id="PulletFacilityLocationID" class="center material-icons ng-binging ng-scope">mode_edit</i>
+        </a>
+        <md-tooltip md-direction="bottom">Edit</md-tooltip>
+    </div>
+    <div ng-if="thisRecord.PulletFacilityLocationID=='0'">
+         <a name="PulletFacilityLocationID" id="PulletFacilityLocationID" onclick="fireCSBLink(this); return false;"
+           csb-link="showInDialog('Form.html?screenID=PulletFacilityLocation_Form&amp;p={{thisRecord.PulletFacilityID}}&amp;p=0','Add Pullet Facility Location',1800,900)"
+           href>
+            <i id="PulletFacilityLocationID" class="center material-icons ng-binging ng-scope">add</i>
+        </a>
+        <md-tooltip md-direction="bottom">Create New</md-tooltip>
+    </div>
+</div> 
+

@@ -1,0 +1,18 @@
+<CargasConnect>
+  <dbo.Clutch_InsertUpdate>
+	<ClutchID/>
+	<Clutch/>
+	<FlockID/>
+	<LayDate/>
+	<RackCnt/>
+	<CaseCnt/>
+	<PlannedQty/>
+	<ActualQty/>
+	<CalculatedQty/>
+	<WgtPerDozen/>
+	<ReasoningForPlannedQty/>
+	<SortOrder/>
+	<IsActive/>
+	<UserName/>
+  </dbo.Clutch_InsertUpdate>
+</CargasConnect>

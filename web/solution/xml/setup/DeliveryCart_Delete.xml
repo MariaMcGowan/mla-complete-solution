@@ -1,0 +1,5 @@
+<CargasConnect>
+  <dbo.DeliveryCart_Delete>
+	<DeliveryCartID/>
+  </dbo.DeliveryCart_Delete>
+</CargasConnect>

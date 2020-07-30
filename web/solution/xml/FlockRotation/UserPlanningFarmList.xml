@@ -1,0 +1,7 @@
+﻿<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Select Farms for Pullet Planning" displayStyle="Paging:50">
+		<field fieldName="Farm" readOnly="true" />
+		<field fieldName="DefaultPulletQty" displayName="Default Pullet Qty" />
+		<field fieldName="IncludeFarmInPlan" displayName ="Select" />
+	</section>
+</fieldList>

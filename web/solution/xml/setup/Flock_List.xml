@@ -1,0 +1,15 @@
+<fieldList xmlns:xs="http://www.cargas.com/schema/csbFormatXML">
+	<section displayName="Setup - Flock">
+		<field fieldName="Farm" displayName="Farm" readOnly="true"/>
+    <field fieldName="Flock" displayName="Flock" readOnly="true"/>
+    <field fieldName="MaleBreed" displayName="Male Breed" readOnly="true"/>
+    <field fieldName="FemaleBreed" displayName="Female Breed" readOnly="true"/>
+    <field fieldName="HatchDate" displayName="Hatch Date" readOnly="true"/>
+    <field fieldName="HousingDate" displayName="Housing Date" readOnly="true"/>
+    <field fieldName="Date_24Weeks" displayName="24 Week Date" readOnly="true"/>
+    <field fieldName="Date_65Weeks" displayName="65 Week Date" readOnly="true"/>
+    <field fieldName="RemovalDate" displayName="Removal Date" readOnly="true"/>
+    <field fieldName="ContractType" displayName="Contract Type" readOnly="true"/>
+    <field fieldName="IsActive"  displayName="Is Active"/>
+	</section>
+</fieldList>
